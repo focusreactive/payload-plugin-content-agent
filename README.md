@@ -115,12 +115,12 @@ mcpPlugin(
 )
 ```
 
-The endpoint then has nine more tools next to the default tools of the MCP plugin:
+The endpoint then has ten more tools next to the default tools of the MCP plugin:
 
 - `getSchemaInfo`, `listDocuments`, `lookupDocuments`, `searchContent`, `checkLinks` and `readDocument` read the content.
 - `patchDocument`, `addDocument`, `editDocument` and `replaceText` change it.
 
-Every write of these tools is a draft, is checked before the save, and is refused when it removes or empties content. An API key reads and writes what its `find`, `create` and `update` flags allow. A new key has the nine tools on. On a key that you made before, turn them on in the admin. Give an outside agent a key of its own, not the key in `mcpApiKey`.
+Every write of these tools is a draft, is checked before the save, and is refused when it removes or empties content. An API key reads and writes what its `find`, `create` and `update` flags allow. A new key has the ten tools on. On a key that you made before, turn them on in the admin. Give an outside agent a key of its own, not the key in `mcpApiKey`.
 
 The wrap adds one checkbox for each tool to the **MCP API Keys** collection. If your database uses migrations, create and run a Payload migration after you add it.
 
