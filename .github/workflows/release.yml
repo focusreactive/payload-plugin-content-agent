@@ -1,0 +1,42 @@
+name: release
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  id-token: write
+
+env:
+  # Git hooks are for people. The release commit that semantic-release pushes must not run them.
+  LEFTHOOK: "0"
+
+jobs:
+  release:
+    name: release
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      # --legacy-peer-deps: the lockfile has no entry for the optional Payload MCP peer.
+      - run: npm ci --legacy-peer-deps
+      - run: npm run build
+      # The package is published with npm trusted publishing (OIDC, `id-token: write`): the job
+      # needs no npm token, and npm attests the build by itself.
+      - run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
