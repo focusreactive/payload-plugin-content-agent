@@ -204,8 +204,19 @@ Set `serverURL` in the Payload config to the public URL of the site. The agent c
 | `mcpUrl` | `<routes.api>/mcp` | Path or full URL of the MCP endpoint. |
 | `apiRoute` | `'/content-agent/chat'` | Path of the chat endpoint. |
 | `disabled` | `false` | Turns the plugin off without removing it from the config. |
+| `modules` | - | Extensions built on the module SDK, such as the [Pro modules](#pro-modules). |
 
 [DOCS.md](DOCS.md) describes every option and the internals of the plugin.
+
+## Pro modules
+
+We also offer paid modules for the plugin in a separate package, `@focus-reactive/payload-plugin-content-agent-pro`. You add them with the `modules` option:
+
+- **Activity log**: records what the agent and people changed, and gives the agent two tools to report on it.
+- **External MCP servers**: gives the agent the tools of MCP servers outside Payload.
+- **Custom tools**: gives the agent your own AI SDK tools.
+
+To get access, [contact us](https://focusreactive.com/#contacts).
 
 ## License
 
