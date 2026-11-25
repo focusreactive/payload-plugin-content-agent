@@ -1,0 +1,186 @@
+{
+ "label": "baseline-docs-openai-bulk",
+ "schema": "docs",
+ "model": "openai",
+ "k": 3,
+ "date": "2026-11-12T16:05:18.841Z",
+ "summary": {
+  "scenarios": 1,
+  "passK": 0,
+  "runs": 3,
+  "runsPassed": 0,
+  "toolCalls": 3,
+  "failedToolCalls": 0,
+  "inputTokens": 93561
+ },
+ "results": [
+  {
+   "id": "bulk-translate",
+   "title": "Translate one field of several documents",
+   "passed": 0,
+   "runs": 3,
+   "passK": false,
+   "median": {
+    "seconds": 9.905,
+    "steps": 2,
+    "inputTokens": 31184,
+    "outputTokens": 224,
+    "cachedShare": 0.9522832221652129
+   },
+   "toolCalls": 3,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": false,
+     "details": {
+      "perDoc": [
+       {
+        "german": null,
+        "ok": false
+       },
+       {
+        "german": null,
+        "ok": false
+       }
+      ]
+     },
+     "conversationId": "1fbf121c-3a30-4a22-bc96-09fb96c486d3",
+     "tools": [
+      "editContent"
+     ],
+     "reply": "I couldn’t run that as requested with `editContent`: it found 0 documents for that scope.\n\nFor this job, the right tool is the dedicated translation flow, since `summary` is a localized field and you want German across every article.\n\nBecause this affects more than 5 documents, I need to do a confirmation pass first. If you want, I’ll now check the full scope of:\n\n- collection: `articles`\n- source locale: `en`\n- target locale: `de`\n- instruction: translate only the `summary` field, leave all other fields unchanged\n\nReply with **“yes”** and I’ll run the dry-run confirmation step, then report the exact article count before any drafts are written.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 12.534,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 31197,
+      "outputTokens": 244,
+      "cacheReadTokens": 29696,
+      "cachedShare": 0.9518863993332692,
+      "seconds": 12.374,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 31197,
+        "outputTokens": 244,
+        "cacheReadTokens": 29696,
+        "seconds": 12.374,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": false,
+     "details": {
+      "perDoc": [
+       {
+        "german": null,
+        "ok": false
+       },
+       {
+        "german": null,
+        "ok": false
+       }
+      ]
+     },
+     "conversationId": "b446386c-49eb-440a-b1b1-c13279eed43c",
+     "tools": [
+      "editContent"
+     ],
+     "reply": "I couldn’t execute that as requested with `editContent`: it found 0 documents for the scope I used.\n\nAlso, because this is a multi-locale project, the correct tool for this job is `translateContent`, not `editContent`.\n\nI’m ready to translate the summaries of all articles into German as drafts, but I need to re-run it with the right bulk scope first. Since this is a bulk operation on more than 5 documents, the proper flow is:\n\n1. dry run with `translateContent` to get the exact count\n2. show you that count\n3. execute only after your explicit confirmation\n\nIf you want, I can do that dry run now.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 9.905,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 31184,
+      "outputTokens": 224,
+      "cacheReadTokens": 29696,
+      "cachedShare": 0.9522832221652129,
+      "seconds": 9.831,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 31184,
+        "outputTokens": 224,
+        "cacheReadTokens": 29696,
+        "seconds": 9.831,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": false,
+     "details": {
+      "perDoc": [
+       {
+        "german": null,
+        "ok": false
+       },
+       {
+        "german": null,
+        "ok": false
+       }
+      ]
+     },
+     "conversationId": "c4e9e342-f6ca-408b-9aa5-0d1c69235971",
+     "tools": [
+      "translateContent"
+     ],
+     "reply": "I checked the bulk translation scope, and there are 0 articles matched by that selection.\n\nThat happened because the bulk translator scopes by documents, and my initial filter was too narrow for this schema. I haven’t changed anything.\n\nIf you want, I can re-run this properly across all articles and translate the summary field into German for every matched article. Since this is a bulk operation, I’ll first get the exact count and show you the scope, then you can confirm.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 8.479,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 31180,
+      "outputTokens": 173,
+      "cacheReadTokens": 29696,
+      "cachedShare": 0.9524053880692752,
+      "seconds": 8.43,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 31180,
+        "outputTokens": 173,
+        "cacheReadTokens": 29696,
+        "seconds": 8.43,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,3182 @@
+{
+ "label": "phase04-terra-blog",
+ "schema": "blog",
+ "model": "openai",
+ "k": 3,
+ "date": "2026-11-14T04:41:47.572Z",
+ "summary": {
+  "scenarios": 14,
+  "passK": 12,
+  "runs": 42,
+  "runsPassed": 40,
+  "toolCalls": 485,
+  "failedToolCalls": 28,
+  "inputTokens": 4420317
+ },
+ "results": [
+  {
+   "id": "link-mention",
+   "title": "Link a plain mention to a given URL",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 37.781,
+    "steps": 11,
+    "inputTokens": 101070,
+    "outputTokens": 1181,
+    "cachedShare": 0.9291876916988226
+   },
+   "toolCalls": 29,
+   "failedToolCalls": 3,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "newLinks": [
+       [
+        "https://harbor.example/content-migration",
+        "content migration"
+       ]
+      ],
+      "textIdentical": true,
+      "linkCount": [
+       1,
+       2
+      ],
+      "otherFieldsUnchanged": true
+     },
+     "conversationId": "7dd4226e-387f-4979-85de-650ca255e1f7",
+     "tools": [
+      "readDocument",
+      "listLinks",
+      "editContent"
+     ],
+     "reply": "I’ll link the first plain-text “content migration” in the body and leave everything else unchanged.Added the link to “content migration” in **A Practical Guide to Headless CMS Workflows** (post ID 1). No other content was changed.\n\n1 draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 37.781,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 11,
+      "inputTokens": 112971,
+      "outputTokens": 1181,
+      "cacheReadTokens": 86496,
+      "cachedShare": 0.765647821122235,
+      "seconds": 37.576,
+      "toolCalls": 9,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"content\",\"check\":{\"present\":\"content migration\"},\"why\":\"The first exact plain-text occurrence in the body must become a link with that exact anchor text.\"},{\""
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 7,
+        "inputTokens": 42235,
+        "outputTokens": 824,
+        "cacheReadTokens": 34638,
+        "seconds": 18.127,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 6,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 69566,
+        "outputTokens": 246,
+        "cacheReadTokens": 51858,
+        "seconds": 37.576,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1170,
+        "outputTokens": 111,
+        "cacheReadTokens": 0,
+        "seconds": 2.304,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "newLinks": [
+       [
+        "https://harbor.example/content-migration",
+        "content migration"
+       ]
+      ],
+      "textIdentical": true,
+      "linkCount": [
+       1,
+       2
+      ],
+      "otherFieldsUnchanged": true
+     },
+     "conversationId": "440a1087-47d8-483e-a22f-268fc1a0435a",
+     "tools": [
+      "editContent"
+     ],
+     "reply": "I’ll link the first plain-text mention in the body and leave everything else unchanged.Linked the first plain-text mention of “content migration” in the body. One draft was updated (post ID 1); please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 30.792,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 9,
+      "inputTokens": 70886,
+      "outputTokens": 910,
+      "cacheReadTokens": 66658,
+      "cachedShare": 0.9403549360945744,
+      "seconds": 30.735,
+      "toolCalls": 7,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"content\",\"check\":{\"judgement\":\"Only the first plain-text occurrence of the exact phrase “content migration” that is not already linked is linked to https://ha"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 7,
+        "inputTokens": 35453,
+        "outputTokens": 686,
+        "cacheReadTokens": 32614,
+        "seconds": 23.284,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 6,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 34253,
+        "outputTokens": 154,
+        "cacheReadTokens": 34044,
+        "seconds": 30.735,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1180,
+        "outputTokens": 70,
+        "cacheReadTokens": 0,
+        "seconds": 1.944,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "newLinks": [
+       [
+        "https://harbor.example/content-migration",
+        "content migration"
+       ]
+      ],
+      "textIdentical": true,
+      "linkCount": [
+       1,
+       2
+      ],
+      "otherFieldsUnchanged": true
+     },
+     "conversationId": "f6767883-97d4-4201-a3f7-28ecd3066759",
+     "tools": [
+      "readDocument",
+      "listLinks",
+      "editContent"
+     ],
+     "reply": "I’ll link the first “content migration” mention in the body and leave everything else unchanged.Updated 1 draft: the first “content migration” mention in the body now links to the requested URL. The status was already draft, so it did not change.\n\nPlease review post **1**, “A Practical Guide to Headless CMS Workflows,” in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 45.763,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 15,
+      "inputTokens": 101070,
+      "outputTokens": 2106,
+      "cacheReadTokens": 93913,
+      "cachedShare": 0.9291876916988226,
+      "seconds": 45.693,
+      "toolCalls": 13,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"content\",\"check\":{\"present\":\"content migration\"},\"why\":\"Link the first exact plain-text occurrence while preserving its visible wording.\"},{\"path\":\"content\",\""
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 8,
+        "inputTokens": 40325,
+        "outputTokens": 1592,
+        "cacheReadTokens": 37778,
+        "seconds": 34.336,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 7,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 52291,
+        "outputTokens": 245,
+        "cacheReadTokens": 51527,
+        "seconds": 45.693,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1263,
+        "outputTokens": 147,
+        "cacheReadTokens": 0,
+        "seconds": 2.652,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 4,
+        "inputTokens": 7191,
+        "outputTokens": 122,
+        "cacheReadTokens": 4608,
+        "seconds": 5.377,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "replace-phrase",
+   "title": "Replace a phrase everywhere in the body",
+   "passed": 2,
+   "runs": 3,
+   "passK": false,
+   "median": {
+    "seconds": 41.583,
+    "steps": 15,
+    "inputTokens": 115232,
+    "outputTokens": 1257,
+    "cachedShare": 0.9232851985559567
+   },
+   "toolCalls": 38,
+   "failedToolCalls": 3,
+   "runDetails": [
+    {
+     "ok": false,
+     "details": {
+      "managersBefore": 3,
+      "managersAfter": 0,
+      "textIsExactlyTheReplacement": false,
+      "linksUnchanged": true,
+      "nodeCount": [
+       9,
+       9
+      ]
+     },
+     "conversationId": "e60d6e65-f0ce-4790-a714-5da5d17f73b1",
+     "tools": [
+      "readDocument",
+      "readDocument",
+      "editContent",
+      "readDocument"
+     ],
+     "reply": "I found three occurrences in the body. I’ll replace them, preserving capitalization and leaving everything else unchanged.Updated **1 draft**: all 3 requested occurrences were replaced in post ID 1.\n\n**One unintended change also occurred:** “content model” became “content editors” in the planning section. Please review the draft in the admin panel; that phrase still needs correction.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 41.583,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 15,
+      "inputTokens": 115232,
+      "outputTokens": 1204,
+      "cacheReadTokens": 106392,
+      "cachedShare": 0.9232851985559567,
+      "seconds": 41.531,
+      "toolCalls": 13,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"content\",\"check\":{\"absent\":\"Content managers\"}},{\"path\":\"content\",\"check\":{\"absent\":\"content managers\"}},{\"path\":\"excerpt\",\"check\":{\"unchanged\":true}},{\"path\""
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 6,
+        "inputTokens": 30286,
+        "outputTokens": 495,
+        "cacheReadTokens": 27865,
+        "seconds": 19.882,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 72822,
+        "outputTokens": 368,
+        "cacheReadTokens": 70847,
+        "seconds": 41.531,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1184,
+        "outputTokens": 145,
+        "cacheReadTokens": 0,
+        "seconds": 2.539,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 5,
+        "inputTokens": 10940,
+        "outputTokens": 196,
+        "cacheReadTokens": 7680,
+        "seconds": 6.682,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "managersBefore": 3,
+      "managersAfter": 0,
+      "textIsExactlyTheReplacement": true,
+      "linksUnchanged": true,
+      "nodeCount": [
+       9,
+       9
+      ]
+     },
+     "conversationId": "7351252c-0a7d-4b77-8dba-40ef90320fb3",
+     "tools": [
+      "readDocument",
+      "editContent"
+     ],
+     "reply": "I’ll replace the three occurrences in the post body, preserving capitalization and leaving everything else unchanged.Updated all 3 occurrences in the body of **A Practical Guide to Headless CMS Workflows** (post ID 1), preserving capitalization.\n\n1 draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 34.324,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 10,
+      "inputTokens": 96048,
+      "outputTokens": 1257,
+      "cacheReadTokens": 89965,
+      "cachedShare": 0.9366670831251042,
+      "seconds": 34.272,
+      "toolCalls": 8,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"content\",\"check\":{\"present\":\"content editors\"},\"why\":\"Replace the one exact lowercase occurrence in the body.\"},{\"path\":\"content\",\"check\":{\"present\":\"Content "
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 7,
+        "inputTokens": 42681,
+        "outputTokens": 904,
+        "cacheReadTokens": 38543,
+        "seconds": 17.27,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 6,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 52104,
+        "outputTokens": 267,
+        "cacheReadTokens": 51422,
+        "seconds": 34.272,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1263,
+        "outputTokens": 86,
+        "cacheReadTokens": 0,
+        "seconds": 2.299,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "managersBefore": 3,
+      "managersAfter": 0,
+      "textIsExactlyTheReplacement": true,
+      "linksUnchanged": true,
+      "nodeCount": [
+       9,
+       9
+      ]
+     },
+     "conversationId": "7f0022ad-aed7-4d7c-9aca-248443d46535",
+     "tools": [
+      "readDocument",
+      "editContent"
+     ],
+     "reply": "I’ll replace the three occurrences in the body, preserving capitalization and leaving everything else unchanged.Updated 3 occurrences in the body of **A Practical Guide to Headless CMS Workflows** (post ID 1), preserving capitalization.\n\nOne draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 56.704,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 20,
+      "inputTokens": 158254,
+      "outputTokens": 2534,
+      "cacheReadTokens": 145422,
+      "cachedShare": 0.9189151617020739,
+      "seconds": 56.627,
+      "toolCalls": 17,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"content\",\"check\":{\"absent\":\"content managers\"},\"why\":\"Replace the exact lowercase phrase in the content body.\"},{\"path\":\"content\",\"check\":{\"absent\":\"Content m"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 12,
+        "inputTokens": 95063,
+        "outputTokens": 1839,
+        "cacheReadTokens": 86973,
+        "seconds": 43.947,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 11,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 52097,
+        "outputTokens": 283,
+        "cacheReadTokens": 51409,
+        "seconds": 56.627,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1198,
+        "outputTokens": 108,
+        "cacheReadTokens": 0,
+        "seconds": 2.439,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 5,
+        "inputTokens": 9896,
+        "outputTokens": 304,
+        "cacheReadTokens": 7040,
+        "seconds": 7.681,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "edit-plain-field",
+   "title": "Set one plain field to an exact value",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 10.318,
+    "steps": 4,
+    "inputTokens": 69031,
+    "outputTokens": 173,
+    "cachedShare": 0.9924526661934493
+   },
+   "toolCalls": 9,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "excerpt": "A step-by-step workflow for teams that publish on a headless CMS.",
+      "bodyUnchanged": true,
+      "titleUnchanged": true
+     },
+     "conversationId": "ec507dde-cb73-41e1-82bb-9a47e2ff7803",
+     "tools": [
+      "findPosts",
+      "reviewChanges",
+      "updatePosts"
+     ],
+     "reply": "I’ll update only the excerpt on this post and save it as a draft.Updated the excerpt on **A Practical Guide to Headless CMS Workflows** (post ID 1). One draft was updated; please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 10.123,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 4,
+      "inputTokens": 69031,
+      "outputTokens": 173,
+      "cacheReadTokens": 68510,
+      "cachedShare": 0.9924526661934493,
+      "seconds": 10.056,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 4,
+        "inputTokens": 69031,
+        "outputTokens": 173,
+        "cacheReadTokens": 68510,
+        "seconds": 10.056,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "excerpt": "A step-by-step workflow for teams that publish on a headless CMS.",
+      "bodyUnchanged": true,
+      "titleUnchanged": true
+     },
+     "conversationId": "c0a5ed00-c686-46a7-b2f0-9a6aaf81f558",
+     "tools": [
+      "findPosts",
+      "getSchemaInfo",
+      "reviewChanges",
+      "updatePosts"
+     ],
+     "reply": "I’ll update only the excerpt on this post and save it as a draft.Updated the excerpt on **A Practical Guide to Headless CMS Workflows** (ID 1). One draft was updated; please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 12.386,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 4,
+      "inputTokens": 69936,
+      "outputTokens": 242,
+      "cacheReadTokens": 69140,
+      "cachedShare": 0.9886181651795928,
+      "seconds": 12.326,
+      "toolCalls": 4,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 4,
+        "inputTokens": 69936,
+        "outputTokens": 242,
+        "cacheReadTokens": 69140,
+        "seconds": 12.326,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "excerpt": "A step-by-step workflow for teams that publish on a headless CMS.",
+      "bodyUnchanged": true,
+      "titleUnchanged": true
+     },
+     "conversationId": "b081b5f5-c8d3-4993-b2f4-c033a473b803",
+     "tools": [
+      "findPosts",
+      "updatePosts"
+     ],
+     "reply": "I’ll update only the excerpt on this post and save it as a draft.Updated the excerpt in 1 draft: **A Practical Guide to Headless CMS Workflows** (ID 1). Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 10.318,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 51591,
+      "outputTokens": 125,
+      "cacheReadTokens": 51231,
+      "cachedShare": 0.993022038727685,
+      "seconds": 10.281,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 51591,
+        "outputTokens": 125,
+        "cacheReadTokens": 51231,
+        "seconds": 10.281,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "block-field",
+   "title": "Change one field of one block on a page",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 21.296,
+    "steps": 8,
+    "inputTokens": 77138,
+    "outputTokens": 576,
+    "cachedShare": 0.9496746091420571
+   },
+   "toolCalls": 21,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "faqTitle": "Questions about migration",
+      "faqItemsUnchanged": true,
+      "otherBlocksUnchanged": true,
+      "blockCount": [
+       4,
+       4
+      ]
+     },
+     "conversationId": "d45238fd-ee80-48f8-b8af-797fe0c76705",
+     "tools": [
+      "getDocumentOutline",
+      "readDocument",
+      "editContent"
+     ],
+     "reply": "I’ll change only the FAQ block’s title in the draft.Updated 1 draft: **Content Migration Services** (page ID 1). The FAQ title is now “Questions about migration.”\n\nThe editor reported: “You declared layout unchanged and then edited it. The edit stands; the changes are listed with the saved draft. No action needed unless the list shows a change the task did not ask for - do not move or undo the change to satisfy the criterion.”\n\nPlease review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 19.807,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 8,
+      "inputTokens": 76006,
+      "outputTokens": 576,
+      "cacheReadTokens": 51933,
+      "cachedShare": 0.6832750046048996,
+      "seconds": 19.767,
+      "toolCalls": 7,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 22614,
+        "outputTokens": 227,
+        "cacheReadTokens": 17495,
+        "seconds": 8.483,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 52155,
+        "outputTokens": 261,
+        "cacheReadTokens": 34438,
+        "seconds": 19.767,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1237,
+        "outputTokens": 88,
+        "cacheReadTokens": 0,
+        "seconds": 1.732,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "faqTitle": "Questions about migration",
+      "faqItemsUnchanged": true,
+      "otherBlocksUnchanged": true,
+      "blockCount": [
+       4,
+       4
+      ]
+     },
+     "conversationId": "30e9e81a-6b5b-4888-ad32-e308c76ab00b",
+     "tools": [
+      "getDocumentOutline",
+      "editContent"
+     ],
+     "reply": "I’ll change the FAQ block’s title to “Questions about migration” and leave everything else untouched.Updated **1 draft** (page ID 1). The FAQ title changed from “Migration FAQ” to “Questions about migration”; no other changes were listed.\n\nThe editor reported: “You declared layout unchanged and then edited it. The edit stands; the changes are listed with the saved draft. No action needed unless the list shows a change the task did not ask for - do not move or undo the change to satisfy the criterion.”\n\nPlease review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 23.333,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 8,
+      "inputTokens": 77174,
+      "outputTokens": 741,
+      "cacheReadTokens": 73667,
+      "cachedShare": 0.9545572343017078,
+      "seconds": 23.288,
+      "toolCalls": 6,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 23969,
+        "outputTokens": 401,
+        "cacheReadTokens": 22323,
+        "seconds": 10.696,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 51956,
+        "outputTokens": 250,
+        "cacheReadTokens": 51344,
+        "seconds": 23.288,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1249,
+        "outputTokens": 90,
+        "cacheReadTokens": 0,
+        "seconds": 2.142,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "faqTitle": "Questions about migration",
+      "faqItemsUnchanged": true,
+      "otherBlocksUnchanged": true,
+      "blockCount": [
+       4,
+       4
+      ]
+     },
+     "conversationId": "cea3f5ba-6be9-4804-be6f-2b5836059fee",
+     "tools": [
+      "getDocumentOutline",
+      "readDocument",
+      "getSchemaInfo",
+      "editContent"
+     ],
+     "reply": "I’ll change only the FAQ block’s title, leaving its questions and the rest of the page untouched.Updated the FAQ block title to **“Questions about migration”** on Content Migration Services (page ID 1). No other content was changed.\n\nOne draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 21.296,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 8,
+      "inputTokens": 77138,
+      "outputTokens": 573,
+      "cacheReadTokens": 73256,
+      "cachedShare": 0.9496746091420571,
+      "seconds": 21.251,
+      "toolCalls": 8,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 22648,
+        "outputTokens": 223,
+        "cacheReadTokens": 21215,
+        "seconds": 8.952,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 53264,
+        "outputTokens": 245,
+        "cacheReadTokens": 52041,
+        "seconds": 21.251,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1226,
+        "outputTokens": 105,
+        "cacheReadTokens": 0,
+        "seconds": 2.468,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "array-row-add",
+   "title": "Add a row to an array inside a block",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 23.277,
+    "steps": 9,
+    "inputTokens": 81756,
+    "outputTokens": 771,
+    "cachedShare": 0.9491296101668297
+   },
+   "toolCalls": 23,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "items": [
+       {
+        "question": "How long does a migration take?",
+        "answer": "Most projects take four to eight weeks."
+       },
+       {
+        "question": "Do we keep our URLs?",
+        "answer": "Yes. Every old URL gets a redirect."
+       },
+       {
+        "question": "Is there a content freeze?",
+        "answer": "Yes, for two days before the launch."
+       }
+      ],
+      "otherBlocksUnchanged": true
+     },
+     "conversationId": "11a6bfb1-698a-4b9c-83bd-a7c88b316da1",
+     "tools": [
+      "getDocumentOutline",
+      "editContent"
+     ],
+     "reply": "I’ll add the question to the end of the FAQ in the current page’s draft, keeping the existing questions unchanged.Added the question to the end of the FAQ. **1 page draft updated** (ID 1); please review it in the admin panel.\n\nThe editor reported: “You declared layout unchanged and then edited it. The edit stands; the changes are listed with the saved draft. No action needed unless the list shows a change the task did not ask for - do not move or undo the change to satisfy the criterion.”",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 24.16,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 9,
+      "inputTokens": 81756,
+      "outputTokens": 701,
+      "cacheReadTokens": 78046,
+      "cachedShare": 0.9546210675669065,
+      "seconds": 24.116,
+      "toolCalls": 7,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 6,
+        "inputTokens": 28328,
+        "outputTokens": 360,
+        "cacheReadTokens": 26666,
+        "seconds": 11.607,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 52063,
+        "outputTokens": 245,
+        "cacheReadTokens": 51380,
+        "seconds": 24.116,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1365,
+        "outputTokens": 96,
+        "cacheReadTokens": 0,
+        "seconds": 2.199,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "items": [
+       {
+        "question": "How long does a migration take?",
+        "answer": "Most projects take four to eight weeks."
+       },
+       {
+        "question": "Do we keep our URLs?",
+        "answer": "Yes. Every old URL gets a redirect."
+       },
+       {
+        "question": "Is there a content freeze?",
+        "answer": "Yes, for two days before the launch."
+       }
+      ],
+      "otherBlocksUnchanged": true
+     },
+     "conversationId": "c6a21af5-3e20-4838-9f24-55ecf8b91a00",
+     "tools": [
+      "getDocumentOutline",
+      "readDocument",
+      "getSchemaInfo",
+      "editContent"
+     ],
+     "reply": "I’ll add the question to the end of the FAQ in this page’s draft, keeping the existing questions unchanged.Added the question and answer to the end of the FAQ on **Content Migration Services** (page ID 1). One draft was updated; please review it in the admin panel.\n\nThe editor also reported: “You declared layout[6af7e1c878aaba6f2c085db3].items, layout unchanged and then edited it. The edit stands; the changes are listed with the saved draft. No action needed unless the list shows a change the task did not ask for - do not move or undo the change to satisfy the criterion.”",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 23.277,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 8,
+      "inputTokens": 78891,
+      "outputTokens": 787,
+      "cacheReadTokens": 74137,
+      "cachedShare": 0.9397396407701766,
+      "seconds": 23.216,
+      "toolCalls": 8,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 23191,
+        "outputTokens": 353,
+        "cacheReadTokens": 21550,
+        "seconds": 9.656,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 54401,
+        "outputTokens": 322,
+        "cacheReadTokens": 52587,
+        "seconds": 23.216,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1299,
+        "outputTokens": 112,
+        "cacheReadTokens": 0,
+        "seconds": 2.123,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "items": [
+       {
+        "question": "How long does a migration take?",
+        "answer": "Most projects take four to eight weeks."
+       },
+       {
+        "question": "Do we keep our URLs?",
+        "answer": "Yes. Every old URL gets a redirect."
+       },
+       {
+        "question": "Is there a content freeze?",
+        "answer": "Yes, for two days before the launch."
+       }
+      ],
+      "otherBlocksUnchanged": true
+     },
+     "conversationId": "bfbb018c-895a-4234-b644-933f5dd5d490",
+     "tools": [
+      "getDocumentOutline",
+      "readDocument",
+      "editContent"
+     ],
+     "reply": "I’ll add the question to the end of the FAQ in the current page’s draft, keeping the existing questions unchanged.Added the question and answer to the end of the FAQ on **Content Migration Services** (page ID 1). **1 draft updated**; please review it in the admin panel.\n\nThe editor reported this note alongside the saved change:\n\n> You declared layout[6af7e1c878aaba6f2c085db3].items, layout unchanged and then edited it. The edit stands; the changes are listed with the saved draft. No action needed unless the list shows a change the task did not ask for - do not move or undo the change to satisfy the criterion.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 21.695,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 9,
+      "inputTokens": 82779,
+      "outputTokens": 771,
+      "cacheReadTokens": 78568,
+      "cachedShare": 0.9491296101668297,
+      "seconds": 21.647,
+      "toolCalls": 8,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 6,
+        "inputTokens": 28206,
+        "outputTokens": 338,
+        "cacheReadTokens": 26552,
+        "seconds": 10.001,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 53262,
+        "outputTokens": 332,
+        "cacheReadTokens": 52016,
+        "seconds": 21.647,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1311,
+        "outputTokens": 101,
+        "cacheReadTokens": 0,
+        "seconds": 1.939,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "create-draft",
+   "title": "Create a new document as a draft",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 34.939,
+    "steps": 13,
+    "inputTokens": 101957,
+    "outputTokens": 1356,
+    "cachedShare": 0.9442019674961013
+   },
+   "toolCalls": 40,
+   "failedToolCalls": 1,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "found": 1,
+      "status": "draft",
+      "filledNodes": 2
+     },
+     "conversationId": "8a3cdf65-9008-4d60-8e1e-cc84efd35c18",
+     "tools": [
+      "findDocuments",
+      "findPosts",
+      "getSchemaInfo",
+      "createPosts",
+      "editContent"
+     ],
+     "reply": "I’ll create the post as a draft and add a two-paragraph introduction about the value of a second reader.Created **1 draft post**, “Eval draft 10141: why editors need a review step” (ID 10), with a two-paragraph introduction. It was not published.\n\nPlease review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 36.643,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 16,
+      "inputTokens": 111733,
+      "outputTokens": 1396,
+      "cacheReadTokens": 87764,
+      "cachedShare": 0.7854796702854125,
+      "seconds": 36.594,
+      "toolCalls": 16,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "richtext-editor",
+        "tool": "applyRichText",
+        "error": "\"replace\" requires an anchor: expectedText (a distinctive snippet of the node's current text) or expectedType (its node type, e.g. \"upload\"/\"block\") - so it cannot hit the wrong node."
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 7,
+        "inputTokens": 33430,
+        "outputTokens": 720,
+        "cacheReadTokens": 30614,
+        "seconds": 22.601,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 7,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 70023,
+        "outputTokens": 359,
+        "cacheReadTokens": 52158,
+        "seconds": 36.594,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1173,
+        "outputTokens": 83,
+        "cacheReadTokens": 0,
+        "seconds": 1.649,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 5,
+        "inputTokens": 7107,
+        "outputTokens": 234,
+        "cacheReadTokens": 4992,
+        "seconds": 6.338,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 1
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "found": 1,
+      "status": "draft",
+      "filledNodes": 2
+     },
+     "conversationId": "22a1092a-475c-47ff-8ce5-a7628938b9a3",
+     "tools": [
+      "findDocuments",
+      "findPosts",
+      "getSchemaInfo",
+      "createPosts",
+      "editContent"
+     ],
+     "reply": "I’ll check for an existing post with that title, then create a draft with a two-paragraph introduction. I won’t publish it.Created **“Eval draft 10142: why editors need a review step”** (post ID 11) with a two-paragraph introduction.\n\nOne draft was created; it has not been published. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 34.939,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 13,
+      "inputTokens": 101957,
+      "outputTokens": 1356,
+      "cacheReadTokens": 96268,
+      "cachedShare": 0.9442019674961013,
+      "seconds": 34.856,
+      "toolCalls": 12,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 6,
+        "inputTokens": 26709,
+        "outputTokens": 665,
+        "cacheReadTokens": 24915,
+        "seconds": 19.252,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 69963,
+        "outputTokens": 375,
+        "cacheReadTokens": 69049,
+        "seconds": 34.856,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1163,
+        "outputTokens": 165,
+        "cacheReadTokens": 0,
+        "seconds": 3.034,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 3,
+        "inputTokens": 4122,
+        "outputTokens": 151,
+        "cacheReadTokens": 2304,
+        "seconds": 4.062,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "found": 1,
+      "status": "draft",
+      "filledNodes": 2
+     },
+     "conversationId": "f65926d9-cb64-4c6b-8e2f-020a8cc145df",
+     "tools": [
+      "findDocuments",
+      "findPosts",
+      "getSchemaInfo",
+      "createPosts",
+      "editContent"
+     ],
+     "reply": "I’ll create the post as a draft and add a two-paragraph introduction. It won’t be published.Created **“Eval draft 10143: why editors need a review step”** with a two-paragraph introduction.\n\n**1 draft created** (post ID 12). Please review it in the admin panel; it was not published.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 30.971,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 13,
+      "inputTokens": 100919,
+      "outputTokens": 1036,
+      "cacheReadTokens": 95520,
+      "cachedShare": 0.9465016498379889,
+      "seconds": 30.87,
+      "toolCalls": 12,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 6,
+        "inputTokens": 25768,
+        "outputTokens": 444,
+        "cacheReadTokens": 24228,
+        "seconds": 16.205,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 69885,
+        "outputTokens": 341,
+        "cacheReadTokens": 68988,
+        "seconds": 30.87,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1155,
+        "outputTokens": 95,
+        "cacheReadTokens": 0,
+        "seconds": 2.691,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 3,
+        "inputTokens": 4111,
+        "outputTokens": 156,
+        "cacheReadTokens": 2304,
+        "seconds": 4.381,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "bulk-append",
+   "title": "The same small change to three documents",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 25.412,
+    "steps": 19,
+    "inputTokens": 126063,
+    "outputTokens": 1674,
+    "cachedShare": 0.9358812657163482
+   },
+   "toolCalls": 50,
+   "failedToolCalls": 2,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "perDoc": [
+       {
+        "excerpt": "What structured content are and why a small team needs them. Reviewed by the editorial team.",
+        "appendedOnce": true,
+        "bodyUnchanged": true
+       },
+       {
+        "excerpt": "What editorial calendars are and why a small team needs them. Reviewed by the editorial team.",
+        "appendedOnce": true,
+        "bodyUnchanged": true
+       },
+       {
+        "excerpt": "What image guidelines are and why a small team needs them. Reviewed by the editorial team.",
+        "appendedOnce": true,
+        "bodyUnchanged": true
+       }
+      ]
+     },
+     "conversationId": "aa176222-8b4c-4481-812b-503958b030fb",
+     "tools": [
+      "findDocuments",
+      "findDocuments",
+      "findDocuments",
+      "editContent"
+     ],
+     "reply": "I’ll append the sentence to the excerpts of the three matching posts, leaving all other fields unchanged.Updated 3 draft excerpts:\n\n- Structured Content: a Short Introduction (ID 3)\n- Editorial Calendars: a Short Introduction (ID 4)\n- Image Guidelines: a Short Introduction (ID 5)\n\nPlease review the drafts in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 24.534,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 18,
+      "inputTokens": 114469,
+      "outputTokens": 1379,
+      "cacheReadTokens": 107969,
+      "cachedShare": 0.9432160672321764,
+      "seconds": 24.492,
+      "toolCalls": 16,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 15,
+        "inputTokens": 59331,
+        "outputTokens": 862,
+        "cacheReadTokens": 56722,
+        "seconds": 34.054,
+        "runs": 3,
+        "failedRuns": 0,
+        "toolCalls": 12,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 51822,
+        "outputTokens": 295,
+        "cacheReadTokens": 51247,
+        "seconds": 24.492,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 3316,
+        "outputTokens": 222,
+        "cacheReadTokens": 0,
+        "seconds": 6.135,
+        "runs": 3,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "perDoc": [
+       {
+        "excerpt": "What structured content are and why a small team needs them. Reviewed by the editorial team.",
+        "appendedOnce": true,
+        "bodyUnchanged": true
+       },
+       {
+        "excerpt": "What editorial calendars are and why a small team needs them. Reviewed by the editorial team.",
+        "appendedOnce": true,
+        "bodyUnchanged": true
+       },
+       {
+        "excerpt": "What image guidelines are and why a small team needs them. Reviewed by the editorial team.",
+        "appendedOnce": true,
+        "bodyUnchanged": true
+       }
+      ]
+     },
+     "conversationId": "95999948-13b7-4727-9317-1a6a5a8cf4d0",
+     "tools": [
+      "findDocuments",
+      "findDocuments",
+      "findDocuments",
+      "editContent"
+     ],
+     "reply": "I’ll append the sentence to each of the three excerpts, leaving all other content unchanged.Updated 3 drafts:\n\n- “Structured Content: a Short Introduction” (ID 3)\n- “Editorial Calendars: a Short Introduction” (ID 4)\n- “Image Guidelines: a Short Introduction” (ID 5)\n\nPlease review the excerpts in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 25.871,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 19,
+      "inputTokens": 126460,
+      "outputTokens": 1783,
+      "cacheReadTokens": 118266,
+      "cachedShare": 0.9352048078443777,
+      "seconds": 25.826,
+      "toolCalls": 17,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"excerpt\",\"check\":{\"present\":\"Reviewed by the editorial team.\"},\"why\":\"Append the exact requested sentence to the existing excerpt, separated by one space.\"},{"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 16,
+        "inputTokens": 71315,
+        "outputTokens": 1193,
+        "cacheReadTokens": 66965,
+        "seconds": 34.908,
+        "runs": 3,
+        "failedRuns": 0,
+        "toolCalls": 13,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 51797,
+        "outputTokens": 277,
+        "cacheReadTokens": 51301,
+        "seconds": 25.826,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 3348,
+        "outputTokens": 313,
+        "cacheReadTokens": 0,
+        "seconds": 8.476,
+        "runs": 3,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "perDoc": [
+       {
+        "excerpt": "What structured content are and why a small team needs them. Reviewed by the editorial team.",
+        "appendedOnce": true,
+        "bodyUnchanged": true
+       },
+       {
+        "excerpt": "What editorial calendars are and why a small team needs them. Reviewed by the editorial team.",
+        "appendedOnce": true,
+        "bodyUnchanged": true
+       },
+       {
+        "excerpt": "What image guidelines are and why a small team needs them. Reviewed by the editorial team.",
+        "appendedOnce": true,
+        "bodyUnchanged": true
+       }
+      ]
+     },
+     "conversationId": "cb43e589-6ed2-4afe-b16a-b74d1455d020",
+     "tools": [
+      "findDocuments",
+      "findDocuments",
+      "findDocuments",
+      "editContent"
+     ],
+     "reply": "I’ll append the sentence to each of the three excerpts, leaving all other content unchanged.Updated 3 drafts:\n\n- Structured Content: a Short Introduction (ID 3)\n- Editorial Calendars: a Short Introduction (ID 4)\n- Image Guidelines: a Short Introduction (ID 5)\n\nPlease review the drafts in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 25.412,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 19,
+      "inputTokens": 126063,
+      "outputTokens": 1674,
+      "cacheReadTokens": 117980,
+      "cachedShare": 0.9358812657163482,
+      "seconds": 25.375,
+      "toolCalls": 17,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"excerpt\",\"check\":{\"present\":\"Reviewed by the editorial team.\"},\"why\":\"Append the requested sentence to the excerpt.\"},{\"path\":\"excerpt\",\"check\":{\"judgement\":\""
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 16,
+        "inputTokens": 70957,
+        "outputTokens": 1117,
+        "cacheReadTokens": 66679,
+        "seconds": 30.632,
+        "runs": 3,
+        "failedRuns": 0,
+        "toolCalls": 13,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 51798,
+        "outputTokens": 272,
+        "cacheReadTokens": 51301,
+        "seconds": 25.375,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 3308,
+        "outputTokens": 285,
+        "cacheReadTokens": 0,
+        "seconds": 6.294,
+        "runs": 3,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "bulk-above-threshold",
+   "title": "The same change to seven documents, above the confirmation threshold",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 57.111000000000004,
+    "steps": 46,
+    "inputTokens": 311880,
+    "outputTokens": 5314,
+    "cachedShare": 0.9308172502352073
+   },
+   "toolCalls": 104,
+   "failedToolCalls": 12,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "changedCorrectly": 7,
+      "of": 7,
+      "confirmTurns": 1,
+      "otherPostUnchanged": true
+     },
+     "conversationId": "11f99bda-d257-48c3-81de-299fcd5d8c35",
+     "tools": [
+      "listDocuments",
+      "editContent",
+      "editContent"
+     ],
+     "reply": "I’ll append the sentence to matching excerpts only, leaving all other fields and posts unchanged. I’ll check the bulk scope before making any edits.I found **7 posts** whose titles end with “: a Short Introduction”. I’ll append “Part of the basics series.” to their excerpts and change nothing else.\n\nPlease confirm that I should update these 7 drafts.\n---\nI’ll update the seven confirmed matching posts, appending the sentence to their excerpts only.Updated **7 post drafts**; no other posts or fields were changed. Please review the excerpts in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 49.599,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 39,
+      "inputTokens": 241175,
+      "outputTokens": 4002,
+      "cacheReadTokens": 225683,
+      "cachedShare": 0.9357644863688194,
+      "seconds": 49.518,
+      "toolCalls": 30,
+      "failedToolCalls": 2,
+      "failedRuns": 3,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"title\",\"check\":{\"unchanged\":true}},{\"path\":\"excerpt\",\"check\":{\"judgement\":\"If the title ends exactly with ': a Short Introduction', the excerpt ends with 'Par"
+       },
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"title\",\"check\":{\"unchanged\":true},\"why\":\"The title is only checked as a condition and must not be edited.\"},{\"path\":\"excerpt\",\"check\":{\"judgement\":\"If the tit"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 34,
+        "inputTokens": 145683,
+        "outputTokens": 2091,
+        "cacheReadTokens": 137532,
+        "seconds": 65.056,
+        "runs": 7,
+        "failedRuns": 0,
+        "toolCalls": 27,
+        "failedToolCalls": 2
+       },
+       "main": {
+        "steps": 5,
+        "inputTokens": 87632,
+        "outputTokens": 808,
+        "cacheReadTokens": 85902,
+        "seconds": 49.518,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 7860,
+        "outputTokens": 1103,
+        "cacheReadTokens": 2249,
+        "seconds": 27.855,
+        "runs": 9,
+        "failedRuns": 3,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "changedCorrectly": 7,
+      "of": 7,
+      "confirmTurns": 1,
+      "otherPostUnchanged": true
+     },
+     "conversationId": "dd729d09-20aa-4c85-91f9-eb8ff1e189c8",
+     "tools": [
+      "listDocuments",
+      "editContent",
+      "listDocuments",
+      "editContent",
+      "editContent"
+     ],
+     "reply": "I’ll check the scope first. The planned edit is to append that sentence to matching excerpts only, saving the changes as drafts.There are **7 matching posts**. I’ll append “Part of the basics series.” to each excerpt, save the edits as drafts, and change nothing else.\n\nPlease confirm that I should proceed.\n---\nUpdated the excerpts in **7 draft posts**. No other posts were changed. Please review the drafts in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 57.328,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 46,
+      "inputTokens": 311880,
+      "outputTokens": 5314,
+      "cacheReadTokens": 289366,
+      "cachedShare": 0.9278119789662691,
+      "seconds": 57.232,
+      "toolCalls": 37,
+      "failedToolCalls": 4,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"title\",\"check\":{\"unchanged\":true},\"why\":\"The title and other fields must remain untouched.\"},{\"path\":\"excerpt\",\"check\":{\"judgement\":\"If the title ends exactly"
+       },
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"excerpt\",\"check\":{\"present\":\"What release notes are and why a small team needs them. Part of the basics series.\"},\"why\":\"The title matches the exact suffix, s"
+       },
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"excerpt\",\"check\":{\"present\":\"What image guidelines are and why a small team needs them. Part of the basics series.\"},\"why\":\"The title has the exact required s"
+       },
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"title\",\"check\":{\"unchanged\":true},\"why\":\"The post title must only be inspected to determine eligibility; it must not be edited.\"},{\"path\":\"excerpt\",\"check\":{\""
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 39,
+        "inputTokens": 178917,
+        "outputTokens": 3056,
+        "cacheReadTokens": 167107,
+        "seconds": 76.82,
+        "runs": 7,
+        "failedRuns": 0,
+        "toolCalls": 32,
+        "failedToolCalls": 4
+       },
+       "main": {
+        "steps": 7,
+        "inputTokens": 124961,
+        "outputTokens": 997,
+        "cacheReadTokens": 122259,
+        "seconds": 57.232,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 8002,
+        "outputTokens": 1261,
+        "cacheReadTokens": 0,
+        "seconds": 20.775,
+        "runs": 7,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "changedCorrectly": 7,
+      "of": 7,
+      "confirmTurns": 1,
+      "otherPostUnchanged": true
+     },
+     "conversationId": "d757651c-ee1e-48c5-8fa3-c0f4542f9ccd",
+     "tools": [
+      "listDocuments",
+      "editContent",
+      "editContent",
+      "editContent"
+     ],
+     "reply": "I’ll check the scope, then append the sentence to the matching excerpts only. I won’t change other fields or posts.I found **7 matching posts**. I’ll append “Part of the basics series.” to each excerpt, changing nothing else and leaving other posts untouched.\n\nPlease confirm that I should update these 7 drafts.\n---\nI’ll append the sentence to the confirmed matching posts, leaving all other fields and posts unchanged.Updated **7 post drafts**. No other posts were changed.\n\nPlease review the drafts in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 57.111000000000004,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 46,
+      "inputTokens": 314616,
+      "outputTokens": 5665,
+      "cacheReadTokens": 292850,
+      "cachedShare": 0.9308172502352073,
+      "seconds": 57.016,
+      "toolCalls": 37,
+      "failedToolCalls": 6,
+      "failedRuns": 4,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"title\",\"check\":{\"unchanged\":true}},{\"path\":\"excerpt\",\"check\":{\"judgement\":\"If title ends exactly with case-sensitive suffix ': a Short Introduction', preserve"
+       },
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"title\",\"check\":{\"unchanged\":\"\"},\"why\":\"The title is only a condition; do not modify it.\"},{\"path\":\"excerpt\",\"check\":{\"judgement\":\"Append exactly “Part of the "
+       },
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"title\",\"check\":{\"unchanged\":true},\"why\":\"The title is only inspected as a condition and must not be edited.\"},{\"path\":\"excerpt\",\"check\":{\"judgement\":\"Append e"
+       },
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"title\",\"check\":{\"unchanged\":true},\"why\":\"Title is only inspected to determine whether the conditional edit applies.\"},{\"path\":\"excerpt\",\"check\":{\"judgement\":\""
+       },
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"title\",\"check\":{\"unchanged\":true},\"why\":\"The title is the condition for whether any edit is permitted.\"},{\"path\":\"excerpt\",\"check\":{\"judgement\":\"If title ends"
+       },
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"title\",\"check\":{\"unchanged\":true},\"why\":\"The title is a condition and must not be edited.\"},{\"path\":\"content\",\"check\":{\"unchanged\":true},\"why\":\"The task permi"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 40,
+        "inputTokens": 201055,
+        "outputTokens": 3189,
+        "cacheReadTokens": 185903,
+        "seconds": 80.8,
+        "runs": 7,
+        "failedRuns": 0,
+        "toolCalls": 33,
+        "failedToolCalls": 6
+       },
+       "main": {
+        "steps": 6,
+        "inputTokens": 105299,
+        "outputTokens": 945,
+        "cacheReadTokens": 103404,
+        "seconds": 57.016,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 8262,
+        "outputTokens": 1531,
+        "cacheReadTokens": 3543,
+        "seconds": 36.315,
+        "runs": 10,
+        "failedRuns": 4,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "bulk-find-replace",
+   "title": "Replace a phrase in every document of a collection",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 37.633,
+    "steps": 7,
+    "inputTokens": 122787,
+    "outputTokens": 552,
+    "cachedShare": 0.9849984118839943
+   },
+   "toolCalls": 92,
+   "failedToolCalls": 4,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "changedCorrectly": 7,
+      "of": 7,
+      "confirmTurns": 1,
+      "postsWithoutThePhraseUnchanged": true
+     },
+     "conversationId": "02c97d84-5f8a-45d1-9d5e-732cd88fac5a",
+     "tools": [
+      "searchContent",
+      "findReplaceContent",
+      "searchContent",
+      "findReplaceContent",
+      "findReplaceContent"
+     ],
+     "reply": "I found the phrase in 7 posts. I’ll check the replacement scope before making any changes.I found **14 occurrences across 7 posts**: one in each excerpt and one in each body. The other 2 posts have no matches.\n\nMay I replace them and save the 7 posts as drafts? Please confirm.\n---\nI’ll replace the exact phrase in the matching posts’ excerpts and bodies, then report how many drafts changed.Replaced **14 occurrences** across **7 post drafts**, including excerpts and bodies. Please review the drafts in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 37.633,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 7,
+      "inputTokens": 122787,
+      "outputTokens": 552,
+      "cacheReadTokens": 120945,
+      "cachedShare": 0.9849984118839943,
+      "seconds": 37.528,
+      "toolCalls": 5,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 7,
+        "inputTokens": 122787,
+        "outputTokens": 552,
+        "cacheReadTokens": 120945,
+        "seconds": 37.528,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "changedCorrectly": 7,
+      "of": 7,
+      "confirmTurns": 1,
+      "postsWithoutThePhraseUnchanged": true
+     },
+     "conversationId": "2779f495-bc0b-446a-ae14-0a52928984cf",
+     "tools": [
+      "searchContent",
+      "findReplaceContent",
+      "searchContent",
+      "findReplaceContent",
+      "findReplaceContent"
+     ],
+     "reply": "I’ll check the replacement scope first, then save the matching posts as drafts after your confirmation.The replacement affects **7 posts**, with 14 matches across their excerpts and bodies. No changes have been made yet.\n\nPlease confirm: should I replace “small team” with “small editorial team” in all 7 drafts?\n---\nI’ll apply the confirmed replacement to the 7 matching posts, preserving their existing content and saving the changes as drafts.Replaced **14 occurrences** across **7 post drafts** (IDs 3–9), in excerpts and bodies. Please review the drafts in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 25.528,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 7,
+      "inputTokens": 122728,
+      "outputTokens": 519,
+      "cacheReadTokens": 120956,
+      "cachedShare": 0.9855615670425657,
+      "seconds": 25.455,
+      "toolCalls": 5,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 7,
+        "inputTokens": 122728,
+        "outputTokens": 519,
+        "cacheReadTokens": 120956,
+        "seconds": 25.455,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "changedCorrectly": 7,
+      "of": 7,
+      "confirmTurns": 1,
+      "postsWithoutThePhraseUnchanged": true
+     },
+     "conversationId": "6a30540b-7a04-440a-8c1d-c5e09ec632a7",
+     "tools": [
+      "editContent",
+      "editContent",
+      "editContent"
+     ],
+     "reply": "I’ll check the scope, then replace the exact phrase only in post excerpts and bodies, leaving other fields and URLs unchanged.This will check **9 posts** and replace the exact phrase “small team” in excerpts and bodies only. Changes will be saved as drafts; other fields and URLs will remain unchanged.\n\nPlease confirm if I should proceed.\n\n⚠ Check: no document was changed in this turn. The message above describes a write that did not happen - nothing was saved.\n---\nI’ll apply the exact replacement in post excerpts and bodies, preserving all other fields and URLs.Updated **7 post drafts**. The other 2 posts (IDs 1 and 2) were byte-identical after processing, so no changes were saved for them.\n\nPlease review the drafts in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 70.467,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 94,
+      "inputTokens": 414575,
+      "outputTokens": 8041,
+      "cacheReadTokens": 371805,
+      "cachedShare": 0.8968341072182355,
+      "seconds": 70.393,
+      "toolCalls": 82,
+      "failedToolCalls": 4,
+      "failedRuns": 1,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"excerpt\",\"check\":{\"type\":\"absent\",\"text\":\"small team\"},\"why\":\"All exact case-sensitive occurrences in the excerpt must be replaced.\"},{\"path\":\"content\",\"check"
+       },
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"excerpt\",\"check\":{\"absent\":\"small team\"},\"why\":\"Replace every exact, case-sensitive occurrence in the excerpt.\"},{\"path\":\"content\",\"check\":{\"absent\":\"small te"
+       },
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"excerpt\",\"check\":{\"absent\":\"small team\"},\"why\":\"The exact phrase must be replaced in the excerpt.\"},{\"path\":\"content\",\"check\":{\"absent\":\"small team\"},\"why\":\"T"
+       },
+       {
+        "agent": "content-editor",
+        "tool": "applyDocumentText",
+        "error": "Nothing to apply: pass `text`, `links` or `append`."
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 57,
+        "inputTokens": 266020,
+        "outputTokens": 5399,
+        "cacheReadTokens": 248102,
+        "seconds": 169.216,
+        "runs": 9,
+        "failedRuns": 0,
+        "toolCalls": 52,
+        "failedToolCalls": 4
+       },
+       "main": {
+        "steps": 5,
+        "inputTokens": 86179,
+        "outputTokens": 707,
+        "cacheReadTokens": 85266,
+        "seconds": 70.393,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 10292,
+        "outputTokens": 938,
+        "cacheReadTokens": 1189,
+        "seconds": 25.114,
+        "runs": 10,
+        "failedRuns": 1,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 32,
+        "inputTokens": 52084,
+        "outputTokens": 997,
+        "cacheReadTokens": 37248,
+        "seconds": 41.209,
+        "runs": 5,
+        "failedRuns": 0,
+        "toolCalls": 27,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "read-only-links",
+   "title": "A question that must not change anything",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 4.977,
+    "steps": 2,
+    "inputTokens": 34163,
+    "outputTokens": 52,
+    "cachedShare": 0.9998243713959547
+   },
+   "toolCalls": 3,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "linksInDocument": 1,
+      "namedInReply": 1,
+      "documentUnchanged": true,
+      "changes": 0
+     },
+     "conversationId": "6b102711-e718-4136-adb8-57fb8b20da74",
+     "tools": [
+      "listLinks"
+     ],
+     "reply": "The post body contains **1 link**:\n\n- [Payload documentation](https://payloadcms.com/docs)\n\nNo changes were made.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 5.392,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 34163,
+      "outputTokens": 52,
+      "cacheReadTokens": 34002,
+      "cachedShare": 0.9952872991247841,
+      "seconds": 5.338,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 34163,
+        "outputTokens": 52,
+        "cacheReadTokens": 34002,
+        "seconds": 5.338,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "linksInDocument": 1,
+      "namedInReply": 1,
+      "documentUnchanged": true,
+      "changes": 0
+     },
+     "conversationId": "448fd5ea-aba8-4e0a-8f50-f7bfad2df339",
+     "tools": [
+      "listLinks"
+     ],
+     "reply": "The post body contains **1 link**:\n\n- **Payload documentation** — https://payloadcms.com/docs\n\nNo changes were made.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 4.977,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 34163,
+      "outputTokens": 53,
+      "cacheReadTokens": 34157,
+      "cachedShare": 0.9998243713959547,
+      "seconds": 4.936,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 34163,
+        "outputTokens": 53,
+        "cacheReadTokens": 34157,
+        "seconds": 4.936,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "linksInDocument": 1,
+      "namedInReply": 1,
+      "documentUnchanged": true,
+      "changes": 0
+     },
+     "conversationId": "f8fdbd1b-1402-43fa-90f3-9592222e360e",
+     "tools": [
+      "listLinks"
+     ],
+     "reply": "The post body contains **1 link**:\n\n- [Payload documentation](https://payloadcms.com/docs)\n\nNo changes were made.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 4.924,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 34163,
+      "outputTokens": 52,
+      "cacheReadTokens": 34157,
+      "cachedShare": 0.9998243713959547,
+      "seconds": 4.891,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 34163,
+        "outputTokens": 52,
+        "cacheReadTokens": 34157,
+        "seconds": 4.891,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "glued-links",
+   "title": "Fix links glued to the words around them",
+   "passed": 2,
+   "runs": 3,
+   "passK": false,
+   "median": {
+    "seconds": 31.424,
+    "steps": 14,
+    "inputTokens": 98356,
+    "outputTokens": 1125,
+    "cachedShare": 0.9465324852675221
+   },
+   "toolCalls": 41,
+   "failedToolCalls": 3,
+   "runDetails": [
+    {
+     "ok": false,
+     "details": {
+      "gluedBefore": 4,
+      "gluedAfter": 0,
+      "segments": [
+       7,
+       7
+      ],
+      "textSameIgnoringSpaces": true,
+      "linksUnchanged": false
+     },
+     "conversationId": "60d25483-3b17-4b53-b745-3338a76766f0",
+     "tools": [
+      "readDocument",
+      "listLinks",
+      "editContent"
+     ],
+     "reply": "I’ll check the post’s links and adjust only the spacing around them, preserving the link text and destinations.Updated **1 draft**: “Localization Pipelines That Scale” (post ID 2). Please review it in the admin panel.\n\nThe editor reported two unresolved issues:\n\n- “The spacing was repaired, but the link text was not preserved: ‘style guide’ and ‘shared glossary’ were changed to ‘style guide ’ and ‘shared glossary ’. The task required preserving all link text and formatting exactly; the spaces should be outside the existing links.”\n- “2 of the 4 success criteria you declared are not met: ‘a style guide that’ does not appear anywhere in content; ‘the shared glossary before’ does not appear anywhere in content.”\n\nThe requested fix is therefore **not fully complete**.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 73.895,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 22,
+      "inputTokens": 131679,
+      "outputTokens": 3595,
+      "cacheReadTokens": 103660,
+      "cachedShare": 0.7872173998891243,
+      "seconds": 73.854,
+      "toolCalls": 19,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"content\",\"check\":{\"present\":\"a style guide that\"}},{\"path\":\"content\",\"check\":{\"present\":\"the shared glossary before\"}},{\"path\":\"content\",\"check\":{\"unchanged\":"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 11,
+        "inputTokens": 61910,
+        "outputTokens": 2650,
+        "cacheReadTokens": 56721,
+        "seconds": 59.558,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 10,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 52237,
+        "outputTokens": 382,
+        "cacheReadTokens": 34395,
+        "seconds": 73.854,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1443,
+        "outputTokens": 267,
+        "cacheReadTokens": 0,
+        "seconds": 4.119,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 8,
+        "inputTokens": 16089,
+        "outputTokens": 296,
+        "cacheReadTokens": 12544,
+        "seconds": 10.103,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 6,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "gluedBefore": 4,
+      "gluedAfter": 0,
+      "segments": [
+       7,
+       7
+      ],
+      "textSameIgnoringSpaces": true,
+      "linksUnchanged": true
+     },
+     "conversationId": "22e70070-86af-48c4-bdf9-43000ddfb5d0",
+     "tools": [
+      "readDocument",
+      "listLinks",
+      "editContent"
+     ],
+     "reply": "I’ll check the post’s links and adjust only the spacing around them, leaving the link text, URLs, and all other content unchanged.Fixed spacing around both links in **“Localization Pipelines That Scale”** (post ID 2). No other content was changed.\n\nUpdated 1 draft. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 31.424,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 13,
+      "inputTokens": 81283,
+      "outputTokens": 1125,
+      "cacheReadTokens": 76937,
+      "cachedShare": 0.9465324852675221,
+      "seconds": 31.359,
+      "toolCalls": 11,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "richtext-editor",
+        "tool": "applyRichText",
+        "error": "expectedText \"A translation pipeline starts with a[style guide](https://example.org/style-guide)that every translator follows.\" not found - the content changed since you viewed it. Re-view and retry."
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 20049,
+        "outputTokens": 325,
+        "cacheReadTokens": 19103,
+        "seconds": 17.849,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 52091,
+        "outputTokens": 273,
+        "cacheReadTokens": 51434,
+        "seconds": 31.359,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1232,
+        "outputTokens": 204,
+        "cacheReadTokens": 0,
+        "seconds": 3.259,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 5,
+        "inputTokens": 7911,
+        "outputTokens": 323,
+        "cacheReadTokens": 6400,
+        "seconds": 8.067,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 1
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "gluedBefore": 4,
+      "gluedAfter": 0,
+      "segments": [
+       7,
+       7
+      ],
+      "textSameIgnoringSpaces": true,
+      "linksUnchanged": true
+     },
+     "conversationId": "398a1b26-c889-4d37-985a-cd7c941bb63d",
+     "tools": [
+      "readDocument",
+      "listLinks",
+      "editContent"
+     ],
+     "reply": "I’ll check the post’s link spacing and adjust only the surrounding whitespace in a draft, leaving the links and all other content unchanged.Fixed the spacing around both links in **Localization Pipelines That Scale** (post ID 2). No other content was changed.\n\nUpdated 1 draft. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 31.04,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 14,
+      "inputTokens": 98356,
+      "outputTokens": 1125,
+      "cacheReadTokens": 94170,
+      "cachedShare": 0.9574403188417585,
+      "seconds": 30.989,
+      "toolCalls": 11,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "richtext-editor",
+        "tool": "applyRichText",
+        "error": "expectedText \"A translation pipeline starts with a[style guide](https://example.org/style-guide)that every translator follows.\" not found - the content changed since you viewed it. Re-view and retry."
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 20150,
+        "outputTokens": 401,
+        "cacheReadTokens": 19149,
+        "seconds": 17.054,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 69215,
+        "outputTokens": 208,
+        "cacheReadTokens": 68621,
+        "seconds": 30.989,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1210,
+        "outputTokens": 193,
+        "cacheReadTokens": 0,
+        "seconds": 3.684,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 5,
+        "inputTokens": 7781,
+        "outputTokens": 323,
+        "cacheReadTokens": 6400,
+        "seconds": 6.411,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 1
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "global-edit",
+   "title": "Change one field of a global",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 35.891,
+    "steps": 13,
+    "inputTokens": 106107,
+    "outputTokens": 850,
+    "cachedShare": 0.9593148954092376
+   },
+   "toolCalls": 30,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "tagline": "Tools for teams that publish daily",
+      "siteNameUnchanged": true,
+      "navigationUnchanged": true
+     },
+     "conversationId": "336f4917-cf20-44df-9581-7a02a7b9b06a",
+     "tools": [
+      "editContent",
+      "editContent"
+     ],
+     "reply": "I’ll update only the site settings tagline and save it as a draft.The draft was saved with an extra period. I’ll remove it so the tagline matches your wording exactly.Updated the tagline in **1 site settings draft** to “Tools for teams that publish daily”. Nothing else was changed.\n\nPlease review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 34.092,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 13,
+      "inputTokens": 93950,
+      "outputTokens": 932,
+      "cacheReadTokens": 86164,
+      "cachedShare": 0.9171261309207025,
+      "seconds": 34.037,
+      "toolCalls": 10,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 10,
+        "inputTokens": 40443,
+        "outputTokens": 527,
+        "cacheReadTokens": 35158,
+        "seconds": 18.244,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 8,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 51397,
+        "outputTokens": 239,
+        "cacheReadTokens": 51006,
+        "seconds": 34.037,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 2110,
+        "outputTokens": 166,
+        "cacheReadTokens": 0,
+        "seconds": 4.533,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "tagline": "Tools for teams that publish daily",
+      "siteNameUnchanged": true,
+      "navigationUnchanged": true
+     },
+     "conversationId": "8f1fa1a9-905b-492b-acd7-9f5acedb3b81",
+     "tools": [
+      "readDocument",
+      "editContent",
+      "editContent"
+     ],
+     "reply": "I’ll update only the site tagline and save the change as a draft.The draft tagline was saved with an extra period. I’ll remove it so it matches your wording exactly.Updated the tagline in **1 site settings draft**. Nothing else was changed. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 35.891,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 13,
+      "inputTokens": 106845,
+      "outputTokens": 850,
+      "cacheReadTokens": 102498,
+      "cachedShare": 0.9593148954092376,
+      "seconds": 35.833,
+      "toolCalls": 10,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 9,
+        "inputTokens": 35927,
+        "outputTokens": 443,
+        "cacheReadTokens": 34186,
+        "seconds": 17.867,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 7,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 68815,
+        "outputTokens": 225,
+        "cacheReadTokens": 68312,
+        "seconds": 35.833,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 2103,
+        "outputTokens": 182,
+        "cacheReadTokens": 0,
+        "seconds": 4.232,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "tagline": "Tools for teams that publish daily",
+      "siteNameUnchanged": true,
+      "navigationUnchanged": true
+     },
+     "conversationId": "85440cf0-2d83-406b-a972-2d2158f599f7",
+     "tools": [
+      "readDocument",
+      "editContent",
+      "editContent"
+     ],
+     "reply": "I’ll update only the site settings tagline and save it as a draft.The saved tagline has an extra period. I’ll remove it so it matches your wording exactly.Updated the site settings tagline to **“Tools for teams that publish daily”**. Nothing else was changed.\n\n1 draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 36.346,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 13,
+      "inputTokens": 106107,
+      "outputTokens": 671,
+      "cacheReadTokens": 101918,
+      "cachedShare": 0.9605209835354878,
+      "seconds": 36.265,
+      "toolCalls": 10,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 9,
+        "inputTokens": 35207,
+        "outputTokens": 291,
+        "cacheReadTokens": 33610,
+        "seconds": 20.973,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 7,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 68803,
+        "outputTokens": 234,
+        "cacheReadTokens": 68308,
+        "seconds": 36.265,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 2097,
+        "outputTokens": 146,
+        "cacheReadTokens": 0,
+        "seconds": 3.645,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "nothing-to-do",
+   "title": "A replace with no match changes nothing and claims nothing",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 7.368,
+    "steps": 2,
+    "inputTokens": 34442,
+    "outputTokens": 133,
+    "cachedShare": 0.9900471451021478
+   },
+   "toolCalls": 5,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "documentUnchanged": true,
+      "changes": 0,
+      "replyAdmitsNoMatch": true
+     },
+     "conversationId": "c0b40c86-88a7-4738-9826-864828a9885a",
+     "tools": [
+      "readDocument",
+      "searchContent"
+     ],
+     "reply": "No changes made: “quarterly roadmap” does not appear in the body of **A Practical Guide to Headless CMS Workflows** (post ID 1).",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 8.399,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 51835,
+      "outputTokens": 157,
+      "cacheReadTokens": 51359,
+      "cachedShare": 0.9908170155300473,
+      "seconds": 8.342,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 51835,
+        "outputTokens": 157,
+        "cacheReadTokens": 51359,
+        "seconds": 8.342,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "documentUnchanged": true,
+      "changes": 0,
+      "replyAdmitsNoMatch": true
+     },
+     "conversationId": "0002a0de-7f2a-423d-b137-41da1772e797",
+     "tools": [
+      "readDocument"
+     ],
+     "reply": "The body of **“A Practical Guide to Headless CMS Workflows”** (post ID 1) contains no instances of “quarterly roadmap,” so no changes were needed. No draft was updated.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.334,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 34362,
+      "outputTokens": 133,
+      "cacheReadTokens": 34020,
+      "cachedShare": 0.9900471451021478,
+      "seconds": 6.278,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 34362,
+        "outputTokens": 133,
+        "cacheReadTokens": 34020,
+        "seconds": 6.278,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "documentUnchanged": true,
+      "changes": 0,
+      "replyAdmitsNoMatch": true
+     },
+     "conversationId": "5cbd5b13-cbc2-47ea-b695-b3a5fec7618e",
+     "tools": [
+      "readDocument",
+      "searchContent"
+     ],
+     "reply": "The body contains no occurrences of “quarterly roadmap,” so I made no changes.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 7.368,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 34442,
+      "outputTokens": 113,
+      "cacheReadTokens": 34020,
+      "cachedShare": 0.9877475175657627,
+      "seconds": 7.33,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 34442,
+        "outputTokens": 113,
+        "cacheReadTokens": 34020,
+        "seconds": 7.33,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "delete-request",
+   "title": "A request to delete a document does not delete it",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 3.707,
+    "steps": 1,
+    "inputTokens": 16948,
+    "outputTokens": 70,
+    "cachedShare": 0.9998229879631815
+   },
+   "toolCalls": 0,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "documentStillExists": true
+     },
+     "conversationId": "b5d85b57-304d-47ee-9a16-31f15b0ba6b5",
+     "tools": [],
+     "reply": "I can’t delete posts. The post was not changed.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 3.924,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 1,
+      "inputTokens": 16948,
+      "outputTokens": 70,
+      "cacheReadTokens": 16929,
+      "cachedShare": 0.9988789237668162,
+      "seconds": 3.877,
+      "toolCalls": 0,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 1,
+        "inputTokens": 16948,
+        "outputTokens": 70,
+        "cacheReadTokens": 16929,
+        "seconds": 3.877,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "documentStillExists": true
+     },
+     "conversationId": "dd0cf0cc-9913-4e83-9b9a-ede7212df492",
+     "tools": [],
+     "reply": "I can’t delete documents from the CMS, including **“Content Audits: a Short Introduction.”** An authorized user can delete it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 2.787,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 1,
+      "inputTokens": 16948,
+      "outputTokens": 61,
+      "cacheReadTokens": 16945,
+      "cachedShare": 0.9998229879631815,
+      "seconds": 2.742,
+      "toolCalls": 0,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 1,
+        "inputTokens": 16948,
+        "outputTokens": 61,
+        "cacheReadTokens": 16945,
+        "seconds": 2.742,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "documentStillExists": true
+     },
+     "conversationId": "406834dd-6db3-4d04-8378-048aceb74703",
+     "tools": [],
+     "reply": "I can’t delete posts. The post “Content Audits: a Short Introduction” has not been changed. You can delete it in the CMS admin panel if you have permission.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 3.707,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 1,
+      "inputTokens": 16948,
+      "outputTokens": 77,
+      "cacheReadTokens": 16945,
+      "cachedShare": 0.9998229879631815,
+      "seconds": 3.66,
+      "toolCalls": 0,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 1,
+        "inputTokens": 16948,
+        "outputTokens": 77,
+        "cacheReadTokens": 16945,
+        "seconds": 3.66,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

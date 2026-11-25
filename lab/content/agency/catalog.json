@@ -1,0 +1,1015 @@
+{
+  "facts": {
+    "founded": 2015,
+    "people": 46,
+    "projects": 180,
+    "offices": ["Amsterdam", "Berlin"],
+    "starter": "{{short}} Starter",
+    "starterVersion": "3.2",
+    "starterPackage": "create-headless-starter",
+    "clutchRating": 4.9,
+    "clutchReviews": 38,
+    "today": "2026-06-01"
+  },
+  "authors": [
+    {
+      "slug": "mara-lindqvist",
+      "name": "Mara Lindqvist",
+      "role": "Head of Engineering"
+    },
+    {
+      "slug": "tobias-renner",
+      "name": "Tobias Renner",
+      "role": "Senior Developer"
+    },
+    {
+      "slug": "ines-okafor",
+      "name": "Ines Okafor",
+      "role": "Content Strategist"
+    },
+    {
+      "slug": "daniel-whitlock",
+      "name": "Daniel Whitlock",
+      "role": "Solutions Architect"
+    },
+    {
+      "slug": "sofia-marchetti",
+      "name": "Sofia Marchetti",
+      "role": "SEO Lead"
+    },
+    {
+      "slug": "jonas-albrecht",
+      "name": "Jonas Albrecht",
+      "role": "Managing Partner"
+    }
+  ],
+  "categories": [
+    { "slug": "engineering", "name": "Engineering" },
+    { "slug": "cms", "name": "CMS" },
+    { "slug": "migration", "name": "Migration" },
+    { "slug": "performance", "name": "Performance" },
+    { "slug": "seo", "name": "SEO" },
+    { "slug": "company", "name": "Company" }
+  ],
+  "technologies": [
+    {
+      "slug": "payload",
+      "name": "Payload",
+      "kind": "cms",
+      "website": "https://payloadcms.com"
+    },
+    {
+      "slug": "sanity",
+      "name": "Sanity",
+      "kind": "cms",
+      "website": "https://www.sanity.io"
+    },
+    {
+      "slug": "storyblok",
+      "name": "Storyblok",
+      "kind": "cms",
+      "website": "https://www.storyblok.com"
+    },
+    {
+      "slug": "contentful",
+      "name": "Contentful",
+      "kind": "cms",
+      "website": "https://www.contentful.com"
+    },
+    {
+      "slug": "strapi",
+      "name": "Strapi",
+      "kind": "cms",
+      "website": "https://strapi.io"
+    },
+    {
+      "slug": "directus",
+      "name": "Directus",
+      "kind": "cms",
+      "website": "https://directus.io"
+    },
+    {
+      "slug": "wordpress",
+      "name": "WordPress",
+      "kind": "cms",
+      "website": "https://wordpress.org"
+    },
+    {
+      "slug": "nextjs",
+      "name": "Next.js",
+      "kind": "framework",
+      "website": "https://nextjs.org"
+    },
+    {
+      "slug": "astro",
+      "name": "Astro",
+      "kind": "framework",
+      "website": "https://astro.build"
+    },
+    {
+      "slug": "nuxt",
+      "name": "Nuxt",
+      "kind": "framework",
+      "website": "https://nuxt.com"
+    },
+    {
+      "slug": "remix",
+      "name": "Remix",
+      "kind": "framework",
+      "website": "https://remix.run"
+    },
+    {
+      "slug": "sveltekit",
+      "name": "SvelteKit",
+      "kind": "framework",
+      "website": "https://svelte.dev"
+    },
+    {
+      "slug": "gatsby",
+      "name": "Gatsby",
+      "kind": "framework",
+      "website": "https://www.gatsbyjs.com"
+    },
+    {
+      "slug": "shopify",
+      "name": "Shopify",
+      "kind": "commerce",
+      "website": "https://www.shopify.com"
+    },
+    {
+      "slug": "medusa",
+      "name": "Medusa",
+      "kind": "commerce",
+      "website": "https://medusajs.com"
+    },
+    {
+      "slug": "commercetools",
+      "name": "commercetools",
+      "kind": "commerce",
+      "website": "https://commercetools.com"
+    },
+    {
+      "slug": "vercel",
+      "name": "Vercel",
+      "kind": "hosting",
+      "website": "https://vercel.com"
+    },
+    {
+      "slug": "netlify",
+      "name": "Netlify",
+      "kind": "hosting",
+      "website": "https://www.netlify.com"
+    },
+    {
+      "slug": "cloudflare-pages",
+      "name": "Cloudflare Pages",
+      "kind": "hosting",
+      "website": "https://pages.cloudflare.com"
+    },
+    {
+      "slug": "algolia",
+      "name": "Algolia",
+      "kind": "search",
+      "website": "https://www.algolia.com"
+    },
+    {
+      "slug": "typesense",
+      "name": "Typesense",
+      "kind": "search",
+      "website": "https://typesense.org"
+    },
+    {
+      "slug": "meilisearch",
+      "name": "Meilisearch",
+      "kind": "search",
+      "website": "https://www.meilisearch.com"
+    }
+  ],
+  "posts": [
+    {
+      "slug": "payload-cms-live-preview-nextjs",
+      "title": "How to set up live preview in Payload CMS with Next.js",
+      "format": "guide",
+      "category": "engineering",
+      "author": "tobias-renner",
+      "technologies": ["payload", "nextjs"]
+    },
+    {
+      "slug": "sanity-to-payload-migration-guide",
+      "title": "Sanity to Payload migration: a step-by-step guide",
+      "format": "guide",
+      "category": "migration",
+      "author": "daniel-whitlock",
+      "technologies": ["sanity", "payload"]
+    },
+    {
+      "slug": "wordpress-to-headless-migration-checklist",
+      "title": "WordPress to headless: the migration checklist we use",
+      "format": "guide",
+      "category": "migration",
+      "author": "daniel-whitlock",
+      "technologies": ["wordpress", "payload", "nextjs"]
+    },
+    {
+      "slug": "nextjs-app-router-cms-caching",
+      "title": "Caching CMS content in the Next.js App Router",
+      "format": "guide",
+      "category": "performance",
+      "author": "mara-lindqvist",
+      "technologies": ["nextjs", "vercel"]
+    },
+    {
+      "slug": "structured-content-modeling-guide",
+      "title": "Content modeling for a headless CMS: a practical guide",
+      "format": "guide",
+      "category": "cms",
+      "author": "ines-okafor",
+      "technologies": ["sanity", "payload", "contentful"]
+    },
+    {
+      "slug": "headless-cms-localization-guide",
+      "title": "Localization in a headless CMS: fields, locales and fallbacks",
+      "format": "guide",
+      "category": "cms",
+      "author": "ines-okafor",
+      "technologies": ["payload", "storyblok", "contentful"]
+    },
+    {
+      "slug": "storyblok-visual-editor-nextjs",
+      "title": "Storyblok visual editor with Next.js: setup and pitfalls",
+      "format": "guide",
+      "category": "engineering",
+      "author": "tobias-renner",
+      "technologies": ["storyblok", "nextjs"]
+    },
+    {
+      "slug": "core-web-vitals-headless-sites",
+      "title": "Core Web Vitals for headless sites: what to fix first",
+      "format": "guide",
+      "category": "performance",
+      "author": "mara-lindqvist",
+      "technologies": ["nextjs", "astro", "vercel"]
+    },
+    {
+      "slug": "cms-redirects-at-scale",
+      "title": "Managing redirects at scale during a CMS migration",
+      "format": "guide",
+      "category": "migration",
+      "author": "sofia-marchetti",
+      "technologies": ["nextjs", "vercel", "netlify"]
+    },
+    {
+      "slug": "payload-access-control-patterns",
+      "title": "Access control patterns in Payload CMS",
+      "format": "guide",
+      "category": "engineering",
+      "author": "tobias-renner",
+      "technologies": ["payload"]
+    },
+    {
+      "slug": "image-optimization-headless-cms",
+      "title": "Image optimization with a headless CMS",
+      "format": "guide",
+      "category": "performance",
+      "author": "mara-lindqvist",
+      "technologies": ["nextjs", "sanity", "payload"]
+    },
+    {
+      "slug": "draft-preview-publish-workflows",
+      "title": "Draft, preview, publish: editorial workflows in a headless CMS",
+      "format": "guide",
+      "category": "cms",
+      "author": "ines-okafor",
+      "technologies": ["payload", "sanity", "storyblok"]
+    },
+    {
+      "slug": "headless-seo-technical-checklist",
+      "title": "Technical SEO checklist for headless websites",
+      "format": "guide",
+      "category": "seo",
+      "author": "sofia-marchetti",
+      "technologies": ["nextjs", "astro"]
+    },
+    {
+      "slug": "astro-content-collections-vs-cms",
+      "title": "Astro content collections or a CMS: how to decide",
+      "format": "guide",
+      "category": "engineering",
+      "author": "tobias-renner",
+      "technologies": ["astro", "sanity"]
+    },
+    {
+      "slug": "best-headless-cms-2026",
+      "title": "10 best headless CMS platforms in 2026",
+      "format": "listicle",
+      "category": "cms",
+      "author": "ines-okafor",
+      "technologies": ["payload", "sanity", "storyblok", "contentful", "strapi", "directus"],
+      "entries": [
+        "Payload",
+        "Sanity",
+        "Storyblok",
+        "Contentful",
+        "Strapi",
+        "Directus",
+        "Hygraph",
+        "Prismic",
+        "DatoCMS",
+        "Kontent.ai"
+      ]
+    },
+    {
+      "slug": "best-nextjs-hosting-platforms-2026",
+      "title": "7 best hosting platforms for Next.js in 2026",
+      "format": "listicle",
+      "category": "engineering",
+      "author": "mara-lindqvist",
+      "technologies": ["nextjs", "vercel", "netlify", "cloudflare-pages"],
+      "entries": [
+        "Vercel",
+        "Netlify",
+        "Cloudflare Pages",
+        "AWS Amplify",
+        "Render",
+        "Fly.io",
+        "Railway"
+      ]
+    },
+    {
+      "slug": "top-headless-commerce-platforms",
+      "title": "8 headless commerce platforms worth a look",
+      "format": "listicle",
+      "category": "cms",
+      "author": "daniel-whitlock",
+      "technologies": ["shopify", "medusa", "commercetools"],
+      "entries": [
+        "Shopify",
+        "Medusa",
+        "commercetools",
+        "BigCommerce",
+        "Saleor",
+        "Swell",
+        "Vendure",
+        "Commerce Layer"
+      ]
+    },
+    {
+      "slug": "best-site-search-tools-headless",
+      "title": "6 site search tools for headless websites",
+      "format": "listicle",
+      "category": "engineering",
+      "author": "tobias-renner",
+      "technologies": ["algolia", "typesense", "meilisearch"],
+      "entries": ["Algolia", "Typesense", "Meilisearch", "Elasticsearch", "Orama", "Pagefind"]
+    },
+    {
+      "slug": "questions-to-ask-headless-cms-agency",
+      "title": "8 questions to ask a headless CMS agency before you sign",
+      "format": "listicle",
+      "category": "company",
+      "author": "jonas-albrecht",
+      "technologies": [],
+      "labels": ["Why it matters", "A good answer"]
+    },
+    {
+      "slug": "best-open-source-cms-2025",
+      "title": "7 best open source CMS platforms in 2025",
+      "format": "listicle",
+      "category": "cms",
+      "author": "ines-okafor",
+      "technologies": ["payload", "strapi", "directus", "wordpress"],
+      "entries": ["Payload", "Strapi", "Directus", "WordPress", "Ghost", "Keystone", "Decap CMS"],
+      "year": 2025
+    },
+    {
+      "slug": "top-frameworks-for-content-sites",
+      "title": "6 frameworks for content-heavy websites",
+      "format": "listicle",
+      "category": "engineering",
+      "author": "mara-lindqvist",
+      "technologies": ["nextjs", "astro", "nuxt", "remix", "sveltekit", "gatsby"],
+      "entries": ["Next.js", "Astro", "Nuxt", "Remix", "SvelteKit", "Gatsby"]
+    },
+    {
+      "slug": "payload-plugins-worth-installing",
+      "title": "9 Payload plugins worth installing",
+      "format": "listicle",
+      "category": "engineering",
+      "author": "tobias-renner",
+      "technologies": ["payload"],
+      "entries": [
+        "SEO",
+        "Form Builder",
+        "Redirects",
+        "Search",
+        "Nested Docs",
+        "Import Export",
+        "MCP",
+        "Multi-Tenant",
+        "Sentry"
+      ],
+      "labels": ["What it does", "When to use it"]
+    },
+    {
+      "slug": "cms-migration-mistakes",
+      "title": "9 CMS migration mistakes and how to avoid them",
+      "format": "listicle",
+      "category": "migration",
+      "author": "daniel-whitlock",
+      "technologies": ["wordpress", "contentful"],
+      "labels": ["What goes wrong", "How to avoid it"]
+    },
+    {
+      "slug": "best-static-site-generators-2026",
+      "title": "6 best static site generators in 2026",
+      "format": "listicle",
+      "category": "engineering",
+      "author": "mara-lindqvist",
+      "technologies": ["astro", "nextjs", "gatsby"],
+      "entries": ["Astro", "Next.js", "Eleventy", "Hugo", "Gatsby", "Docusaurus"]
+    },
+    {
+      "slug": "payload-vs-sanity",
+      "title": "Payload vs Sanity: which headless CMS fits your team",
+      "format": "comparison",
+      "category": "cms",
+      "author": "daniel-whitlock",
+      "technologies": ["payload", "sanity"]
+    },
+    {
+      "slug": "payload-vs-strapi",
+      "title": "Payload vs Strapi: an honest comparison",
+      "format": "comparison",
+      "category": "cms",
+      "author": "tobias-renner",
+      "technologies": ["payload", "strapi"]
+    },
+    {
+      "slug": "storyblok-vs-contentful",
+      "title": "Storyblok vs Contentful for marketing teams",
+      "format": "comparison",
+      "category": "cms",
+      "author": "ines-okafor",
+      "technologies": ["storyblok", "contentful"]
+    },
+    {
+      "slug": "nextjs-vs-astro-content-sites",
+      "title": "Next.js vs Astro for content sites",
+      "format": "comparison",
+      "category": "engineering",
+      "author": "mara-lindqvist",
+      "technologies": ["nextjs", "astro"]
+    },
+    {
+      "slug": "vercel-vs-netlify",
+      "title": "Vercel vs Netlify: hosting for headless projects",
+      "format": "comparison",
+      "category": "engineering",
+      "author": "mara-lindqvist",
+      "technologies": ["vercel", "netlify"]
+    },
+    {
+      "slug": "algolia-vs-typesense",
+      "title": "Algolia vs Typesense: site search compared",
+      "format": "comparison",
+      "category": "engineering",
+      "author": "tobias-renner",
+      "technologies": ["algolia", "typesense"]
+    },
+    {
+      "slug": "sanity-vs-contentful",
+      "title": "Sanity vs Contentful: content platforms compared",
+      "format": "comparison",
+      "category": "cms",
+      "author": "ines-okafor",
+      "technologies": ["sanity", "contentful"]
+    },
+    {
+      "slug": "shopify-vs-medusa-headless",
+      "title": "Shopify vs Medusa for headless commerce",
+      "format": "comparison",
+      "category": "cms",
+      "author": "daniel-whitlock",
+      "technologies": ["shopify", "medusa"]
+    },
+    {
+      "slug": "payload-partner-program",
+      "title": "{{brand}} joins the Payload partner program",
+      "format": "news",
+      "category": "company",
+      "author": "jonas-albrecht",
+      "technologies": ["payload"]
+    },
+    {
+      "slug": "berlin-office-opening",
+      "title": "{{brand}} opens an office in Berlin",
+      "format": "news",
+      "category": "company",
+      "author": "jonas-albrecht",
+      "technologies": [],
+      "year": 2025
+    },
+    {
+      "slug": "starter-3-released",
+      "title": "{{short}} Starter 3.0 is out",
+      "format": "news",
+      "category": "company",
+      "author": "mara-lindqvist",
+      "technologies": ["payload", "nextjs"],
+      "year": 2025
+    },
+    {
+      "slug": "clutch-top-developer-2026",
+      "title": "{{brand}} named a top web developer on Clutch in 2026",
+      "format": "news",
+      "category": "company",
+      "author": "jonas-albrecht",
+      "technologies": []
+    },
+    {
+      "slug": "state-of-headless-cms-2026",
+      "title": "The state of headless CMS in 2026",
+      "format": "report",
+      "category": "cms",
+      "author": "ines-okafor",
+      "technologies": ["payload", "sanity", "contentful", "storyblok"]
+    },
+    {
+      "slug": "cms-migration-cost-report-2025",
+      "title": "What a CMS migration costs: our 2025 project data",
+      "format": "report",
+      "category": "migration",
+      "author": "jonas-albrecht",
+      "technologies": ["wordpress", "contentful", "payload"],
+      "year": 2025
+    },
+    {
+      "slug": "headless-performance-benchmark-2026",
+      "title": "Headless performance benchmark 2026: 60 sites measured",
+      "format": "report",
+      "category": "performance",
+      "author": "mara-lindqvist",
+      "technologies": ["nextjs", "astro", "nuxt"]
+    },
+    {
+      "slug": "editor-experience-survey-2026",
+      "title": "Editor experience survey 2026: what content teams want",
+      "format": "report",
+      "category": "cms",
+      "author": "ines-okafor",
+      "technologies": ["sanity", "storyblok", "payload"]
+    }
+  ],
+  "docs": [
+    {
+      "path": "getting-started/installation",
+      "title": "Installation",
+      "section": "getting-started"
+    },
+    {
+      "path": "getting-started/project-structure",
+      "title": "Project structure",
+      "section": "getting-started"
+    },
+    {
+      "path": "getting-started/environment-variables",
+      "title": "Environment variables",
+      "section": "getting-started"
+    },
+    {
+      "path": "getting-started/first-deploy",
+      "title": "First deploy",
+      "section": "getting-started"
+    },
+    {
+      "path": "guides/content-modeling",
+      "title": "Content modeling",
+      "section": "guides"
+    },
+    {
+      "path": "guides/live-preview",
+      "title": "Live preview",
+      "section": "guides"
+    },
+    {
+      "path": "guides/localization",
+      "title": "Localization",
+      "section": "guides"
+    },
+    { "path": "guides/redirects", "title": "Redirects", "section": "guides" },
+    {
+      "path": "guides/seo-metadata",
+      "title": "SEO metadata",
+      "section": "guides"
+    },
+    {
+      "path": "guides/image-handling",
+      "title": "Image handling",
+      "section": "guides"
+    },
+    {
+      "path": "guides/upgrading-to-3",
+      "title": "Upgrading from 2.x to 3.x",
+      "section": "guides"
+    },
+    {
+      "path": "reference/cli",
+      "title": "CLI reference",
+      "section": "reference"
+    },
+    {
+      "path": "reference/configuration",
+      "title": "Configuration reference",
+      "section": "reference"
+    },
+    {
+      "path": "reference/blocks",
+      "title": "Blocks reference",
+      "section": "reference"
+    },
+    {
+      "path": "reference/hooks",
+      "title": "Hooks reference",
+      "section": "reference"
+    },
+    {
+      "path": "reference/rest-api",
+      "title": "REST API reference",
+      "section": "reference"
+    },
+    {
+      "path": "recipes/add-a-block",
+      "title": "Add a block",
+      "section": "recipes"
+    },
+    {
+      "path": "recipes/add-a-locale",
+      "title": "Add a locale",
+      "section": "recipes"
+    },
+    {
+      "path": "recipes/protect-a-page",
+      "title": "Protect a page with a password",
+      "section": "recipes"
+    },
+    {
+      "path": "recipes/scheduled-publishing",
+      "title": "Scheduled publishing",
+      "section": "recipes"
+    }
+  ],
+  "cases": [
+    {
+      "slug": "nordlys-outdoor",
+      "client": "Nordlys Outdoor",
+      "title": "Nordlys Outdoor: a headless storefront for four markets",
+      "industry": "ecommerce",
+      "country": "no",
+      "year": 2025,
+      "services": ["migration", "development"],
+      "technologies": ["shopify", "sanity", "nextjs"],
+      "results": [
+        ["Faster page load", 58, "%"],
+        ["Conversion rate", 23, "%"],
+        ["Time to launch", 5, "months"]
+      ]
+    },
+    {
+      "slug": "kettlebrook-bank",
+      "client": "Kettlebrook Bank",
+      "title": "Kettlebrook Bank: 1,400 pages moved without a traffic drop",
+      "industry": "fintech",
+      "country": "uk",
+      "year": 2024,
+      "services": ["migration", "audit"],
+      "technologies": ["contentful", "nextjs"],
+      "results": [
+        ["Pages migrated", 1400, "pages"],
+        ["Organic traffic", 12, "%"],
+        ["Largest Contentful Paint", 900, "ms"]
+      ]
+    },
+    {
+      "slug": "lumenpath-learning",
+      "client": "Lumenpath Learning",
+      "title": "Lumenpath Learning: a course catalog editors can run alone",
+      "industry": "education",
+      "country": "us",
+      "year": 2025,
+      "services": ["development", "design"],
+      "technologies": ["payload", "nextjs"],
+      "results": [
+        ["Publishing speed", 4, "x"],
+        ["Developer tickets", 70, "%"],
+        ["Time to launch", 4, "months"]
+      ]
+    },
+    {
+      "slug": "verdan-health",
+      "client": "Verdan Health",
+      "title": "Verdan Health: one content platform for six languages",
+      "industry": "healthcare",
+      "country": "de",
+      "year": 2024,
+      "services": ["migration", "localization"],
+      "technologies": ["storyblok", "nuxt"],
+      "results": [
+        ["Translation time", 60, "%"],
+        ["Pages migrated", 820, "pages"],
+        ["Organic traffic", 31, "%"]
+      ]
+    },
+    {
+      "slug": "tallgrass-media",
+      "client": "Tallgrass Media",
+      "title": "Tallgrass Media: from WordPress to a headless newsroom",
+      "industry": "media",
+      "country": "us",
+      "year": 2023,
+      "services": ["migration", "development"],
+      "technologies": ["wordpress", "payload", "nextjs"],
+      "results": [
+        ["Pages migrated", 12000, "pages"],
+        ["Faster page load", 64, "%"],
+        ["Ad viewability", 18, "%"]
+      ]
+    },
+    {
+      "slug": "alpenroute-travel",
+      "client": "Alpenroute Travel",
+      "title": "Alpenroute Travel: a trip planner in three languages",
+      "industry": "travel",
+      "country": "ch",
+      "year": 2025,
+      "services": ["development", "localization"],
+      "technologies": ["sanity", "astro"],
+      "results": [
+        ["Booking requests", 27, "%"],
+        ["Largest Contentful Paint", 1100, "ms"],
+        ["Time to launch", 3, "months"]
+      ]
+    },
+    {
+      "slug": "quillstack",
+      "client": "Quillstack",
+      "title": "Quillstack: a marketing site that ships a landing a day",
+      "industry": "saas",
+      "country": "nl",
+      "year": 2026,
+      "services": ["design", "development"],
+      "technologies": ["payload", "nextjs", "vercel"],
+      "results": [
+        ["Landing pages launched", 140, "pages"],
+        ["Publishing speed", 6, "x"],
+        ["Demo requests", 35, "%"]
+      ]
+    },
+    {
+      "slug": "brightharbor-pay",
+      "client": "Brightharbor Pay",
+      "title": "Brightharbor Pay: an audit that cut build time in half",
+      "industry": "fintech",
+      "country": "se",
+      "year": 2025,
+      "services": ["audit", "support"],
+      "technologies": ["strapi", "nextjs"],
+      "results": [
+        ["Build time", 52, "%"],
+        ["Interaction to Next Paint", 140, "ms"],
+        ["Incidents", 80, "%"]
+      ]
+    },
+    {
+      "slug": "maple-and-finch",
+      "client": "Maple & Finch",
+      "title": "Maple & Finch: custom commerce on an open source stack",
+      "industry": "ecommerce",
+      "country": "ca",
+      "year": 2024,
+      "services": ["development"],
+      "technologies": ["medusa", "payload", "nextjs"],
+      "results": [
+        ["Checkout completion", 16, "%"],
+        ["Platform fees", 40, "%"],
+        ["Time to launch", 6, "months"]
+      ]
+    },
+    {
+      "slug": "sundari-clinics",
+      "client": "Sundari Clinics",
+      "title": "Sundari Clinics: 40 clinic sites on one content model",
+      "industry": "healthcare",
+      "country": "au",
+      "year": 2025,
+      "services": ["migration", "design"],
+      "technologies": ["contentful", "payload"],
+      "results": [
+        ["Sites consolidated", 40, "+"],
+        ["Content cost", 45, "%"],
+        ["Appointment requests", 22, "%"]
+      ]
+    },
+    {
+      "slug": "fjordline-ferries",
+      "client": "Fjordline Ferries",
+      "title": "Fjordline Ferries: timetables that editors update in minutes",
+      "industry": "travel",
+      "country": "dk",
+      "year": 2023,
+      "services": ["development", "support"],
+      "technologies": ["storyblok", "nextjs"],
+      "results": [
+        ["Update time", 90, "%"],
+        ["Mobile bookings", 19, "%"],
+        ["Largest Contentful Paint", 1300, "ms"]
+      ]
+    },
+    {
+      "slug": "campus-nord",
+      "client": "Campus Nord",
+      "title": "Campus Nord: a university site rebuilt for two languages",
+      "industry": "education",
+      "country": "at",
+      "year": 2026,
+      "services": ["migration", "localization"],
+      "technologies": ["wordpress", "sanity", "astro"],
+      "results": [
+        ["Pages migrated", 3600, "pages"],
+        ["Faster page load", 71, "%"],
+        ["Applications", 14, "%"]
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "slug": "payload-cms-development",
+      "title": "Payload CMS development",
+      "family": "technology",
+      "subject": "Payload CMS development services",
+      "blocks": [
+        "hero",
+        "logoCloud",
+        "featureGrid",
+        "richTextSection",
+        "stats",
+        "steps",
+        "caseStudyCards",
+        "comparisonTable",
+        "technologyGrid",
+        "reviewSlider",
+        "pricingTable",
+        "faqList",
+        "relatedArticles",
+        "cta",
+        "contactForm"
+      ]
+    },
+    {
+      "slug": "nextjs-development",
+      "title": "Next.js development",
+      "family": "technology",
+      "subject": "Next.js development services for content sites and web apps",
+      "blocks": [
+        "hero",
+        "logoCloud",
+        "featureGrid",
+        "twoColumnText",
+        "stats",
+        "steps",
+        "caseStudyCards",
+        "technologyGrid",
+        "quote",
+        "faqList",
+        "relatedArticles",
+        "cta",
+        "contactForm"
+      ]
+    },
+    {
+      "slug": "headless-cms-development",
+      "title": "Headless CMS development",
+      "family": "service",
+      "subject": "Headless CMS website development, from content model to launch",
+      "blocks": [
+        "hero",
+        "logoCloud",
+        "richTextSection",
+        "featureGrid",
+        "steps",
+        "stats",
+        "technologyGrid",
+        "caseStudyCards",
+        "reviewSlider",
+        "callout",
+        "pricingTable",
+        "faqList",
+        "cta",
+        "contactForm"
+      ]
+    },
+    {
+      "slug": "cms-audit",
+      "title": "CMS and performance audit",
+      "family": "service",
+      "subject": "A two-week audit of a CMS setup, content model and site performance",
+      "blocks": [
+        "hero",
+        "featureGrid",
+        "steps",
+        "richTextSection",
+        "stats",
+        "quote",
+        "comparisonTable",
+        "pricingTable",
+        "faqList",
+        "awardsStrip",
+        "cta",
+        "contactForm"
+      ]
+    },
+    {
+      "slug": "wordpress-to-headless-migration",
+      "title": "WordPress to headless migration",
+      "family": "migration",
+      "subject": "Migration from WordPress to a headless CMS with no loss of search traffic",
+      "blocks": [
+        "hero",
+        "logoCloud",
+        "richTextSection",
+        "comparisonTable",
+        "steps",
+        "stats",
+        "timeline",
+        "caseStudyCards",
+        "reviewSlider",
+        "callout",
+        "faqList",
+        "relatedArticles",
+        "cta",
+        "contactForm"
+      ]
+    },
+    {
+      "slug": "headless-cms-agency-germany",
+      "title": "Headless CMS agency in Germany",
+      "family": "region",
+      "subject": "Headless CMS agency services for companies in Germany, from the Berlin office",
+      "blocks": [
+        "hero",
+        "logoCloud",
+        "featureGrid",
+        "richTextSection",
+        "stats",
+        "caseStudyCards",
+        "reviewSlider",
+        "technologyGrid",
+        "steps",
+        "awardsStrip",
+        "faqList",
+        "cta",
+        "contactForm"
+      ]
+    },
+    {
+      "slug": "headless-ecommerce",
+      "title": "Headless ecommerce",
+      "family": "solution",
+      "subject": "Headless ecommerce storefronts on Shopify, Medusa or commercetools with a CMS for content",
+      "blocks": [
+        "hero",
+        "logoCloud",
+        "featureGrid",
+        "imageWithText",
+        "stats",
+        "comparisonTable",
+        "steps",
+        "caseStudyCards",
+        "quote",
+        "technologyGrid",
+        "faqList",
+        "relatedArticles",
+        "cta",
+        "contactForm"
+      ]
+    },
+    {
+      "slug": "about",
+      "title": "About {{brand}}",
+      "family": "company",
+      "subject": "The company: history, team, way of working, offices",
+      "blocks": [
+        "hero",
+        "richTextSection",
+        "stats",
+        "timeline",
+        "twoColumnText",
+        "featureGrid",
+        "awardsStrip",
+        "logoCloud",
+        "reviewSlider",
+        "quote",
+        "cta"
+      ]
+    }
+  ]
+}

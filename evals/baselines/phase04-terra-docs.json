@@ -1,0 +1,1810 @@
+{
+ "label": "phase04-terra-docs",
+ "schema": "docs",
+ "model": "openai",
+ "k": 3,
+ "date": "2026-11-14T04:50:55.481Z",
+ "summary": {
+  "scenarios": 8,
+  "passK": 8,
+  "runs": 24,
+  "runsPassed": 24,
+  "toolCalls": 170,
+  "failedToolCalls": 7,
+  "inputTokens": 1739981
+ },
+ "results": [
+  {
+   "id": "translate-field",
+   "title": "Translate one field into the second locale",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 23.462,
+    "steps": 8,
+    "inputTokens": 72311,
+    "outputTokens": 692,
+    "cachedShare": 0.9503525548150294
+   },
+   "toolCalls": 21,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+      "englishUnchanged": true,
+      "englishBodyUnchanged": true,
+      "looksGerman": true
+     },
+     "conversationId": "e7a282b2-cc8d-47d7-a5f0-ce11e4f07b7e",
+     "tools": [
+      "readDocument",
+      "readDocument",
+      "editContent"
+     ],
+     "reply": "I’ll translate the summary into German and save it as a draft, leaving the rest of the article unchanged.Translated the summary into German in **1 draft**: “Install the desktop app” (ID 1).\n\nPlease review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 22.896,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 8,
+      "inputTokens": 72311,
+      "outputTokens": 692,
+      "cacheReadTokens": 49469,
+      "cachedShare": 0.6841144500836663,
+      "seconds": 22.696,
+      "toolCalls": 7,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 21945,
+        "outputTokens": 345,
+        "cacheReadTokens": 17054,
+        "seconds": 10.952,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 49225,
+        "outputTokens": 247,
+        "cacheReadTokens": 32415,
+        "seconds": 22.696,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1141,
+        "outputTokens": 100,
+        "cacheReadTokens": 0,
+        "seconds": 1.94,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+      "englishUnchanged": true,
+      "englishBodyUnchanged": true,
+      "looksGerman": true
+     },
+     "conversationId": "674904a2-accd-42d6-a15e-40ca75d08e6b",
+     "tools": [
+      "readDocument",
+      "editContent"
+     ],
+     "reply": "I’ll translate only the summary into German and save it as a draft, leaving the rest of the article unchanged.Updated the German summary for **Install the desktop app** (ID 1). One draft was updated; please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 23.462,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 8,
+      "inputTokens": 71595,
+      "outputTokens": 694,
+      "cacheReadTokens": 68503,
+      "cachedShare": 0.9568126265800685,
+      "seconds": 23.406,
+      "toolCalls": 6,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 22172,
+        "outputTokens": 389,
+        "cacheReadTokens": 20735,
+        "seconds": 12.083,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 48303,
+        "outputTokens": 218,
+        "cacheReadTokens": 47768,
+        "seconds": 23.406,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1120,
+        "outputTokens": 87,
+        "cacheReadTokens": 0,
+        "seconds": 2.2,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Geschäftskonto an.",
+      "englishUnchanged": true,
+      "englishBodyUnchanged": true,
+      "looksGerman": true
+     },
+     "conversationId": "8aa87314-6d25-408a-92da-02f1115767e8",
+     "tools": [
+      "readDocument",
+      "readDocument",
+      "getSchemaInfo",
+      "editContent"
+     ],
+     "reply": "I’ll translate only the article’s summary into German, leaving the other fields unchanged, and save it as a draft.Updated the German summary for **Install the desktop app** (ID 1). One draft was updated; please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 23.822,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 8,
+      "inputTokens": 72471,
+      "outputTokens": 631,
+      "cacheReadTokens": 68873,
+      "cachedShare": 0.9503525548150294,
+      "seconds": 23.751,
+      "toolCalls": 8,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 21746,
+        "outputTokens": 294,
+        "cacheReadTokens": 20422,
+        "seconds": 12.983,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 49622,
+        "outputTokens": 248,
+        "cacheReadTokens": 48451,
+        "seconds": 23.751,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1103,
+        "outputTokens": 89,
+        "cacheReadTokens": 0,
+        "seconds": 2.297,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "bulk-translate",
+   "title": "Translate one field of several documents",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 27.293,
+    "steps": 14,
+    "inputTokens": 110444,
+    "outputTokens": 1261,
+    "cachedShare": 0.9393144623913855
+   },
+   "toolCalls": 35,
+   "failedToolCalls": 1,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "perDoc": [
+       {
+        "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+        "ok": true
+       },
+       {
+        "german": "Finden Sie frühere Rechnungen und laden Sie sie als PDF herunter.",
+        "ok": true
+       }
+      ]
+     },
+     "conversationId": "a05a9b1c-1b76-470d-a73e-18b3df1ee27b",
+     "tools": [
+      "translateContent",
+      "listDocuments",
+      "readDocument",
+      "readDocument"
+     ],
+     "reply": "I’ll check how many articles are in scope, then translate only their summaries into German drafts, leaving the other fields unchanged.Translated the summaries of **2 articles** into German drafts:\n\n- Install the desktop app (ID 1)\n- Download an invoice (ID 2)\n\nPlease review the drafts in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 34.125,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 15,
+      "inputTokens": 122010,
+      "outputTokens": 1207,
+      "cacheReadTokens": 98665,
+      "cachedShare": 0.8086632243258749,
+      "seconds": 34.09,
+      "toolCalls": 13,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"summary\",\"check\":{\"changed\":true},\"why\":\"Translate only the localized summary into German.\"},{\"path\":\"title\",\"check\":{\"unchanged\":true}},{\"path\":\"body\",\"check"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 11,
+        "inputTokens": 54414,
+        "outputTokens": 692,
+        "cacheReadTokens": 50479,
+        "seconds": 27.072,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 9,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 65170,
+        "outputTokens": 363,
+        "cacheReadTokens": 48186,
+        "seconds": 34.09,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 2426,
+        "outputTokens": 152,
+        "cacheReadTokens": 0,
+        "seconds": 4.54,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "perDoc": [
+       {
+        "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+        "ok": true
+       },
+       {
+        "german": "Finden Sie frühere Rechnungen und laden Sie sie als PDF herunter.",
+        "ok": true
+       }
+      ]
+     },
+     "conversationId": "2ec57925-4e5e-42ba-8bfc-32729baf0d25",
+     "tools": [
+      "editContent",
+      "listDocuments",
+      "readDocument",
+      "readDocument"
+     ],
+     "reply": "I’ll translate only each article’s summary from English into German, leaving all other fields unchanged. I’ll check the scope before making any draft changes.Translated the summaries into German for both articles:\n\n- **Install the desktop app** (ID 1)\n- **Download an invoice** (ID 2)\n\nUpdated **2 drafts**. Please review them in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 27.293,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 14,
+      "inputTokens": 110444,
+      "outputTokens": 1261,
+      "cacheReadTokens": 104410,
+      "cachedShare": 0.9453659773278765,
+      "seconds": 27.24,
+      "toolCalls": 12,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 10,
+        "inputTokens": 42926,
+        "outputTokens": 693,
+        "cacheReadTokens": 40385,
+        "seconds": 19.741,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 8,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 65298,
+        "outputTokens": 421,
+        "cacheReadTokens": 64025,
+        "seconds": 27.24,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 2220,
+        "outputTokens": 147,
+        "cacheReadTokens": 0,
+        "seconds": 3.883,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "perDoc": [
+       {
+        "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+        "ok": true
+       },
+       {
+        "german": "Finden Sie frühere Rechnungen und laden Sie sie als PDF herunter.",
+        "ok": true
+       }
+      ]
+     },
+     "conversationId": "d0f06fe1-91c7-4ff5-8a2a-8d4350ee3ba8",
+     "tools": [
+      "editContent",
+      "listDocuments"
+     ],
+     "reply": "I’ll check how many articles are in scope, then translate only their summaries into German drafts, leaving other fields unchanged.Translated the summaries of **2 articles** into German drafts:\n\n- Download an invoice (ID 2)\n- Install the desktop app (ID 1)\n\nPlease review the drafts in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 24.131,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 13,
+      "inputTokens": 93795,
+      "outputTokens": 1279,
+      "cacheReadTokens": 88103,
+      "cachedShare": 0.9393144623913855,
+      "seconds": 24.092,
+      "toolCalls": 10,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 10,
+        "inputTokens": 43156,
+        "outputTokens": 727,
+        "cacheReadTokens": 40566,
+        "seconds": 19.261,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 8,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 48340,
+        "outputTokens": 360,
+        "cacheReadTokens": 47537,
+        "seconds": 24.092,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 2299,
+        "outputTokens": 192,
+        "cacheReadTokens": 0,
+        "seconds": 4.647,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "array-row-edit",
+   "title": "Change one field of one array row",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 22.307,
+    "steps": 9,
+    "inputTokens": 78074,
+    "outputTokens": 730,
+    "cachedShare": 0.9461461571113636
+   },
+   "toolCalls": 23,
+   "failedToolCalls": 2,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "steps": [
+       {
+        "heading": "Download the installer",
+        "detail": "Open the downloads page and choose your system."
+       },
+       {
+        "heading": "Run the installer",
+        "detail": "Accept the license. Choose the folder you want."
+       },
+       {
+        "heading": "Sign in",
+        "detail": "Use your work account. A workspace admin can reset the password."
+       }
+      ],
+      "bodyUnchanged": true
+     },
+     "conversationId": "3cac1f29-aa37-49a8-ae79-86b99417bdfa",
+     "tools": [
+      "readDocument",
+      "getSchemaInfo",
+      "editContent"
+     ],
+     "reply": "I’ll update only the detail for “Run the installer” and leave everything else unchanged.Updated 1 draft: **Install the desktop app** (ID 1). The “Run the installer” detail now reads exactly: “Accept the license. Choose the folder you want.”\n\nThe editor reported: “You declared steps unchanged and then edited it. The edit stands; the changes are listed with the saved draft. No action needed unless the list shows a change the task did not ask for - do not move or undo the change to satisfy the criterion.”\n\nPlease review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 22.307,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 9,
+      "inputTokens": 78074,
+      "outputTokens": 686,
+      "cacheReadTokens": 74008,
+      "cachedShare": 0.9479212029612931,
+      "seconds": 22.274,
+      "toolCalls": 8,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"steps[6af7e694ddab7e85eb2dc8e4].detail\",\"check\":{\"present\":\"Accept the license. Choose the folder you want.\"},\"why\":\"The requested step detail must match exac"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 6,
+        "inputTokens": 27631,
+        "outputTokens": 326,
+        "cacheReadTokens": 25804,
+        "seconds": 11.006,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 49238,
+        "outputTokens": 292,
+        "cacheReadTokens": 48204,
+        "seconds": 22.274,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1205,
+        "outputTokens": 68,
+        "cacheReadTokens": 0,
+        "seconds": 1.814,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "steps": [
+       {
+        "heading": "Download the installer",
+        "detail": "Open the downloads page and choose your system."
+       },
+       {
+        "heading": "Run the installer",
+        "detail": "Accept the license. Choose the folder you want."
+       },
+       {
+        "heading": "Sign in",
+        "detail": "Use your work account. A workspace admin can reset the password."
+       }
+      ],
+      "bodyUnchanged": true
+     },
+     "conversationId": "4aaa93b6-8f2d-4f67-8123-16d35573853c",
+     "tools": [
+      "readDocument",
+      "editContent"
+     ],
+     "reply": "I’ll update only the detail for “Run the installer” in this article’s draft.Updated 1 draft: article **1**, step “Run the installer.” Its detail now reads exactly:\n\n“Accept the license. Choose the folder you want.”\n\nThe editor reported: “You declared steps unchanged and then edited it. The edit stands; the changes are listed with the saved draft. No action needed unless the list shows a change the task did not ask for - do not move or undo the change to satisfy the criterion.”\n\nPlease review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 29.005,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 9,
+      "inputTokens": 85760,
+      "outputTokens": 945,
+      "cacheReadTokens": 80447,
+      "cachedShare": 0.9380480410447761,
+      "seconds": 28.947,
+      "toolCalls": 7,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"steps[6af7e694ddab7e85eb2dc8e4].detail\",\"check\":{\"changed\":true},\"why\":\"Set only the named step detail to the requested exact text.\"},{\"path\":\"steps[6af7e694d"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 6,
+        "inputTokens": 36315,
+        "outputTokens": 629,
+        "cacheReadTokens": 32717,
+        "seconds": 18.01,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 48223,
+        "outputTokens": 243,
+        "cacheReadTokens": 47730,
+        "seconds": 28.947,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1222,
+        "outputTokens": 73,
+        "cacheReadTokens": 0,
+        "seconds": 2.273,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "steps": [
+       {
+        "heading": "Download the installer",
+        "detail": "Open the downloads page and choose your system."
+       },
+       {
+        "heading": "Run the installer",
+        "detail": "Accept the license. Choose the folder you want."
+       },
+       {
+        "heading": "Sign in",
+        "detail": "Use your work account. A workspace admin can reset the password."
+       }
+      ],
+      "bodyUnchanged": true
+     },
+     "conversationId": "6437c614-209a-4333-9885-7d532bfd4dc2",
+     "tools": [
+      "readDocument",
+      "findArticles",
+      "getSchemaInfo",
+      "editContent"
+     ],
+     "reply": "I’ll update only the detail for “Run the installer” in the current article, leaving everything else unchanged.Updated 1 draft: **Install the desktop app** (ID: 1). The “Run the installer” detail now reads exactly: “Accept the license. Choose the folder you want.”\n\nThe editor flagged: “You declared steps unchanged and then edited it. The edit stands; the changes are listed with the saved draft. No action needed unless the list shows a change the task did not ask for - do not move or undo the change to satisfy the criterion.”\n\nPlease review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 21.571,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 8,
+      "inputTokens": 73031,
+      "outputTokens": 730,
+      "cacheReadTokens": 69098,
+      "cachedShare": 0.9461461571113636,
+      "seconds": 21.513,
+      "toolCalls": 8,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 22029,
+        "outputTokens": 329,
+        "cacheReadTokens": 20582,
+        "seconds": 9.785,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 49797,
+        "outputTokens": 332,
+        "cacheReadTokens": 48516,
+        "seconds": 21.513,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1205,
+        "outputTokens": 69,
+        "cacheReadTokens": 0,
+        "seconds": 1.865,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "group-field",
+   "title": "Change a field inside a group",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 20.538,
+    "steps": 8,
+    "inputTokens": 71894,
+    "outputTokens": 606,
+    "cachedShare": 0.9540017247614544
+   },
+   "toolCalls": 22,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "metaDescription": "Install the desktop app on Windows or macOS in three steps.",
+      "metaTitleUnchanged": true,
+      "summaryUnchanged": true
+     },
+     "conversationId": "9c66b6fe-c5cb-41f9-9eb8-7d2a43a4c9bc",
+     "tools": [
+      "findArticles",
+      "getSchemaInfo",
+      "editContent"
+     ],
+     "reply": "I’ll set the SEO meta description to that exact text and leave everything else unchanged.Updated the SEO meta description on **Install the desktop app** (ID 1). One draft was updated; all other fields were left unchanged.\n\nPlease review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 19.17,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 8,
+      "inputTokens": 71857,
+      "outputTokens": 560,
+      "cacheReadTokens": 68552,
+      "cachedShare": 0.954005872775095,
+      "seconds": 19.131,
+      "toolCalls": 7,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 21662,
+        "outputTokens": 294,
+        "cacheReadTokens": 20360,
+        "seconds": 9.4,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 49101,
+        "outputTokens": 205,
+        "cacheReadTokens": 48192,
+        "seconds": 19.131,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1094,
+        "outputTokens": 61,
+        "cacheReadTokens": 0,
+        "seconds": 1.791,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "metaDescription": "Install the desktop app on Windows or macOS in three steps.",
+      "metaTitleUnchanged": true,
+      "summaryUnchanged": true
+     },
+     "conversationId": "e901e7a2-00d2-4a97-8520-c5ff985a8978",
+     "tools": [
+      "findArticles",
+      "readDocument",
+      "getSchemaInfo",
+      "editContent"
+     ],
+     "reply": "I’ll set the meta description to that exact text and leave all other fields unchanged.Updated the meta description in **1 draft**: “Install the desktop app” (ID 1). Nothing else was changed.\n\nPlease review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 23.243,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 8,
+      "inputTokens": 72395,
+      "outputTokens": 606,
+      "cacheReadTokens": 68849,
+      "cachedShare": 0.9510187167622073,
+      "seconds": 23.21,
+      "toolCalls": 8,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 21676,
+        "outputTokens": 295,
+        "cacheReadTokens": 20363,
+        "seconds": 13.078,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 49631,
+        "outputTokens": 232,
+        "cacheReadTokens": 48486,
+        "seconds": 23.21,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1088,
+        "outputTokens": 79,
+        "cacheReadTokens": 0,
+        "seconds": 1.92,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "metaDescription": "Install the desktop app on Windows or macOS in three steps.",
+      "metaTitleUnchanged": true,
+      "summaryUnchanged": true
+     },
+     "conversationId": "394c2e44-0846-42dc-85e4-023f29a4ff8b",
+     "tools": [
+      "findArticles",
+      "getSchemaInfo",
+      "editContent"
+     ],
+     "reply": "I’ll update only the SEO meta description on this article’s draft, leaving all other content unchanged.Updated the SEO meta description on **Install the desktop app** (ID 1) to the exact text requested. One draft was updated; no other fields changed.\n\nPlease review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 20.538,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 8,
+      "inputTokens": 71894,
+      "outputTokens": 630,
+      "cacheReadTokens": 68587,
+      "cachedShare": 0.9540017247614544,
+      "seconds": 20.497,
+      "toolCalls": 7,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 21681,
+        "outputTokens": 315,
+        "cacheReadTokens": 20352,
+        "seconds": 9.633,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 49120,
+        "outputTokens": 220,
+        "cacheReadTokens": 48235,
+        "seconds": 20.497,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1093,
+        "outputTokens": 95,
+        "cacheReadTokens": 0,
+        "seconds": 2.47,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "replace-in-one-field",
+   "title": "Replace a phrase in the body and leave the same phrase in other fields",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 30.043,
+    "steps": 13,
+    "inputTokens": 86508,
+    "outputTokens": 954,
+    "cachedShare": 0.9218781260859035
+   },
+   "toolCalls": 33,
+   "failedToolCalls": 4,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "body": true,
+      "bodyIsExactlyTheReplacement": true,
+      "stepsUnchanged": true,
+      "nodeCount": [
+       4,
+       4
+      ]
+     },
+     "conversationId": "96f66772-f079-42cb-8d97-387accac8f7f",
+     "tools": [
+      "readDocument",
+      "getSchemaInfo",
+      "editContent"
+     ],
+     "reply": "I’ll replace the phrase only in this article’s body and leave the steps unchanged.Updated 1 draft: **Install the desktop app** (ID 1). Replaced one occurrence in the body; the steps were unchanged.\n\nPlease review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 30.043,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 13,
+      "inputTokens": 86508,
+      "outputTokens": 918,
+      "cacheReadTokens": 79415,
+      "cachedShare": 0.9180075831137005,
+      "seconds": 30.002,
+      "toolCalls": 11,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"body\",\"check\":{\"present\":\"workspace owner\"},\"why\":\"The exact phrase in the body must be replaced.\"},{\"path\":\"body\",\"check\":{\"absent\":\"workspace admin\"},\"why\":"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 6,
+        "inputTokens": 28787,
+        "outputTokens": 531,
+        "cacheReadTokens": 26688,
+        "seconds": 19.488,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 49465,
+        "outputTokens": 221,
+        "cacheReadTokens": 48375,
+        "seconds": 30.002,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1086,
+        "outputTokens": 60,
+        "cacheReadTokens": 0,
+        "seconds": 1.813,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 4,
+        "inputTokens": 7170,
+        "outputTokens": 106,
+        "cacheReadTokens": 4352,
+        "seconds": 5.494,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "body": true,
+      "bodyIsExactlyTheReplacement": true,
+      "stepsUnchanged": true,
+      "nodeCount": [
+       4,
+       4
+      ]
+     },
+     "conversationId": "3ea96995-a397-4815-8f48-5ce920eb2623",
+     "tools": [
+      "readDocument",
+      "getSchemaInfo",
+      "editContent"
+     ],
+     "reply": "I’ll check the article’s body and replace the phrase there only, leaving the steps unchanged.Updated 1 draft: **Install the desktop app** (ID 1). The body now says “workspace owner”; the steps were unchanged.\n\nPlease review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 36.602,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 14,
+      "inputTokens": 94967,
+      "outputTokens": 954,
+      "cacheReadTokens": 87548,
+      "cachedShare": 0.9218781260859035,
+      "seconds": 36.55,
+      "toolCalls": 12,
+      "failedToolCalls": 2,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"body\",\"check\":{\"absent\":\"workspace admin\"},\"why\":\"Replace the exact phrase only in the body.\"},{\"path\":\"body\",\"check\":{\"unchanged\":\"all text and rich-text for"
+       },
+       {
+        "agent": "richtext-editor",
+        "tool": "applyRichText",
+        "error": "No segments provided to apply."
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 6,
+        "inputTokens": 34742,
+        "outputTokens": 520,
+        "cacheReadTokens": 31460,
+        "seconds": 19.581,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 49475,
+        "outputTokens": 227,
+        "cacheReadTokens": 48408,
+        "seconds": 36.55,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1128,
+        "outputTokens": 69,
+        "cacheReadTokens": 0,
+        "seconds": 1.839,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 5,
+        "inputTokens": 9622,
+        "outputTokens": 138,
+        "cacheReadTokens": 7680,
+        "seconds": 6.259,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 1
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "body": true,
+      "bodyIsExactlyTheReplacement": true,
+      "stepsUnchanged": true,
+      "nodeCount": [
+       4,
+       4
+      ]
+     },
+     "conversationId": "6f654cd3-4fdb-4755-8756-750ccdbca9af",
+     "tools": [
+      "readDocument",
+      "getSchemaInfo",
+      "editContent"
+     ],
+     "reply": "I’ll replace the phrase only in the article’s body and leave the steps untouched.Updated 1 draft: **Install the desktop app** (ID 1). The phrase was replaced once in the body; the steps were left unchanged.\n\nPlease review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 29.512,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 12,
+      "inputTokens": 84040,
+      "outputTokens": 978,
+      "cacheReadTokens": 78654,
+      "cachedShare": 0.9359114707282247,
+      "seconds": 29.463,
+      "toolCalls": 10,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"body\",\"check\":{\"absent\":\"workspace admin\"},\"why\":\"The exact phrase should be replaced throughout the body.\"},{\"path\":\"body\",\"check\":{\"present\":\"workspace owne"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 6,
+        "inputTokens": 28703,
+        "outputTokens": 541,
+        "cacheReadTokens": 26670,
+        "seconds": 17.324,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 49463,
+        "outputTokens": 225,
+        "cacheReadTokens": 48400,
+        "seconds": 29.463,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1089,
+        "outputTokens": 82,
+        "cacheReadTokens": 0,
+        "seconds": 1.919,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 3,
+        "inputTokens": 4785,
+        "outputTokens": 130,
+        "cacheReadTokens": 3584,
+        "seconds": 3.841,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "global-array-add",
+   "title": "Add a row to a global that has drafts",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 23.317,
+    "steps": 9,
+    "inputTokens": 85094,
+    "outputTokens": 613,
+    "cachedShare": 0.9674687900034058
+   },
+   "toolCalls": 20,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "links": [
+       {
+        "label": "Setup",
+        "path": "/setup"
+       },
+       {
+        "label": "Billing",
+        "path": "/billing"
+       },
+       {
+        "label": "Glossary",
+        "path": "/glossary"
+       }
+      ]
+     },
+     "conversationId": "7878a33a-c862-4601-9096-e06a73b0e7ee",
+     "tools": [
+      "readDocument",
+      "editContent"
+     ],
+     "reply": "I’ll add “Glossary” at the end of the navigation draft, keeping all existing links.Added **Glossary** (`/glossary`) to the end of the navigation. **1 draft updated**; please review it in the admin panel.\n\nThe editor reported this note: “You declared links unchanged and then edited it. The edit stands; the changes are listed with the saved draft. No action needed unless the list shows a change the task did not ask for - do not move or undo the change to satisfy the criterion.”",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 23.317,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 8,
+      "inputTokens": 68818,
+      "outputTokens": 613,
+      "cacheReadTokens": 62839,
+      "cachedShare": 0.9131186608154843,
+      "seconds": 23.276,
+      "toolCalls": 6,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 19702,
+        "outputTokens": 263,
+        "cacheReadTokens": 15349,
+        "seconds": 10.541,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 47960,
+        "outputTokens": 215,
+        "cacheReadTokens": 47490,
+        "seconds": 23.276,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1156,
+        "outputTokens": 135,
+        "cacheReadTokens": 0,
+        "seconds": 2.595,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "links": [
+       {
+        "label": "Setup",
+        "path": "/setup"
+       },
+       {
+        "label": "Billing",
+        "path": "/billing"
+       },
+       {
+        "label": "Glossary",
+        "path": "/glossary"
+       }
+      ]
+     },
+     "conversationId": "729ab894-db75-412b-acdd-11ae44b5182f",
+     "tools": [
+      "readDocument",
+      "editContent",
+      "readDocument"
+     ],
+     "reply": "I’ll add “Glossary” at the end of the navigation, keeping the existing links intact.Updated **1 navigation draft**: added “Glossary” → `/glossary` at the end, preserving the existing links. Please review it in the admin panel.\n\nThe editor reported: “You declared links unchanged and then edited it. The edit stands; the changes are listed with the saved draft. No action needed unless the list shows a change the task did not ask for - do not move or undo the change to satisfy the criterion.”",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 25.553,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 9,
+      "inputTokens": 85149,
+      "outputTokens": 614,
+      "cacheReadTokens": 82379,
+      "cachedShare": 0.9674687900034058,
+      "seconds": 25.501,
+      "toolCalls": 7,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 19658,
+        "outputTokens": 254,
+        "cacheReadTokens": 18682,
+        "seconds": 10.108,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 64327,
+        "outputTokens": 251,
+        "cacheReadTokens": 63697,
+        "seconds": 25.501,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1164,
+        "outputTokens": 109,
+        "cacheReadTokens": 0,
+        "seconds": 2.471,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "links": [
+       {
+        "label": "Setup",
+        "path": "/setup"
+       },
+       {
+        "label": "Billing",
+        "path": "/billing"
+       },
+       {
+        "label": "Glossary",
+        "path": "/glossary"
+       }
+      ]
+     },
+     "conversationId": "9ff77cf6-35a9-475d-b58d-39d53d440268",
+     "tools": [
+      "readDocument",
+      "getSchemaInfo",
+      "editContent"
+     ],
+     "reply": "I’ll add “Glossary” to the end of the navigation draft, keeping the existing links in order.Added **Glossary** (`/glossary`) to the end of the navigation, preserving the existing links.\n\nUpdated 1 navigation draft. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 22.243,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 9,
+      "inputTokens": 85094,
+      "outputTokens": 574,
+      "cacheReadTokens": 82455,
+      "cachedShare": 0.968987237643077,
+      "seconds": 22.195,
+      "toolCalls": 7,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 19738,
+        "outputTokens": 292,
+        "cacheReadTokens": 18775,
+        "seconds": 9.396,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 64226,
+        "outputTokens": 179,
+        "cacheReadTokens": 63680,
+        "seconds": 22.195,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1130,
+        "outputTokens": 103,
+        "cacheReadTokens": 0,
+        "seconds": 2.221,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "read-only-question",
+   "title": "A question that must not change anything",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 7.027,
+    "steps": 2,
+    "inputTokens": 32129,
+    "outputTokens": 159,
+    "cachedShare": 0.9849668523763578
+   },
+   "toolCalls": 5,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "stepsNamed": 3,
+      "changes": 0,
+      "documentUnchanged": true
+     },
+     "conversationId": "0b24423a-48ca-4378-a5e4-d28cd7cedabc",
+     "tools": [
+      "readDocument"
+     ],
+     "reply": "The article has three steps:\n\n1. **Download the installer** — Open the downloads page and choose your system.\n2. **Run the installer** — Accept the license and keep the default folder.\n3. **Sign in** — Use your work account. A workspace admin can reset the password.\n\nNothing was changed.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.633,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 31852,
+      "outputTokens": 121,
+      "cacheReadTokens": 31630,
+      "cachedShare": 0.9930302649755117,
+      "seconds": 6.593,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 31852,
+        "outputTokens": 121,
+        "cacheReadTokens": 31630,
+        "seconds": 6.593,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "stepsNamed": 3,
+      "changes": 0,
+      "documentUnchanged": true
+     },
+     "conversationId": "c4aad3e5-285a-47b7-adf3-f4e88dea265a",
+     "tools": [
+      "readDocument",
+      "readDocument"
+     ],
+     "reply": "**Install the desktop app** has three steps:\n\n1. **Download the installer** — Open the downloads page and choose your system.\n2. **Run the installer** — Accept the license and keep the default folder.\n3. **Sign in** — Use your work account. A workspace admin can reset the password.\n\nNo changes were made.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 7.027,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 32132,
+      "outputTokens": 159,
+      "cacheReadTokens": 31646,
+      "cachedShare": 0.9848748910743185,
+      "seconds": 6.996,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 32132,
+        "outputTokens": 159,
+        "cacheReadTokens": 31646,
+        "seconds": 6.996,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "stepsNamed": 3,
+      "changes": 0,
+      "documentUnchanged": true
+     },
+     "conversationId": "dcaab71b-35ec-4eba-862d-bdc6cd019ed3",
+     "tools": [
+      "readDocument",
+      "readDocument"
+     ],
+     "reply": "**“Install the desktop app”** (ID 1) has three steps:\n\n1. **Download the installer** — Open the downloads page and choose your system.\n2. **Run the installer** — Accept the license and keep the default folder.\n3. **Sign in** — Use your work account. A workspace admin can reset the password.\n\nNo changes were made.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 7.456,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 32129,
+      "outputTokens": 163,
+      "cacheReadTokens": 31646,
+      "cachedShare": 0.9849668523763578,
+      "seconds": 7.423,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 32129,
+        "outputTokens": 163,
+        "cacheReadTokens": 31646,
+        "seconds": 7.423,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "no-drafts-collection",
+   "title": "A collection without drafts gets no agent write",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 10.038,
+    "steps": 3,
+    "inputTokens": 47946,
+    "outputTokens": 251,
+    "cachedShare": 0.9899887373294957
+   },
+   "toolCalls": 11,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "nameAfter": "Billing"
+     },
+     "conversationId": "f270da27-addf-4721-aa31-5ca82f4b93d7",
+     "tools": [
+      "findDocuments",
+      "findDocuments",
+      "findCategories",
+      "getSchemaInfo"
+     ],
+     "reply": "I couldn’t rename **Billing** (category ID 2) because categories don’t support drafts, and I’m restricted to draft-only changes. No changes were made.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 10.094,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 47946,
+      "outputTokens": 273,
+      "cacheReadTokens": 47466,
+      "cachedShare": 0.9899887373294957,
+      "seconds": 10.056,
+      "toolCalls": 4,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 47946,
+        "outputTokens": 273,
+        "cacheReadTokens": 47466,
+        "seconds": 10.056,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "nameAfter": "Billing"
+     },
+     "conversationId": "8ada19cf-e55e-4a6d-90e2-bfc1d8346b9b",
+     "tools": [
+      "findDocuments",
+      "findCategories",
+      "getSchemaInfo"
+     ],
+     "reply": "I didn’t rename **Billing** (category ID 2) because categories don’t support drafts, and I can only make draft changes. Please make the rename in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 8.947,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 47732,
+      "outputTokens": 202,
+      "cacheReadTokens": 47375,
+      "cachedShare": 0.9925207408028157,
+      "seconds": 8.906,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 47732,
+        "outputTokens": 202,
+        "cacheReadTokens": 47375,
+        "seconds": 8.906,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "nameAfter": "Billing"
+     },
+     "conversationId": "8b9632cd-b003-4b75-a5ad-a241f2a5d4ec",
+     "tools": [
+      "findDocuments",
+      "findDocuments",
+      "findCategories",
+      "getSchemaInfo"
+     ],
+     "reply": "I didn’t rename **Billing** (ID 2) because the Categories collection does not support drafts, and I can only make draft changes. The rename would need to be made in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 10.038,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 47977,
+      "outputTokens": 251,
+      "cacheReadTokens": 47483,
+      "cachedShare": 0.9897033995456156,
+      "seconds": 10.004,
+      "toolCalls": 4,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 47977,
+        "outputTokens": 251,
+        "cacheReadTokens": 47483,
+        "seconds": 10.004,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

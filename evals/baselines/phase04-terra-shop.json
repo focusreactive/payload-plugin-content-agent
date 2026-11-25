@@ -1,0 +1,1552 @@
+{
+ "label": "phase04-terra-shop",
+ "schema": "shop",
+ "model": "openai",
+ "k": 3,
+ "date": "2026-11-14T05:00:03.263Z",
+ "summary": {
+  "scenarios": 8,
+  "passK": 7,
+  "runs": 24,
+  "runsPassed": 23,
+  "toolCalls": 147,
+  "failedToolCalls": 5,
+  "inputTokens": 2281653
+ },
+ "results": [
+  {
+   "id": "number-field",
+   "title": "Change a number",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 8.917,
+    "steps": 3,
+    "inputTokens": 72793,
+    "outputTokens": 146,
+    "cachedShare": 0.986825656313107
+   },
+   "toolCalls": 8,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "price": 159
+     },
+     "conversationId": "3c971ec9-9dd9-4c79-ab3e-72b6eed454f1",
+     "tools": [
+      "findProducts",
+      "getSchemaInfo",
+      "updateProducts"
+     ],
+     "reply": "I’ll update only the price to 159 and save the product as a draft.Updated the price of **Ridge 28 Backpack** (ID 1) from 149 to 159. One draft was updated; please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 8.917,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 72833,
+      "outputTokens": 167,
+      "cacheReadTokens": 48136,
+      "cachedShare": 0.6609092032457814,
+      "seconds": 8.669,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 72833,
+        "outputTokens": 167,
+        "cacheReadTokens": 48136,
+        "seconds": 8.669,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "price": 159
+     },
+     "conversationId": "67c85144-0bad-41b3-8238-8bc6eb638d92",
+     "tools": [
+      "findProducts",
+      "updateProducts"
+     ],
+     "reply": "I’ll change the Ridge 28 Backpack’s price from 149 to 159 in its draft, leaving all other product fields unchanged.Updated the price to **159** for Ridge 28 Backpack (ID 1). One draft updated; please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 9.853,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 71993,
+      "outputTokens": 144,
+      "cacheReadTokens": 71417,
+      "cachedShare": 0.9919992221465976,
+      "seconds": 9.783,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 71993,
+        "outputTokens": 144,
+        "cacheReadTokens": 71417,
+        "seconds": 9.783,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "price": 159
+     },
+     "conversationId": "37b9a18a-e6bc-43da-b64f-c5d7d391456d",
+     "tools": [
+      "findProducts",
+      "getSchemaInfo",
+      "updateProducts"
+     ],
+     "reply": "I’ll change only the price to 159 and save it as a draft.Updated the price of **Ridge 28 Backpack** (ID 1) from 149 to 159. One draft updated; please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 8.129,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 72793,
+      "outputTokens": 146,
+      "cacheReadTokens": 71834,
+      "cachedShare": 0.986825656313107,
+      "seconds": 8.082,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 72793,
+        "outputTokens": 146,
+        "cacheReadTokens": 71834,
+        "seconds": 8.082,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "array-row-number",
+   "title": "Change one value in one array row",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 42.175,
+    "steps": 11,
+    "inputTokens": 133841,
+    "outputTokens": 1539,
+    "cachedShare": 0.9508024636080515
+   },
+   "toolCalls": 36,
+   "failedToolCalls": 1,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "variants": [
+       {
+        "sku": "RDG-28-BLK",
+        "color": "black",
+        "stock": 14
+       },
+       {
+        "sku": "RDG-28-SND",
+        "color": "sand",
+        "stock": 12
+       },
+       {
+        "sku": "RDG-28-FOR",
+        "color": "forest",
+        "stock": 0
+       }
+      ]
+     },
+     "conversationId": "a47fe791-2baa-41af-a28f-10dd79c9055c",
+     "tools": [
+      "findProducts",
+      "getSchemaInfo",
+      "editContent",
+      "readDocument"
+     ],
+     "reply": "I’ll change the sand variant’s stock from 3 to 12 in the draft, leaving everything else unchanged.Updated **1 draft**: Ridge 28 Backpack (ID 1), sand stock **3 → 12**.\n\nThe save regenerated the variant row IDs, so the checker could not find the original sand row and flagged that the variants had changed. The stock value is 12; please review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 42.175,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 11,
+      "inputTokens": 133841,
+      "outputTokens": 1539,
+      "cacheReadTokens": 124916,
+      "cachedShare": 0.9333163978153182,
+      "seconds": 42.121,
+      "toolCalls": 10,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 7,
+        "inputTokens": 34527,
+        "outputTokens": 982,
+        "cacheReadTokens": 28285,
+        "seconds": 21.663,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 6,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 97944,
+        "outputTokens": 448,
+        "cacheReadTokens": 96631,
+        "seconds": 42.121,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1370,
+        "outputTokens": 109,
+        "cacheReadTokens": 0,
+        "seconds": 2.852,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "variants": [
+       {
+        "sku": "RDG-28-BLK",
+        "color": "black",
+        "stock": 14
+       },
+       {
+        "sku": "RDG-28-SND",
+        "color": "sand",
+        "stock": 12
+       },
+       {
+        "sku": "RDG-28-FOR",
+        "color": "forest",
+        "stock": 0
+       }
+      ]
+     },
+     "conversationId": "5d31d35f-db80-491e-8f41-53a7cf505393",
+     "tools": [
+      "findProducts",
+      "getSchemaInfo",
+      "editContent",
+      "findProducts",
+      "editContent"
+     ],
+     "reply": "I’ll change the sand variant’s stock from 3 to 12 in the draft, leaving everything else unchanged.The stock is now 12, but the saved draft also has new variant row IDs. I’ll try to restore the original IDs without changing any stock values.Updated **Ridge 28 Backpack** (ID 1): sand stock is now **12** in one draft.\n\nThe save also regenerated all three variant row IDs. I tried to restore them, but no further change was written. Please review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 76.207,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 19,
+      "inputTokens": 201006,
+      "outputTokens": 3274,
+      "cacheReadTokens": 191117,
+      "cachedShare": 0.9508024636080515,
+      "seconds": 76.126,
+      "toolCalls": 17,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "editContent",
+        "error": "Nothing was written: the document is byte-identical to the one you opened"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 14,
+        "inputTokens": 74853,
+        "outputTokens": 2344,
+        "cacheReadTokens": 69415,
+        "seconds": 46.545,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 12,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 5,
+        "inputTokens": 123426,
+        "outputTokens": 633,
+        "cacheReadTokens": 121702,
+        "seconds": 76.126,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 1
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 2727,
+        "outputTokens": 297,
+        "cacheReadTokens": 0,
+        "seconds": 5.453,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "variants": [
+       {
+        "sku": "RDG-28-BLK",
+        "color": "black",
+        "stock": 14
+       },
+       {
+        "sku": "RDG-28-SND",
+        "color": "sand",
+        "stock": 12
+       },
+       {
+        "sku": "RDG-28-FOR",
+        "color": "forest",
+        "stock": 0
+       }
+      ]
+     },
+     "conversationId": "8ded78c3-fdbe-4d1a-9779-c3d4c708aa9e",
+     "tools": [
+      "findProducts",
+      "getSchemaInfo",
+      "editContent"
+     ],
+     "reply": "I’ll change the sand variant’s stock from 3 to 12 in the draft, leaving everything else unchanged.Updated 1 draft: **Ridge 28 Backpack** (ID 1), sand variant stock changed from 3 to 12. No other content was changed. Please review it in the admin panel.\n\nThe editor reported: “You declared variants unchanged and then edited it. The edit stands; the changes are listed with the saved draft. No action needed unless the list shows a change the task did not ask for - do not move or undo the change to satisfy the criterion.”",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 29.086,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 10,
+      "inputTokens": 106282,
+      "outputTokens": 937,
+      "cacheReadTokens": 102240,
+      "cachedShare": 0.9619691010707363,
+      "seconds": 29.009,
+      "toolCalls": 9,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 7,
+        "inputTokens": 32246,
+        "outputTokens": 529,
+        "cacheReadTokens": 30412,
+        "seconds": 15.477,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 6,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 72816,
+        "outputTokens": 297,
+        "cacheReadTokens": 71828,
+        "seconds": 29.009,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1220,
+        "outputTokens": 111,
+        "cacheReadTokens": 0,
+        "seconds": 2.197,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "select-field",
+   "title": "Change a select to one of its options",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 10.27,
+    "steps": 3,
+    "inputTokens": 72843,
+    "outputTokens": 186,
+    "cachedShare": 0.9862718449267603
+   },
+   "toolCalls": 9,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "availability": "retired"
+     },
+     "conversationId": "752a2094-084d-401a-9bd5-6f33cab90c36",
+     "tools": [
+      "findProducts",
+      "getSchemaInfo",
+      "updateProducts"
+     ],
+     "reply": "I’ll mark this product as retired in a draft, leaving all other product fields unchanged.Marked **Ridge 28 Backpack** (ID 1) as retired. One draft was updated; please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 8.157,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 72787,
+      "outputTokens": 143,
+      "cacheReadTokens": 71810,
+      "cachedShare": 0.9865772734142085,
+      "seconds": 8.112,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 72787,
+        "outputTokens": 143,
+        "cacheReadTokens": 71810,
+        "seconds": 8.112,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "availability": "retired"
+     },
+     "conversationId": "27d15d7a-1f76-4a42-bdea-b3b48e67ebc0",
+     "tools": [
+      "findProducts",
+      "getSchemaInfo",
+      "updateProducts"
+     ],
+     "reply": "I’ll mark the current product as retired in a draft, without changing its other fields.Marked **Ridge 28 Backpack** (ID 1) as retired. One draft updated; no other content fields were changed. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 10.27,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 72843,
+      "outputTokens": 186,
+      "cacheReadTokens": 71843,
+      "cachedShare": 0.9862718449267603,
+      "seconds": 10.211,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 72843,
+        "outputTokens": 186,
+        "cacheReadTokens": 71843,
+        "seconds": 10.211,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "availability": "retired"
+     },
+     "conversationId": "180f0bd2-a4b5-45fb-a700-ed8b39777b03",
+     "tools": [
+      "findProducts",
+      "getSchemaInfo",
+      "updateProducts"
+     ],
+     "reply": "I’ll change only the availability of Ridge 28 Backpack to retired and save it as a draft.Marked **Ridge 28 Backpack** (ID 1) as retired. One draft updated; please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 10.97,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 72850,
+      "outputTokens": 187,
+      "cacheReadTokens": 71842,
+      "cachedShare": 0.9861633493479753,
+      "seconds": 10.905,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 72850,
+        "outputTokens": 187,
+        "cacheReadTokens": 71842,
+        "seconds": 10.905,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "relationship-replace",
+   "title": "Point a relationship at another document",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 13.067,
+    "steps": 4,
+    "inputTokens": 97397,
+    "outputTokens": 242,
+    "cachedShare": 0.989416631594075
+   },
+   "toolCalls": 15,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "brandBefore": 2,
+      "brandAfter": 1,
+      "fjell": 1
+     },
+     "conversationId": "410bb6f4-872d-4a82-9e6a-2b5e66391927",
+     "tools": [
+      "findDocuments",
+      "findProducts",
+      "getSchemaInfo",
+      "reviewChanges",
+      "updateProducts"
+     ],
+     "reply": "I’ll change Market Tote’s brand to Fjell in the draft, leaving all other product fields unchanged.Updated **Market Tote** (ID 3) to brand **Fjell**. One draft was updated; no other product fields were changed. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 13.067,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 4,
+      "inputTokens": 97397,
+      "outputTokens": 242,
+      "cacheReadTokens": 72656,
+      "cachedShare": 0.7459778021910326,
+      "seconds": 13.017,
+      "toolCalls": 5,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 4,
+        "inputTokens": 97397,
+        "outputTokens": 242,
+        "cacheReadTokens": 72656,
+        "seconds": 13.017,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "brandBefore": 2,
+      "brandAfter": 1,
+      "fjell": 1
+     },
+     "conversationId": "d9650109-2a96-4398-a583-e2b65e6074fa",
+     "tools": [
+      "findDocuments",
+      "findProducts",
+      "getSchemaInfo",
+      "reviewChanges",
+      "updateProducts"
+     ],
+     "reply": "I’ll change Market Tote’s brand to Fjell in the draft, leaving the other fields unchanged.Updated the brand to Fjell for **Market Tote** (ID 3). One draft was updated; please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 12.869,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 4,
+      "inputTokens": 97394,
+      "outputTokens": 232,
+      "cacheReadTokens": 96372,
+      "cachedShare": 0.9895065404439699,
+      "seconds": 12.799,
+      "toolCalls": 5,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 4,
+        "inputTokens": 97394,
+        "outputTokens": 232,
+        "cacheReadTokens": 96372,
+        "seconds": 12.799,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "brandBefore": 2,
+      "brandAfter": 1,
+      "fjell": 1
+     },
+     "conversationId": "562e257e-0f11-4d89-af25-d4dfb70aff3f",
+     "tools": [
+      "findProducts",
+      "findDocuments",
+      "getSchemaInfo",
+      "reviewChanges",
+      "updateProducts"
+     ],
+     "reply": "I’ll change Market Tote’s brand to Fjell in the draft, leaving all other product fields unchanged.Updated **Market Tote** (ID 3) to use the Fjell brand. One draft was updated; no other product fields were changed. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 15.809,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 4,
+      "inputTokens": 97417,
+      "outputTokens": 249,
+      "cacheReadTokens": 96386,
+      "cachedShare": 0.989416631594075,
+      "seconds": 15.764,
+      "toolCalls": 5,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 4,
+        "inputTokens": 97417,
+        "outputTokens": 249,
+        "cacheReadTokens": 96386,
+        "seconds": 15.764,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "block-relationship-add",
+   "title": "Add a reference to a block that lists documents",
+   "passed": 2,
+   "runs": 3,
+   "passK": false,
+   "median": {
+    "seconds": 33.82,
+    "steps": 10,
+    "inputTokens": 126104,
+    "outputTokens": 1244,
+    "cachedShare": 0.9553786851309872
+   },
+   "toolCalls": 37,
+   "failedToolCalls": 3,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "products": [
+       1,
+       2,
+       3
+      ],
+      "bannerUnchanged": true
+     },
+     "conversationId": "5a1dc39f-e19e-4c0b-96f7-89b2c7d315f9",
+     "tools": [
+      "getDocumentOutline",
+      "findDocuments",
+      "readDocument",
+      "editContent"
+     ],
+     "reply": "I’ll add Market Tote to the end of the “Our picks” grid, keeping its two existing products.Added **Market Tote** to the end of the “Our picks” grid, keeping both existing products. Updated 1 draft: **Autumn Gear** (ID 1).\n\nPlease review it in the admin panel. The editor flagged: “You declared sections unchanged and then edited it. The edit stands; the changes are listed with the saved draft. No action needed unless the list shows a change the task did not ask for - do not move or undo the change to satisfy the criterion.”",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 26.645,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 10,
+      "inputTokens": 104753,
+      "outputTokens": 733,
+      "cacheReadTokens": 73963,
+      "cachedShare": 0.70607047053545,
+      "seconds": 26.583,
+      "toolCalls": 10,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "lookupDocuments",
+        "error": "AI_InvalidToolInputError: Invalid input for tool lookupDocuments: AI_TypeValidationError: Type validation failed: Value: {\"collection\":\"products\",\"limit\":100}.\nError message: [\n  {\n    \"origin\": \"number\",\n    \"code\": \"too_big\",\n    \"maximum\": 50,\n    \"inclusive\": true,\n    \"schema\": {\n      \"def\": {"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 7,
+        "inputTokens": 31093,
+        "outputTokens": 311,
+        "cacheReadTokens": 26106,
+        "seconds": 13.57,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 6,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 72324,
+        "outputTokens": 341,
+        "cacheReadTokens": 47857,
+        "seconds": 26.583,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1336,
+        "outputTokens": 81,
+        "cacheReadTokens": 0,
+        "seconds": 1.841,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "products": [
+       1,
+       2,
+       3
+      ],
+      "bannerUnchanged": true
+     },
+     "conversationId": "cc1f9395-7d7d-444d-93ad-3e7560ca5797",
+     "tools": [
+      "findDocuments",
+      "getDocumentOutline",
+      "readDocument",
+      "getSchemaInfo",
+      "editContent",
+      "getDocumentOutline"
+     ],
+     "reply": "I’ll add Market Tote to the end of the “Our picks” grid, keeping its existing products in order.Updated 1 draft: **Autumn Gear** (ID 1). Market Tote (ID 3) is now last in the product grid; the existing products remain in order.\n\nThe automated check flagged two issues, but the saved grid confirms the requested order `[1, 2, 3]`. Please review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 33.82,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 10,
+      "inputTokens": 126104,
+      "outputTokens": 1244,
+      "cacheReadTokens": 121580,
+      "cachedShare": 0.9641248493307112,
+      "seconds": 33.761,
+      "toolCalls": 11,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 6,
+        "inputTokens": 26327,
+        "outputTokens": 755,
+        "cacheReadTokens": 24668,
+        "seconds": 16.482,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 98354,
+        "outputTokens": 366,
+        "cacheReadTokens": 96912,
+        "seconds": 33.761,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 6,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1423,
+        "outputTokens": 123,
+        "cacheReadTokens": 0,
+        "seconds": 2.759,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": false,
+     "details": {
+      "products": [
+       1,
+       2
+      ],
+      "bannerUnchanged": true
+     },
+     "conversationId": "c1790b79-e785-4787-8a15-83e478bddbab",
+     "tools": [
+      "findDocuments",
+      "getDocumentOutline",
+      "readDocument",
+      "getSchemaInfo",
+      "editContent"
+     ],
+     "reply": "I’ll add Market Tote to the end of the “Our picks” grid, keeping the two existing products in place.I couldn’t add Market Tote: the CMS rejected the product-grid update, and **no changes were saved**. The existing products remain unchanged.\n\nPlease review the page in the admin panel. No drafts were updated.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 48.952,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 15,
+      "inputTokens": 140090,
+      "outputTokens": 1815,
+      "cacheReadTokens": 133839,
+      "cachedShare": 0.9553786851309872,
+      "seconds": 48.865,
+      "toolCalls": 16,
+      "failedToolCalls": 2,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "lookupDocuments",
+        "error": "AI_InvalidToolInputError: Invalid input for tool lookupDocuments: AI_TypeValidationError: Type validation failed: Value: {\"collection\":\"products\",\"limit\":100}.\nError message: [\n  {\n    \"origin\": \"number\",\n    \"code\": \"too_big\",\n    \"maximum\": 50,\n    \"inclusive\": true,\n    \"schema\": {\n      \"def\": {"
+       },
+       {
+        "agent": "main",
+        "tool": "editContent",
+        "error": "CMS rejected the save (no changes persisted): MCP error -32602: Input validation error: Invalid arguments for tool updateLandingPages: Invalid input at sections[1]"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 12,
+        "inputTokens": 65787,
+        "outputTokens": 1381,
+        "cacheReadTokens": 61875,
+        "seconds": 35.324,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 11,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 72944,
+        "outputTokens": 337,
+        "cacheReadTokens": 71964,
+        "seconds": 48.865,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 1
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1359,
+        "outputTokens": 97,
+        "cacheReadTokens": 0,
+        "seconds": 2.72,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "rich-text-append",
+   "title": "Add a paragraph to the end of a rich text field",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 33.713,
+    "steps": 12,
+    "inputTokens": 105483,
+    "outputTokens": 803,
+    "cachedShare": 0.9533609740539932
+   },
+   "toolCalls": 27,
+   "failedToolCalls": 1,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "paragraphs": [
+       "The Ridge 28 carries a day of gear and keeps it dry.",
+       "The back panel is padded and the hip belt comes off for city use.",
+       "It fits a 15-inch laptop."
+      ]
+     },
+     "conversationId": "7f8d6a01-3dfb-4ee7-8292-a5159c6672a2",
+     "tools": [
+      "readDocument",
+      "editContent"
+     ],
+     "reply": "I’ll add that sentence as a third paragraph in the Ridge 28 Backpack description, leaving the first two unchanged.Updated 1 draft: **Ridge 28 Backpack** (ID 1).\n\nThe sentence was added, but **not as a separate third paragraph**. The review flagged this issue:\n\n- “The requested sentence was appended directly to the existing text (`city use.It fits...`) rather than added as a separate third paragraph. The content should have a paragraph break before ‘It fits a 15-inch laptop.’”\n\nPlease review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 33.713,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 12,
+      "inputTokens": 105483,
+      "outputTokens": 810,
+      "cacheReadTokens": 100057,
+      "cachedShare": 0.9485604315387314,
+      "seconds": 33.65,
+      "toolCalls": 9,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "AI_InvalidToolInputError: Invalid input for tool declareOutcome: AI_TypeValidationError: Type validation failed: Value: {\"criteria\":[{\"path\":\"description\",\"check\":{\"present\":\"It fits a 15-inch laptop.\"},\"why\":\"Append the requested third paragraph verbatim.\"},{\"path\":\"description\",\"check\":{\"judgement"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 6,
+        "inputTokens": 28336,
+        "outputTokens": 339,
+        "cacheReadTokens": 26447,
+        "seconds": 19.289,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 72031,
+        "outputTokens": 270,
+        "cacheReadTokens": 71434,
+        "seconds": 33.65,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1168,
+        "outputTokens": 104,
+        "cacheReadTokens": 0,
+        "seconds": 2.393,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 3,
+        "inputTokens": 3948,
+        "outputTokens": 97,
+        "cacheReadTokens": 2176,
+        "seconds": 3.67,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "paragraphs": [
+       "The Ridge 28 carries a day of gear and keeps it dry.",
+       "The back panel is padded and the hip belt comes off for city use.",
+       "It fits a 15-inch laptop."
+      ]
+     },
+     "conversationId": "55942d38-b407-49a8-a5e2-583ec543c9b0",
+     "tools": [
+      "readDocument",
+      "editContent"
+     ],
+     "reply": "I’ll add that sentence as the third paragraph in the draft, leaving the first two paragraphs unchanged.Updated **1 draft** for Ridge 28 Backpack (ID 1). Please review it in the admin panel. The save reported two open issues:\n\n- review: The new sentence was appended directly to the preceding text (`city use.It fits a 15-inch laptop.`), rather than as a separate third paragraph as requested. The other listed fields appear unchanged, but the paragraph structure does not match the task.\n- You declared the document unchanged and then edited it. The edit stands; the changes are listed with the saved draft. No action needed unless the list shows a change the task did not ask for - do not move or undo the change to satisfy the criterion.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 28.596,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 11,
+      "inputTokens": 98900,
+      "outputTokens": 759,
+      "cacheReadTokens": 94954,
+      "cachedShare": 0.9601011122345804,
+      "seconds": 28.543,
+      "toolCalls": 8,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 21610,
+        "outputTokens": 256,
+        "cacheReadTokens": 20289,
+        "seconds": 13.786,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 72083,
+        "outputTokens": 295,
+        "cacheReadTokens": 71465,
+        "seconds": 28.543,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1244,
+        "outputTokens": 111,
+        "cacheReadTokens": 0,
+        "seconds": 3.188,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 3,
+        "inputTokens": 3963,
+        "outputTokens": 97,
+        "cacheReadTokens": 3200,
+        "seconds": 3.746,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "paragraphs": [
+       "The Ridge 28 carries a day of gear and keeps it dry.",
+       "The back panel is padded and the hip belt comes off for city use.",
+       "It fits a 15-inch laptop."
+      ]
+     },
+     "conversationId": "5073b6a7-5007-4b47-bf90-d9fd1773b4aa",
+     "tools": [
+      "readDocument",
+      "getSchemaInfo",
+      "editContent"
+     ],
+     "reply": "I’ll add the sentence as a third paragraph, keeping the existing two paragraphs unchanged, and save it as a draft.Updated **1 draft**: Ridge 28 Backpack (ID 1). The sentence was added, but it was concatenated to the existing text rather than placed in a third paragraph.\n\nPlease review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 34.894,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 12,
+      "inputTokens": 106606,
+      "outputTokens": 803,
+      "cacheReadTokens": 101634,
+      "cachedShare": 0.9533609740539932,
+      "seconds": 34.837,
+      "toolCalls": 10,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 6,
+        "inputTokens": 28534,
+        "outputTokens": 280,
+        "cacheReadTokens": 26517,
+        "seconds": 17.602,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 72900,
+        "outputTokens": 272,
+        "cacheReadTokens": 71917,
+        "seconds": 34.837,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1197,
+        "outputTokens": 154,
+        "cacheReadTokens": 0,
+        "seconds": 3.389,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 3,
+        "inputTokens": 3975,
+        "outputTokens": 97,
+        "cacheReadTokens": 3200,
+        "seconds": 3.587,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "count-question",
+   "title": "A question across collections that must not change anything",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 7.518,
+    "steps": 3,
+    "inputTokens": 71619,
+    "outputTokens": 85,
+    "cachedShare": 0.9937865650176629
+   },
+   "toolCalls": 6,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "namesFjell": true,
+      "leavesOutTheOtherBrand": true,
+      "unchanged": true,
+      "changes": 0
+     },
+     "conversationId": "9667789a-d50b-4c51-aa11-7dfd23a6259d",
+     "tools": [
+      "findDocuments",
+      "findProducts"
+     ],
+     "reply": "Fjell has two products:\n\n- Squall Rain Shell\n- Ridge 28 Backpack",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 12.714,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 71619,
+      "outputTokens": 79,
+      "cacheReadTokens": 47418,
+      "cachedShare": 0.6620868763875508,
+      "seconds": 12.653,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 71619,
+        "outputTokens": 79,
+        "cacheReadTokens": 47418,
+        "seconds": 12.653,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "namesFjell": true,
+      "leavesOutTheOtherBrand": true,
+      "unchanged": true,
+      "changes": 0
+     },
+     "conversationId": "645c4b81-f370-4b3f-9613-26f403bfa82c",
+     "tools": [
+      "findDocuments",
+      "findProducts"
+     ],
+     "reply": "Fjell has two products:\n\n- Squall Rain Shell\n- Ridge 28 Backpack\n\nNo changes were made.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.643,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 71619,
+      "outputTokens": 85,
+      "cacheReadTokens": 71174,
+      "cachedShare": 0.9937865650176629,
+      "seconds": 6.598,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 71619,
+        "outputTokens": 85,
+        "cacheReadTokens": 71174,
+        "seconds": 6.598,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "namesFjell": true,
+      "leavesOutTheOtherBrand": true,
+      "unchanged": true,
+      "changes": 0
+     },
+     "conversationId": "969acd33-2761-45ee-b2fa-fb69d2a305b6",
+     "tools": [
+      "findDocuments",
+      "findProducts"
+     ],
+     "reply": "Fjell has two products:\n\n- Squall Rain Shell (ID 2)\n- Ridge 28 Backpack (ID 1)\n\nBoth are drafts. Nothing was changed.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 7.518,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 71619,
+      "outputTokens": 96,
+      "cacheReadTokens": 71174,
+      "cachedShare": 0.9937865650176629,
+      "seconds": 7.476,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 71619,
+        "outputTokens": 96,
+        "cacheReadTokens": 71174,
+        "seconds": 7.476,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "no-drafts-collection",
+   "title": "A collection without drafts gets no agent write",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 10.416,
+    "steps": 3,
+    "inputTokens": 71809,
+    "outputTokens": 203,
+    "cachedShare": 0.9933295269395201
+   },
+   "toolCalls": 9,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "ratingAfter": 5
+     },
+     "conversationId": "d4412908-5b75-4c1e-97c0-2b5376958ee9",
+     "tools": [
+      "findDocuments",
+      "getSchemaInfo",
+      "readDocument"
+     ],
+     "reply": "I couldn’t change **“Dry after a full day of rain”** (ID 1) from 5 to 4: reviews don’t support drafts, and I can only make draft changes. No changes were made.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 10.416,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 71821,
+      "outputTokens": 217,
+      "cacheReadTokens": 71305,
+      "cachedShare": 0.992815471797942,
+      "seconds": 10.361,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 71821,
+        "outputTokens": 217,
+        "cacheReadTokens": 71305,
+        "seconds": 10.361,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "ratingAfter": 5
+     },
+     "conversationId": "6a78de49-b8bf-4dec-97f3-5fc7a8c89e4c",
+     "tools": [
+      "findDocuments",
+      "getSchemaInfo",
+      "readDocument"
+     ],
+     "reply": "I couldn’t change **“Dry after a full day of rain”** (ID 1) from 5 to 4. Reviews don’t support drafts, and I can only make draft changes. No documents were updated.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 11.204,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 71809,
+      "outputTokens": 203,
+      "cacheReadTokens": 71330,
+      "cachedShare": 0.9933295269395201,
+      "seconds": 11.145,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 71809,
+        "outputTokens": 203,
+        "cacheReadTokens": 71330,
+        "seconds": 11.145,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "ratingAfter": 5
+     },
+     "conversationId": "8a4abfb4-de88-4c50-8282-35881328dc78",
+     "tools": [
+      "findDocuments",
+      "getSchemaInfo",
+      "readDocument"
+     ],
+     "reply": "I couldn’t change **“Dry after a full day of rain”** (ID 1) from 5 to 4 because reviews don’t support drafts, and I can only make draft changes. No changes were made.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 10.233,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 71794,
+      "outputTokens": 196,
+      "cacheReadTokens": 71322,
+      "cachedShare": 0.9934256344541327,
+      "seconds": 10.177,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 71794,
+        "outputTokens": 196,
+        "cacheReadTokens": 71322,
+        "seconds": 10.177,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

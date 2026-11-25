@@ -1,0 +1,21 @@
+pre-commit:
+  jobs:
+    - name: format
+      glob: "*.{js,jsx,ts,tsx,mjs,cjs,mts,cts}"
+      exclude:
+        - "dist/**"
+        - "**/importMap.js"
+        - "src/ui/generatedStyles.ts"
+      run: >-
+        npx oxlint -c oxlint.format.config.ts --fix --quiet {staged_files} && npx oxfmt {staged_files}
+      stage_fixed: true
+
+commit-msg:
+  jobs:
+    - name: commitlint
+      run: npx commitlint --edit {1}
+
+pre-push:
+  jobs:
+    - name: typecheck
+      run: npm run typecheck

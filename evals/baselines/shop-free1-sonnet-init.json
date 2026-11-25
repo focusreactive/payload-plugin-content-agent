@@ -1,0 +1,1671 @@
+{
+ "label": "free1-sonnet-shop",
+ "schema": "shop",
+ "model": "anthropic",
+ "k": 3,
+ "date": "2026-11-23T08:12:45.695Z",
+ "summary": {
+  "scenarios": 8,
+  "passK": 8,
+  "runs": 24,
+  "runsPassed": 24,
+  "toolCalls": 69,
+  "failedToolCalls": 2,
+  "inputTokens": 1465296
+ },
+ "results": [
+  {
+   "id": "number-field",
+   "title": "Change a number",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 4.558,
+    "steps": 2,
+    "inputTokens": 37821,
+    "outputTokens": 175,
+    "cachedShare": 0.9580480583679188
+   },
+   "toolCalls": 3,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "price": 159
+     },
+     "conversationId": "0d244628-371e-4795-82be-0b695314fca4",
+     "tools": [
+      "updateDocument"
+     ],
+     "reply": "I'll update only the price on product 1.I changed the price of \"Ridge 28 Backpack\" (id 1) to 159 and left every other field as it was. The change is saved as a draft, so please review and publish it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 4.558,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 37821,
+      "outputTokens": 174,
+      "cacheReadTokens": 18121,
+      "cachedShare": 0.4791253536395124,
+      "seconds": 4.481,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 37821,
+        "outputTokens": 174,
+        "cacheReadTokens": 18121,
+        "seconds": 4.481,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-sonnet-5-5": {
+        "inputTokens": 37821,
+        "outputTokens": 174,
+        "cacheReadTokens": 18121,
+        "cacheWriteTokens": 18121
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "price": 159
+     },
+     "conversationId": "f69bff3c-362a-4927-8058-bb6151a65b4b",
+     "tools": [
+      "updateDocument"
+     ],
+     "reply": "I'll update the price on the Ridge 28 Backpack.I changed the price of Ridge 28 Backpack (id 1) to 159 and left every other field as it was. It's saved as a draft, so please review and publish it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 4.982,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 37829,
+      "outputTokens": 179,
+      "cacheReadTokens": 36242,
+      "cachedShare": 0.9580480583679188,
+      "seconds": 4.905,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 37829,
+        "outputTokens": 179,
+        "cacheReadTokens": 36242,
+        "seconds": 4.905,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-sonnet-5-5": {
+        "inputTokens": 37829,
+        "outputTokens": 179,
+        "cacheReadTokens": 36242,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "price": 159
+     },
+     "conversationId": "e8015370-a860-4698-89cc-bb0dac611144",
+     "tools": [
+      "updateDocument"
+     ],
+     "reply": "I'll update only the price field on this product.I changed the price of Ridge 28 Backpack (id 1) to 159. Nothing else on the product was touched.\n\nIt is saved as a draft, so please review and publish it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 3.915,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 37821,
+      "outputTokens": 175,
+      "cacheReadTokens": 36242,
+      "cachedShare": 0.9582507072790248,
+      "seconds": 3.848,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 37821,
+        "outputTokens": 175,
+        "cacheReadTokens": 36242,
+        "seconds": 3.848,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-sonnet-5-5": {
+        "inputTokens": 37821,
+        "outputTokens": 175,
+        "cacheReadTokens": 36242,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "array-row-number",
+   "title": "Change one value in one array row",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 5.853,
+    "steps": 3,
+    "inputTokens": 57579,
+    "outputTokens": 496,
+    "cachedShare": 0.9441463033397592
+   },
+   "toolCalls": 6,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "variants": [
+       {
+        "sku": "RDG-28-BLK",
+        "color": "black",
+        "stock": 14
+       },
+       {
+        "sku": "RDG-28-SND",
+        "color": "sand",
+        "stock": 12
+       },
+       {
+        "sku": "RDG-28-FOR",
+        "color": "forest",
+        "stock": 0
+       }
+      ]
+     },
+     "conversationId": "104a550f-b059-4c99-99c3-bc0e8880e02b",
+     "tools": [
+      "readDocument",
+      "updateDocument"
+     ],
+     "reply": "Let me read the product first to see its variants.There's exactly one sand variant (stock 3). I'll update the variants array with only that value changed.I set the stock of the sand variant (RDG-28-SND) on \"Ridge 28 Backpack\" (id 1) from 3 to 12, saved as a draft. 1 draft was updated.\n\nThe black variant (stock 14) and the forest variant (stock 0) kept their values, and no other field changed. Saving the array gave the three variant rows new internal ids, which has no effect on their content. Please review the draft in the admin panel before publishing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 5.653,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 57579,
+      "outputTokens": 496,
+      "cacheReadTokens": 54363,
+      "cachedShare": 0.9441463033397592,
+      "seconds": 5.594,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 57579,
+        "outputTokens": 496,
+        "cacheReadTokens": 54363,
+        "seconds": 5.594,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-sonnet-5-5": {
+        "inputTokens": 57579,
+        "outputTokens": 496,
+        "cacheReadTokens": 54363,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "variants": [
+       {
+        "sku": "RDG-28-BLK",
+        "color": "black",
+        "stock": 14
+       },
+       {
+        "sku": "RDG-28-SND",
+        "color": "sand",
+        "stock": 12
+       },
+       {
+        "sku": "RDG-28-FOR",
+        "color": "forest",
+        "stock": 0
+       }
+      ]
+     },
+     "conversationId": "ea262d3b-3bbb-4d99-8b4c-03b46bcecbf6",
+     "tools": [
+      "readDocument",
+      "updateDocument"
+     ],
+     "reply": "I'll read the product first to see its variants.There is exactly one sand variant (stock 3). I'll send the complete variants array with only that stock changed.I set the stock of the sand variant (RDG-28-SND) on \"Ridge 28 Backpack\" (id 1) from 3 to 12. The change is saved as a draft, so please review it in the admin panel before publishing.\n\nThe black variant (14) and the forest variant (0) keep their values, and so do all the other fields. Saving the array gave the three variant rows new internal ids, which does not affect their SKUs, colors or stock.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.218,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 57579,
+      "outputTokens": 495,
+      "cacheReadTokens": 54363,
+      "cachedShare": 0.9441463033397592,
+      "seconds": 6.153,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 57579,
+        "outputTokens": 495,
+        "cacheReadTokens": 54363,
+        "seconds": 6.153,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-sonnet-5-5": {
+        "inputTokens": 57579,
+        "outputTokens": 495,
+        "cacheReadTokens": 54363,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "variants": [
+       {
+        "sku": "RDG-28-BLK",
+        "color": "black",
+        "stock": 14
+       },
+       {
+        "sku": "RDG-28-SND",
+        "color": "sand",
+        "stock": 12
+       },
+       {
+        "sku": "RDG-28-FOR",
+        "color": "forest",
+        "stock": 0
+       }
+      ]
+     },
+     "conversationId": "7383f7cd-8bb8-4bf4-bf0a-a33673c405ab",
+     "tools": [
+      "readDocument",
+      "updateDocument"
+     ],
+     "reply": "I'll read the product first to see its variants.There is one sand variant (RDG-28-SND, stock 3). I'll update the variants array with the full list, changing only that stock value.I set the stock of the sand variant (RDG-28-SND) on \"Ridge 28 Backpack\" (id 1) from 3 to 12. I saved it as a draft, so please review it in the admin panel before publishing.\n\nThe black variant (stock 14) and the forest variant (stock 0) kept the same values. The other fields were not changed. Saving the variants array gave all three rows new internal row ids, which has no effect on their content.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 5.853,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 57591,
+      "outputTokens": 503,
+      "cacheReadTokens": 54363,
+      "cachedShare": 0.9439495754544981,
+      "seconds": 5.784,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 57591,
+        "outputTokens": 503,
+        "cacheReadTokens": 54363,
+        "seconds": 5.784,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-sonnet-5-5": {
+        "inputTokens": 57591,
+        "outputTokens": 503,
+        "cacheReadTokens": 54363,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "select-field",
+   "title": "Change a select to one of its options",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 3.423,
+    "steps": 2,
+    "inputTokens": 37880,
+    "outputTokens": 238,
+    "cachedShare": 0.9567581837381204
+   },
+   "toolCalls": 3,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "availability": "retired"
+     },
+     "conversationId": "d5ba3386-83bf-4e0b-8cf9-3ecbc73dd1ec",
+     "tools": [
+      "updateDocument"
+     ],
+     "reply": "I'll set the availability on this product to \"retired\", sending only that field.I set \"Ridge 28 Backpack\" (id 1) to **retired**. I changed nothing else, and the name, SKU, price, brand, categories and variants are as they were.\n\nThis is saved as a draft, so please review and publish it in the admin panel. The variants still list stock (black 14, sand 3, forest 0), because you asked me to change nothing else.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 3.654,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 37880,
+      "outputTokens": 240,
+      "cacheReadTokens": 36242,
+      "cachedShare": 0.9567581837381204,
+      "seconds": 3.582,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 37880,
+        "outputTokens": 240,
+        "cacheReadTokens": 36242,
+        "seconds": 3.582,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-sonnet-5-5": {
+        "inputTokens": 37880,
+        "outputTokens": 240,
+        "cacheReadTokens": 36242,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "availability": "retired"
+     },
+     "conversationId": "1dd12e53-f73e-44db-81dd-8635129743c1",
+     "tools": [
+      "updateDocument"
+     ],
+     "reply": "I'll set the availability on this product to \"retired\" and leave every other field as it is.\"Ridge 28 Backpack\" (ID 1) is now marked as retired. I changed only the availability field. The name, SKU, price, description, brand, categories and variants are as they were.\n\nIt's saved as a draft, so please review and publish it in the admin panel. If the product already has a published version, that version still shows it as available until you publish this draft.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 3.423,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 37884,
+      "outputTokens": 238,
+      "cacheReadTokens": 36242,
+      "cachedShare": 0.9566571639742372,
+      "seconds": 3.353,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 37884,
+        "outputTokens": 238,
+        "cacheReadTokens": 36242,
+        "seconds": 3.353,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-sonnet-5-5": {
+        "inputTokens": 37884,
+        "outputTokens": 238,
+        "cacheReadTokens": 36242,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "availability": "retired"
+     },
+     "conversationId": "6e75e7a0-d4b9-40ea-a992-d70118711f40",
+     "tools": [
+      "updateDocument"
+     ],
+     "reply": "I'll set the availability of this product to \"retired\", changing only that field.I set \"Ridge 28 Backpack\" (id 1) to **retired** and changed nothing else. The name, SKU, price, brand, categories and variants are all as they were.\n\nThis is saved as a draft, so please review it in the admin panel and publish it when you're ready.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 3.245,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 37880,
+      "outputTokens": 211,
+      "cacheReadTokens": 36242,
+      "cachedShare": 0.9567581837381204,
+      "seconds": 3.198,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 37880,
+        "outputTokens": 211,
+        "cacheReadTokens": 36242,
+        "seconds": 3.198,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-sonnet-5-5": {
+        "inputTokens": 37880,
+        "outputTokens": 211,
+        "cacheReadTokens": 36242,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "relationship-replace",
+   "title": "Point a relationship at another document",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 6.722,
+    "steps": 3,
+    "inputTokens": 57454,
+    "outputTokens": 398,
+    "cachedShare": 0.946200438611759
+   },
+   "toolCalls": 9,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "brandBefore": 2,
+      "brandAfter": 1,
+      "fjell": 1
+     },
+     "conversationId": "4c2bef22-ba00-4e86-883e-64ca3535650f",
+     "tools": [
+      "findDocuments",
+      "readDocument",
+      "updateDocument"
+     ],
+     "reply": "I'll look up the Fjell brand and read the current product at the same time.The Fjell brand has id 1, and the product currently uses brand 2. I'll update only the brand.I changed the brand of Market Tote (id 3) from brand 2 to Fjell (brand id 1). The product is saved as a draft, so please review it in the admin panel before publishing.\n\nI sent only the brand field. The name, SKU, price, availability, description, categories and variants are the same as before.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.722,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 57454,
+      "outputTokens": 398,
+      "cacheReadTokens": 54363,
+      "cachedShare": 0.946200438611759,
+      "seconds": 6.671,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 57454,
+        "outputTokens": 398,
+        "cacheReadTokens": 54363,
+        "seconds": 6.671,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-sonnet-5-5": {
+        "inputTokens": 57454,
+        "outputTokens": 398,
+        "cacheReadTokens": 54363,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "brandBefore": 2,
+      "brandAfter": 1,
+      "fjell": 1
+     },
+     "conversationId": "155dfcce-2a64-4885-9473-98f4e09aca26",
+     "tools": [
+      "findDocuments",
+      "readDocument",
+      "updateDocument"
+     ],
+     "reply": "I'll look up the brand \"Fjell\" and read the current product in parallel.The current brand is id 2, and Fjell is id 1. I'll update only the brand field.I changed the brand of Market Tote (id 3) to Fjell (brand id 1); it was brand id 2 before. The change is saved as a draft, and nothing else on the product changed.\n\nPlease review and publish it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 7.552,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 57454,
+      "outputTokens": 376,
+      "cacheReadTokens": 54363,
+      "cachedShare": 0.946200438611759,
+      "seconds": 7.507,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 57454,
+        "outputTokens": 376,
+        "cacheReadTokens": 54363,
+        "seconds": 7.507,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-sonnet-5-5": {
+        "inputTokens": 57454,
+        "outputTokens": 376,
+        "cacheReadTokens": 54363,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "brandBefore": 2,
+      "brandAfter": 1,
+      "fjell": 1
+     },
+     "conversationId": "48ff0bbe-784f-4d14-bef6-2a53cc3e0fd1",
+     "tools": [
+      "findDocuments",
+      "readDocument",
+      "updateDocument"
+     ],
+     "reply": "I'll look up the brand \"Fjell\" and read the current product at the same time.The brand \"Fjell\" has id 1, and the product currently has brand 2. I'll update only that field.I changed the brand of Market Tote (id 3) from brand 2 to Fjell (brand id 1). I sent only the brand field, and the name, SKU, price, availability, categories and variants are unchanged.\n\nThe change is saved as a draft, so please review it in the admin panel before publishing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.688,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 57458,
+      "outputTokens": 399,
+      "cacheReadTokens": 54363,
+      "cachedShare": 0.9461345678582617,
+      "seconds": 6.622,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 57458,
+        "outputTokens": 399,
+        "cacheReadTokens": 54363,
+        "seconds": 6.622,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-sonnet-5-5": {
+        "inputTokens": 57458,
+        "outputTokens": 399,
+        "cacheReadTokens": 54363,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "block-relationship-add",
+   "title": "Add a reference to a block that lists documents",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 10.515,
+    "steps": 5,
+    "inputTokens": 85099,
+    "outputTokens": 1128,
+    "cachedShare": 0.9004923677128991
+   },
+   "toolCalls": 18,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "products": [
+       1,
+       2,
+       3
+      ],
+      "bannerUnchanged": true
+     },
+     "conversationId": "9d6f418b-57d8-4a1c-b8df-63fd66b34486",
+     "tools": [
+      "readDocument",
+      "findDocuments",
+      "editContent"
+     ],
+     "instructions": [
+      "In the productGrid block [6b03f4bfc95392c054711dc1], set `products` to [1, 2, 3]: keep the existing products 1 and 2 in their order and append product 3 (Market Tote) at the end. Do not change anything else."
+     ],
+     "reply": "I'll read the page outline and look up the product in parallel.I added \"Market Tote\" (product id 3) to the end of the \"Our picks\" product grid on the \"Autumn Gear\" landing page (id 1). The grid now lists products 1, 2 and 3, so the two existing products are still there in their original order. Nothing else on the page changed.\n\nThe change is saved as a draft on the landing page, so please review it in the admin panel before publishing. The Market Tote product itself (id 3) is also still a draft, so it won't appear on the live page until you publish it too.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 10.515,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 5,
+      "inputTokens": 85131,
+      "outputTokens": 1128,
+      "cacheReadTokens": 65497,
+      "cachedShare": 0.769367210534353,
+      "seconds": 10.47,
+      "toolCalls": 6,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 2,
+        "inputTokens": 25521,
+        "outputTokens": 484,
+        "cacheReadTokens": 11134,
+        "seconds": 3.456,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 57542,
+        "outputTokens": 527,
+        "cacheReadTokens": 54363,
+        "seconds": 10.47,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 2068,
+        "outputTokens": 117,
+        "cacheReadTokens": 0,
+        "seconds": 1.455,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-haiku-5-5": {
+        "inputTokens": 27589,
+        "outputTokens": 601,
+        "cacheReadTokens": 11134,
+        "cacheWriteTokens": 11134
+       },
+       "claude-sonnet-5-5": {
+        "inputTokens": 57542,
+        "outputTokens": 527,
+        "cacheReadTokens": 54363,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "products": [
+       1,
+       2,
+       3
+      ],
+      "bannerUnchanged": true
+     },
+     "conversationId": "1fe44b9c-6f35-4ca8-85a7-bc7933e378bb",
+     "tools": [
+      "readDocument",
+      "findDocuments",
+      "editContent"
+     ],
+     "instructions": [
+      "In the productGrid block [6b03f4bfc95392c054711dc1], set `products` to [1, 2, 3] (keep products 1 and 2, add product 3 \"Market Tote\" at the end). Do not change anything else."
+     ],
+     "reply": "I'll look at the page structure and find the product in parallel.The grid currently has products [1, 2], and Market Tote is product 3.I added \"Market Tote\" (product id 3) to the end of the \"Our picks\" product grid on \"Autumn Gear\" (id 1). The grid now holds products 1, 2 and 3, and nothing else on the page changed.\n\nThis is saved as a draft, so please review it in the admin panel before publishing. Market Tote is itself still a draft product, so it won't show up on the live page until it is published as well.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 9.946,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 5,
+      "inputTokens": 84991,
+      "outputTokens": 997,
+      "cacheReadTokens": 76631,
+      "cachedShare": 0.9016366438799402,
+      "seconds": 9.876,
+      "toolCalls": 6,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 2,
+        "inputTokens": 25369,
+        "outputTokens": 351,
+        "cacheReadTokens": 22268,
+        "seconds": 2.337,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 57556,
+        "outputTokens": 514,
+        "cacheReadTokens": 54363,
+        "seconds": 9.876,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 2066,
+        "outputTokens": 132,
+        "cacheReadTokens": 0,
+        "seconds": 1.516,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-haiku-5-5": {
+        "inputTokens": 27435,
+        "outputTokens": 483,
+        "cacheReadTokens": 22268,
+        "cacheWriteTokens": 0
+       },
+       "claude-sonnet-5-5": {
+        "inputTokens": 57556,
+        "outputTokens": 514,
+        "cacheReadTokens": 54363,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "products": [
+       1,
+       2,
+       3
+      ],
+      "bannerUnchanged": true
+     },
+     "conversationId": "54f3d5e7-f266-4a31-9550-a9ee5e38114f",
+     "tools": [
+      "readDocument",
+      "findDocuments",
+      "editContent"
+     ],
+     "instructions": [
+      "In the productGrid block [6b03f4bfc95392c054711dc1], set `products` to [1, 2, 3] - keep the existing products 1 and 2 in their order and append product 3 (Market Tote) at the end. Do not change anything else."
+     ],
+     "reply": "I'll look at the page structure and find the product in parallel.The grid currently holds products [1, 2], and Market Tote is product 3.I added \"Market Tote\" (product id 3) to the end of the \"Our picks\" product grid on the \"Autumn Gear\" page (id 1). The grid now holds products 1, 2 and 3, so the two existing products are still there in their original order.\n\nNothing else on the page changed. This is a draft, so please review it in the admin panel before publishing. Market Tote itself is still a draft product, so it won't show on the live page until it is published too.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 11.022,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 5,
+      "inputTokens": 85099,
+      "outputTokens": 1186,
+      "cacheReadTokens": 76631,
+      "cachedShare": 0.9004923677128991,
+      "seconds": 10.944,
+      "toolCalls": 6,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 2,
+        "inputTokens": 25505,
+        "outputTokens": 497,
+        "cacheReadTokens": 22268,
+        "seconds": 3.043,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 57566,
+        "outputTokens": 533,
+        "cacheReadTokens": 54363,
+        "seconds": 10.944,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 2028,
+        "outputTokens": 156,
+        "cacheReadTokens": 0,
+        "seconds": 1.643,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-haiku-5-5": {
+        "inputTokens": 27533,
+        "outputTokens": 653,
+        "cacheReadTokens": 22268,
+        "cacheWriteTokens": 0
+       },
+       "claude-sonnet-5-5": {
+        "inputTokens": 57566,
+        "outputTokens": 533,
+        "cacheReadTokens": 54363,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "rich-text-append",
+   "title": "Add a paragraph to the end of a rich text field",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 11.46,
+    "steps": 6,
+    "inputTokens": 99799,
+    "outputTokens": 1366,
+    "cachedShare": 0.8798685357568713
+   },
+   "toolCalls": 21,
+   "failedToolCalls": 2,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "paragraphs": [
+       "The Ridge 28 carries a day of gear and keeps it dry.",
+       "The back panel is padded and the hip belt comes off for city use.",
+       "It fits a 15-inch laptop."
+      ]
+     },
+     "conversationId": "97404b0a-ab64-4685-bde4-6a3115401b2e",
+     "tools": [
+      "readDocument",
+      "editContent"
+     ],
+     "instructions": [
+      "In the description rich text, add a new third paragraph at the very end with exactly this text: \"It fits a 15-inch laptop.\" Do not change, reword, or reformat the first two paragraphs, and do not touch any other field."
+     ],
+     "reply": "I'll check the current description first so the new paragraph lands in the right place.The description has two paragraphs. I'll add the third at the end.I added \"It fits a 15-inch laptop.\" as the third paragraph at the end of the description for Ridge 28 Backpack (id 1). The first two paragraphs are unchanged, and no other field was touched.\n\nThis is one updated draft. Please review it in the admin panel before publishing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 10.882,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 6,
+      "inputTokens": 100160,
+      "outputTokens": 1367,
+      "cacheReadTokens": 76661,
+      "cachedShare": 0.7653853833865815,
+      "seconds": 10.833,
+      "toolCalls": 7,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "Nothing was declared. criteria[1]: \"itemsAdded\" needs \"n\", a whole number of 0 or more. Call declareOutcome again with every criterion as one flat object: {\"type\": one of \"absent\", \"present\", \"countAtMost\", \"nonEmpty\", \"unchanged\", \"changed\", \"shorter\", \"lengthAtMost\", \"linkCount\", \"itemRemoved\", \"i"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 3,
+        "inputTokens": 40848,
+        "outputTokens": 631,
+        "cacheReadTokens": 22298,
+        "seconds": 3.566,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 57364,
+        "outputTokens": 390,
+        "cacheReadTokens": 54363,
+        "seconds": 10.833,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1948,
+        "outputTokens": 346,
+        "cacheReadTokens": 0,
+        "seconds": 2.436,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-haiku-5-5": {
+        "inputTokens": 42796,
+        "outputTokens": 977,
+        "cacheReadTokens": 22298,
+        "cacheWriteTokens": 11149
+       },
+       "claude-sonnet-5-5": {
+        "inputTokens": 57364,
+        "outputTokens": 390,
+        "cacheReadTokens": 54363,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "paragraphs": [
+       "The Ridge 28 carries a day of gear and keeps it dry.",
+       "The back panel is padded and the hip belt comes off for city use.",
+       "It fits a 15-inch laptop."
+      ]
+     },
+     "conversationId": "445a15d2-10a6-4f58-81e2-2daf7207ffef",
+     "tools": [
+      "readDocument",
+      "editContent"
+     ],
+     "instructions": [
+      "In the description rich text, add a third paragraph at the very end with exactly this text: \"It fits a 15-inch laptop.\" Keep the first two paragraphs unchanged and do not alter anything else."
+     ],
+     "reply": "I'll read the current description first so the new paragraph goes in after the existing two.I added \"It fits a 15-inch laptop.\" as a third paragraph at the end of the description on Ridge 28 Backpack (id 1). The first two paragraphs and all other fields are unchanged.\n\nThis is saved as a draft (1 document updated), so please review it in the admin panel before publishing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 12,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 6,
+      "inputTokens": 99799,
+      "outputTokens": 1302,
+      "cacheReadTokens": 87810,
+      "cachedShare": 0.8798685357568713,
+      "seconds": 11.945,
+      "toolCalls": 7,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 3,
+        "inputTokens": 40442,
+        "outputTokens": 563,
+        "cacheReadTokens": 33447,
+        "seconds": 3.88,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 57338,
+        "outputTokens": 368,
+        "cacheReadTokens": 54363,
+        "seconds": 11.945,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 2019,
+        "outputTokens": 371,
+        "cacheReadTokens": 0,
+        "seconds": 3.171,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-haiku-5-5": {
+        "inputTokens": 42461,
+        "outputTokens": 934,
+        "cacheReadTokens": 33447,
+        "cacheWriteTokens": 0
+       },
+       "claude-sonnet-5-5": {
+        "inputTokens": 57338,
+        "outputTokens": 368,
+        "cacheReadTokens": 54363,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "paragraphs": [
+       "The Ridge 28 carries a day of gear and keeps it dry.",
+       "The back panel is padded and the hip belt comes off for city use.",
+       "It fits a 15-inch laptop."
+      ]
+     },
+     "conversationId": "b19ae8c1-a6a1-459f-985c-9ca49dc70dee",
+     "tools": [
+      "readDocument",
+      "editContent"
+     ],
+     "instructions": [
+      "In the description rich text, add a new third paragraph at the very end with exactly this text: \"It fits a 15-inch laptop.\" Keep the first two paragraphs exactly as they are; do not change, reorder or remove anything else."
+     ],
+     "reply": "I'll read the description first to see its current structure.The description has two paragraphs. I'll add the third at the end.I added \"It fits a 15-inch laptop.\" as the third paragraph at the end of the description of Ridge 28 Backpack (id 1). The first two paragraphs are unchanged, and nothing else in the document was modified.\n\nThe change is saved as a draft, so please review it in the admin panel before publishing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 11.46,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 6,
+      "inputTokens": 99338,
+      "outputTokens": 1366,
+      "cacheReadTokens": 87810,
+      "cachedShare": 0.8839517606555397,
+      "seconds": 11.396,
+      "toolCalls": 7,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "Nothing was declared. criteria[1]: \"itemsAdded\" needs \"n\", a whole number of 0 or more. Call declareOutcome again with every criterion as one flat object: {\"type\": one of \"absent\", \"present\", \"countAtMost\", \"nonEmpty\", \"unchanged\", \"changed\", \"shorter\", \"lengthAtMost\", \"linkCount\", \"itemRemoved\", \"i"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 3,
+        "inputTokens": 40036,
+        "outputTokens": 696,
+        "cacheReadTokens": 33447,
+        "seconds": 3.737,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 57351,
+        "outputTokens": 390,
+        "cacheReadTokens": 54363,
+        "seconds": 11.396,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1951,
+        "outputTokens": 280,
+        "cacheReadTokens": 0,
+        "seconds": 2.051,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-haiku-5-5": {
+        "inputTokens": 41987,
+        "outputTokens": 976,
+        "cacheReadTokens": 33447,
+        "cacheWriteTokens": 0
+       },
+       "claude-sonnet-5-5": {
+        "inputTokens": 57351,
+        "outputTokens": 390,
+        "cacheReadTokens": 54363,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "count-question",
+   "title": "A question across collections that must not change anything",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 6.131,
+    "steps": 3,
+    "inputTokens": 56452,
+    "outputTokens": 327,
+    "cachedShare": 0.9629951108906681
+   },
+   "toolCalls": 6,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "namesFjell": true,
+      "leavesOutTheOtherBrand": true,
+      "unchanged": true,
+      "changes": 0
+     },
+     "conversationId": "757eb7d6-b0a8-4f62-9140-92a708397714",
+     "tools": [
+      "findDocuments",
+      "listDocuments"
+     ],
+     "reply": "I'll find the brand first.The brand Fjell (id 1) has 2 products:\n\n1. **Squall Rain Shell** (id 2, SKU SQL-01)\n2. **Ridge 28 Backpack** (id 1, SKU RDG-28)\n\nBoth have a published version, and each also has a newer draft. I changed nothing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.07,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 56452,
+      "outputTokens": 327,
+      "cacheReadTokens": 54363,
+      "cachedShare": 0.9629951108906681,
+      "seconds": 6.02,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 56452,
+        "outputTokens": 327,
+        "cacheReadTokens": 54363,
+        "seconds": 6.02,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-sonnet-5-5": {
+        "inputTokens": 56452,
+        "outputTokens": 327,
+        "cacheReadTokens": 54363,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "namesFjell": true,
+      "leavesOutTheOtherBrand": true,
+      "unchanged": true,
+      "changes": 0
+     },
+     "conversationId": "c1fd4a92-6b3e-4e1b-b63d-bb658d8a0d73",
+     "tools": [
+      "findDocuments",
+      "listDocuments"
+     ],
+     "reply": "I'll find the brand first.The brand Fjell (id 1) has 2 products:\n\n1. **Ridge 28 Backpack** (id 1, SKU RDG-28)\n2. **Squall Rain Shell** (id 2, SKU SQL-01)\n\nBoth have a published version, and their current drafts are newer. I changed nothing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.131,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 56452,
+      "outputTokens": 327,
+      "cacheReadTokens": 54363,
+      "cachedShare": 0.9629951108906681,
+      "seconds": 6.082,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 56452,
+        "outputTokens": 327,
+        "cacheReadTokens": 54363,
+        "seconds": 6.082,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-sonnet-5-5": {
+        "inputTokens": 56452,
+        "outputTokens": 327,
+        "cacheReadTokens": 54363,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "namesFjell": true,
+      "leavesOutTheOtherBrand": true,
+      "unchanged": true,
+      "changes": 0
+     },
+     "conversationId": "b1ed0f7b-856a-4719-aa15-0e8129e8fcb0",
+     "tools": [
+      "findDocuments",
+      "listDocuments"
+     ],
+     "reply": "I'll look up the brand first.The brand Fjell (id 1) has 2 products:\n\n1. **Ridge 28 Backpack** (id 1, SKU RDG-28)\n2. **Squall Rain Shell** (id 2, SKU SQL-01)\n\nBoth have a published version, and their drafts are newer than what is live. I changed nothing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.17,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 56454,
+      "outputTokens": 331,
+      "cacheReadTokens": 54363,
+      "cachedShare": 0.9629609947922202,
+      "seconds": 6.107,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 56454,
+        "outputTokens": 331,
+        "cacheReadTokens": 54363,
+        "seconds": 6.107,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-sonnet-5-5": {
+        "inputTokens": 56454,
+        "outputTokens": 331,
+        "cacheReadTokens": 54363,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "no-drafts-collection",
+   "title": "A collection without drafts is written only after the person confirms the live change",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 4.468,
+    "steps": 3,
+    "inputTokens": 56396,
+    "outputTokens": 272,
+    "cachedShare": 0.9639513440669552
+   },
+   "toolCalls": 3,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "ratingAfter": 4,
+      "cards": [
+       {
+        "tool": "updateDocument",
+        "reason": "{\"kind\":\"live-write\",\"collection\":\"reviews\",\"document\":{\"id\":1}}"
+       }
+      ],
+      "restUnchanged": true
+     },
+     "conversationId": "c4586369-a42f-4317-89d4-209700f03df6",
+     "tools": [
+      "findDocuments",
+      "updateDocument"
+     ],
+     "reply": "I'll look up that review first.I changed the rating of the review \"Dry after a full day of rain\" (id 1) to 4.\n\nReviews have no draft state, so the change is live on the site now. It isn't waiting as a draft for you to publish.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 4.873,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 56398,
+      "outputTokens": 266,
+      "cacheReadTokens": 54363,
+      "cachedShare": 0.9639171601829852,
+      "seconds": 4.787,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 56398,
+        "outputTokens": 266,
+        "cacheReadTokens": 54363,
+        "seconds": 4.787,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-sonnet-5-5": {
+        "inputTokens": 56398,
+        "outputTokens": 266,
+        "cacheReadTokens": 54363,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "ratingAfter": 4,
+      "cards": [
+       {
+        "tool": "updateDocument",
+        "reason": "{\"kind\":\"live-write\",\"collection\":\"reviews\",\"document\":{\"id\":1}}"
+       }
+      ],
+      "restUnchanged": true
+     },
+     "conversationId": "e480c549-fcf5-425b-bd94-d11352b60d5c",
+     "tools": [
+      "findDocuments",
+      "updateDocument"
+     ],
+     "reply": "Let me find that review first.I changed the rating of the review \"Dry after a full day of rain\" (id 1) to 4. The save returned the document with rating 4.\n\nReviews have no draft state, so the change is already live on the site. It is not a draft waiting for review.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 4.354,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 56396,
+      "outputTokens": 272,
+      "cacheReadTokens": 54363,
+      "cachedShare": 0.9639513440669552,
+      "seconds": 4.251,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 56396,
+        "outputTokens": 272,
+        "cacheReadTokens": 54363,
+        "seconds": 4.251,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-sonnet-5-5": {
+        "inputTokens": 56396,
+        "outputTokens": 272,
+        "cacheReadTokens": 54363,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "ratingAfter": 4,
+      "cards": [
+       {
+        "tool": "updateDocument",
+        "reason": "{\"kind\":\"live-write\",\"collection\":\"reviews\",\"document\":{\"id\":1}}"
+       }
+      ],
+      "restUnchanged": true
+     },
+     "conversationId": "45231027-f4c9-48bc-8c64-ab9efbdd28d1",
+     "tools": [
+      "findDocuments",
+      "updateDocument"
+     ],
+     "reply": "Let me find that review first.I changed the rating of the review \"Dry after a full day of rain\" (id 1) to 4. The saved document now shows `rating: 4`.\n\nReviews have no draft state, so the change is live on the site now, not a draft. The title, text and product were not touched.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 4.468,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 56396,
+      "outputTokens": 279,
+      "cacheReadTokens": 54363,
+      "cachedShare": 0.9639513440669552,
+      "seconds": 4.373,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 56396,
+        "outputTokens": 279,
+        "cacheReadTokens": 54363,
+        "seconds": 4.373,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "claude-sonnet-5-5": {
+        "inputTokens": 56396,
+        "outputTokens": 279,
+        "cacheReadTokens": 54363,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

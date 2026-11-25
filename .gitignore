@@ -1,0 +1,29 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.local
+.DS_Store
+*.tgz
+.idea/
+.claude/
+.junie/
+
+# Editors, OS and temporary files
+.vscode/
+*.swp
+*~
+Thumbs.db
+*.log
+*.tmp
+tmp/
+coverage/
+.cache/
+.eslintcache
+.env.*.local
+
+# Tailwind CLI intermediate output (the committed artifact is src/ui/generatedStyles.ts)
+.tailwind/
+
+# Eval run output
+evals/results/

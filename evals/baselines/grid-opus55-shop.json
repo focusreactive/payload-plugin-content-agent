@@ -1,0 +1,1545 @@
+{
+ "label": "grid-opus55-shop",
+ "schema": "shop",
+ "model": "anthropic",
+ "k": 3,
+ "date": "2026-11-12T17:27:55.273Z",
+ "summary": {
+  "scenarios": 8,
+  "passK": 6,
+  "runs": 24,
+  "runsPassed": 18,
+  "toolCalls": 108,
+  "failedToolCalls": 7,
+  "inputTokens": 4237398
+ },
+ "results": [
+  {
+   "id": "number-field",
+   "title": "Change a number",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 5.039,
+    "steps": 3,
+    "inputTokens": 144720,
+    "outputTokens": 366,
+    "cachedShare": 0.9841694828927173
+   },
+   "toolCalls": 6,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "price": 159
+     },
+     "conversationId": "725c4546-a917-4166-b361-677f8ef822c7",
+     "tools": [
+      "findProducts",
+      "updateProducts"
+     ],
+     "reply": "I changed the price of **Ridge 28 Backpack** (ID 1, SKU RDG-28) from **149** to **159**. That was the only field I sent, so nothing else on the product changed.\n\nThe change is saved as a draft (1 draft updated). Please check it in the admin panel and publish it when you're ready.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 5.705,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 144720,
+      "outputTokens": 390,
+      "cacheReadTokens": 95326,
+      "cachedShare": 0.6586926478717523,
+      "seconds": 5.422,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 144720,
+        "outputTokens": 390,
+        "cacheReadTokens": 95326,
+        "seconds": 5.422,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "price": 159
+     },
+     "conversationId": "796c6018-61ca-4395-a067-b9a5354c2bfd",
+     "tools": [
+      "findProducts",
+      "updateProducts"
+     ],
+     "reply": "I changed the price of **Ridge 28 Backpack** (ID 1) from **149** to **159**. The price is the only field I sent, so nothing else on the product changed.\n\nThis updated 1 draft. It hasn't been published yet, so please check it in the admin panel and publish it when you're ready.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 5.039,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 144655,
+      "outputTokens": 366,
+      "cacheReadTokens": 142989,
+      "cachedShare": 0.9884829421727559,
+      "seconds": 4.928,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 144655,
+        "outputTokens": 366,
+        "cacheReadTokens": 142989,
+        "seconds": 4.928,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "price": 159
+     },
+     "conversationId": "e7973a51-16c3-461f-a31b-08652979733b",
+     "tools": [
+      "findProducts",
+      "updateProducts"
+     ],
+     "reply": "Reading the product first.I changed the price of **Ridge 28 Backpack** (ID 1) from 149 to **159** and saved it as a draft. Nothing else on the product changed.\n\nIt hasn't been published yet, so the new price won't be live until you review and publish the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 4.523,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 145289,
+      "outputTokens": 283,
+      "cacheReadTokens": 142989,
+      "cachedShare": 0.9841694828927173,
+      "seconds": 4.471,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 145289,
+        "outputTokens": 283,
+        "cacheReadTokens": 142989,
+        "seconds": 4.471,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "array-row-number",
+   "title": "Change one value in one array row",
+   "passed": 0,
+   "runs": 3,
+   "passK": false,
+   "median": {
+    "seconds": 19.025,
+    "steps": 8,
+    "inputTokens": 228537,
+    "outputTokens": 1560,
+    "cachedShare": 0.8657617851807115
+   },
+   "toolCalls": 21,
+   "failedToolCalls": 5,
+   "runDetails": [
+    {
+     "ok": false,
+     "details": {
+      "variants": [
+       {
+        "sku": "RDG-28-BLK",
+        "color": "black",
+        "stock": 14
+       },
+       {
+        "sku": "RDG-28-SND",
+        "color": "sand",
+        "stock": 3
+       },
+       {
+        "sku": "RDG-28-FOR",
+        "color": "forest",
+        "stock": 0
+       }
+      ]
+     },
+     "conversationId": "26918af9-8919-40f3-910c-4d37196af5f1",
+     "tools": [
+      "findProducts",
+      "editContent",
+      "reviewChanges"
+     ],
+     "reply": "I haven't changed anything yet. I need your OK before I save.\n\n**Product:** Ridge 28 Backpack (ID 1)\n\nThe planned change is to set the sand variant's stock from **3 to 12**. Everything else stays the same:\n\n| SKU | Color | Stock now | Stock after |\n|---|---|---|---|\n| RDG-28-BLK | black | 14 | 14 |\n| RDG-28-SND | sand | 3 | **12** |\n| RDG-28-FOR | forest | 0 | 0 |\n\n**Why I need your OK:** my first try to save just this one value was rejected by the CMS. The only way I can make the change is to save the whole variants list again. When I do that, each variant row gets a new internal ID. The SKUs, colors, stock levels and order stay exactly as they are. The safety check flagged this as \"removing 3 rows and adding 3 rows\", so I'm stopping here.\n\nThe new IDs only matter if something outside the CMS points to those specific row IDs. Most setups don't.\n\nReply **\"yes\"** and I'll save it as a draft for you to review in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 18.735,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 8,
+      "inputTokens": 228537,
+      "outputTokens": 1474,
+      "cacheReadTokens": 190652,
+      "cachedShare": 0.8342281556159397,
+      "seconds": 18.673,
+      "toolCalls": 6,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "editContent",
+        "error": "CMS rejected the save (no changes persisted): MCP error -32602: Input validation error: Invalid arguments for tool updateProducts: Unrecognized key(s) in object: 'id' at variants[0]\nUnrecognized key(s) in object: 'id' at variants[1]\nUnrecognized key(s) in object: 'id' at variants[2]"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 4,
+        "inputTokens": 32151,
+        "outputTokens": 245,
+        "cacheReadTokens": 0,
+        "seconds": 4.133,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 194475,
+        "outputTokens": 1122,
+        "cacheReadTokens": 190652,
+        "seconds": 18.673,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 1
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1911,
+        "outputTokens": 107,
+        "cacheReadTokens": 0,
+        "seconds": 1.558,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": false,
+     "details": {
+      "variants": [
+       {
+        "sku": "RDG-28-BLK",
+        "color": "black",
+        "stock": 14
+       },
+       {
+        "sku": "RDG-28-SND",
+        "color": "sand",
+        "stock": 3
+       },
+       {
+        "sku": "RDG-28-FOR",
+        "color": "forest",
+        "stock": 0
+       }
+      ]
+     },
+     "conversationId": "c6f98585-4139-4cf5-9b09-818bb6387014",
+     "tools": [
+      "findProducts",
+      "updateProducts",
+      "editContent",
+      "updateProducts",
+      "reviewChanges"
+     ],
+     "reply": "One sand variant. Send full array with ids preserved.The update tool won't take the variant row IDs, so sending the array through it would recreate all three rows. I'll make this targeted edit with editContent instead.Both routes reject row IDs, so the only way to save this is to send the variants without them. The values stay the same, but Payload will give the three rows new internal IDs.I haven't changed anything yet. The sand variant on Ridge 28 Backpack (product 1) still has stock 3, and I need your OK before I go further.\n\n**The problem:** I can't update one variant on its own. The tools can only replace the whole variants list, and they won't accept the internal IDs of the existing rows. I tried two different ways and both were rejected for that reason.\n\n**The only way to save it:** Replace the list with the same three variants, changing only the sand stock:\n\n| SKU | Color | Stock |\n|---|---|---|\n| RDG-28-BLK | black | 14 (unchanged) |\n| RDG-28-SND | sand | 3 → **12** |\n| RDG-28-FOR | forest | 0 (unchanged) |\n\nAll SKUs, colors, other stock values and the row order stay exactly the same. The one side effect is that all three rows get new internal IDs. That usually doesn't mat",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 27.74,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 10,
+      "inputTokens": 329642,
+      "outputTokens": 2546,
+      "cacheReadTokens": 285978,
+      "cachedShare": 0.8675411507028837,
+      "seconds": 27.68,
+      "toolCalls": 9,
+      "failedToolCalls": 3,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "updateProducts",
+        "error": "MCP error -32602: Input validation error: Invalid arguments for tool updateProducts: Unrecognized key(s) in object: 'id' at variants[0]\nUnrecognized key(s) in object: 'id' at variants[1]\nUnrecognized key(s) in object: 'id' at variants[2]"
+       },
+       {
+        "agent": "main",
+        "tool": "editContent",
+        "error": "CMS rejected the save (no changes persisted): MCP error -32602: Input validation error: Invalid arguments for tool updateProducts: Unrecognized key(s) in object: 'id' at variants[0]\nUnrecognized key(s) in object: 'id' at variants[1]\nUnrecognized key(s) in object: 'id' at variants[2]"
+       },
+       {
+        "agent": "main",
+        "tool": "updateProducts",
+        "error": "Blocked - this update is DESTRUCTIVE and has not been reviewed: \"variants\" would lose 3 of its 3 item(s) - Payload replaces the whole array on update, so anything omitted is removed. Call reviewChanges({ collection: \"products\", id: \"1\", proposedChanges }) with these exact fields first. If the user h"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 4,
+        "inputTokens": 32815,
+        "outputTokens": 628,
+        "cacheReadTokens": 0,
+        "seconds": 5.923,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 6,
+        "inputTokens": 294723,
+        "outputTokens": 1774,
+        "cacheReadTokens": 285978,
+        "seconds": 27.68,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 3
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 2104,
+        "outputTokens": 144,
+        "cacheReadTokens": 0,
+        "seconds": 2.215,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": false,
+     "details": {
+      "variants": [
+       {
+        "sku": "RDG-28-BLK",
+        "color": "black",
+        "stock": 14
+       },
+       {
+        "sku": "RDG-28-SND",
+        "color": "sand",
+        "stock": 3
+       },
+       {
+        "sku": "RDG-28-FOR",
+        "color": "forest",
+        "stock": 0
+       }
+      ]
+     },
+     "conversationId": "2a7f5ca5-f232-4d3a-82be-6ee42050ae55",
+     "tools": [
+      "findProducts",
+      "editContent",
+      "reviewChanges"
+     ],
+     "reply": "I haven't changed anything yet. I need your OK before saving.\n\n**The product:** Ridge 28 Backpack (ID 1). The sand variant (RDG-28-SND) has a stock of 3 right now.\n\n**Why I'm asking:** The edit tool won't accept the variants' internal row IDs, so the only way to save is to send the whole variants list again. The safety check flags this as \"removes 3 of 3 items\" because Payload deletes the old rows and creates them again with new internal row IDs.\n\n**What the saved draft would contain:**\n| SKU | Color | Stock |\n|---|---|---|\n| RDG-28-BLK | black | 14 (same) |\n| RDG-28-SND | sand | **3 → 12** |\n| RDG-28-FOR | forest | 0 (same) |\n\nThe SKUs, colors, order and every other field would stay exactly the same. The only other difference is that the three rows would get new internal IDs. This only matters if something outside the CMS refers to those row IDs. Anything that uses the SKUs isn't affected.\n\nShould I save this as a draft? If you'd rather keep the row IDs exactly as they are, you can change the number by hand in the admin panel instead.\n\n⚠ Check: no document was changed in this turn. The message above describes a write that did not happen - nothing was saved.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 19.025,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 7,
+      "inputTokens": 220213,
+      "outputTokens": 1560,
+      "cacheReadTokens": 190652,
+      "cachedShare": 0.8657617851807115,
+      "seconds": 18.947,
+      "toolCalls": 6,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "editContent",
+        "error": "CMS rejected the save (no changes persisted): MCP error -32602: Input validation error: Invalid arguments for tool updateProducts: Unrecognized key(s) in object: 'id' at variants[0]\nUnrecognized key(s) in object: 'id' at variants[1]\nUnrecognized key(s) in object: 'id' at variants[2]"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 3,
+        "inputTokens": 23784,
+        "outputTokens": 282,
+        "cacheReadTokens": 0,
+        "seconds": 3.212,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 194480,
+        "outputTokens": 1154,
+        "cacheReadTokens": 190652,
+        "seconds": 18.947,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 1
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1949,
+        "outputTokens": 124,
+        "cacheReadTokens": 0,
+        "seconds": 2.024,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "select-field",
+   "title": "Change a select to one of its options",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 6.68,
+    "steps": 3,
+    "inputTokens": 144706,
+    "outputTokens": 393,
+    "cachedShare": 0.9881345624922256
+   },
+   "toolCalls": 6,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "availability": "retired"
+     },
+     "conversationId": "56f9e821-1bb9-4b08-8a19-52ec5b717e3e",
+     "tools": [
+      "findProducts",
+      "updateProducts"
+     ],
+     "reply": "Let me read the current draft first.I've set **Ridge 28 Backpack** (ID 1) to **retired**. Before, it was \"available.\"\n\nThat was the only field I changed. The rest of the product is the same as before: name, SKU, price, description, brand, categories and variants. The change is saved as a draft, so it won't go live until you review and publish it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 7.26,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 144680,
+      "outputTokens": 393,
+      "cacheReadTokens": 142989,
+      "cachedShare": 0.9883121371302184,
+      "seconds": 7.211,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 144680,
+        "outputTokens": 393,
+        "cacheReadTokens": 142989,
+        "seconds": 7.211,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "availability": "retired"
+     },
+     "conversationId": "66fe5705-22dd-4111-9d64-7dfde1a21b51",
+     "tools": [
+      "findProducts",
+      "updateProducts"
+     ],
+     "reply": "I changed **Ridge 28 Backpack** (ID 1) from **available** to **retired**. That's the only field I sent, so everything else is unchanged.\n\nThe change is saved as a draft, so it isn't live yet. Please review and publish it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.515,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 144706,
+      "outputTokens": 384,
+      "cacheReadTokens": 142989,
+      "cachedShare": 0.9881345624922256,
+      "seconds": 6.457,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 144706,
+        "outputTokens": 384,
+        "cacheReadTokens": 142989,
+        "seconds": 6.457,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "availability": "retired"
+     },
+     "conversationId": "232af06d-4f55-4a72-bf84-1d1d7e8dede4",
+     "tools": [
+      "findProducts",
+      "updateProducts"
+     ],
+     "reply": "I'll read the product first, then change only its availability.I changed **Ridge 28 Backpack** (ID 1, SKU RDG-28) from \"available\" to **retired**. That's the only field I changed. The name, SKU, price, description, brand, categories and variants are as they were.\n\n1 draft updated. It's saved as a draft, so the change won't go live until it's published. Please review it in the admin panel and publish it there.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.68,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 144722,
+      "outputTokens": 416,
+      "cacheReadTokens": 142989,
+      "cachedShare": 0.988025317505286,
+      "seconds": 6.627,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 144722,
+        "outputTokens": 416,
+        "cacheReadTokens": 142989,
+        "seconds": 6.627,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "relationship-replace",
+   "title": "Point a relationship at another document",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 6.19,
+    "steps": 3,
+    "inputTokens": 145387,
+    "outputTokens": 468,
+    "cachedShare": 0.9835060906408414
+   },
+   "toolCalls": 9,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "brandBefore": 2,
+      "brandAfter": 1,
+      "fjell": 1
+     },
+     "conversationId": "845db546-a7b9-4366-ad9a-572f2b9ea2c8",
+     "tools": [
+      "findBrands",
+      "findProducts",
+      "updateProducts"
+     ],
+     "reply": "I changed the brand on **Market Tote** (product ID 3) to **Fjell** (brand ID 1). It was set to brand ID 2 before.\n\nOnly the brand field changed. The name, SKU, price, availability, description, categories and variants are the same as before. The change is saved as a draft (1 document updated), so you'll need to review and publish it in the admin panel before it goes live.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 5.353,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 145547,
+      "outputTokens": 420,
+      "cacheReadTokens": 142989,
+      "cachedShare": 0.982424921159488,
+      "seconds": 5.295,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 145547,
+        "outputTokens": 420,
+        "cacheReadTokens": 142989,
+        "seconds": 5.295,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "brandBefore": 2,
+      "brandAfter": 1,
+      "fjell": 1
+     },
+     "conversationId": "7beb4a9e-5a4d-4fbd-a3c1-e23fdebc037a",
+     "tools": [
+      "findBrands",
+      "findProducts",
+      "updateProducts"
+     ],
+     "reply": "Fjell exists (brand ID 1). The product currently has brand ID 2. I'll update only the brand field and save it as a draft.I changed the brand of **Market Tote** (product ID 3) to **Fjell** (brand ID 1). Before, it was set to brand ID 2. Nothing else on the product was touched.\n\n1 draft was updated. It isn't published yet, so please review it in the admin panel and publish it when you're ready.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.19,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 145248,
+      "outputTokens": 514,
+      "cacheReadTokens": 142989,
+      "cachedShare": 0.9844472901520158,
+      "seconds": 6.142,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 145248,
+        "outputTokens": 514,
+        "cacheReadTokens": 142989,
+        "seconds": 6.142,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "brandBefore": 2,
+      "brandAfter": 1,
+      "fjell": 1
+     },
+     "conversationId": "aa9205a6-0b07-4f65-9913-b88cf2d978dd",
+     "tools": [
+      "findProducts",
+      "findBrands",
+      "updateProducts"
+     ],
+     "reply": "I changed the brand of **Market Tote** (ID 3) from brand ID 2 to **Fjell** (brand ID 1, which already existed). The save confirmed the new brand.\n\nThat was the only field I sent. Name, SKU, price, availability, description, categories and variants were left as they were. The change is saved as a draft, so you'll need to review and publish it in the admin panel before it goes live.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.635,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 145387,
+      "outputTokens": 468,
+      "cacheReadTokens": 142989,
+      "cachedShare": 0.9835060906408414,
+      "seconds": 6.584,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 145387,
+        "outputTokens": 468,
+        "cacheReadTokens": 142989,
+        "seconds": 6.584,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "block-relationship-add",
+   "title": "Add a reference to a block that lists documents",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 12.71,
+    "steps": 7,
+    "inputTokens": 178610,
+    "outputTokens": 1045,
+    "cachedShare": 0.8005654778567829
+   },
+   "toolCalls": 20,
+   "failedToolCalls": 1,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "products": [
+       1,
+       2,
+       3
+      ],
+      "bannerUnchanged": true
+     },
+     "conversationId": "f1dc996c-1aae-4db4-bdc2-bcb032a631ee",
+     "tools": [
+      "getDocumentOutline",
+      "findDocuments",
+      "editContent"
+     ],
+     "reply": "I added Market Tote to the end of the \"Our picks\" product grid on this page. The page is saved as a draft and hasn't been published.\n\n- **Grid now shows:** Ridge 28 Backpack (1), Squall Rain Shell (2), Market Tote (3).\n- **Nothing else changed:** the other two products are still there in their original order, and the banner wasn't touched.\n\n**Heads-up:** Market Tote (ID 3) is still a draft product itself. If it isn't published, it may not appear in the grid on the live page, even after you publish this page.\n\nPlease check the draft in the admin panel before publishing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 12.71,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 7,
+      "inputTokens": 178610,
+      "outputTokens": 1045,
+      "cacheReadTokens": 142989,
+      "cachedShare": 0.8005654778567829,
+      "seconds": 12.662,
+      "toolCalls": 7,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 4,
+        "inputTokens": 31094,
+        "outputTokens": 385,
+        "cacheReadTokens": 0,
+        "seconds": 4.45,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 145527,
+        "outputTokens": 540,
+        "cacheReadTokens": 142989,
+        "seconds": 12.662,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1989,
+        "outputTokens": 120,
+        "cacheReadTokens": 0,
+        "seconds": 1.485,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "products": [
+       1,
+       2,
+       3
+      ],
+      "bannerUnchanged": true
+     },
+     "conversationId": "435a59d5-8662-404c-a04f-d1162e0d83be",
+     "tools": [
+      "getDocumentOutline",
+      "findDocuments",
+      "editContent"
+     ],
+     "reply": "I added **Market Tote** (product ID 3) to the end of the \"Our picks\" product grid on this landing page. The grid now has products 1, 2 and 3, and the two original products stayed in the same order. Nothing else on the page changed. This is saved as a draft and still needs to be published.\n\n**Before you publish:** the Market Tote product itself is still a **draft**, not published. If you publish the landing page first, the tote may not show in the grid on the live site. Publish the product too, or check how your site handles draft products.\n\nYou can check the change in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 11.733,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 6,
+      "inputTokens": 170512,
+      "outputTokens": 999,
+      "cacheReadTokens": 142989,
+      "cachedShare": 0.8385861405648869,
+      "seconds": 11.685,
+      "toolCalls": 6,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 3,
+        "inputTokens": 22995,
+        "outputTokens": 309,
+        "cacheReadTokens": 0,
+        "seconds": 3.32,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 145533,
+        "outputTokens": 557,
+        "cacheReadTokens": 142989,
+        "seconds": 11.685,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1984,
+        "outputTokens": 133,
+        "cacheReadTokens": 0,
+        "seconds": 1.369,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "products": [
+       1,
+       2,
+       3
+      ],
+      "bannerUnchanged": true
+     },
+     "conversationId": "75b3218b-3ec3-4ac8-86d2-179369f34a6d",
+     "tools": [
+      "getDocumentOutline",
+      "findDocuments",
+      "editContent"
+     ],
+     "reply": "I added **Market Tote** (product ID 3) to the end of the \"Our picks\" product grid on this landing page (ID 1). It's saved as a draft.\n\n- **Grid products:** before [1, 2], now [1, 2, 3]. Products 1 and 2 stay first, in the same order.\n- **Nothing else changed:** the banner and the grid title are the same.\n\nThe Market Tote product is still a draft itself. If the live site only shows published products, it may not appear in the grid until you publish the product as well as this page.\n\nPlease review the change in the admin panel before publishing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 12.944,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 7,
+      "inputTokens": 178845,
+      "outputTokens": 1136,
+      "cacheReadTokens": 142989,
+      "cachedShare": 0.799513545248679,
+      "seconds": 12.88,
+      "toolCalls": 7,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "lookupDocuments",
+        "error": "`where` must be a valid JSON string, e.g. {\"title\":{\"contains\":\"Acme\"}}"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 4,
+        "inputTokens": 31298,
+        "outputTokens": 432,
+        "cacheReadTokens": 0,
+        "seconds": 4.567,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 145536,
+        "outputTokens": 572,
+        "cacheReadTokens": 142989,
+        "seconds": 12.88,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 2011,
+        "outputTokens": 132,
+        "cacheReadTokens": 0,
+        "seconds": 1.541,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "rich-text-append",
+   "title": "Add a paragraph to the end of a rich text field",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 25.274,
+    "steps": 11,
+    "inputTokens": 237862,
+    "outputTokens": 2149,
+    "cachedShare": 0.8015235724916128
+   },
+   "toolCalls": 34,
+   "failedToolCalls": 1,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "paragraphs": [
+       "The Ridge 28 carries a day of gear and keeps it dry.",
+       "The back panel is padded and the hip belt comes off for city use.",
+       "It fits a 15-inch laptop."
+      ]
+     },
+     "conversationId": "bf81f792-b520-41ad-b1b2-2306b037aff8",
+     "tools": [
+      "editContent",
+      "findProducts",
+      "readDocument"
+     ],
+     "reply": "I added the new paragraph to the description of product #1 (Ridge 28). It's saved as a draft and hasn't been published.\n\nThe draft's description now reads:\n1. \"The Ridge 28 carries a day of gear and keeps it dry.\" (unchanged)\n2. \"The back panel is padded and the hip belt comes off for city use.\" (unchanged)\n3. **\"It fits a 15-inch laptop.\"** (new, its own paragraph)\n\nThe editing tool's change summary made it look like the new sentence had been joined onto the end of paragraph 2 (\"…city use.It fits…\"). I read the saved draft to check, and that's only how the summary displays it. The sentence is a separate third paragraph.\n\nThe editing tool flagged two issues, quoted here as it gave them:\n- \"review: Review unavailable - not verified\"\n- \"You declared the document unchanged and then edited it. The edit stands; the changes are listed with the saved draft. No action needed unless the list shows a change the task did not ask for - do not move or undo the change to satisfy the criterion.\"\n\nThe only change listed is the new sentence, which is what you asked for, so neither issue needs action.\n\nPlease look over the draft in the admin panel and publish it when you're happy with it.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 25.274,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 11,
+      "inputTokens": 236973,
+      "outputTokens": 2087,
+      "cacheReadTokens": 190652,
+      "cachedShare": 0.8045304739358492,
+      "seconds": 25.225,
+      "toolCalls": 9,
+      "failedToolCalls": 0,
+      "failedRuns": 2,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 4,
+        "inputTokens": 33316,
+        "outputTokens": 495,
+        "cacheReadTokens": 0,
+        "seconds": 9.268,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 194676,
+        "outputTokens": 919,
+        "cacheReadTokens": 190652,
+        "seconds": 25.225,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 2087,
+        "outputTokens": 300,
+        "cacheReadTokens": 0,
+        "seconds": 4.696,
+        "runs": 2,
+        "failedRuns": 2,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 3,
+        "inputTokens": 6894,
+        "outputTokens": 373,
+        "cacheReadTokens": 0,
+        "seconds": 4.905,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "paragraphs": [
+       "The Ridge 28 carries a day of gear and keeps it dry.",
+       "The back panel is padded and the hip belt comes off for city use.",
+       "It fits a 15-inch laptop."
+      ]
+     },
+     "conversationId": "50cd9cd1-f6f1-491e-a356-cc9b8ff0c179",
+     "tools": [
+      "readDocument",
+      "editContent",
+      "readDocument"
+     ],
+     "reply": "I added the new paragraph to the **Ridge 28 Backpack** (product ID 1). It's saved as a draft and not published yet.\n\nI checked the saved description and it now has three separate paragraphs:\n1. The Ridge 28 carries a day of gear and keeps it dry. *(unchanged)*\n2. The back panel is padded and the hip belt comes off for city use. *(unchanged)*\n3. **It fits a 15-inch laptop.** *(new)*\n\nThe editing tool raised two notes about this change:\n- \"Review unavailable - not verified\": the tool's automatic review didn't run. My own check above shows the description is correct.\n- \"You declared the document unchanged and then edited it. The edit stands; the changes are listed with the saved draft.\": this is an internal mismatch in the tool. The only change was adding the new paragraph.\n\nThe change log also showed \"…city use.It fits a 15-inch laptop.\" with no space, as if the text were joined. That's just how the log prints the text. In the saved description it's a separate paragraph, and the first two paragraphs weren't changed.\n\nOne draft was updated. Please review it in the admin panel and publish it when you're ready.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 24.584,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 11,
+      "inputTokens": 237862,
+      "outputTokens": 2149,
+      "cacheReadTokens": 190652,
+      "cachedShare": 0.8015235724916128,
+      "seconds": 24.523,
+      "toolCalls": 9,
+      "failedToolCalls": 0,
+      "failedRuns": 2,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 4,
+        "inputTokens": 33629,
+        "outputTokens": 529,
+        "cacheReadTokens": 0,
+        "seconds": 8.925,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 195238,
+        "outputTokens": 940,
+        "cacheReadTokens": 190652,
+        "seconds": 24.523,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 2120,
+        "outputTokens": 300,
+        "cacheReadTokens": 0,
+        "seconds": 4.324,
+        "runs": 2,
+        "failedRuns": 2,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 3,
+        "inputTokens": 6875,
+        "outputTokens": 380,
+        "cacheReadTokens": 0,
+        "seconds": 4.649,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "paragraphs": [
+       "The Ridge 28 carries a day of gear and keeps it dry.",
+       "The back panel is padded and the hip belt comes off for city use.",
+       "It fits a 15-inch laptop."
+      ]
+     },
+     "conversationId": "74e51c87-81c3-4b3e-932f-9ac5bb2c221c",
+     "tools": [
+      "editContent",
+      "editContent",
+      "readDocument"
+     ],
+     "reply": "Let me check the saved draft to see what it says now.I added the paragraph to the Ridge 28 Backpack (product ID 1) description. The change is saved as a draft and not published yet.\n\nIt took two passes. The first one stuck the sentence onto the end of the second paragraph (\"…for city use.It fits a 15-inch laptop.\"). I ran a second edit to put it back in its own paragraph. When I read the saved draft afterwards, the description has three separate paragraphs:\n\n1. The Ridge 28 carries a day of gear and keeps it dry.\n2. The back panel is padded and the hip belt comes off for city use.\n3. It fits a 15-inch laptop.\n\nThe first two paragraphs have their original wording, and no other fields changed.\n\nThe second edit came back with two notes, quoted as given:\n- \"Review unavailable - not verified\"\n- \"You declared the document unchanged and then edited it. The edit stands; the changes are listed with the saved draft. No action needed unless the list shows a change the task did not ask for - do not move or undo the change to satisfy the criterion.\"\n\nBecause that pass wasn't automatically checked, my reading of the draft text is the only confirmation. That check can't show formatting, so please",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 48.726,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 19,
+      "inputTokens": 284071,
+      "outputTokens": 4441,
+      "cacheReadTokens": 190652,
+      "cachedShare": 0.6711420736365205,
+      "seconds": 48.68,
+      "toolCalls": 16,
+      "failedToolCalls": 1,
+      "failedRuns": 3,
+      "failures": [
+       {
+        "agent": "richtext-editor",
+        "tool": "applyRichText",
+        "error": "Edit key \"edit1\" is not a valid node index (valid: 0..2). Re-view in surgical mode - to APPEND, use insertAfter on the LAST index (2)."
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 8,
+        "inputTokens": 66916,
+        "outputTokens": 1305,
+        "cacheReadTokens": 0,
+        "seconds": 26.192,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 8,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 195420,
+        "outputTokens": 1101,
+        "cacheReadTokens": 190652,
+        "seconds": 48.68,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 3978,
+        "outputTokens": 582,
+        "cacheReadTokens": 0,
+        "seconds": 9.906,
+        "runs": 4,
+        "failedRuns": 3,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 7,
+        "inputTokens": 17757,
+        "outputTokens": 1453,
+        "cacheReadTokens": 0,
+        "seconds": 16.188,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 1
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "count-question",
+   "title": "A question across collections that must not change anything",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 5.556,
+    "steps": 3,
+    "inputTokens": 144463,
+    "outputTokens": 345,
+    "cachedShare": 0.9897966953475976
+   },
+   "toolCalls": 6,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "namesFjell": true,
+      "leavesOutTheOtherBrand": true,
+      "unchanged": true,
+      "changes": 0
+     },
+     "conversationId": "6cad62eb-6bf0-4ed7-b9e7-51706aa5e3f8",
+     "tools": [
+      "findBrands",
+      "findProducts"
+     ],
+     "reply": "The brand Fjell (ID 1) has 2 products:\n\n1. **Ridge 28 Backpack** (ID 1)\n2. **Squall Rain Shell** (ID 2)\n\nThese are from the draft versions, which match what you see in the admin panel. I didn't change anything.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 5.612,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 144463,
+      "outputTokens": 345,
+      "cacheReadTokens": 142989,
+      "cachedShare": 0.9897966953475976,
+      "seconds": 5.568,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 144463,
+        "outputTokens": 345,
+        "cacheReadTokens": 142989,
+        "seconds": 5.568,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "namesFjell": true,
+      "leavesOutTheOtherBrand": true,
+      "unchanged": true,
+      "changes": 0
+     },
+     "conversationId": "7840c223-ef2b-4bde-a9d6-fbbc100c376b",
+     "tools": [
+      "findBrands",
+      "findProducts"
+     ],
+     "reply": "The brand Fjell (ID 1) has 2 products:\n\n1. **Ridge 28 Backpack** (ID 1)\n2. **Squall Rain Shell** (ID 2)\n\nThis list comes from the draft versions, which match what you see in the admin panel. I didn't change anything.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 5.556,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 144463,
+      "outputTokens": 347,
+      "cacheReadTokens": 142989,
+      "cachedShare": 0.9897966953475976,
+      "seconds": 5.494,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 144463,
+        "outputTokens": 347,
+        "cacheReadTokens": 142989,
+        "seconds": 5.494,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "namesFjell": true,
+      "leavesOutTheOtherBrand": true,
+      "unchanged": true,
+      "changes": 0
+     },
+     "conversationId": "2d42df70-f5db-4c16-98db-36d1270f24f3",
+     "tools": [
+      "findBrands",
+      "findProducts"
+     ],
+     "reply": "Fjell (brand ID 1) has **2 products**:\n\n1. **Ridge 28 Backpack** (ID 1)\n2. **Squall Rain Shell** (ID 2)\n\nBoth products are currently drafts. I only looked things up and didn't change anything.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 4.954,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 144563,
+      "outputTokens": 315,
+      "cacheReadTokens": 142989,
+      "cachedShare": 0.9891120134474243,
+      "seconds": 4.914,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 144563,
+        "outputTokens": 315,
+        "cacheReadTokens": 142989,
+        "seconds": 4.914,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "no-drafts-collection",
+   "title": "A collection without drafts gets no agent write",
+   "passed": 0,
+   "runs": 3,
+   "passK": false,
+   "median": {
+    "seconds": 5.15,
+    "steps": 3,
+    "inputTokens": 144559,
+    "outputTokens": 290,
+    "cachedShare": 0.9891393825358504
+   },
+   "toolCalls": 6,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": false,
+     "details": {
+      "ratingAfter": 4
+     },
+     "conversationId": "d68ccd29-d496-4e1a-8ccf-c647711bcf38",
+     "tools": [
+      "findReviews",
+      "updateReviews"
+     ],
+     "reply": "Found it (ID 1, current rating 5). Reviews have no drafts, so this updates the rating directly.I changed the rating of the review **\"Dry after a full day of rain\"** (ID 1) from **5 to 4**. Nothing else in the review was changed.\n\nReviews don't have drafts, so this went live right away rather than waiting for you to publish it. You can check it in the admin panel under Reviews → ID 1.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 4.756,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 144559,
+      "outputTokens": 281,
+      "cacheReadTokens": 142989,
+      "cachedShare": 0.9891393825358504,
+      "seconds": 4.712,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 144559,
+        "outputTokens": 281,
+        "cacheReadTokens": 142989,
+        "seconds": 4.712,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": false,
+     "details": {
+      "ratingAfter": 4
+     },
+     "conversationId": "35b0ccb9-a437-4f9e-a8f9-00816e1540f5",
+     "tools": [
+      "findReviews",
+      "updateReviews"
+     ],
+     "reply": "Found it (ID 1, current rating 5). Reviews don't support drafts, so this change applies straight away. I'm only updating the rating field.I changed the rating of the review **\"Dry after a full day of rain\"** (ID 1) from **5 to 4**. Nothing else in the review was changed.\n\nReviews don't have drafts, so the new rating is already live. If you didn't mean to change it, you'll need to set it back in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 5.211,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 144588,
+      "outputTokens": 305,
+      "cacheReadTokens": 142989,
+      "cachedShare": 0.9889409909536061,
+      "seconds": 5.162,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 144588,
+        "outputTokens": 305,
+        "cacheReadTokens": 142989,
+        "seconds": 5.162,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": false,
+     "details": {
+      "ratingAfter": 4
+     },
+     "conversationId": "a7556e34-c92a-46ef-bb83-3f17415f22b3",
+     "tools": [
+      "findReviews",
+      "updateReviews"
+     ],
+     "reply": "Reviews have no drafts, so this update will apply directly.I changed the rating of the review **\"Dry after a full day of rain\"** (ID 1) from **5 to 4**. I didn't touch anything else in it.\n\nThis change is already live, not a draft. Reviews don't have a draft version, so updates take effect immediately. If you want to check it, it's under Reviews in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 5.15,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 144543,
+      "outputTokens": 290,
+      "cacheReadTokens": 142989,
+      "cachedShare": 0.9892488740374836,
+      "seconds": 5.085,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 144543,
+        "outputTokens": 290,
+        "cacheReadTokens": 142989,
+        "seconds": 5.085,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

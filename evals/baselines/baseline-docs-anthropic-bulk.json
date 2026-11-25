@@ -1,0 +1,257 @@
+{
+ "label": "baseline-docs-anthropic-bulk",
+ "schema": "docs",
+ "model": "anthropic",
+ "k": 3,
+ "date": "2026-11-12T16:04:19.024Z",
+ "summary": {
+  "scenarios": 1,
+  "passK": 1,
+  "runs": 3,
+  "runsPassed": 3,
+  "toolCalls": 31,
+  "failedToolCalls": 0,
+  "inputTokens": 509198
+ },
+ "results": [
+  {
+   "id": "bulk-translate",
+   "title": "Translate one field of several documents",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 20.463,
+    "steps": 13,
+    "inputTokens": 161803,
+    "outputTokens": 2054,
+    "cachedShare": 0.5510960859811005
+   },
+   "toolCalls": 31,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "perDoc": [
+       {
+        "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Geschäftskonto an.",
+        "ok": true
+       },
+       {
+        "german": "Suchen Sie nach früheren Rechnungen und laden Sie diese als PDF herunter.",
+        "ok": true
+       }
+      ]
+     },
+     "conversationId": "59716607-5a16-470d-9365-5599643abd5a",
+     "tools": [
+      "listDocuments",
+      "translateContent",
+      "findArticles",
+      "findArticles"
+     ],
+     "reply": "Only 2 articles exist, so this is well under the confirmation threshold. I'll translate just the `summary` field of each into German, leaving title, body, steps, and SEO untouched.Done. Both articles' summaries were translated into German as drafts (titles stayed in English as expected, since only the summary field was targeted):\n\n| ID | Title | German Summary |\n|----|-------|-----------------|\n| 1 | Install the desktop app | \"Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Geschäftskonto an.\" |\n| 2 | Download an invoice | \"Suchen Sie nach früheren Rechnungen und laden Sie diese als PDF herunter.\" |\n\n2 of 2 articles updated, 0 rejected, 0 errors. These are saved as drafts in the `de` locale — please review them in the admin panel before publishing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 22.284,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 14,
+      "inputTokens": 193221,
+      "outputTokens": 2411,
+      "cacheReadTokens": 89169,
+      "cachedShare": 0.4614871054388498,
+      "seconds": 22.122,
+      "toolCalls": 12,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 10,
+        "inputTokens": 66672,
+        "outputTokens": 1335,
+        "cacheReadTokens": 0,
+        "seconds": 19.164,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 8,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 123384,
+        "outputTokens": 878,
+        "cacheReadTokens": 89169,
+        "seconds": 22.122,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 3165,
+        "outputTokens": 198,
+        "cacheReadTokens": 0,
+        "seconds": 4.81,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "perDoc": [
+       {
+        "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+        "ok": true
+       },
+       {
+        "german": "Finden Sie Ihre vergangenen Rechnungen und laden Sie diese als PDF herunter.",
+        "ok": true
+       }
+      ]
+     },
+     "conversationId": "2496122d-0da4-4764-9e3b-705dcc4c39da",
+     "tools": [
+      "listDocuments",
+      "translateContent"
+     ],
+     "reply": "Only 2 articles exist, so this is well under the bulk-confirmation threshold. I'll translate just the summary field of each into German.Done - translated the `summary` field into German (locale `de`) for both articles, leaving all other fields untouched:\n\n- **Install the desktop app** (id 1) — path `/setup/install`\n- **Download an invoice** (id 2) — path `/billing/invoices`\n\nBoth were saved as drafts. Please review them in the admin panel (switch locale to German) before publishing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 17.838,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 12,
+      "inputTokens": 154174,
+      "outputTokens": 1684,
+      "cacheReadTokens": 89169,
+      "cachedShare": 0.5783660020496323,
+      "seconds": 17.802,
+      "toolCalls": 9,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 9,
+        "inputTokens": 59200,
+        "outputTokens": 981,
+        "cacheReadTokens": 0,
+        "seconds": 14.159,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 7,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 91808,
+        "outputTokens": 458,
+        "cacheReadTokens": 89169,
+        "seconds": 17.802,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 3166,
+        "outputTokens": 245,
+        "cacheReadTokens": 0,
+        "seconds": 5.041,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "perDoc": [
+       {
+        "german": "Lade den Installer herunter, führe ihn aus und melde dich mit deinem Geschäftskonto an.",
+        "ok": true
+       },
+       {
+        "german": "Suchen Sie nach früheren Rechnungen und laden Sie sie als PDF herunter.",
+        "ok": true
+       }
+      ]
+     },
+     "conversationId": "d989ba83-613a-4fce-a775-4932d48a0336",
+     "tools": [
+      "listDocuments",
+      "translateContent"
+     ],
+     "reply": "Only 2 articles exist, so this is well under the confirmation threshold. I'll translate just the `summary` field of each into German.Done. Both articles now have German (de) translations of their `summary` field, saved as drafts:\n\n- **Install the desktop app** (id 1)\n- **Download an invoice** (id 2)\n\nOnly the `summary` field was translated — titles, body, steps, and SEO fields were left untouched. Please review the German drafts in the admin panel before publishing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 20.463,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 13,
+      "inputTokens": 161803,
+      "outputTokens": 2054,
+      "cacheReadTokens": 89169,
+      "cachedShare": 0.5510960859811005,
+      "seconds": 20.424,
+      "toolCalls": 10,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 10,
+        "inputTokens": 66784,
+        "outputTokens": 1366,
+        "cacheReadTokens": 0,
+        "seconds": 17.628,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 8,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 91856,
+        "outputTokens": 485,
+        "cacheReadTokens": 89169,
+        "seconds": 20.424,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 3163,
+        "outputTokens": 203,
+        "cacheReadTokens": 0,
+        "seconds": 4.584,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

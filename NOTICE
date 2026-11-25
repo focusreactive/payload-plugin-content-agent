@@ -1,0 +1,26 @@
+@focus-reactive/payload-plugin-content-agent
+Copyright (c) 2026 FocusReactive
+
+This product is licensed under the MIT License (see LICENSE). It includes
+code from the third parties below, under their own licenses.
+
+AI Elements
+  https://github.com/vercel/ai-elements
+  Copyright 2023 Vercel, Inc.
+  Licensed under the Apache License, Version 2.0:
+  https://www.apache.org/licenses/LICENSE-2.0
+  src/ui/components/reasoning.tsx is adapted from its Reasoning component.
+  The header of that file lists the changes.
+
+Tailwind CSS
+  https://tailwindcss.com
+  Copyright (c) Tailwind Labs, Inc.
+  Licensed under the MIT License.
+  src/ui/generatedStyles.ts holds CSS that Tailwind CSS generated, with its
+  base styles.
+
+ldrs
+  https://uiball.com/ldrs/
+  Copyright (c) 2022 Griffin Johnston
+  Licensed under the MIT License.
+  The chat loader (Tail Chase) comes from this package, a dependency.

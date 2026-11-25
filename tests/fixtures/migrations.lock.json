@@ -1,0 +1,11 @@
+{
+  "retired": [],
+  "groups": {
+    "core": [
+      {
+        "name": "001-init",
+        "sha256": "d442dd6bb22dfa00da30915aa256e2042d224b654a76a65f3cd89fbe69fda8fa"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "content-agent-lab",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Test host for the content agent plugin: Next.js + Payload + Postgres, four schemas",
+  "dependencies": {
+    "@ai-sdk/anthropic": "^4.0.102",
+    "@ai-sdk/openai": "^4.0.115",
+    "@payloadcms/db-postgres": "3.91.0",
+    "@payloadcms/next": "3.91.0",
+    "@payloadcms/plugin-mcp": "3.91.0",
+    "@payloadcms/richtext-lexical": "3.91.0",
+    "ai": "^7.0.170",
+    "graphql": "^16.9.0",
+    "next": "^16.4.6",
+    "payload": "3.91.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
+  }
+}

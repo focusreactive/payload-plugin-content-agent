@@ -1,0 +1,1449 @@
+{
+ "label": "baseline-docs-openai",
+ "schema": "docs",
+ "model": "openai",
+ "k": 3,
+ "date": "2026-11-12T15:24:45.093Z",
+ "summary": {
+  "scenarios": 7,
+  "passK": 4,
+  "runs": 21,
+  "runsPassed": 12,
+  "toolCalls": 109,
+  "failedToolCalls": 14,
+  "inputTokens": 1422377
+ },
+ "results": [
+  {
+   "id": "translate-field",
+   "title": "Translate one field into the second locale",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 19.256,
+    "steps": 7,
+    "inputTokens": 54562,
+    "outputTokens": 553,
+    "cachedShare": 0.8515816868883106
+   },
+   "toolCalls": 12,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+      "englishUnchanged": true,
+      "englishBodyUnchanged": true,
+      "looksGerman": true
+     },
+     "conversationId": "0038fed2-7c8d-4598-8b57-31043c4c2157",
+     "tools": [
+      "findArticles",
+      "updateArticles"
+     ],
+     "reply": "I’ll update the German locale draft for this article’s `summary` field only.I found the English summary. Now I’ll save its German translation to the `de` draft for this same article.Done — updated 1 draft in the German locale for article ID 1.\n\nNew German summary:\n“Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.”\n\nPlease review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 11.136,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 47228,
+      "outputTokens": 263,
+      "cacheReadTokens": 29696,
+      "cachedShare": 0.628779537562463,
+      "seconds": 10.971,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 47228,
+        "outputTokens": 263,
+        "cacheReadTokens": 29696,
+        "seconds": 10.971,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+      "englishUnchanged": true,
+      "englishBodyUnchanged": true,
+      "looksGerman": true
+     },
+     "conversationId": "c0c91b59-f7e4-4998-933a-e3b8c074c697",
+     "tools": [
+      "editContent"
+     ],
+     "reply": "I’ll update the current article’s German draft locale and translate only its summary field.Done — I translated the summary for article ID 1 into German and saved it as a draft.\n\nUpdated:\n- summary: “Download the installer, run it and sign in with your work ac…” → “Laden Sie das Installationsprogramm herunter, führen Sie es …”\n\n1 draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 22.507,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 7,
+      "inputTokens": 54562,
+      "outputTokens": 553,
+      "cacheReadTokens": 46464,
+      "cachedShare": 0.8515816868883106,
+      "seconds": 22.45,
+      "toolCalls": 5,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 22089,
+        "outputTokens": 307,
+        "cacheReadTokens": 16768,
+        "seconds": 11.483,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 31387,
+        "outputTokens": 182,
+        "cacheReadTokens": 29696,
+        "seconds": 22.45,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1086,
+        "outputTokens": 64,
+        "cacheReadTokens": 0,
+        "seconds": 1.771,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+      "englishUnchanged": true,
+      "englishBodyUnchanged": true,
+      "looksGerman": true
+     },
+     "conversationId": "82a981fd-8b15-4700-a050-1aa0ca554ea1",
+     "tools": [
+      "editContent"
+     ],
+     "reply": "I’ll update the draft of the current article (ID 1) and translate only its `summary` into German, leaving all other fields unchanged.Done — I updated 1 draft.\n\nGerman summary:\n“Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.”\n\nPlease review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 19.256,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 7,
+      "inputTokens": 55309,
+      "outputTokens": 606,
+      "cacheReadTokens": 49408,
+      "cachedShare": 0.8933085031369217,
+      "seconds": 19.205,
+      "toolCalls": 5,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 22764,
+        "outputTokens": 369,
+        "cacheReadTokens": 19712,
+        "seconds": 10.181,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 31429,
+        "outputTokens": 173,
+        "cacheReadTokens": 29696,
+        "seconds": 19.205,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1116,
+        "outputTokens": 64,
+        "cacheReadTokens": 0,
+        "seconds": 1.588,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "array-row-edit",
+   "title": "Change one field of one array row",
+   "passed": 0,
+   "runs": 3,
+   "passK": false,
+   "median": {
+    "seconds": 27.239,
+    "steps": 9,
+    "inputTokens": 87091,
+    "outputTokens": 773,
+    "cachedShare": 0.9188587792536981
+   },
+   "toolCalls": 19,
+   "failedToolCalls": 6,
+   "runDetails": [
+    {
+     "ok": false,
+     "details": {
+      "steps": [
+       {
+        "heading": "Download the installer",
+        "detail": "Open the downloads page and choose your system."
+       },
+       {
+        "heading": "Run the installer",
+        "detail": "Accept the license and keep the default folder."
+       },
+       {
+        "heading": "Sign in",
+        "detail": "Use your work account. A workspace admin can reset the password."
+       }
+      ],
+      "bodyUnchanged": true
+     },
+     "conversationId": "a42349d7-c172-464a-93da-a7d625bed4fe",
+     "tools": [
+      "findArticles",
+      "updateArticles",
+      "updateArticles",
+      "reviewChanges"
+     ],
+     "reply": "I’ll update only that one step detail in the current article draft and leave everything else unchanged.I found the matching step and I’m changing only its `detail` field.The first save failed because this array field does not accept row `id` values in the update payload. I’ll retry with the same three steps, preserving headings and the two unchanged details, but without row ids.Because the CMS treats a `steps` update as replacing the whole array, I need to run the required review first before I can save this safely. The intended change is still just that one detail line; I’m reviewing the exact payload now.I can make that change, but the CMS is flagging this update as destructive because updating `steps` replaces the whole array.\n\nReview says it would remove the existing 3 step rows and recreate 3 rows with the same headings/details, with only this one text change:\n- **Run the installer** → `Accept the license. Choose the folder you want.`\n\nNothing else in the visible text would change, but the array rows themselves would be replaced under the hood.\n\nReply **yes** to confirm, and I’ll save the draft.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 21.245,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 5,
+      "inputTokens": 80544,
+      "outputTokens": 705,
+      "cacheReadTokens": 76288,
+      "cachedShare": 0.9471593166468018,
+      "seconds": 21.193,
+      "toolCalls": 4,
+      "failedToolCalls": 2,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "updateArticles",
+        "error": "MCP error -32602: Input validation error: Invalid arguments for tool updateArticles: [\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"id\"\n    ],\n    \"path\": [\n      \"steps\",\n      0\n    ],\n    \"message\": \"Unrecognized key(s) in object: 'id'\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \""
+       },
+       {
+        "agent": "main",
+        "tool": "updateArticles",
+        "error": "Blocked - this update is DESTRUCTIVE and has not been reviewed: \"steps\" would lose 3 of its 3 item(s) - Payload replaces the whole array on update, so anything omitted is removed. Call reviewChanges({ collection: \"articles\", id: \"1\", proposedChanges }) with these exact fields first. If the user has "
+       }
+      ],
+      "perAgent": {
+       "main": {
+        "steps": 5,
+        "inputTokens": 80544,
+        "outputTokens": 705,
+        "cacheReadTokens": 76288,
+        "seconds": 21.193,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 2
+       }
+      }
+     }
+    },
+    {
+     "ok": false,
+     "details": {
+      "steps": [
+       {
+        "heading": "Download the installer",
+        "detail": "Open the downloads page and choose your system."
+       },
+       {
+        "heading": "Run the installer",
+        "detail": "Accept the license and keep the default folder."
+       },
+       {
+        "heading": "Sign in",
+        "detail": "Use your work account. A workspace admin can reset the password."
+       }
+      ],
+      "bodyUnchanged": true
+     },
+     "conversationId": "85d34275-e86f-491a-8d9b-cd1e2bcea822",
+     "tools": [
+      "editContent",
+      "findArticles",
+      "reviewChanges"
+     ],
+     "reply": "I’ll update only that one step detail in the current article draft and leave everything else untouched.The first save failed because the CMS rejected row IDs inside the `steps` array, so nothing changed. I’ll rewrite the steps without those internal IDs and change only the detail for “Run the installer.”I couldn’t apply it yet.\n\nThe CMS requires replacing the whole `steps` array, and that would remove the internal row IDs from all 3 steps. The content would stay the same except for your requested sentence, but the system still flags that as a destructive array rewrite.\n\nPlanned change:\n- “Run the installer” detail:\n  - from: `Accept the license and keep the default folder.`\n  - to: `Accept the license. Choose the folder you want.`\n\nNothing else in the visible step text would change, but the array rows would be rewritten internally.\n\nReply with **yes** and I’ll save that draft update.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 27.239,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 9,
+      "inputTokens": 87091,
+      "outputTokens": 773,
+      "cacheReadTokens": 79232,
+      "cachedShare": 0.9097610545291707,
+      "seconds": 27.192,
+      "toolCalls": 7,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "editContent",
+        "error": "CMS rejected the save (no changes persisted): MCP error -32602: Input validation error: Invalid arguments for tool updateArticles: [\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"id\"\n    ],\n    \"path\": [\n      \"steps\",\n      0\n    ],\n    \"message\": \"Unrecognized key(s) in object: 'id'\"\n "
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 21862,
+        "outputTokens": 273,
+        "cacheReadTokens": 18816,
+        "seconds": 10.262,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 63977,
+        "outputTokens": 456,
+        "cacheReadTokens": 60416,
+        "seconds": 27.192,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 1
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1252,
+        "outputTokens": 44,
+        "cacheReadTokens": 0,
+        "seconds": 1.471,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": false,
+     "details": {
+      "steps": [
+       {
+        "heading": "Download the installer",
+        "detail": "Open the downloads page and choose your system."
+       },
+       {
+        "heading": "Run the installer",
+        "detail": "Accept the license and keep the default folder."
+       },
+       {
+        "heading": "Sign in",
+        "detail": "Use your work account. A workspace admin can reset the password."
+       }
+      ],
+      "bodyUnchanged": true
+     },
+     "conversationId": "79f0c37f-90bf-4a91-b27c-7afc8bc663d9",
+     "tools": [
+      "findArticles",
+      "updateArticles",
+      "updateArticles",
+      "editContent"
+     ],
+     "reply": "I’ll update only that one step detail in this article draft and leave everything else unchanged.I found the matching step. I’m changing only its `detail` field in the draft.The save was refused because each `steps` row cannot include its row `id` in this update shape. I’ll resend the full `steps` array without row ids, changing only that one detail.This update path would replace the whole `steps` array and the API is treating the row ids as removals, so I need to use the content editor to make the in-place change safely instead. I’ll do that now and change nothing else.I couldn’t save the change.\n\nReason: this article’s `steps` field is configured so the update path rejects step row `id`s, but removing those ids makes the CMS treat the whole array as destructive and block the save. The editor tool hit the same validation issue, so no draft change was persisted.\n\nWhat I attempted:\n- Read article `1`\n- Targeted only the step `Run the installer`\n- Tried a safe draft update\n- Result: `0` drafts updated\n\nIf you want, I can try a different route next:\n1. inspect the exact schema/update shape for `steps`, or\n2. rewrite the whole article content through a lower-level content edit once the ",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 33.683,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 10,
+      "inputTokens": 103363,
+      "outputTokens": 989,
+      "cacheReadTokens": 94976,
+      "cachedShare": 0.9188587792536981,
+      "seconds": 33.626,
+      "toolCalls": 8,
+      "failedToolCalls": 3,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "updateArticles",
+        "error": "MCP error -32602: Input validation error: Invalid arguments for tool updateArticles: [\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"id\"\n    ],\n    \"path\": [\n      \"steps\",\n      0\n    ],\n    \"message\": \"Unrecognized key(s) in object: 'id'\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \""
+       },
+       {
+        "agent": "main",
+        "tool": "updateArticles",
+        "error": "Blocked - this update is DESTRUCTIVE and has not been reviewed: \"steps\" would lose 3 of its 3 item(s) - Payload replaces the whole array on update, so anything omitted is removed. Call reviewChanges({ collection: \"articles\", id: \"1\", proposedChanges }) with these exact fields first. If the user has "
+       },
+       {
+        "agent": "main",
+        "tool": "editContent",
+        "error": "CMS rejected the save (no changes persisted): MCP error -32602: Input validation error: Invalid arguments for tool updateArticles: [\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"id\"\n    ],\n    \"path\": [\n      \"steps\",\n      0\n    ],\n    \"message\": \"Unrecognized key(s) in object: 'id'\"\n "
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 21628,
+        "outputTokens": 200,
+        "cacheReadTokens": 18688,
+        "seconds": 9.129,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 5,
+        "inputTokens": 80576,
+        "outputTokens": 733,
+        "cacheReadTokens": 76288,
+        "seconds": 33.626,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 3
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1159,
+        "outputTokens": 56,
+        "cacheReadTokens": 0,
+        "seconds": 1.67,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "group-field",
+   "title": "Change a field inside a group",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 6.373,
+    "steps": 2,
+    "inputTokens": 31591,
+    "outputTokens": 129,
+    "cachedShare": 0.9400145611091767
+   },
+   "toolCalls": 5,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "metaDescription": "Install the desktop app on Windows or macOS in three steps.",
+      "metaTitleUnchanged": true,
+      "summaryUnchanged": true
+     },
+     "conversationId": "a6b1c2dd-4fc1-41aa-8f03-313a31fa6924",
+     "tools": [
+      "updateArticles"
+     ],
+     "reply": "I’ll update only this article’s SEO meta description in the draft and leave all other fields untouched.Done — updated 1 draft article.\n\nChanged only:\n- `seo.metaDescription` → `Install the desktop app on Windows or macOS in three steps.`\n\nPlease review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.373,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 31590,
+      "outputTokens": 128,
+      "cacheReadTokens": 29696,
+      "cachedShare": 0.9400443178220956,
+      "seconds": 6.312,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 31590,
+        "outputTokens": 128,
+        "cacheReadTokens": 29696,
+        "seconds": 6.312,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "metaDescription": "Install the desktop app on Windows or macOS in three steps.",
+      "metaTitleUnchanged": true,
+      "summaryUnchanged": true
+     },
+     "conversationId": "6c0dff02-2ea6-441c-9186-252bbf73b6ed",
+     "tools": [
+      "findArticles",
+      "reviewChanges",
+      "updateArticles"
+     ],
+     "reply": "I’ll update only this article’s `seo.metaDescription` on the draft, leaving every other field untouched.Done — updated 1 draft article.\n\nChanged only:\n- `seo.metaDescription` → `Install the desktop app on Windows or macOS in three steps.`\n\nNothing else was changed. Please review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 12.13,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 4,
+      "inputTokens": 63325,
+      "outputTokens": 305,
+      "cacheReadTokens": 59392,
+      "cachedShare": 0.9378918278720885,
+      "seconds": 12.084,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 4,
+        "inputTokens": 63325,
+        "outputTokens": 305,
+        "cacheReadTokens": 59392,
+        "seconds": 12.084,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "metaDescription": "Install the desktop app on Windows or macOS in three steps.",
+      "metaTitleUnchanged": true,
+      "summaryUnchanged": true
+     },
+     "conversationId": "acdbc6d0-2ac5-447f-a9d0-3cc5f951013f",
+     "tools": [
+      "updateArticles"
+     ],
+     "reply": "I’ll update only this article’s `seo.metaDescription` on the draft, leaving all other fields untouched.Done — updated 1 draft article.\n\nChanged only:\n- `seo.metaDescription` → `Install the desktop app on Windows or macOS in three steps.`\n\nPlease review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 5.984,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 31591,
+      "outputTokens": 129,
+      "cacheReadTokens": 29696,
+      "cachedShare": 0.9400145611091767,
+      "seconds": 5.933,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 31591,
+        "outputTokens": 129,
+        "cacheReadTokens": 29696,
+        "seconds": 5.933,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "replace-in-one-field",
+   "title": "Replace a phrase in the body and leave the same phrase in other fields",
+   "passed": 0,
+   "runs": 3,
+   "passK": false,
+   "median": {
+    "seconds": 22.784,
+    "steps": 7,
+    "inputTokens": 56007,
+    "outputTokens": 729,
+    "cachedShare": 0.884596743793642
+   },
+   "toolCalls": 18,
+   "failedToolCalls": 2,
+   "runDetails": [
+    {
+     "ok": false,
+     "details": {
+      "body": true,
+      "bodyIsExactlyTheReplacement": true,
+      "stepsUnchanged": false,
+      "nodeCount": [
+       4,
+       4
+      ]
+     },
+     "conversationId": "ee411957-6815-4ad5-be88-5ff16de94a5a",
+     "tools": [
+      "editContent"
+     ],
+     "reply": "I’ll update only the article body in the current draft of this article, leaving the steps array unchanged.Done: updated 1 draft of article ID 1.\n\nWhat changed:\n- body: replaced “workspace admin” with “workspace owner”\n- steps[6af5d12a6f8385319b0078c4].detail was also changed, even though you asked not to touch steps\n- _status was changed from draft to published, which also wasn’t intended\n\nPlease review this draft in the admin panel. If you want, I can make a corrective follow-up to:\n1. revert the steps change, and\n2. switch the article back to draft.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 28.029,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 10,
+      "inputTokens": 72632,
+      "outputTokens": 733,
+      "cacheReadTokens": 65408,
+      "cachedShare": 0.9005397070161912,
+      "seconds": 27.98,
+      "toolCalls": 8,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 8,
+        "inputTokens": 39757,
+        "outputTokens": 432,
+        "cacheReadTokens": 35712,
+        "seconds": 17.011,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 7,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 31627,
+        "outputTokens": 246,
+        "cacheReadTokens": 29696,
+        "seconds": 27.98,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1248,
+        "outputTokens": 55,
+        "cacheReadTokens": 0,
+        "seconds": 2.578,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": false,
+     "details": {
+      "body": false,
+      "bodyIsExactlyTheReplacement": false,
+      "stepsUnchanged": true,
+      "nodeCount": [
+       4,
+       4
+      ]
+     },
+     "conversationId": "c5c4ce3a-ca30-4d7a-896e-c52c08ea9bb1",
+     "tools": [
+      "editContent"
+     ],
+     "reply": "I’ll update only the article body on this draft, leaving the steps array untouched.I tried to make the body-only replacement, but the CMS rejected the save, so no draft was updated.\n\nReason:\n- the save failed on the `steps` field structure (`steps[*].id` was rejected), even though the instruction said not to touch steps\n\nSo the actual result is:\n- 0 drafts updated\n\nIf you want, I can try a safer second pass using a deterministic body-only approach:\n1. read the current draft,\n2. isolate the body content,\n3. update only that field,\n4. leave `steps` completely untouched.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 22.784,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 7,
+      "inputTokens": 56007,
+      "outputTokens": 729,
+      "cacheReadTokens": 49536,
+      "cachedShare": 0.8844608709625582,
+      "seconds": 22.74,
+      "toolCalls": 5,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "editContent",
+        "error": "CMS rejected the save (no changes persisted): MCP error -32602: Input validation error: Invalid arguments for tool updateArticles: [\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"id\"\n    ],\n    \"path\": [\n      \"steps\",\n      0\n    ],\n    \"message\": \"Unrecognized key(s) in object: 'id'\"\n "
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 23300,
+        "outputTokens": 409,
+        "cacheReadTokens": 19840,
+        "seconds": 11.554,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 31474,
+        "outputTokens": 227,
+        "cacheReadTokens": 29696,
+        "seconds": 22.74,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 1
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1233,
+        "outputTokens": 93,
+        "cacheReadTokens": 0,
+        "seconds": 2.128,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": false,
+     "details": {
+      "body": false,
+      "bodyIsExactlyTheReplacement": false,
+      "stepsUnchanged": true,
+      "nodeCount": [
+       4,
+       4
+      ]
+     },
+     "conversationId": "eccaf8ae-28da-4812-b691-4fbc27e37634",
+     "tools": [
+      "editContent"
+     ],
+     "reply": "I’ll update the current article’s body only, leaving the steps untouched, and save it as a draft.I attempted the draft edit, but it did not save.\n\nReason: the CMS rejected the write because the article’s `steps` rows currently include internal `id` keys that the underlying update endpoint refuses, so no changes were persisted.\n\nIf you want, I can try a safer second pass that explicitly rewrites only the `body` field and leaves `steps` structurally untouched.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 22.27,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 7,
+      "inputTokens": 55709,
+      "outputTokens": 630,
+      "cacheReadTokens": 49280,
+      "cachedShare": 0.884596743793642,
+      "seconds": 22.236,
+      "toolCalls": 5,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "editContent",
+        "error": "CMS rejected the save (no changes persisted): MCP error -32602: Input validation error: Invalid arguments for tool updateArticles: [\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"id\"\n    ],\n    \"path\": [\n      \"steps\",\n      0\n    ],\n    \"message\": \"Unrecognized key(s) in object: 'id'\"\n "
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 22984,
+        "outputTokens": 344,
+        "cacheReadTokens": 19584,
+        "seconds": 12.31,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 31481,
+        "outputTokens": 197,
+        "cacheReadTokens": 29696,
+        "seconds": 22.236,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 1
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1244,
+        "outputTokens": 89,
+        "cacheReadTokens": 0,
+        "seconds": 1.679,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "global-array-add",
+   "title": "Add a row to a global that has drafts",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 49.687,
+    "steps": 16,
+    "inputTokens": 142269,
+    "outputTokens": 1232,
+    "cachedShare": 0.9324838247641626
+   },
+   "toolCalls": 44,
+   "failedToolCalls": 6,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "links": [
+       {
+        "label": "Setup",
+        "path": "/setup"
+       },
+       {
+        "label": "Billing",
+        "path": "/billing"
+       },
+       {
+        "label": "Glossary",
+        "path": "/glossary"
+       }
+      ]
+     },
+     "conversationId": "a27d5677-d72f-4883-951c-6ed83b4fc65e",
+     "tools": [
+      "findNavigation",
+      "updateNavigation",
+      "reviewChanges",
+      "updateNavigation",
+      "editContent"
+     ],
+     "reply": "I'll update the navigation draft by appending a new “Glossary” link at the end, keeping all existing links intact. First I'll read the current navigation so I only change that array safely.I found 2 existing navigation links. I'll append “Glossary” → `/glossary` to the end and save it as a draft.The direct update was blocked because updating the links array this way would drop the existing row IDs, so I need to review the exact change first and then retry safely without removing anything.The reviewed change is safe: it adds 1 link and keeps the existing 2. I'll save that reviewed draft now.The low-level global update is still refusing the array write, so I'll use the content editor to append the link in the navigation draft while preserving the existing items.I updated the navigation draft, but there’s an issue to review:\n\n- 1 draft updated\n- Added 1 new navigation row\n- Open issue: “Glossary” appears 2 times, but only 1 is intended\n\nSo the draft now likely has a duplicate Glossary link. Please review it in the admin panel. If you want, I can fix the duplicate in a follow-up draft edit.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 53.441,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 18,
+      "inputTokens": 152560,
+      "outputTokens": 1254,
+      "cacheReadTokens": 138752,
+      "cachedShare": 0.9094913476664919,
+      "seconds": 53.38,
+      "toolCalls": 16,
+      "failedToolCalls": 2,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "updateNavigation",
+        "error": "Blocked - this update is DESTRUCTIVE and has not been reviewed: \"links\" would lose 2 of its 2 item(s) - Payload replaces the whole array on update, so anything omitted is removed. Call reviewChanges({ collection: \"global:navigation\", id: \"navigation\", proposedChanges }) with these exact fields first"
+       },
+       {
+        "agent": "main",
+        "tool": "updateNavigation",
+        "error": "Blocked - this update is DESTRUCTIVE and has not been reviewed: \"links\" would lose 2 of its 2 item(s) - Payload replaces the whole array on update, so anything omitted is removed. Call reviewChanges({ collection: \"global:navigation\", id: \"navigation\", proposedChanges }) with these exact fields first"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 12,
+        "inputTokens": 54675,
+        "outputTokens": 480,
+        "cacheReadTokens": 46592,
+        "seconds": 24.217,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 11,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 6,
+        "inputTokens": 96652,
+        "outputTokens": 696,
+        "cacheReadTokens": 92160,
+        "seconds": 53.38,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 2
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1233,
+        "outputTokens": 78,
+        "cacheReadTokens": 0,
+        "seconds": 2.491,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "links": [
+       {
+        "label": "Setup",
+        "path": "/setup"
+       },
+       {
+        "label": "Billing",
+        "path": "/billing"
+       },
+       {
+        "label": "Glossary",
+        "path": "/glossary"
+       }
+      ]
+     },
+     "conversationId": "b0dd7e2e-075a-47c7-91c5-99706b5e046f",
+     "tools": [
+      "findNavigation",
+      "updateNavigation",
+      "readDocument",
+      "updateNavigation",
+      "editContent"
+     ],
+     "reply": "I’ll add “Glossary” → “/glossary” to the end of the navigation draft while keeping the existing links intact. First I’ll read the current navigation so I can append without overwriting anything.I found 2 existing links. I’m updating the navigation draft to append “Glossary” at the end and keep the current links unchanged.The CMS blocked that write because the navigation link rows have internal IDs, and sending the array without them looks like removing the 2 existing items. I’ll review the exact change first, then retry in a way that preserves the current links and appends the new one.I have the exact current link rows, including their IDs. Now I’ll update the draft preserving both existing rows and adding the new one at the end.I hit a CMS safeguard on the global update path. To avoid overwriting the navigation array incorrectly, I’ll use the content editor to append the link to the existing navigation draft instead of replacing the whole array manually.Done — I updated the navigation draft.\n\nResult:\n- Added 1 new link at the end: `Glossary` → `/glossary`\n\nNote:\n- The editor reported that `Glossary` now appears 2 times in the navigation, so there was already another matching link ",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 49.687,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 16,
+      "inputTokens": 142269,
+      "outputTokens": 1232,
+      "cacheReadTokens": 133504,
+      "cachedShare": 0.9383913572176651,
+      "seconds": 49.62,
+      "toolCalls": 14,
+      "failedToolCalls": 2,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "updateNavigation",
+        "error": "Blocked - this update is DESTRUCTIVE and has not been reviewed: \"links\" would lose 2 of its 2 item(s) - Payload replaces the whole array on update, so anything omitted is removed. Call reviewChanges({ collection: \"global:navigation\", id: \"navigation\", proposedChanges }) with these exact fields first"
+       },
+       {
+        "agent": "main",
+        "tool": "updateNavigation",
+        "error": "Blocked - this update is DESTRUCTIVE and has not been reviewed: \"links\" would lose 2 of its 2 item(s) - Payload replaces the whole array on update, so anything omitted is removed. Call reviewChanges({ collection: \"global:navigation\", id: \"navigation\", proposedChanges }) with these exact fields first"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 10,
+        "inputTokens": 44285,
+        "outputTokens": 445,
+        "cacheReadTokens": 41344,
+        "seconds": 20.763,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 9,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 6,
+        "inputTokens": 96697,
+        "outputTokens": 677,
+        "cacheReadTokens": 92160,
+        "seconds": 49.62,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 2
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1287,
+        "outputTokens": 110,
+        "cacheReadTokens": 0,
+        "seconds": 1.755,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "links": [
+       {
+        "label": "Setup",
+        "path": "/setup"
+       },
+       {
+        "label": "Billing",
+        "path": "/billing"
+       },
+       {
+        "label": "Glossary",
+        "path": "/glossary"
+       }
+      ]
+     },
+     "conversationId": "2aab985f-ca07-407e-ab50-6aa7ac629889",
+     "tools": [
+      "findNavigation",
+      "updateNavigation",
+      "editContent"
+     ],
+     "reply": "I’ll append “Glossary” to the existing navigation links as a draft, preserving all current links.I found 2 existing navigation links. I’m adding “Glossary” → “/glossary” to the end and saving it as a draft.The direct global update was blocked because this API treats the `links` array as a full replacement and would drop the existing row metadata unless I review the exact change first. I’ll use the content editor to append the link while keeping all existing links intact, saving only a draft.Done — I updated the navigation draft and added 1 link at the end:\n\n- Glossary → `/glossary`\n\nThe draft was updated by 1 row. Please review it in the admin panel before publishing.\n\nNote: the editor flagged that “Glossary” now appears twice somewhere in the navigation, so there may already have been an existing Glossary entry or matching path. I did not make a second pass automatically. If you want, I can check the navigation and remove the duplicate in the draft.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 42.211,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 16,
+      "inputTokens": 121482,
+      "outputTokens": 1108,
+      "cacheReadTokens": 113280,
+      "cachedShare": 0.9324838247641626,
+      "seconds": 42.148,
+      "toolCalls": 14,
+      "failedToolCalls": 2,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "updateNavigation",
+        "error": "Blocked - this update is DESTRUCTIVE and has not been reviewed: \"links\" would lose 2 of its 2 item(s) - Payload replaces the whole array on update, so anything omitted is removed. Call reviewChanges({ collection: \"global:navigation\", id: \"navigation\", proposedChanges }) with these exact fields first"
+       },
+       {
+        "agent": "content-editor",
+        "tool": "insertItem",
+        "error": "No item with id \"[6af5d12a6f8385319b0078c7]\" at \"links\""
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 12,
+        "inputTokens": 56574,
+        "outputTokens": 542,
+        "cacheReadTokens": 52864,
+        "seconds": 24.538,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 11,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 63622,
+        "outputTokens": 456,
+        "cacheReadTokens": 60416,
+        "seconds": 42.148,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 1
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1286,
+        "outputTokens": 110,
+        "cacheReadTokens": 0,
+        "seconds": 1.855,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "read-only-question",
+   "title": "A question that must not change anything",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 6.458,
+    "steps": 2,
+    "inputTokens": 31408,
+    "outputTokens": 144,
+    "cachedShare": 0.9454915944982171
+   },
+   "toolCalls": 3,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "stepsNamed": 3,
+      "changes": 0,
+      "documentUnchanged": true
+     },
+     "conversationId": "a44e5d4d-13d6-4059-9f20-5d4b4e78bd2a",
+     "tools": [
+      "findArticles"
+     ],
+     "reply": "This article, “Install the desktop app” (ID 1), has 3 steps:\n\n1. Download the installer — Open the downloads page and choose your system.\n2. Run the installer — Accept the license and keep the default folder.\n3. Sign in — Use your work account. A workspace admin can reset the password.\n\nNo changes made.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 8.568,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 31408,
+      "outputTokens": 144,
+      "cacheReadTokens": 14848,
+      "cachedShare": 0.47274579724910853,
+      "seconds": 8.516,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 31408,
+        "outputTokens": 144,
+        "cacheReadTokens": 14848,
+        "seconds": 8.516,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "stepsNamed": 3,
+      "changes": 0,
+      "documentUnchanged": true
+     },
+     "conversationId": "91101e3a-276b-4565-8123-c36dbdeb7f35",
+     "tools": [
+      "findArticles"
+     ],
+     "reply": "This article has 3 steps:\n\n1. Download the installer — Open the downloads page and choose your system.\n2. Run the installer — Accept the license and keep the default folder.\n3. Sign in — Use your work account. A workspace admin can reset the password.\n\nI didn’t change anything.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 5.716,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 31408,
+      "outputTokens": 132,
+      "cacheReadTokens": 29696,
+      "cachedShare": 0.9454915944982171,
+      "seconds": 5.682,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 31408,
+        "outputTokens": 132,
+        "cacheReadTokens": 29696,
+        "seconds": 5.682,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "stepsNamed": 3,
+      "changes": 0,
+      "documentUnchanged": true
+     },
+     "conversationId": "c53148e4-6126-48b9-83cb-bd8f90a57ae4",
+     "tools": [
+      "findArticles"
+     ],
+     "reply": "This article, “Install the desktop app” (ID 1), has 3 steps:\n\n1. Download the installer — Open the downloads page and choose your system.\n2. Run the installer — Accept the license and keep the default folder.\n3. Sign in — Use your work account. A workspace admin can reset the password.\n\nI didn’t change anything.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.458,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 31408,
+      "outputTokens": 146,
+      "cacheReadTokens": 29696,
+      "cachedShare": 0.9454915944982171,
+      "seconds": 6.419,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 31408,
+        "outputTokens": 146,
+        "cacheReadTokens": 29696,
+        "seconds": 6.419,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "no-drafts-collection",
+   "title": "A collection without drafts gets no agent write",
+   "passed": 0,
+   "runs": 3,
+   "passK": false,
+   "median": {
+    "seconds": 11.99,
+    "steps": 4,
+    "inputTokens": 62912,
+    "outputTokens": 264,
+    "cachedShare": 0.9440488301119023
+   },
+   "toolCalls": 8,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": false,
+     "details": {
+      "nameAfter": "Payments"
+     },
+     "conversationId": "97ae2d9d-4845-4812-babe-2980eda13b26",
+     "tools": [
+      "findDocuments",
+      "findCategories",
+      "updateCategories"
+     ],
+     "reply": "I'll update the existing category draft so its localized name changes from “Billing” to “Payments”, leaving everything else untouched.I found one matching category. I’m reading its draft record now, then I’ll change only the name field.Done — updated 1 category draft:\n\n- ID 2: Billing → Payments\n\nPlease review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 12.147,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 4,
+      "inputTokens": 62912,
+      "outputTokens": 264,
+      "cacheReadTokens": 59392,
+      "cachedShare": 0.9440488301119023,
+      "seconds": 12.105,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 4,
+        "inputTokens": 62912,
+        "outputTokens": 264,
+        "cacheReadTokens": 59392,
+        "seconds": 12.105,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": false,
+     "details": {
+      "nameAfter": "Payments"
+     },
+     "conversationId": "a9a480bf-3437-4747-88b6-c28e9e53428a",
+     "tools": [
+      "findCategories",
+      "updateCategories"
+     ],
+     "reply": "I’ll find the existing category named “Billing” in the draft view, then update only its `name` field as a draft.Found one matching category: ID 2. Updating its `name` from “Billing” to “Payments” as a draft.Done — updated 1 draft category:\n\n- ID 2: Billing → Payments\n\nPlease review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 9.854,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 47049,
+      "outputTokens": 238,
+      "cacheReadTokens": 44544,
+      "cachedShare": 0.9467576356564433,
+      "seconds": 9.82,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 47049,
+        "outputTokens": 238,
+        "cacheReadTokens": 44544,
+        "seconds": 9.82,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": false,
+     "details": {
+      "nameAfter": "Payments"
+     },
+     "conversationId": "06961449-bbe4-41a4-85ee-ab1de905b8cc",
+     "tools": [
+      "findDocuments",
+      "findCategories",
+      "updateCategories"
+     ],
+     "reply": "I’ll find the existing category named “Billing” first, then update only its `name` field as a draft.I found one matching category. I’ll read its draft version to get the exact document ID, then update just the localized `name` field in English to “Payments” as a draft.Done — updated 1 draft category:\n\n- ID 2: Billing → Payments\n\nPlease review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 11.99,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 4,
+      "inputTokens": 62930,
+      "outputTokens": 278,
+      "cacheReadTokens": 59392,
+      "cachedShare": 0.943778801843318,
+      "seconds": 11.939,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 4,
+        "inputTokens": 62930,
+        "outputTokens": 278,
+        "cacheReadTokens": 59392,
+        "seconds": 11.939,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

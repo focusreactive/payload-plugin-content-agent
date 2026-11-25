@@ -1,0 +1,1687 @@
+{
+ "label": "grid-opus55-docs",
+ "schema": "docs",
+ "model": "anthropic",
+ "k": 3,
+ "date": "2026-11-12T17:22:29.643Z",
+ "summary": {
+  "scenarios": 8,
+  "passK": 6,
+  "runs": 24,
+  "runsPassed": 18,
+  "toolCalls": 133,
+  "failedToolCalls": 11,
+  "inputTokens": 3396647
+ },
+ "results": [
+  {
+   "id": "translate-field",
+   "title": "Translate one field into the second locale",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 9.247,
+    "steps": 3,
+    "inputTokens": 93038,
+    "outputTokens": 843,
+    "cachedShare": 0.9584901670543455
+   },
+   "toolCalls": 9,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+      "englishUnchanged": true,
+      "englishBodyUnchanged": true,
+      "looksGerman": true
+     },
+     "conversationId": "39925901-3f46-40f7-b5bf-0318284a14ad",
+     "tools": [
+      "findArticles",
+      "findArticles",
+      "updateArticles"
+     ],
+     "reply": "The German summary is empty, so I'll save the translation to the `de` locale as a draft. The English text stays as it is.I translated the summary of \"Install the desktop app\" (article ID 1) into German and saved it as a draft. One draft was updated, and nothing has been published.\n\n- **English (unchanged):** Download the installer, run it and sign in with your work account.\n- **German (new):** Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.\n\nThe German title is also still empty, and so are the body, steps and SEO fields. I can translate the whole article if you'd like. Please review the draft in the admin panel by switching to the **de** locale before you publish.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 9.247,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 93038,
+      "outputTokens": 843,
+      "cacheReadTokens": 60436,
+      "cachedShare": 0.6495840409295127,
+      "seconds": 9.004,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 93038,
+        "outputTokens": 843,
+        "cacheReadTokens": 60436,
+        "seconds": 9.004,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+      "englishUnchanged": true,
+      "englishBodyUnchanged": true,
+      "looksGerman": true
+     },
+     "conversationId": "c245a79b-a931-47bc-9486-a0284b53210f",
+     "tools": [
+      "readDocument",
+      "readDocument",
+      "updateArticles",
+      "readDocument"
+     ],
+     "reply": "The article's German version currently falls back to the English text. I'll save a German summary in the `de` locale only and leave English as it is.I added a German summary to the German (`de`) version of article 1, \"Install the desktop app,\" and saved it as a draft. I checked afterwards: the English summary hasn't changed.\n\n- **English:** Download the installer, run it and sign in with your work account.\n- **German:** Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.\n\nThe German version of this article had no German text of its own, so it was showing the English text. That's still true for the rest of it: the title, body, steps and SEO fields haven't been translated. I can translate those too if you'd like.\n\nPlease switch the admin panel to the German locale to review the draft before publishing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 12.734,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 94580,
+      "outputTokens": 861,
+      "cacheReadTokens": 90654,
+      "cachedShare": 0.9584901670543455,
+      "seconds": 12.605,
+      "toolCalls": 4,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 94580,
+        "outputTokens": 861,
+        "cacheReadTokens": 90654,
+        "seconds": 12.605,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+      "englishUnchanged": true,
+      "englishBodyUnchanged": true,
+      "looksGerman": true
+     },
+     "conversationId": "d1c4f4fc-094f-4035-98d6-b341b328d1f6",
+     "tools": [
+      "findArticles",
+      "updateArticles"
+     ],
+     "reply": "I translated the summary of article #1, \"Install the desktop app\", into German and saved it to the draft. The German summary was empty before.\n\n- **English (unchanged):** \"Download the installer, run it and sign in with your work account.\"\n- **German (new):** \"Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.\"\n\nI used the formal \"Sie\". If you'd rather address readers as \"du\", I can change it. The German title is also still empty.\n\n1 draft updated and nothing published. Please check it in the admin panel by switching to the DE locale.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 7.761,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 92606,
+      "outputTokens": 662,
+      "cacheReadTokens": 90654,
+      "cachedShare": 0.9789214521737253,
+      "seconds": 7.713,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 92606,
+        "outputTokens": 662,
+        "cacheReadTokens": 90654,
+        "seconds": 7.713,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "bulk-translate",
+   "title": "Translate one field of several documents",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 18.164,
+    "steps": 8,
+    "inputTokens": 147934,
+    "outputTokens": 2132,
+    "cachedShare": 0.612800302837752
+   },
+   "toolCalls": 20,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "perDoc": [
+       {
+        "german": "Lade das Installationsprogramm herunter, führe es aus und melde dich mit deinem Arbeitskonto an.",
+        "ok": true
+       },
+       {
+        "german": "Frühere Rechnungen finden und als PDF herunterladen.",
+        "ok": true
+       }
+      ]
+     },
+     "conversationId": "dfb800f1-8ef5-494c-b840-5ca12cf9227e",
+     "tools": [
+      "translateContent"
+     ],
+     "reply": "I'll check how many articles this covers first. Nothing will be written until you confirm.I translated the summaries of both articles in the collection (2 of 2) into German, with no rejections or errors.\n\n- Only the **Summary** field was translated, from the English version into the German one. Titles, body text, steps and SEO fields were left alone, and the English summaries are unchanged.\n- The German text is saved in **2 drafts** and isn't published yet.\n\nPlease review the German versions in the admin panel (switch the locale to **de**) before publishing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 18.001,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 8,
+      "inputTokens": 116393,
+      "outputTokens": 2225,
+      "cacheReadTokens": 60436,
+      "cachedShare": 0.5192408478173086,
+      "seconds": 17.97,
+      "toolCalls": 7,
+      "failedToolCalls": 0,
+      "failedRuns": 1,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 6,
+        "inputTokens": 48603,
+        "outputTokens": 707,
+        "cacheReadTokens": 0,
+        "seconds": 7.233,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 6,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 61504,
+        "outputTokens": 640,
+        "cacheReadTokens": 60436,
+        "seconds": 17.97,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 6286,
+        "outputTokens": 878,
+        "cacheReadTokens": 0,
+        "seconds": 8.969,
+        "runs": 3,
+        "failedRuns": 1,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "perDoc": [
+       {
+        "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+        "ok": true
+       },
+       {
+        "german": "Finden Sie frühere Rechnungen und laden Sie sie als PDF herunter.",
+        "ok": true
+       }
+      ]
+     },
+     "conversationId": "92608417-e52f-4d38-807d-7c60650f8289",
+     "tools": [
+      "listDocuments",
+      "listDocuments",
+      "updateArticles",
+      "updateArticles",
+      "listDocuments"
+     ],
+     "reply": "There are only 2 articles, so no bulk confirmation is needed. I'll write only the German (`de`) summary on each one, saved as a draft. The English text and every other field stay as they are.I translated the summaries of both articles into German. These are the only 2 articles in the collection, and both are saved as drafts.\n\n| ID | Article | English summary (unchanged) | New German summary |\n|---|---|---|---|\n| 2 | Download an invoice | Find past invoices and download them as PDF. | Finden Sie frühere Rechnungen und laden Sie sie als PDF herunter. |\n| 1 | Install the desktop app | Download the installer, run it and sign in with your work account. | Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an. |\n\n- Only the German summary was changed. I checked the English versions afterwards and they're the same as before.\n- The German titles, body, steps and SEO fields are still in English, so these articles are only partly translated. I can translate the rest too if you'd like.\n- I used the formal \"Sie\" in both summaries to keep the tone consistent.\n\nPlease check the German versions in the admin panel (switch the locale to **de**)",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 19.233,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 5,
+      "inputTokens": 160746,
+      "outputTokens": 1470,
+      "cacheReadTokens": 151090,
+      "cachedShare": 0.9399300760205541,
+      "seconds": 19.19,
+      "toolCalls": 5,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 5,
+        "inputTokens": 160746,
+        "outputTokens": 1470,
+        "cacheReadTokens": 151090,
+        "seconds": 19.19,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "perDoc": [
+       {
+        "german": "Laden Sie das Installationsprogramm herunter, starten Sie es und melden Sie sich mit Ihrem Arbeitskonto an.",
+        "ok": true
+       },
+       {
+        "german": "Finden Sie frühere Rechnungen und laden Sie sie als PDF herunter.",
+        "ok": true
+       }
+      ]
+     },
+     "conversationId": "4dcc17ce-8ea7-4b62-9272-7a96c7819e35",
+     "tools": [
+      "translateContent",
+      "listDocuments"
+     ],
+     "reply": "I translated the summaries of both articles into German. That covers every article in the collection, so I didn't need to ask you to confirm a bulk change. The tool reported 2 of 2 translated, with no rejections or errors.\n\n| ID | Article | German summary |\n|---|---|---|\n| 1 | Install the desktop app | Laden Sie das Installationsprogramm herunter, starten Sie es und melden Sie sich mit Ihrem Arbeitskonto an. |\n| 2 | Download an invoice | Finden Sie frühere Rechnungen und laden Sie sie als PDF herunter. |\n\nThe English summaries weren't changed. I only touched the summary field. The other German fields (title, steps and SEO) still show English. That's either the English text showing through or a copy of it, so they still need translating if you want them in German.\n\nBoth changes are saved as drafts, so please review them in the admin panel (German locale) before publishing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 18.164,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 9,
+      "inputTokens": 147934,
+      "outputTokens": 2132,
+      "cacheReadTokens": 90654,
+      "cachedShare": 0.612800302837752,
+      "seconds": 18.134,
+      "toolCalls": 8,
+      "failedToolCalls": 0,
+      "failedRuns": 1,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 6,
+        "inputTokens": 48614,
+        "outputTokens": 723,
+        "cacheReadTokens": 0,
+        "seconds": 8.896,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 6,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 93069,
+        "outputTokens": 753,
+        "cacheReadTokens": 90654,
+        "seconds": 18.134,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 6251,
+        "outputTokens": 656,
+        "cacheReadTokens": 0,
+        "seconds": 6.327,
+        "runs": 3,
+        "failedRuns": 1,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "array-row-edit",
+   "title": "Change one field of one array row",
+   "passed": 0,
+   "runs": 3,
+   "passK": false,
+   "median": {
+    "seconds": 26.865,
+    "steps": 9,
+    "inputTokens": 215997,
+    "outputTokens": 2299,
+    "cachedShare": 0.8394005472298226
+   },
+   "toolCalls": 26,
+   "failedToolCalls": 6,
+   "runDetails": [
+    {
+     "ok": false,
+     "details": {
+      "steps": [
+       {
+        "heading": "Download the installer",
+        "detail": "Open the downloads page and choose your system."
+       },
+       {
+        "heading": "Run the installer",
+        "detail": "Accept the license and keep the default folder."
+       },
+       {
+        "heading": "Sign in",
+        "detail": "Use your work account. A workspace admin can reset the password."
+       }
+      ],
+      "bodyUnchanged": true
+     },
+     "conversationId": "d4ee0558-64d5-4090-8f26-c734cdc36345",
+     "tools": [
+      "readDocument",
+      "updateArticles",
+      "editContent",
+      "readDocument"
+     ],
+     "reply": "I didn't make the change. The step \"Run the installer\" still says \"Accept the license and keep the default folder.\"\n\n**Why it failed:** The only way I can edit steps is to resend the whole list of steps, and the tool won't accept the IDs that keep each step tied to its saved data. I tried a direct save and then the content editor. Both were rejected, and nothing was saved.\n\n**Why I stopped there:** I could resend the steps without their IDs, but the CMS would likely treat all three as new steps. That would give every step a new ID and could also wipe the German version of the step headings and details. The German view currently shows the same English text. That may just be the English showing because there's no German, or it may be stored German text, and I can't tell which. Either way, it wouldn't meet \"change nothing else.\"\n\n**What you can do:**\n- **Fastest:** In the admin panel, open the article, go to Steps → \"Run the installer\" and paste `Accept the license. Choose the folder you want.` into Detail.\n- **Or I can do it without the IDs**, if you're fine with all three steps getting new IDs and possibly losing German step text. I'd change only the English detail of that step and ",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 24.659,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 8,
+      "inputTokens": 183526,
+      "outputTokens": 2029,
+      "cacheReadTokens": 151090,
+      "cachedShare": 0.8232620991031243,
+      "seconds": 24.626,
+      "toolCalls": 7,
+      "failedToolCalls": 2,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "updateArticles",
+        "error": "MCP error -32602: Input validation error: Invalid arguments for tool updateArticles: Unrecognized key(s) in object: 'id' at steps[0]\nUnrecognized key(s) in object: 'id' at steps[1]\nUnrecognized key(s) in object: 'id' at steps[2]"
+       },
+       {
+        "agent": "main",
+        "tool": "editContent",
+        "error": "CMS rejected the save (no changes persisted): MCP error -32602: Input validation error: Invalid arguments for tool updateArticles: Unrecognized key(s) in object: 'id' at steps[0]\nUnrecognized key(s) in object: 'id' at steps[1]\nUnrecognized key(s) in object: 'id' at steps[2]"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 3,
+        "inputTokens": 23786,
+        "outputTokens": 281,
+        "cacheReadTokens": 0,
+        "seconds": 3.715,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 5,
+        "inputTokens": 157797,
+        "outputTokens": 1640,
+        "cacheReadTokens": 151090,
+        "seconds": 24.626,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 2
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1943,
+        "outputTokens": 108,
+        "cacheReadTokens": 0,
+        "seconds": 1.412,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": false,
+     "details": {
+      "steps": [
+       {
+        "heading": "Download the installer",
+        "detail": "Open the downloads page and choose your system."
+       },
+       {
+        "heading": "Run the installer",
+        "detail": "Accept the license and keep the default folder."
+       },
+       {
+        "heading": "Sign in",
+        "detail": "Use your work account. A workspace admin can reset the password."
+       }
+      ],
+      "bodyUnchanged": true
+     },
+     "conversationId": "72af7995-b92d-4caa-ba62-b6e87d76763e",
+     "tools": [
+      "readDocument",
+      "reviewChanges",
+      "updateArticles",
+      "editContent",
+      "searchContent",
+      "findReplaceContent",
+      "readDocument",
+      "readDocument"
+     ],
+     "reply": "The old text shows up only once, in that step's detail, so a literal replace on this one document will change just that field.I couldn't make the change. The step \"Run the installer\" still says **\"Accept the license and keep the default folder.\"** I checked the draft again after the attempts and it hasn't changed.\n\n**Why it failed:** I tried three ways to save the change, and the CMS rejected each one:\n1. **Direct update:** the tool won't accept the row IDs of the steps, and I need those to change one step without touching the others.\n2. **Content editor:** it failed on the same row ID error, so nothing was saved.\n3. **Literal find-and-replace:** the old text appears only in that one step, but the save failed (0 of 1 replacements).\n\n**The only option left breaks your \"change nothing else\" condition.** I could save all three steps again without their row IDs. Every step would get a new ID, even though the visible text in the other two would stay the same. The step text can differ by language, and the German version is matched to each step by that ID. So the German step text could be lost or end up on the wrong step. (In German the steps currently show the English text, which is prob",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 32.695,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 12,
+      "inputTokens": 315600,
+      "outputTokens": 2736,
+      "cacheReadTokens": 271962,
+      "cachedShare": 0.8617300380228137,
+      "seconds": 32.571,
+      "toolCalls": 11,
+      "failedToolCalls": 2,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "updateArticles",
+        "error": "MCP error -32602: Input validation error: Invalid arguments for tool updateArticles: Unrecognized key(s) in object: 'id' at steps[0]\nUnrecognized key(s) in object: 'id' at steps[1]\nUnrecognized key(s) in object: 'id' at steps[2]"
+       },
+       {
+        "agent": "main",
+        "tool": "editContent",
+        "error": "CMS rejected the save (no changes persisted): MCP error -32602: Input validation error: Invalid arguments for tool updateArticles: Unrecognized key(s) in object: 'id' at steps[0]\nUnrecognized key(s) in object: 'id' at steps[1]\nUnrecognized key(s) in object: 'id' at steps[2]"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 3,
+        "inputTokens": 23762,
+        "outputTokens": 262,
+        "cacheReadTokens": 0,
+        "seconds": 4.213,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 9,
+        "inputTokens": 289922,
+        "outputTokens": 2388,
+        "cacheReadTokens": 271962,
+        "seconds": 32.571,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 8,
+        "failedToolCalls": 2
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1916,
+        "outputTokens": 86,
+        "cacheReadTokens": 0,
+        "seconds": 1.277,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": false,
+     "details": {
+      "steps": [
+       {
+        "heading": "Download the installer",
+        "detail": "Open the downloads page and choose your system."
+       },
+       {
+        "heading": "Run the installer",
+        "detail": "Accept the license and keep the default folder."
+       },
+       {
+        "heading": "Sign in",
+        "detail": "Use your work account. A workspace admin can reset the password."
+       }
+      ],
+      "bodyUnchanged": true
+     },
+     "conversationId": "bee5b5e2-a7b7-406c-aa83-b960b5527032",
+     "tools": [
+      "readDocument",
+      "reviewChanges",
+      "updateArticles",
+      "editContent",
+      "readDocument"
+     ],
+     "reply": "I didn't make the change. Article 1 is exactly as it was.\n\nThe save failed twice. I tried a direct update, then the content editor. Both were rejected with the same error: the update tool won't accept the IDs that identify each step. The only way I can save from here is to resend all three steps without those IDs, and that breaks \"change nothing else\":\n- The CMS would give all three steps new IDs, even the ones you aren't changing.\n- Step headings and details can have a separate German version, and those versions are tied to the step IDs. With new IDs, they could be lost. Right now the German steps read exactly like the English ones, and I can't tell from here if that's real saved German text or just English showing through as a fallback.\n\nYou have two options:\n1. **Edit it yourself in the admin panel (recommended).** In the steps, open \"Run the installer\" and replace the detail \"Accept the license and keep the default folder.\" with \"Accept the license. Choose the folder you want.\" Nothing else changes.\n2. **I resend the steps without their IDs.** I'll do that only if you confirm, knowing all three steps get new IDs and any German step text may be lost.\n\nThe lasting fix is to chang",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 26.865,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 9,
+      "inputTokens": 215997,
+      "outputTokens": 2299,
+      "cacheReadTokens": 181308,
+      "cachedShare": 0.8394005472298226,
+      "seconds": 26.813,
+      "toolCalls": 8,
+      "failedToolCalls": 2,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "updateArticles",
+        "error": "MCP error -32602: Input validation error: Invalid arguments for tool updateArticles: Unrecognized key(s) in object: 'id' at steps[0]\nUnrecognized key(s) in object: 'id' at steps[1]\nUnrecognized key(s) in object: 'id' at steps[2]"
+       },
+       {
+        "agent": "main",
+        "tool": "editContent",
+        "error": "CMS rejected the save (no changes persisted): MCP error -32602: Input validation error: Invalid arguments for tool updateArticles: Unrecognized key(s) in object: 'id' at steps[0]\nUnrecognized key(s) in object: 'id' at steps[1]\nUnrecognized key(s) in object: 'id' at steps[2]"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 3,
+        "inputTokens": 23780,
+        "outputTokens": 270,
+        "cacheReadTokens": 0,
+        "seconds": 3.599,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 6,
+        "inputTokens": 190287,
+        "outputTokens": 1938,
+        "cacheReadTokens": 181308,
+        "seconds": 26.813,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 2
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1930,
+        "outputTokens": 91,
+        "cacheReadTokens": 0,
+        "seconds": 1.497,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "group-field",
+   "title": "Change a field inside a group",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 7.496,
+    "steps": 3,
+    "inputTokens": 92805,
+    "outputTokens": 605,
+    "cachedShare": 0.9768223694844028
+   },
+   "toolCalls": 6,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "metaDescription": "Install the desktop app on Windows or macOS in three steps.",
+      "metaTitleUnchanged": true,
+      "summaryUnchanged": true
+     },
+     "conversationId": "e7d851d5-889a-43f8-9f61-e7fbd583b181",
+     "tools": [
+      "findArticles",
+      "updateArticles"
+     ],
+     "reply": "I changed the English SEO meta description of article 1, \"Install the desktop app\", and saved it as a draft. It was not published.\n\n- **Meta description:** was \"Three steps to install the desktop app.\" and is now \"Install the desktop app on Windows or macOS in three steps.\"\n- **Meta title:** I sent the existing value back with the update so it would stay the same. It's still \"Install the desktop app\".\n\nNothing else was changed, and the German version wasn't touched. 1 draft was updated. Please review it in the admin panel before you publish.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 8.189,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 92894,
+      "outputTokens": 686,
+      "cacheReadTokens": 90654,
+      "cachedShare": 0.9758864942838074,
+      "seconds": 8.162,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 92894,
+        "outputTokens": 686,
+        "cacheReadTokens": 90654,
+        "seconds": 8.162,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "metaDescription": "Install the desktop app on Windows or macOS in three steps.",
+      "metaTitleUnchanged": true,
+      "summaryUnchanged": true
+     },
+     "conversationId": "9c3163df-4674-4ed1-b25f-4baec71e2c95",
+     "tools": [
+      "findArticles",
+      "updateArticles"
+     ],
+     "reply": "I changed the SEO meta description on \"Install the desktop app\" (ID 1, English) and saved it as a draft.\n\n- **Before:** \"Three steps to install the desktop app.\"\n- **After:** \"Install the desktop app on Windows or macOS in three steps.\"\n\nNothing else changed. I sent the meta title along with the description so it wouldn't get wiped, and it's still \"Install the desktop app\". The German version wasn't touched.\n\n1 draft updated. It isn't published yet, so please review it in the admin panel and publish it when you're ready.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 7.038,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 92714,
+      "outputTokens": 605,
+      "cacheReadTokens": 90654,
+      "cachedShare": 0.9777811333779148,
+      "seconds": 7,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 92714,
+        "outputTokens": 605,
+        "cacheReadTokens": 90654,
+        "seconds": 7,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "metaDescription": "Install the desktop app on Windows or macOS in three steps.",
+      "metaTitleUnchanged": true,
+      "summaryUnchanged": true
+     },
+     "conversationId": "f5d02191-a28c-48be-978a-8067091ac85e",
+     "tools": [
+      "findArticles",
+      "updateArticles"
+     ],
+     "reply": "I'll keep the existing meta title and replace only the meta description.I changed the SEO meta description on article #1, \"Install the desktop app\" (English version), and saved it as a draft.\n\n- **Before:** \"Three steps to install the desktop app.\"\n- **After:** \"Install the desktop app on Windows or macOS in three steps.\"\n\nThe meta title is still \"Install the desktop app,\" and nothing else in the article changed. The German meta description is stored separately and wasn't touched.\n\nPlease check it in the admin panel and publish when you're ready.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 7.496,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 92805,
+      "outputTokens": 603,
+      "cacheReadTokens": 90654,
+      "cachedShare": 0.9768223694844028,
+      "seconds": 7.462,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 92805,
+        "outputTokens": 603,
+        "cacheReadTokens": 90654,
+        "seconds": 7.462,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "replace-in-one-field",
+   "title": "Replace a phrase in the body and leave the same phrase in other fields",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 27.064,
+    "steps": 11,
+    "inputTokens": 169225,
+    "outputTokens": 2037,
+    "cachedShare": 0.7142679864086275
+   },
+   "toolCalls": 29,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "body": true,
+      "bodyIsExactlyTheReplacement": true,
+      "stepsUnchanged": true,
+      "nodeCount": [
+       4,
+       4
+      ]
+     },
+     "conversationId": "c120043b-b4c4-4061-bad3-566449cbafe6",
+     "tools": [
+      "searchContent",
+      "readDocument",
+      "editContent",
+      "searchContent",
+      "listLinks"
+     ],
+     "reply": "The phrase appears twice in this article: once in the body and once in step 3 (\"Sign in\"). A plain find/replace would change both, so I'll edit only the body.Let me confirm the steps and the link weren't changed.I changed 1 phrase in the body of \"Install the desktop app\" (ID 1) and saved it as a draft.\n\n- **Body:** \"Ask a workspace admin for an invite…\" now reads \"Ask a workspace **owner** for an invite…\". That was the only time the phrase appeared in the body.\n- **Steps:** Not touched. Step 3 (\"Sign in\") still says \"A workspace admin can reset the password.\" I searched the article afterwards to check this.\n- **Link:** The \"system requirements\" link in the body still points to https://help.example/requirements.\n\nThe editing tool reported 2 issues, word for word:\n- \"Review unavailable - not verified\"\n- \"You declared the document unchanged and then edited it. The edit stands; the changes are listed with the saved draft. No action needed unless the list shows a change the task did not ask for…\"\n\nThe list of changes shows only the replacement you asked for, so neither issue needs action.\n\nSeparately, the body of \"Download an invoice\" (ID 2) also says \"workspace admin\". I didn't change ",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 31.631,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 11,
+      "inputTokens": 173810,
+      "outputTokens": 2699,
+      "cacheReadTokens": 120872,
+      "cachedShare": 0.6954260399286577,
+      "seconds": 31.596,
+      "toolCalls": 11,
+      "failedToolCalls": 0,
+      "failedRuns": 2,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 4,
+        "inputTokens": 33527,
+        "outputTokens": 539,
+        "cacheReadTokens": 0,
+        "seconds": 9.847,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 128211,
+        "outputTokens": 1173,
+        "cacheReadTokens": 120872,
+        "seconds": 31.596,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 4218,
+        "outputTokens": 600,
+        "cacheReadTokens": 0,
+        "seconds": 4.563,
+        "runs": 2,
+        "failedRuns": 2,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 3,
+        "inputTokens": 7854,
+        "outputTokens": 387,
+        "cacheReadTokens": 0,
+        "seconds": 4.709,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "body": true,
+      "bodyIsExactlyTheReplacement": true,
+      "stepsUnchanged": true,
+      "nodeCount": [
+       4,
+       4
+      ]
+     },
+     "conversationId": "ad3d3ef9-d59c-4ce6-9e71-ae8db2118e72",
+     "tools": [
+      "readDocument",
+      "editContent",
+      "readDocument"
+     ],
+     "reply": "I replaced \"workspace admin\" with \"workspace owner\" in the body of **\"Install the desktop app\"** (article ID 1). The body had one instance of the phrase, so one change was made, and it's saved as a draft. I read the article again afterwards to confirm it.\n\n- **Body:** \"Ask a workspace admin for an invite…\" now reads \"Ask a workspace **owner** for an invite…\"\n- **Steps:** not changed. The \"Sign in\" step still says \"A workspace admin can reset the password.\" I didn't use a find-and-replace across the whole article because it would have changed this line too.\n- **Other fields:** not changed.\n\nThe editing tool flagged one issue, quoted here word for word: *\"You declared the document unchanged and then edited it. The edit stands; the changes are listed with the saved draft. No action needed unless the list shows a change the task did not ask for - do not move or undo the change to satisfy the criterion.\"* The only change in the list is the body line above, so nothing else needs doing.\n\n1 draft updated. Please review it in the admin panel before publishing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 27.064,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 11,
+      "inputTokens": 169225,
+      "outputTokens": 2037,
+      "cacheReadTokens": 120872,
+      "cachedShare": 0.7142679864086275,
+      "seconds": 27.021,
+      "toolCalls": 9,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 4,
+        "inputTokens": 33474,
+        "outputTokens": 585,
+        "cacheReadTokens": 0,
+        "seconds": 10.255,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 126568,
+        "outputTokens": 938,
+        "cacheReadTokens": 120872,
+        "seconds": 27.021,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 2104,
+        "outputTokens": 149,
+        "cacheReadTokens": 0,
+        "seconds": 1.889,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 3,
+        "inputTokens": 7079,
+        "outputTokens": 365,
+        "cacheReadTokens": 0,
+        "seconds": 4.529,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "body": true,
+      "bodyIsExactlyTheReplacement": true,
+      "stepsUnchanged": true,
+      "nodeCount": [
+       4,
+       4
+      ]
+     },
+     "conversationId": "64e43733-72a3-4a30-bb35-9be51e1d48a0",
+     "tools": [
+      "readDocument",
+      "editContent",
+      "readDocument"
+     ],
+     "reply": "The phrase shows up once in the body and once in a step (\"A workspace admin can reset the password.\"). A find/replace would change both, so I'll edit only the body.I changed \"workspace admin\" to \"workspace owner\" in the body of article 1, \"Install the desktop app\". It was the only place it appeared in the body. The result is saved as a draft, and I re-read the article afterwards to check it.\n\n- **Body:** \"Ask a workspace admin for an invite…\" now reads \"Ask a **workspace owner** for an invite…\"\n- **Steps:** unchanged. The \"Sign in\" step still says \"A workspace admin can reset the password.\"\n\nThe editing tool flagged one issue: *\"You declared the document unchanged and then edited it. The edit stands; the changes are listed with the saved draft.\"* This is just an internal note. The only change saved is the one above.\n\nI only edited the English version. Please review the draft in the admin panel before publishing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 25.9,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 11,
+      "inputTokens": 168631,
+      "outputTokens": 1913,
+      "cacheReadTokens": 120872,
+      "cachedShare": 0.7167839839649887,
+      "seconds": 25.861,
+      "toolCalls": 9,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 4,
+        "inputTokens": 32939,
+        "outputTokens": 571,
+        "cacheReadTokens": 0,
+        "seconds": 9.106,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 4,
+        "inputTokens": 126579,
+        "outputTokens": 845,
+        "cacheReadTokens": 120872,
+        "seconds": 25.861,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 2079,
+        "outputTokens": 134,
+        "cacheReadTokens": 0,
+        "seconds": 2.099,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       },
+       "richtext-editor": {
+        "steps": 3,
+        "inputTokens": 7034,
+        "outputTokens": 363,
+        "cacheReadTokens": 0,
+        "seconds": 4.581,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "global-array-add",
+   "title": "Add a row to a global that has drafts",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 24.881,
+    "steps": 10,
+    "inputTokens": 220328,
+    "outputTokens": 1712,
+    "cachedShare": 0.8229004030354744
+   },
+   "toolCalls": 27,
+   "failedToolCalls": 5,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "links": [
+       {
+        "label": "Setup",
+        "path": "/setup"
+       },
+       {
+        "label": "Billing",
+        "path": "/billing"
+       },
+       {
+        "label": "Glossary",
+        "path": "/glossary"
+       }
+      ]
+     },
+     "conversationId": "9adffe19-6efb-4141-a0b8-6da5487cd075",
+     "tools": [
+      "readDocument",
+      "updateNavigation",
+      "editContent",
+      "readDocument"
+     ],
+     "reply": "The navigation draft currently has 2 links: Setup (/setup) and Billing (/billing). I'll add Glossary to the end and keep both, saved as a draft.I added the Glossary link to the end of the navigation and saved it as a draft. Setup and Billing are unchanged, with their original row IDs. The navigation now has 3 links:\n\n1. Setup → /setup\n2. Billing → /billing\n3. **Glossary → /glossary** (new)\n\nThe editing tool flagged one issue: \"You declared the document unchanged and then edited it. The edit stands; the changes are listed with the saved draft.\" The saved changes show only the one added row, and I read the navigation back afterwards to confirm it.\n\n- **Why I used the editor:** my first attempt with the direct navigation update was rejected and saved nothing. A direct update would also have rebuilt the existing rows, which could have lost their German labels, so I made the change through the content editor instead.\n- **German label:** link labels are stored separately for English and German, and I only set the English one. The German navigation won't have a label for Glossary until one is added. I can add a German label if you tell me what it should be.\n\nPlease review the draft in the",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 27.758,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 9,
+      "inputTokens": 188708,
+      "outputTokens": 1712,
+      "cacheReadTokens": 151090,
+      "cachedShare": 0.8006549801810204,
+      "seconds": 27.724,
+      "toolCalls": 8,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "updateNavigation",
+        "error": "MCP error -32602: Input validation error: Invalid arguments for tool updateNavigation: Unrecognized key(s) in object: 'id' at links[0]\nUnrecognized key(s) in object: 'id' at links[1]"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 4,
+        "inputTokens": 30750,
+        "outputTokens": 478,
+        "cacheReadTokens": 0,
+        "seconds": 7.42,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 5,
+        "inputTokens": 155932,
+        "outputTokens": 1099,
+        "cacheReadTokens": 151090,
+        "seconds": 27.724,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 1
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 2026,
+        "outputTokens": 135,
+        "cacheReadTokens": 0,
+        "seconds": 2.084,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "links": [
+       {
+        "label": "Setup",
+        "path": "/setup"
+       },
+       {
+        "label": "Billing",
+        "path": "/billing"
+       },
+       {
+        "label": "Glossary",
+        "path": "/glossary"
+       }
+      ]
+     },
+     "conversationId": "1b368615-c90a-4a8c-aeff-8b4b6257954c",
+     "tools": [
+      "readDocument",
+      "updateNavigation",
+      "updateNavigation",
+      "editContent",
+      "readDocument"
+     ],
+     "reply": "I added the \"Glossary\" link to the end of the navigation and saved it as a draft. Nothing is published yet. The navigation now reads:\n\n1. Setup → `/setup` (unchanged)\n2. Billing → `/billing` (unchanged)\n3. **Glossary → `/glossary`** (new)\n\nI read the navigation again after saving, and all three links are there in this order.\n\nThe editing tool reported one issue, which I'm passing on as it was given: *\"You declared the document unchanged and then edited it. The edit stands; the changes are listed with the saved draft. No action needed unless the list shows a change the task did not ask for.\"* The only change it lists is the new Glossary link, so you don't need to do anything about it.\n\nPlease check the navigation draft in the admin panel and publish it when you're happy with it.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 20.579,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 10,
+      "inputTokens": 220328,
+      "outputTokens": 1571,
+      "cacheReadTokens": 181308,
+      "cachedShare": 0.8229004030354744,
+      "seconds": 20.534,
+      "toolCalls": 9,
+      "failedToolCalls": 2,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "updateNavigation",
+        "error": "MCP error -32602: Input validation error: Invalid arguments for tool updateNavigation: Unrecognized key(s) in object: 'id' at links[0]\nUnrecognized key(s) in object: 'id' at links[1]"
+       },
+       {
+        "agent": "main",
+        "tool": "updateNavigation",
+        "error": "Blocked - this update is DESTRUCTIVE and has not been reviewed: \"links\" would lose 2 of its 2 item(s) - Payload replaces the whole array on update, so anything omitted is removed. Call reviewChanges({ collection: \"global:navigation\", id: \"navigation\", proposedChanges }) with these exact fields first"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 4,
+        "inputTokens": 30632,
+        "outputTokens": 467,
+        "cacheReadTokens": 0,
+        "seconds": 4.522,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 6,
+        "inputTokens": 187715,
+        "outputTokens": 968,
+        "cacheReadTokens": 181308,
+        "seconds": 20.534,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 2
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1981,
+        "outputTokens": 136,
+        "cacheReadTokens": 0,
+        "seconds": 2.022,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "links": [
+       {
+        "label": "Setup",
+        "path": "/setup"
+       },
+       {
+        "label": "Billing",
+        "path": "/billing"
+       },
+       {
+        "label": "Glossary",
+        "path": "/glossary"
+       }
+      ]
+     },
+     "conversationId": "8f3ae90e-8814-4b33-badc-5e15dcac077f",
+     "tools": [
+      "readDocument",
+      "updateNavigation",
+      "reviewChanges",
+      "updateNavigation",
+      "editContent",
+      "readDocument"
+     ],
+     "reply": "I added the \"Glossary\" link (path `/glossary`) to the end of the navigation and kept the existing links. The change is saved as a draft and hasn't been published.\n\nThe navigation draft now has these links, in this order:\n\n1. Setup → `/setup` (unchanged)\n2. Billing → `/billing` (unchanged)\n3. **Glossary → `/glossary`** (new)\n\nThe editing tool raised one issue, quoted as it gave it: *\"You declared the document unchanged and then edited it. The edit stands; the changes are listed with the saved draft. No action needed unless the list shows a change the task did not ask for.\"* The only change it lists is the new Glossary row, and I reread the draft to confirm that.\n\nThe label \"Glossary\" is set for English only. If the German (`de`) site also shows this menu, the link may need a German label.\n\n1 draft updated (Navigation). Please review it in the admin panel and publish it when you're happy with it.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 24.881,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 11,
+      "inputTokens": 252420,
+      "outputTokens": 1892,
+      "cacheReadTokens": 211526,
+      "cachedShare": 0.8379922351636162,
+      "seconds": 24.836,
+      "toolCalls": 10,
+      "failedToolCalls": 2,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "updateNavigation",
+        "error": "Blocked - this update is DESTRUCTIVE and has not been reviewed: \"links\" would lose 2 of its 2 item(s) - Payload replaces the whole array on update, so anything omitted is removed. Call reviewChanges({ collection: \"global:navigation\", id: \"navigation\", proposedChanges }) with these exact fields first"
+       },
+       {
+        "agent": "main",
+        "tool": "updateNavigation",
+        "error": "MCP error -32602: Input validation error: Invalid arguments for tool updateNavigation: Unrecognized key(s) in object: 'id' at links[0]\nUnrecognized key(s) in object: 'id' at links[1]"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 4,
+        "inputTokens": 30441,
+        "outputTokens": 431,
+        "cacheReadTokens": 0,
+        "seconds": 4.114,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 7,
+        "inputTokens": 219968,
+        "outputTokens": 1278,
+        "cacheReadTokens": 211526,
+        "seconds": 24.836,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 6,
+        "failedToolCalls": 2
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 2011,
+        "outputTokens": 183,
+        "cacheReadTokens": 0,
+        "seconds": 1.668,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "read-only-question",
+   "title": "A question that must not change anything",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 3.279,
+    "steps": 2,
+    "inputTokens": 61470,
+    "outputTokens": 220,
+    "cachedShare": 0.9831787863998699
+   },
+   "toolCalls": 3,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "stepsNamed": 3,
+      "changes": 0,
+      "documentUnchanged": true
+     },
+     "conversationId": "75c447fb-ea7a-4152-a7a0-8d3463cb9f35",
+     "tools": [
+      "findArticles"
+     ],
+     "reply": "The article **\"Install the desktop app\"** (ID 1) has 3 steps in its current draft:\n\n1. **Download the installer**: Open the downloads page and choose your system.\n2. **Run the installer**: Accept the license and keep the default folder.\n3. **Sign in**: Use your work account. A workspace admin can reset the password.\n\nI didn't change anything.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 3.35,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 61470,
+      "outputTokens": 220,
+      "cacheReadTokens": 60436,
+      "cachedShare": 0.9831787863998699,
+      "seconds": 3.315,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 61470,
+        "outputTokens": 220,
+        "cacheReadTokens": 60436,
+        "seconds": 3.315,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "stepsNamed": 3,
+      "changes": 0,
+      "documentUnchanged": true
+     },
+     "conversationId": "add42479-1b7f-408b-af95-c09383c0dec7",
+     "tools": [
+      "findArticles"
+     ],
+     "reply": "The article **\"Install the desktop app\"** (ID 1) has 3 steps in its current draft:\n\n1. **Download the installer**: Open the downloads page and choose your system.\n2. **Run the installer**: Accept the license and keep the default folder.\n3. **Sign in**: Use your work account. A workspace admin can reset the password.\n\nI didn't change anything.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 3.239,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 61470,
+      "outputTokens": 220,
+      "cacheReadTokens": 60436,
+      "cachedShare": 0.9831787863998699,
+      "seconds": 3.197,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 61470,
+        "outputTokens": 220,
+        "cacheReadTokens": 60436,
+        "seconds": 3.197,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "stepsNamed": 3,
+      "changes": 0,
+      "documentUnchanged": true
+     },
+     "conversationId": "5fba3cba-0b00-469a-a72f-19bb79bd72c9",
+     "tools": [
+      "findArticles"
+     ],
+     "reply": "The article **\"Install the desktop app\"** (ID 1) has 3 steps in its current draft:\n\n1. **Download the installer:** Open the downloads page and choose your system.\n2. **Run the installer:** Accept the license and keep the default folder.\n3. **Sign in:** Use your work account. A workspace admin can reset the password.\n\nI didn't change anything.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 3.279,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 61470,
+      "outputTokens": 220,
+      "cacheReadTokens": 60436,
+      "cachedShare": 0.9831787863998699,
+      "seconds": 3.242,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 61470,
+        "outputTokens": 220,
+        "cacheReadTokens": 60436,
+        "seconds": 3.242,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "no-drafts-collection",
+   "title": "A collection without drafts gets no agent write",
+   "passed": 0,
+   "runs": 3,
+   "passK": false,
+   "median": {
+    "seconds": 8.545,
+    "steps": 4,
+    "inputTokens": 123585,
+    "outputTokens": 624,
+    "cachedShare": 0.9780474976736659
+   },
+   "toolCalls": 13,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": false,
+     "details": {
+      "nameAfter": "Payments"
+     },
+     "conversationId": "82c44ea8-84be-46e0-8e99-84dff53cb928",
+     "tools": [
+      "findCategories",
+      "findCategories",
+      "updateCategories",
+      "findCategories"
+     ],
+     "reply": "Found the category (ID 2) and there's no existing \"Payments\" category to clash with. Renaming it now. Only the name changes, in the default English locale.I renamed category **ID 2** from \"Billing\" to **\"Payments\"** in English. That's 1 document updated.\n\n- **This change is already live.** Categories don't have drafts, so the new name is saved straight away. Any articles in this category keep their link to it and will show the new name.\n- **The German name is still \"Billing\".** Category names are stored separately for each language. I can't tell whether \"Billing\" was entered as the German name or is just the English name showing because no German one exists. If you want it changed there too, tell me the German name (for example \"Zahlungen\") and I'll set it.\n\nYou can check it in the admin panel under Categories.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 7.903,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 92651,
+      "outputTokens": 628,
+      "cacheReadTokens": 90654,
+      "cachedShare": 0.9784459962655557,
+      "seconds": 7.872,
+      "toolCalls": 4,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 92651,
+        "outputTokens": 628,
+        "cacheReadTokens": 90654,
+        "seconds": 7.872,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": false,
+     "details": {
+      "nameAfter": "Payments"
+     },
+     "conversationId": "260919e6-75ba-4307-a7be-f02e9654aec5",
+     "tools": [
+      "findCategories",
+      "findCategories",
+      "updateCategories",
+      "findCategories",
+      "findCategories"
+     ],
+     "reply": "I renamed category **ID 2** from \"Billing\" to **\"Payments\"** in English, and the new name has saved. Before renaming, I checked that no \"Payments\" category already existed, so this doesn't create a duplicate.\n\n- **The change is already live.** Categories don't have drafts, so this went straight to the site rather than waiting for review like articles do.\n- **Linked articles keep their category.** Articles in this category point to its ID, so they now show \"Payments\" and don't need updating.\n- **There's no German name.** The category only has an English name. If you want one, such as \"Zahlungen\", I can add it.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 8.545,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 4,
+      "inputTokens": 124046,
+      "outputTokens": 624,
+      "cacheReadTokens": 120872,
+      "cachedShare": 0.9744127178627283,
+      "seconds": 8.501,
+      "toolCalls": 5,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 4,
+        "inputTokens": 124046,
+        "outputTokens": 624,
+        "cacheReadTokens": 120872,
+        "seconds": 8.501,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": false,
+     "details": {
+      "nameAfter": "Payments"
+     },
+     "conversationId": "7f0549cc-bd6c-484b-ab01-b246b0af469d",
+     "tools": [
+      "findCategories",
+      "findCategories",
+      "findCategories",
+      "updateCategories"
+     ],
+     "reply": "I found the category (ID 2). There's no existing \"Payments\" category, so renaming it won't create a duplicate. Next I'll change its English name. That's a single-field update.I renamed category **ID 2** from \"Billing\" to **\"Payments\"**.\n\n- **Live now:** Categories don't have drafts, so the new name is already showing everywhere the category is used. Articles in this category still belong to it because they're linked by ID, not by name.\n- **Only the name changed:** It still has no parent category.\n- **German name is empty:** The category never had a German name, and I didn't add one. Do you want me to set it, for example to \"Zahlungen\"?",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 8.567,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 4,
+      "inputTokens": 123585,
+      "outputTokens": 573,
+      "cacheReadTokens": 120872,
+      "cachedShare": 0.9780474976736659,
+      "seconds": 8.518,
+      "toolCalls": 4,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 4,
+        "inputTokens": 123585,
+        "outputTokens": 573,
+        "cacheReadTokens": 120872,
+        "seconds": 8.518,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

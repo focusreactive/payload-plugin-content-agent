@@ -1,0 +1,45 @@
+{
+  "license": "CC0 1.0. Every file is a copy made smaller: 1200 pixels on the long side, JPEG.",
+  "photos": [
+    {
+      "file": "team-meeting.jpg",
+      "shows": "Three people at a wooden table; one writes in a notebook, a cup and a laptop are next to them.",
+      "source": "https://openverse.org/image/be224b0f-9817-49e7-8402-8198f7f4e126"
+    },
+    {
+      "file": "writing-papers.jpg",
+      "shows": "A person writes on papers at a desk.",
+      "source": "https://openverse.org/image/b73d6a7e-37f4-4f5e-9468-5ac1d0ef30fe"
+    },
+    {
+      "file": "keyboard-with-code.jpg",
+      "shows": "A laptop keyboard, close up, with code on the screen.",
+      "source": "https://openverse.org/image/07eb8147-43f8-4d83-a78f-901f0559840c"
+    },
+    {
+      "file": "bar-chart.jpg",
+      "shows": "A bar chart.",
+      "source": "https://commons.wikimedia.org/wiki/File:Bar_chart.jpg"
+    },
+    {
+      "file": "street-sign.jpg",
+      "shows": "A blue street sign with white text: IMPASSE BERGER, and two smaller lines under it.",
+      "source": "https://commons.wikimedia.org/w/index.php?curid=136466888"
+    },
+    {
+      "file": "boathouse-on-lake.jpg",
+      "shows": "A boathouse on a mountain lake.",
+      "source": "https://commons.wikimedia.org/w/index.php?curid=61911519"
+    },
+    {
+      "file": "kayaks-on-lake.jpg",
+      "shows": "Kayaks on a mountain lake.",
+      "source": "https://commons.wikimedia.org/w/index.php?curid=61728766"
+    },
+    {
+      "file": "bicycle-sign.jpg",
+      "shows": "A blue sign under trees next to a road, with the text: REDMOND, BICYCLE CAPITAL OF THE NORTHWEST.",
+      "source": "https://commons.wikimedia.org/w/index.php?curid=19139609"
+    }
+  ]
+}

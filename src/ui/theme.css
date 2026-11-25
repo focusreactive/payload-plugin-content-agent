@@ -1,0 +1,123 @@
+/* source(none) with explicit sources: Tailwind otherwise scans every file in the repo. */
+@import "tailwindcss" source(none);
+@import "ldrs/react/TailChase.css";
+
+/* The generated stylesheet is excluded: scanning it would keep every class it already holds. */
+@source '../**/*.{ts,tsx}';
+@source not './generatedStyles.ts';
+
+/* A class set from JS, not `:host-context()`: Firefox does not support it. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-ca-bg: #ffffff;
+  --color-ca-surface: #fafafa;
+  --color-ca-border: #e4e4e7;
+  --color-ca-border-strong: #d4d4d8;
+  --color-ca-fg: #18181b;
+  --color-ca-muted: #52525b;
+  --color-ca-faint: #a1a1aa;
+  --color-ca-accent: #2563eb;
+  --color-ca-accent-fg: #ffffff;
+  --color-ca-ok: #16a34a;
+  --color-ca-warn: #d97706;
+  --color-ca-danger: #dc2626;
+
+  --radius-ca: 0.75rem;
+
+  /* `rem` resolves against the document root even inside a shadow root, so the panel scales
+   * with the browser's base font size. */
+  --text-2xs: 0.875rem;
+  --text-2xs--line-height: 1.45;
+  --text-xs: 0.9375rem;
+  --text-xs--line-height: 1.5;
+  --text-sm: 1rem;
+  --text-sm--line-height: 1.6;
+
+  --animate-ca-shimmer: ca-shimmer 1.6s linear infinite;
+}
+
+@keyframes ca-shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+.ca-shimmer-text {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-ca-muted) 0%,
+    var(--color-ca-muted) 35%,
+    var(--color-ca-fg) 50%,
+    var(--color-ca-muted) 65%,
+    var(--color-ca-muted) 100%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ca-loader *,
+  .ca-shimmer-text,
+  .animate-spin,
+  .animate-pulse {
+    animation: none !important;
+  }
+  .ca-shimmer-text {
+    background: none;
+    color: var(--color-ca-fg);
+  }
+}
+
+.dark {
+  --color-ca-bg: #17181c;
+  --color-ca-surface: #1e2026;
+  --color-ca-border: #33363d;
+  --color-ca-border-strong: #464a52;
+  --color-ca-fg: #ececef;
+  --color-ca-muted: #a1a1aa;
+  --color-ca-faint: #71717a;
+  --color-ca-accent: #60a5fa;
+  --color-ca-accent-fg: #0b1220;
+  --color-ca-ok: #4ade80;
+  --color-ca-warn: #fbbf24;
+  --color-ca-danger: #f87171;
+}
+
+/* Tailwind 4 preflight leaves buttons with the default arrow cursor. */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  summary {
+    cursor: pointer;
+  }
+}
+
+:host {
+  all: initial;
+  display: contents;
+}
+
+.ca-scope {
+  color: var(--color-ca-fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Payload's diff styles are in the document and do not reach the shadow root of the panel. */
+.html-diff [data-match-type="create"]:not(img) {
+  background-color: color-mix(in srgb, var(--color-ca-ok) 22%, transparent);
+  color: var(--color-ca-fg);
+  border-radius: 4px;
+}
+
+.html-diff [data-match-type="delete"]:not(img) {
+  background-color: color-mix(in srgb, var(--color-ca-danger) 22%, transparent);
+  color: var(--color-ca-fg);
+  border-radius: 4px;
+  text-decoration: line-through;
+}

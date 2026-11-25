@@ -1,0 +1,158 @@
+{
+  "name": "@focus-reactive/payload-plugin-content-agent",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "AI content agent plugin for Payload CMS: a schema-aware assistant that reads and edits your content",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/focusreactive/payload-plugin-content-agent.git"
+  },
+  "homepage": "https://github.com/focusreactive/payload-plugin-content-agent#readme",
+  "bugs": {
+    "url": "https://github.com/focusreactive/payload-plugin-content-agent/issues"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./client": {
+      "types": "./dist/client.d.ts",
+      "import": "./dist/client.js"
+    },
+    "./types": {
+      "types": "./dist/types.d.ts"
+    },
+    "./sdk": {
+      "types": "./dist/sdk/index.d.ts",
+      "import": "./dist/sdk/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "NOTICE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "npm run build:css && node scripts/buildInfo.mjs && tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run clean && npm run build",
+    "build:css": "tailwindcss -i src/ui/theme.css -o .tailwind/theme.css --minify && node scripts/cssToTs.mjs",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "lint": "oxlint . && oxfmt --check .",
+    "format": "oxlint -c oxlint.format.config.ts --fix --quiet . && oxfmt .",
+    "check:dist": "node scripts/checkDist.mjs",
+    "api": "api-extractor run --local",
+    "check:api": "api-extractor run",
+    "prepare": "lefthook install",
+    "validate": "npm run lint && npm run typecheck && npm test && npm run check:dist && npm run check:api"
+  },
+  "peerDependencies": {
+    "@ai-sdk/anthropic": "^4.0.0",
+    "@ai-sdk/openai": "^4.0.0",
+    "@lexical/headless": ">=0.41.0",
+    "@lexical/list": ">=0.41.0",
+    "@lexical/markdown": ">=0.41.0",
+    "@lexical/overflow": ">=0.41.0",
+    "@lexical/rich-text": ">=0.41.0",
+    "@payloadcms/plugin-mcp": "^3.61.0",
+    "@payloadcms/richtext-lexical": "^3.0.0",
+    "@payloadcms/ui": "^3.0.0",
+    "ai": "^7.0.170",
+    "lexical": ">=0.41.0",
+    "mammoth": "^1.8.0",
+    "payload": "^3.0.0",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0",
+    "xlsx": ">=0.20.2"
+  },
+  "peerDependenciesMeta": {
+    "@ai-sdk/anthropic": {
+      "optional": true
+    },
+    "@ai-sdk/openai": {
+      "optional": true
+    },
+    "mammoth": {
+      "optional": true
+    },
+    "xlsx": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@ai-sdk/mcp": "^2.0.97",
+    "@ai-sdk/react": "^4.0.174",
+    "@radix-ui/react-slot": "^1.5.0",
+    "@radix-ui/react-tooltip": "^1.4.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "ldrs": "^1.1.9",
+    "linkedom": "^0.18.15",
+    "lucide-react": "^1.72.0",
+    "pg": "^8.23.1",
+    "react-markdown": "^10.1.0",
+    "recharts": "^3.10.1",
+    "remark-gfm": "^4.0.1",
+    "tailwind-merge": "^3.7.0",
+    "turndown": "^7.2.5",
+    "ulid": "^3.0.2",
+    "undici": "^7.0.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@ai-sdk/anthropic": "^4.0.102",
+    "@ai-sdk/openai": "^4.0.115",
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
+    "@microsoft/api-extractor": "^7.60.1",
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "@payloadcms/plugin-mcp": "^3.93.0",
+    "@payloadcms/richtext-lexical": "^3.93.0",
+    "@payloadcms/ui": "^3.93.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@tailwindcss/cli": "^4.3.5",
+    "@types/node": "^22.20.5",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/turndown": "^5.0.6",
+    "ai": "^7.0.170",
+    "lefthook": "^2.2.2",
+    "oxfmt": "^0.78.0",
+    "oxlint": "^1.93.0",
+    "payload": "^3.93.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "semantic-release": "^25.0.9",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^7.0.2",
+    "ultracite": "^8.2.0",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
+  },
+  "keywords": [
+    "payload",
+    "payload-plugin",
+    "payload-cms",
+    "ai",
+    "ai-agent",
+    "content-agent",
+    "cms",
+    "headless-cms"
+  ],
+  "license": "MIT"
+}

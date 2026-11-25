@@ -1,0 +1,2621 @@
+{
+ "label": "free1-terra-docs",
+ "schema": "docs",
+ "model": "openai",
+ "k": 3,
+ "date": "2026-11-23T07:29:42.711Z",
+ "summary": {
+  "scenarios": 10,
+  "passK": 10,
+  "runs": 30,
+  "runsPassed": 30,
+  "toolCalls": 102,
+  "failedToolCalls": 0,
+  "inputTokens": 1274510
+ },
+ "results": [
+  {
+   "id": "translate-field",
+   "title": "Translate one field into the second locale",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 7.334,
+    "steps": 3,
+    "inputTokens": 31998,
+    "outputTokens": 121,
+    "cachedShare": 0.7555356625681262
+   },
+   "toolCalls": 7,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+      "englishUnchanged": true,
+      "englishBodyUnchanged": true,
+      "looksGerman": true
+     },
+     "conversationId": "e14f90ad-a4b4-4baa-b329-0c9b47e6bdcb",
+     "tools": [
+      "readDocument",
+      "updateDocument"
+     ],
+     "reply": "Translated the summary into German for **Install the desktop app** (ID: 1). One draft was updated; please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 7.334,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 31998,
+      "outputTokens": 119,
+      "cacheReadTokens": 21056,
+      "cachedShare": 0.6580411275704732,
+      "seconds": 7.263,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 31998,
+        "outputTokens": 119,
+        "cacheReadTokens": 21056,
+        "seconds": 7.263,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 31998,
+        "outputTokens": 119,
+        "cacheReadTokens": 21056,
+        "cacheWriteTokens": 10933
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem geschäftlichen Konto an.",
+      "englishUnchanged": true,
+      "englishBodyUnchanged": true,
+      "looksGerman": true
+     },
+     "conversationId": "c13e50e0-3128-47a5-af47-05b2163ba2b4",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "Translate only the article's English summary into German, and save the translation in the German summary field. Do not change any other fields or the English content."
+     ],
+     "reply": "Translated the summary of **Install the desktop app** (ID: 1) into German. One draft was updated; please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 12.997,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 4,
+      "inputTokens": 37981,
+      "outputTokens": 440,
+      "cacheReadTokens": 28696,
+      "cachedShare": 0.7555356625681262,
+      "seconds": 12.942,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 2,
+        "inputTokens": 15690,
+        "outputTokens": 248,
+        "cacheReadTokens": 7720,
+        "seconds": 4.972,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 21127,
+        "outputTokens": 96,
+        "cacheReadTokens": 20976,
+        "seconds": 12.942,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1164,
+        "outputTokens": 96,
+        "cacheReadTokens": 0,
+        "seconds": 3.134,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 16854,
+        "outputTokens": 344,
+        "cacheReadTokens": 7720,
+        "cacheWriteTokens": 9125
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 21127,
+        "outputTokens": 96,
+        "cacheReadTokens": 20976,
+        "cacheWriteTokens": 145
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+      "englishUnchanged": true,
+      "englishBodyUnchanged": true,
+      "looksGerman": true
+     },
+     "conversationId": "26c301e7-1806-4f52-b44f-39d523b6d180",
+     "tools": [
+      "readDocument",
+      "updateDocument"
+     ],
+     "reply": "Translated the summary of **“Install the desktop app” (ID: 1)** into German. One draft was updated; please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.69,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 31998,
+      "outputTokens": 121,
+      "cacheReadTokens": 31624,
+      "cachedShare": 0.9883117694855929,
+      "seconds": 6.634,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 31998,
+        "outputTokens": 121,
+        "cacheReadTokens": 31624,
+        "seconds": 6.634,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 31998,
+        "outputTokens": 121,
+        "cacheReadTokens": 31624,
+        "cacheWriteTokens": 365
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "bulk-translate",
+   "title": "Translate one field of several documents",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 13.509,
+    "steps": 8,
+    "inputTokens": 68484,
+    "outputTokens": 753,
+    "cachedShare": 0.9341573293288669
+   },
+   "toolCalls": 21,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "perDoc": [
+       {
+        "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+        "ok": true
+       },
+       {
+        "german": "Finden Sie frühere Rechnungen und laden Sie sie als PDF herunter.",
+        "ok": true
+       }
+      ]
+     },
+     "conversationId": "37d22216-6da3-438a-9454-798da8ff759a",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "Translate only the article's English summary into German and save it in the German summary field. Leave all other fields and locales unchanged."
+     ],
+     "reply": "Translated the summaries of 2 articles into German and updated 2 drafts. Please review them in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 15.927,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 8,
+      "inputTokens": 68484,
+      "outputTokens": 934,
+      "cacheReadTokens": 47443,
+      "cachedShare": 0.6927603527831319,
+      "seconds": 15.887,
+      "toolCalls": 7,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 6,
+        "inputTokens": 46391,
+        "outputTokens": 743,
+        "cacheReadTokens": 37045,
+        "seconds": 15.656,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 6,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 20886,
+        "outputTokens": 82,
+        "cacheReadTokens": 10398,
+        "seconds": 15.887,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1207,
+        "outputTokens": 109,
+        "cacheReadTokens": 0,
+        "seconds": 2.689,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 47598,
+        "outputTokens": 852,
+        "cacheReadTokens": 37045,
+        "cacheWriteTokens": 10532
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 20886,
+        "outputTokens": 82,
+        "cacheReadTokens": 10398,
+        "cacheWriteTokens": 10482
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "perDoc": [
+       {
+        "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+        "ok": true
+       },
+       {
+        "german": "Finden Sie frühere Rechnungen und laden Sie sie als PDF herunter.",
+        "ok": true
+       }
+      ]
+     },
+     "conversationId": "52e9c5ed-4337-4c42-b6ad-7318f7065c45",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "Translate the article's English summary into German and update only the German summary. Preserve all other fields and content."
+     ],
+     "reply": "Updated the German summaries in **2 article drafts**. Please review them in the admin panel before publishing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 13.509,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 8,
+      "inputTokens": 69256,
+      "outputTokens": 625,
+      "cacheReadTokens": 64696,
+      "cachedShare": 0.9341573293288669,
+      "seconds": 13.468,
+      "toolCalls": 7,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 6,
+        "inputTokens": 47194,
+        "outputTokens": 472,
+        "cacheReadTokens": 43900,
+        "seconds": 13.788,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 6,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 20882,
+        "outputTokens": 76,
+        "cacheReadTokens": 20796,
+        "seconds": 13.468,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1180,
+        "outputTokens": 77,
+        "cacheReadTokens": 0,
+        "seconds": 1.952,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 48374,
+        "outputTokens": 549,
+        "cacheReadTokens": 43900,
+        "cacheWriteTokens": 4453
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 20882,
+        "outputTokens": 76,
+        "cacheReadTokens": 20796,
+        "cacheWriteTokens": 80
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "perDoc": [
+       {
+        "german": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+        "ok": true
+       },
+       {
+        "german": "Finden Sie frühere Rechnungen und laden Sie sie als PDF herunter.",
+        "ok": true
+       }
+      ]
+     },
+     "conversationId": "8c89b180-bd4e-4b53-8b6d-6f26964af996",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "Translate only the article's summary from English into German. Leave every other field and both locales' other content unchanged."
+     ],
+     "reply": "Translated the summaries of 2 articles into German. Please review the drafts in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 12.972,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 8,
+      "inputTokens": 68173,
+      "outputTokens": 753,
+      "cacheReadTokens": 64182,
+      "cachedShare": 0.9414577618705352,
+      "seconds": 12.933,
+      "toolCalls": 7,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 6,
+        "inputTokens": 46078,
+        "outputTokens": 586,
+        "cacheReadTokens": 43386,
+        "seconds": 13.233,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 6,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 20883,
+        "outputTokens": 75,
+        "cacheReadTokens": 20796,
+        "seconds": 12.933,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1212,
+        "outputTokens": 92,
+        "cacheReadTokens": 0,
+        "seconds": 2.209,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 47290,
+        "outputTokens": 678,
+        "cacheReadTokens": 43386,
+        "cacheWriteTokens": 3883
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 20883,
+        "outputTokens": 75,
+        "cacheReadTokens": 20796,
+        "cacheWriteTokens": 81
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "array-row-edit",
+   "title": "Change one field of one array row",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 10.913,
+    "steps": 4,
+    "inputTokens": 37924,
+    "outputTokens": 284,
+    "cachedShare": 0.9610800548465351
+   },
+   "toolCalls": 10,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "steps": [
+       {
+        "heading": "Download the installer",
+        "detail": "Open the downloads page and choose your system."
+       },
+       {
+        "heading": "Run the installer",
+        "detail": "Accept the license. Choose the folder you want."
+       },
+       {
+        "heading": "Sign in",
+        "detail": "Use your work account. A workspace admin can reset the password."
+       }
+      ],
+      "bodyUnchanged": true
+     },
+     "conversationId": "9db5dee5-a7f0-4bfc-b49a-f3e1a1e6efaa",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "In the steps, change the detail of the step \"Run the installer\" to exactly: \"Accept the license. Choose the folder you want.\" Change nothing else."
+     ],
+     "reply": "Updated the “Run the installer” step in **Install the desktop app** (ID: 1). Nothing else was changed.\n\n1 draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 13.604,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 5,
+      "inputTokens": 45347,
+      "outputTokens": 577,
+      "cacheReadTokens": 43471,
+      "cachedShare": 0.9586301188612256,
+      "seconds": 13.547,
+      "toolCalls": 4,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 3,
+        "inputTokens": 24159,
+        "outputTokens": 477,
+        "cacheReadTokens": 22484,
+        "seconds": 8.888,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 21188,
+        "outputTokens": 100,
+        "cacheReadTokens": 20987,
+        "seconds": 13.547,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "seconds": 0,
+        "runs": 0,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 24159,
+        "outputTokens": 477,
+        "cacheReadTokens": 22484,
+        "cacheWriteTokens": 1666
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 21188,
+        "outputTokens": 100,
+        "cacheReadTokens": 20987,
+        "cacheWriteTokens": 195
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "steps": [
+       {
+        "heading": "Download the installer",
+        "detail": "Open the downloads page and choose your system."
+       },
+       {
+        "heading": "Run the installer",
+        "detail": "Accept the license. Choose the folder you want."
+       },
+       {
+        "heading": "Sign in",
+        "detail": "Use your work account. A workspace admin can reset the password."
+       }
+      ],
+      "bodyUnchanged": true
+     },
+     "conversationId": "657281ed-db5a-4b91-b058-0094c22b111a",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "In the steps, change the detail of the step \"Run the installer\" to exactly: \"Accept the license. Choose the folder you want.\" Change nothing else."
+     ],
+     "reply": "Updated the “Run the installer” step in **Install the desktop app** (ID 1). Nothing else was changed.\n\n1 draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 9.785,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 4,
+      "inputTokens": 37896,
+      "outputTokens": 252,
+      "cacheReadTokens": 36448,
+      "cachedShare": 0.9617901625501373,
+      "seconds": 9.56,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 2,
+        "inputTokens": 15528,
+        "outputTokens": 94,
+        "cacheReadTokens": 15424,
+        "seconds": 3.43,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 21188,
+        "outputTokens": 99,
+        "cacheReadTokens": 21024,
+        "seconds": 9.56,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1180,
+        "outputTokens": 59,
+        "cacheReadTokens": 0,
+        "seconds": 1.991,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 16708,
+        "outputTokens": 153,
+        "cacheReadTokens": 15424,
+        "cacheWriteTokens": 1275
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 21188,
+        "outputTokens": 99,
+        "cacheReadTokens": 21024,
+        "cacheWriteTokens": 158
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "steps": [
+       {
+        "heading": "Download the installer",
+        "detail": "Open the downloads page and choose your system."
+       },
+       {
+        "heading": "Run the installer",
+        "detail": "Accept the license. Choose the folder you want."
+       },
+       {
+        "heading": "Sign in",
+        "detail": "Use your work account. A workspace admin can reset the password."
+       }
+      ],
+      "bodyUnchanged": true
+     },
+     "conversationId": "7998be29-c48c-4ea1-a0e6-734fc3100548",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "In the steps, change the detail of the step \"Run the installer\" to exactly: \"Accept the license. Choose the folder you want.\" Change nothing else."
+     ],
+     "reply": "Updated 1 draft: **Install the desktop app** (ID: 1). Only the “Run the installer” step’s detail was changed.\n\nPlease review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 10.913,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 4,
+      "inputTokens": 37924,
+      "outputTokens": 284,
+      "cacheReadTokens": 36448,
+      "cachedShare": 0.9610800548465351,
+      "seconds": 10.864,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 2,
+        "inputTokens": 15554,
+        "outputTokens": 121,
+        "cacheReadTokens": 15424,
+        "seconds": 4.492,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 21189,
+        "outputTokens": 100,
+        "cacheReadTokens": 21024,
+        "seconds": 10.864,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1181,
+        "outputTokens": 63,
+        "cacheReadTokens": 0,
+        "seconds": 1.982,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 16735,
+        "outputTokens": 184,
+        "cacheReadTokens": 15424,
+        "cacheWriteTokens": 1302
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 21189,
+        "outputTokens": 100,
+        "cacheReadTokens": 21024,
+        "cacheWriteTokens": 159
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "group-field",
+   "title": "Change a field inside a group",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 9.851,
+    "steps": 4,
+    "inputTokens": 37799,
+    "outputTokens": 230,
+    "cachedShare": 0.9630890401815512
+   },
+   "toolCalls": 10,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "metaDescription": "Install the desktop app on Windows or macOS in three steps.",
+      "metaTitleUnchanged": true,
+      "summaryUnchanged": true
+     },
+     "conversationId": "0f4253c8-ce31-4383-87ca-e00f104df0fd",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "Set seo.metaDescription to exactly: Install the desktop app on Windows or macOS in three steps. Change nothing else."
+     ],
+     "reply": "Updated the SEO meta description on **Install the desktop app** (ID: 1). No other fields changed.\n\n1 draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 10.044,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 5,
+      "inputTokens": 44946,
+      "outputTokens": 400,
+      "cacheReadTokens": 43287,
+      "cachedShare": 0.9630890401815512,
+      "seconds": 9.992,
+      "toolCalls": 4,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 3,
+        "inputTokens": 23787,
+        "outputTokens": 312,
+        "cacheReadTokens": 22304,
+        "seconds": 5.68,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 21159,
+        "outputTokens": 88,
+        "cacheReadTokens": 20983,
+        "seconds": 9.992,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "seconds": 0,
+        "runs": 0,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 23787,
+        "outputTokens": 312,
+        "cacheReadTokens": 22304,
+        "cacheWriteTokens": 1474
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 21159,
+        "outputTokens": 88,
+        "cacheReadTokens": 20983,
+        "cacheWriteTokens": 170
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "metaDescription": "Install the desktop app on Windows or macOS in three steps.",
+      "metaTitleUnchanged": true,
+      "summaryUnchanged": true
+     },
+     "conversationId": "62f2112b-6534-4b79-a3d9-9bf629a9df8d",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "Set only seo.metaDescription to exactly: Install the desktop app on Windows or macOS in three steps. Change nothing else."
+     ],
+     "reply": "Updated the SEO meta description in **Install the desktop app** (ID: 1). No other content was changed.\n\n1 draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 9.81,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 4,
+      "inputTokens": 37799,
+      "outputTokens": 230,
+      "cacheReadTokens": 35318,
+      "cachedShare": 0.9343633429455805,
+      "seconds": 9.767,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 2,
+        "inputTokens": 15479,
+        "outputTokens": 83,
+        "cacheReadTokens": 14302,
+        "seconds": 4.171,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 21160,
+        "outputTokens": 90,
+        "cacheReadTokens": 21016,
+        "seconds": 9.767,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1160,
+        "outputTokens": 57,
+        "cacheReadTokens": 0,
+        "seconds": 1.835,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 16639,
+        "outputTokens": 140,
+        "cacheReadTokens": 14302,
+        "cacheWriteTokens": 2328
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 21160,
+        "outputTokens": 90,
+        "cacheReadTokens": 21016,
+        "cacheWriteTokens": 138
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "metaDescription": "Install the desktop app on Windows or macOS in three steps.",
+      "metaTitleUnchanged": true,
+      "summaryUnchanged": true
+     },
+     "conversationId": "042a0d85-7e5e-4f96-8042-e2a24a309570",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "Set seo.metaDescription to exactly: Install the desktop app on Windows or macOS in three steps. Change nothing else."
+     ],
+     "reply": "Updated the SEO meta description for **Install the desktop app** (ID: 1) exactly as requested. No other fields changed.\n\nOne draft was updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 9.851,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 4,
+      "inputTokens": 37797,
+      "outputTokens": 212,
+      "cacheReadTokens": 36414,
+      "cachedShare": 0.9634097944281292,
+      "seconds": 9.81,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 2,
+        "inputTokens": 15477,
+        "outputTokens": 84,
+        "cacheReadTokens": 15398,
+        "seconds": 2.924,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 21160,
+        "outputTokens": 93,
+        "cacheReadTokens": 21016,
+        "seconds": 9.81,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1160,
+        "outputTokens": 35,
+        "cacheReadTokens": 0,
+        "seconds": 2.852,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 16637,
+        "outputTokens": 119,
+        "cacheReadTokens": 15398,
+        "cacheWriteTokens": 1230
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 21160,
+        "outputTokens": 93,
+        "cacheReadTokens": 21016,
+        "cacheWriteTokens": 138
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "replace-in-one-field",
+   "title": "Replace a phrase in the body and leave the same phrase in other fields",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 17.429,
+    "steps": 6,
+    "inputTokens": 55298,
+    "outputTokens": 539,
+    "cachedShare": 0.957809515146002
+   },
+   "toolCalls": 15,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "body": true,
+      "bodyIsExactlyTheReplacement": true,
+      "stepsUnchanged": true,
+      "nodeCount": [
+       4,
+       4
+      ]
+     },
+     "conversationId": "99c4ffba-5a85-4705-8b5b-f13ee36307bb",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "In the body field only, replace \"workspace admin\" with \"workspace owner\". Do not touch the steps or any other fields."
+     ],
+     "reply": "Updated 1 draft: **Install the desktop app** (ID: 1). The replacement was made in the body; steps were unchanged. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 20.338,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 6,
+      "inputTokens": 55344,
+      "outputTokens": 608,
+      "cacheReadTokens": 51784,
+      "cachedShare": 0.9356750505926569,
+      "seconds": 20.294,
+      "toolCalls": 5,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 4,
+        "inputTokens": 32997,
+        "outputTokens": 402,
+        "cacheReadTokens": 30808,
+        "seconds": 10.024,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 21144,
+        "outputTokens": 93,
+        "cacheReadTokens": 20976,
+        "seconds": 20.294,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1203,
+        "outputTokens": 113,
+        "cacheReadTokens": 0,
+        "seconds": 2.983,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 34200,
+        "outputTokens": 515,
+        "cacheReadTokens": 30808,
+        "cacheWriteTokens": 3377
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 21144,
+        "outputTokens": 93,
+        "cacheReadTokens": 20976,
+        "cacheWriteTokens": 162
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "body": true,
+      "bodyIsExactlyTheReplacement": true,
+      "stepsUnchanged": true,
+      "nodeCount": [
+       4,
+       4
+      ]
+     },
+     "conversationId": "5a6d4ff8-c613-4a5d-83de-0ff231b6b89c",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "In the body field only, replace \"workspace admin\" with \"workspace owner\". Do not touch the steps or any other fields."
+     ],
+     "reply": "Updated the body of **Install the desktop app** (ID: 1), replacing “workspace admin” with “workspace owner.” The steps were unchanged.\n\n1 draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 16.391,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 6,
+      "inputTokens": 54965,
+      "outputTokens": 444,
+      "cacheReadTokens": 52646,
+      "cachedShare": 0.957809515146002,
+      "seconds": 16.338,
+      "toolCalls": 5,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 4,
+        "inputTokens": 32617,
+        "outputTokens": 260,
+        "cacheReadTokens": 31644,
+        "seconds": 9.742,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 21144,
+        "outputTokens": 99,
+        "cacheReadTokens": 21002,
+        "seconds": 16.338,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1204,
+        "outputTokens": 85,
+        "cacheReadTokens": 0,
+        "seconds": 1.809,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 33821,
+        "outputTokens": 345,
+        "cacheReadTokens": 31644,
+        "cacheWriteTokens": 2162
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 21144,
+        "outputTokens": 99,
+        "cacheReadTokens": 21002,
+        "cacheWriteTokens": 136
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "body": true,
+      "bodyIsExactlyTheReplacement": true,
+      "stepsUnchanged": true,
+      "nodeCount": [
+       4,
+       4
+      ]
+     },
+     "conversationId": "ab2a46c3-3ef1-41ea-a7d0-470425ac36d5",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "In the body field only, replace \"workspace admin\" with \"workspace owner\". Do not touch the steps or any other fields."
+     ],
+     "reply": "Updated 1 draft: **Install the desktop app** (ID: 1). The replacement was made in the body only; steps were unchanged.\n\nPlease review the draft in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 17.429,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 6,
+      "inputTokens": 55298,
+      "outputTokens": 539,
+      "cacheReadTokens": 53028,
+      "cachedShare": 0.958949690766393,
+      "seconds": 17.356,
+      "toolCalls": 5,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 4,
+        "inputTokens": 32952,
+        "outputTokens": 349,
+        "cacheReadTokens": 31890,
+        "seconds": 8.464,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 21144,
+        "outputTokens": 95,
+        "cacheReadTokens": 21138,
+        "seconds": 17.356,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1202,
+        "outputTokens": 95,
+        "cacheReadTokens": 0,
+        "seconds": 2.307,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 34154,
+        "outputTokens": 444,
+        "cacheReadTokens": 31890,
+        "cacheWriteTokens": 2249
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 21144,
+        "outputTokens": 95,
+        "cacheReadTokens": 21138,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "global-array-add",
+   "title": "Add a row to a global that has drafts",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 14.829,
+    "steps": 6,
+    "inputTokens": 55158,
+    "outputTokens": 546,
+    "cachedShare": 0.9527901664309801
+   },
+   "toolCalls": 11,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "links": [
+       {
+        "label": "Setup",
+        "path": "/setup"
+       },
+       {
+        "label": "Billing",
+        "path": "/billing"
+       },
+       {
+        "label": "Glossary",
+        "path": "/glossary"
+       }
+      ]
+     },
+     "conversationId": "95aaeabc-269a-445f-b3a5-a4bc786d04c6",
+     "tools": [
+      "readDocument",
+      "editContent"
+     ],
+     "instructions": [
+      "Add a link labeled \"Glossary\" with the path \"/glossary\" at the end of the navigation. Keep all existing links and their order."
+     ],
+     "reply": "Added **Glossary** (`/glossary`) to the end of the navigation, keeping the existing links in order.\n\nOne navigation draft was updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 19.143,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 6,
+      "inputTokens": 55251,
+      "outputTokens": 559,
+      "cacheReadTokens": 46118,
+      "cachedShare": 0.8346998244375667,
+      "seconds": 19.097,
+      "toolCalls": 5,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 3,
+        "inputTokens": 22380,
+        "outputTokens": 298,
+        "cacheReadTokens": 14762,
+        "seconds": 6.062,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 31678,
+        "outputTokens": 114,
+        "cacheReadTokens": 31356,
+        "seconds": 19.097,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1193,
+        "outputTokens": 147,
+        "cacheReadTokens": 0,
+        "seconds": 3.154,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 23573,
+        "outputTokens": 445,
+        "cacheReadTokens": 14762,
+        "cacheWriteTokens": 8799
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 31678,
+        "outputTokens": 114,
+        "cacheReadTokens": 31356,
+        "cacheWriteTokens": 313
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "links": [
+       {
+        "label": "Setup",
+        "path": "/setup"
+       },
+       {
+        "label": "Billing",
+        "path": "/billing"
+       },
+       {
+        "label": "Glossary",
+        "path": "/glossary"
+       }
+      ]
+     },
+     "conversationId": "a5f477fd-8cce-4540-bee9-6f97db64846f",
+     "tools": [
+      "readDocument",
+      "updateDocument"
+     ],
+     "reply": "Added **Glossary** (`/glossary`) to the end of the navigation, keeping the existing links.\n\nUpdated 1 draft. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.478,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 31832,
+      "outputTokens": 113,
+      "cacheReadTokens": 31387,
+      "cachedShare": 0.9860203568735864,
+      "seconds": 6.375,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 31832,
+        "outputTokens": 113,
+        "cacheReadTokens": 31387,
+        "seconds": 6.375,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 31832,
+        "outputTokens": 113,
+        "cacheReadTokens": 31387,
+        "cacheWriteTokens": 436
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "links": [
+       {
+        "label": "Setup",
+        "path": "/setup"
+       },
+       {
+        "label": "Billing",
+        "path": "/billing"
+       },
+       {
+        "label": "Glossary",
+        "path": "/glossary"
+       }
+      ]
+     },
+     "conversationId": "d45fede7-b210-4122-9548-e893c2d3c80b",
+     "tools": [
+      "readDocument",
+      "editContent"
+     ],
+     "instructions": [
+      "Add a link with label \"Glossary\" and path \"/glossary\" at the end of the navigation. Keep all existing links unchanged and in their current order."
+     ],
+     "reply": "Added **Glossary** (`/glossary`) to the end of the navigation, keeping the existing links unchanged.\n\n1 navigation draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 14.829,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 6,
+      "inputTokens": 55158,
+      "outputTokens": 546,
+      "cacheReadTokens": 52554,
+      "cachedShare": 0.9527901664309801,
+      "seconds": 14.765,
+      "toolCalls": 5,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 3,
+        "inputTokens": 22404,
+        "outputTokens": 301,
+        "cacheReadTokens": 21228,
+        "seconds": 6.26,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 31559,
+        "outputTokens": 119,
+        "cacheReadTokens": 31326,
+        "seconds": 14.765,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1195,
+        "outputTokens": 126,
+        "cacheReadTokens": 0,
+        "seconds": 2.378,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 23599,
+        "outputTokens": 427,
+        "cacheReadTokens": 21228,
+        "cacheWriteTokens": 2359
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 31559,
+        "outputTokens": 119,
+        "cacheReadTokens": 31326,
+        "cacheWriteTokens": 224
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "discard-localized",
+   "title": "Restore drill: a discard brings a translated locale back to its own state",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 15.303,
+    "steps": 5,
+    "inputTokens": 46370,
+    "outputTokens": 573,
+    "cachedShare": 0.9355833513047229
+   },
+   "toolCalls": 10,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "translated": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+      "results": [
+       {
+        "collection": "articles",
+        "id": "1",
+        "locale": "de",
+        "status": "restored",
+        "restored": [
+         "summary"
+        ]
+       }
+      ],
+      "germanRestored": true,
+      "germanDiffers": [],
+      "germanSummary": null,
+      "englishUnchanged": true
+     },
+     "conversationId": "36a18f8f-09bc-4b70-98ee-68994d650e12",
+     "tools": [
+      "readDocument",
+      "updateDocument"
+     ],
+     "reply": "Translated the summary of **Install the desktop app** (ID: 1) into German. One draft was updated; please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.192,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 31998,
+      "outputTokens": 120,
+      "cacheReadTokens": 31624,
+      "cachedShare": 0.9883117694855929,
+      "seconds": 6.155,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 31998,
+        "outputTokens": 120,
+        "cacheReadTokens": 31624,
+        "seconds": 6.155,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 31998,
+        "outputTokens": 120,
+        "cacheReadTokens": 31624,
+        "cacheWriteTokens": 365
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "translated": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+      "results": [
+       {
+        "collection": "articles",
+        "id": "1",
+        "locale": "de",
+        "status": "restored",
+        "restored": [
+         "summary"
+        ]
+       }
+      ],
+      "germanRestored": true,
+      "germanDiffers": [],
+      "germanSummary": null,
+      "englishUnchanged": true
+     },
+     "conversationId": "04983302-d398-4732-b63a-465927da3cc7",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "Translate only the article's summary from English into German. Use the English summary as the source, write the translation to the German localized summary field, and leave all other fields and locales unchanged."
+     ],
+     "reply": "Translated the summary of **Install the desktop app** (ID: 1) into German. One draft was updated; please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 15.303,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 5,
+      "inputTokens": 46370,
+      "outputTokens": 573,
+      "cacheReadTokens": 43383,
+      "cachedShare": 0.9355833513047229,
+      "seconds": 15.199,
+      "toolCalls": 4,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 3,
+        "inputTokens": 23971,
+        "outputTokens": 384,
+        "cacheReadTokens": 22407,
+        "seconds": 8.614,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 21158,
+        "outputTokens": 103,
+        "cacheReadTokens": 20976,
+        "seconds": 15.199,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1241,
+        "outputTokens": 86,
+        "cacheReadTokens": 0,
+        "seconds": 2.11,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 25212,
+        "outputTokens": 470,
+        "cacheReadTokens": 22407,
+        "cacheWriteTokens": 2793
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 21158,
+        "outputTokens": 103,
+        "cacheReadTokens": 20976,
+        "cacheWriteTokens": 176
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "translated": "Laden Sie das Installationsprogramm herunter, führen Sie es aus und melden Sie sich mit Ihrem Arbeitskonto an.",
+      "results": [
+       {
+        "collection": "articles",
+        "id": "1",
+        "locale": "de",
+        "status": "restored",
+        "restored": [
+         "summary"
+        ]
+       }
+      ],
+      "germanRestored": true,
+      "germanDiffers": [],
+      "germanSummary": null,
+      "englishUnchanged": true
+     },
+     "conversationId": "525829db-68b9-4fb6-b76a-c7a63e95afcd",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "Translate only the English summary of this article into German and save it in the German summary field. Leave all other fields and the English source unchanged."
+     ],
+     "reply": "Updated the German summary in 1 draft of **“Install the desktop app” (ID 1)**. Please review it in the admin panel.\n\nThe review flagged one issue: “The German wording appears to faithfully translate the English summary, but the diff shows the existing `summary` field changed from English to German. The task required saving the translation in the German summary field while leaving the English source unchanged; the diff does not show that the English source was preserved or a separate German summary field was updated.”",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 20.155,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 5,
+      "inputTokens": 46816,
+      "outputTokens": 1166,
+      "cacheReadTokens": 43569,
+      "cachedShare": 0.9306433697881066,
+      "seconds": 20.102,
+      "toolCalls": 4,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 3,
+        "inputTokens": 24352,
+        "outputTokens": 594,
+        "cacheReadTokens": 22593,
+        "seconds": 9.886,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 21240,
+        "outputTokens": 164,
+        "cacheReadTokens": 20976,
+        "seconds": 20.102,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1224,
+        "outputTokens": 408,
+        "cacheReadTokens": 0,
+        "seconds": 5.118,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 25576,
+        "outputTokens": 1002,
+        "cacheReadTokens": 22593,
+        "cacheWriteTokens": 2971
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 21240,
+        "outputTokens": 164,
+        "cacheReadTokens": 20976,
+        "cacheWriteTokens": 258
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "discard-global",
+   "title": "Restore drill: a discard brings a global back",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 13.885,
+    "steps": 5,
+    "inputTokens": 44598,
+    "outputTokens": 570,
+    "cachedShare": 0.943715074395745
+   },
+   "toolCalls": 12,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "changed": [
+       {
+        "label": "Setup",
+        "path": "/setup"
+       },
+       {
+        "label": "Billing",
+        "path": "/billing"
+       },
+       {
+        "label": "Glossary",
+        "path": "/glossary"
+       }
+      ],
+      "results": [
+       {
+        "collection": "global:navigation",
+        "id": "navigation",
+        "locale": "en",
+        "status": "restored",
+        "restored": [
+         "links"
+        ]
+       }
+      ],
+      "links": [
+       {
+        "label": "Setup",
+        "path": "/setup"
+       },
+       {
+        "label": "Billing",
+        "path": "/billing"
+       }
+      ]
+     },
+     "conversationId": "4e180a7e-223c-467c-821f-caa00b0a9704",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "Add a link labeled \"Glossary\" with the path \"/glossary\" to the end of the navigation. Keep all existing links in their current order."
+     ],
+     "reply": "Added **Glossary** (`/glossary`) to the end of the navigation, keeping the existing links in order.\n\n1 navigation draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 14.732,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 5,
+      "inputTokens": 44559,
+      "outputTokens": 570,
+      "cacheReadTokens": 42051,
+      "cachedShare": 0.943715074395745,
+      "seconds": 14.682,
+      "toolCalls": 4,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 3,
+        "inputTokens": 22388,
+        "outputTokens": 296,
+        "cacheReadTokens": 21219,
+        "seconds": 7.382,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 20982,
+        "outputTokens": 96,
+        "cacheReadTokens": 20832,
+        "seconds": 14.682,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1189,
+        "outputTokens": 178,
+        "cacheReadTokens": 0,
+        "seconds": 2.977,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 23577,
+        "outputTokens": 474,
+        "cacheReadTokens": 21219,
+        "cacheWriteTokens": 2346
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 20982,
+        "outputTokens": 96,
+        "cacheReadTokens": 20832,
+        "cacheWriteTokens": 144
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "changed": [
+       {
+        "label": "Setup",
+        "path": "/setup"
+       },
+       {
+        "label": "Billing",
+        "path": "/billing"
+       },
+       {
+        "label": "Glossary",
+        "path": "/glossary"
+       }
+      ],
+      "results": [
+       {
+        "collection": "global:navigation",
+        "id": "navigation",
+        "locale": "en",
+        "status": "restored",
+        "restored": [
+         "links"
+        ]
+       }
+      ],
+      "links": [
+       {
+        "label": "Setup",
+        "path": "/setup"
+       },
+       {
+        "label": "Billing",
+        "path": "/billing"
+       }
+      ]
+     },
+     "conversationId": "ad08d3b7-4b1a-4de7-a1a1-af91e58cb041",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "Add a link labeled \"Glossary\" with path \"/glossary\" to the end of the navigation. Keep all existing links in their current order and unchanged."
+     ],
+     "reply": "I’ll add “Glossary” to the end of the navigation and leave the existing links in place.Added **Glossary** (`/glossary`) to the end of the navigation, keeping the existing links unchanged.\n\n1 navigation draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 13.885,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 5,
+      "inputTokens": 44598,
+      "outputTokens": 560,
+      "cacheReadTokens": 42057,
+      "cachedShare": 0.9430243508677519,
+      "seconds": 13.85,
+      "toolCalls": 4,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 3,
+        "inputTokens": 22398,
+        "outputTokens": 300,
+        "cacheReadTokens": 21225,
+        "seconds": 6.03,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 21010,
+        "outputTokens": 124,
+        "cacheReadTokens": 20832,
+        "seconds": 13.85,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1190,
+        "outputTokens": 136,
+        "cacheReadTokens": 0,
+        "seconds": 2.72,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 23588,
+        "outputTokens": 436,
+        "cacheReadTokens": 21225,
+        "cacheWriteTokens": 2351
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 21010,
+        "outputTokens": 124,
+        "cacheReadTokens": 20832,
+        "cacheWriteTokens": 172
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "changed": [
+       {
+        "label": "Setup",
+        "path": "/setup"
+       },
+       {
+        "label": "Billing",
+        "path": "/billing"
+       },
+       {
+        "label": "Glossary",
+        "path": "/glossary"
+       }
+      ],
+      "results": [
+       {
+        "collection": "global:navigation",
+        "id": "navigation",
+        "locale": "en",
+        "status": "restored",
+        "restored": [
+         "links"
+        ]
+       }
+      ],
+      "links": [
+       {
+        "label": "Setup",
+        "path": "/setup"
+       },
+       {
+        "label": "Billing",
+        "path": "/billing"
+       }
+      ]
+     },
+     "conversationId": "e952f4c1-b7b7-4c9b-8697-bbfd8ac85de9",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "Add a link labeled \"Glossary\" with the path \"/glossary\" to the end of the navigation. Keep all existing links in their current order."
+     ],
+     "reply": "Added **Glossary** (`/glossary`) to the end of the navigation, keeping the existing links unchanged.\n\nUpdated 1 draft. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 13.247,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 5,
+      "inputTokens": 44656,
+      "outputTokens": 615,
+      "cacheReadTokens": 42878,
+      "cachedShare": 0.9601845216768183,
+      "seconds": 13.214,
+      "toolCalls": 4,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 3,
+        "inputTokens": 22481,
+        "outputTokens": 343,
+        "cacheReadTokens": 22046,
+        "seconds": 5.98,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 20984,
+        "outputTokens": 95,
+        "cacheReadTokens": 20832,
+        "seconds": 13.214,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1191,
+        "outputTokens": 177,
+        "cacheReadTokens": 0,
+        "seconds": 2.883,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 23672,
+        "outputTokens": 520,
+        "cacheReadTokens": 22046,
+        "cacheWriteTokens": 1614
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 20984,
+        "outputTokens": 95,
+        "cacheReadTokens": 20832,
+        "cacheWriteTokens": 146
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "read-only-question",
+   "title": "A question that must not change anything",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 4.071,
+    "steps": 2,
+    "inputTokens": 21152,
+    "outputTokens": 104,
+    "cachedShare": 0.9997163388804842
+   },
+   "toolCalls": 3,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "stepsNamed": 3,
+      "changes": 0,
+      "documentUnchanged": true
+     },
+     "conversationId": "74046cd6-b758-41a1-84ae-49a13bbf27fd",
+     "tools": [
+      "readDocument"
+     ],
+     "reply": "**Install the desktop app** (ID 1) has three steps:\n\n1. **Download the installer:** Open the downloads page and choose your system.\n2. **Run the installer:** Accept the license and keep the default folder.\n3. **Sign in:** Use your work account. A workspace admin can reset the password.\n\nNothing was changed.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 4.286,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 21152,
+      "outputTokens": 100,
+      "cacheReadTokens": 20966,
+      "cachedShare": 0.9912065052950075,
+      "seconds": 4.235,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 21152,
+        "outputTokens": 100,
+        "cacheReadTokens": 20966,
+        "seconds": 4.235,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 21152,
+        "outputTokens": 100,
+        "cacheReadTokens": 20966,
+        "cacheWriteTokens": 180
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "stepsNamed": 3,
+      "changes": 0,
+      "documentUnchanged": true
+     },
+     "conversationId": "dd7b116c-a99f-40ed-ada5-646f167830fa",
+     "tools": [
+      "readDocument"
+     ],
+     "reply": "**Install the desktop app** (ID: 1) has three steps:\n\n1. **Download the installer** — Open the downloads page and choose your system.\n2. **Run the installer** — Accept the license and keep the default folder.\n3. **Sign in** — Use your work account. A workspace admin can reset the password.\n\nNothing was changed.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 4.071,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 21152,
+      "outputTokens": 104,
+      "cacheReadTokens": 21146,
+      "cachedShare": 0.9997163388804842,
+      "seconds": 4.034,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 21152,
+        "outputTokens": 104,
+        "cacheReadTokens": 21146,
+        "seconds": 4.034,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 21152,
+        "outputTokens": 104,
+        "cacheReadTokens": 21146,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "stepsNamed": 3,
+      "changes": 0,
+      "documentUnchanged": true
+     },
+     "conversationId": "47c2d83c-0857-4012-b37f-2844bfe188ab",
+     "tools": [
+      "readDocument"
+     ],
+     "reply": "**Install the desktop app** (ID: 1) has three steps:\n\n1. **Download the installer** — Open the downloads page and choose your system.\n2. **Run the installer** — Accept the license and keep the default folder.\n3. **Sign in** — Use your work account. A workspace admin can reset the password.\n\nNothing was changed.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 4.057,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 21152,
+      "outputTokens": 104,
+      "cacheReadTokens": 21146,
+      "cachedShare": 0.9997163388804842,
+      "seconds": 4.004,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 21152,
+        "outputTokens": 104,
+        "cacheReadTokens": 21146,
+        "seconds": 4.004,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 21152,
+        "outputTokens": 104,
+        "cacheReadTokens": 21146,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "no-drafts-collection",
+   "title": "A collection without drafts is written only after the person confirms the live change",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 6.322,
+    "steps": 3,
+    "inputTokens": 31526,
+    "outputTokens": 89,
+    "cachedShare": 0.9938209011977945
+   },
+   "toolCalls": 3,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "nameAfter": "Payments",
+      "cards": [
+       {
+        "tool": "updateDocument",
+        "reason": "{\"kind\":\"live-write\",\"collection\":\"categories\",\"document\":{\"id\":2}}"
+       }
+      ],
+      "categories": [
+       2,
+       2
+      ]
+     },
+     "conversationId": "d13d6a6a-d968-49eb-a87e-d7decb1b7804",
+     "tools": [
+      "findDocuments",
+      "updateDocument"
+     ],
+     "reply": "Renamed category **Billing** (ID 2) to **Payments**. The change is live, not a draft. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.322,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 31526,
+      "outputTokens": 88,
+      "cacheReadTokens": 31266,
+      "cachedShare": 0.9917528389266003,
+      "seconds": 6.227,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 31526,
+        "outputTokens": 88,
+        "cacheReadTokens": 31266,
+        "seconds": 6.227,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 31526,
+        "outputTokens": 88,
+        "cacheReadTokens": 31266,
+        "cacheWriteTokens": 251
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "nameAfter": "Payments",
+      "cards": [
+       {
+        "tool": "updateDocument",
+        "reason": "{\"kind\":\"live-write\",\"collection\":\"categories\",\"document\":{\"id\":2}}"
+       }
+      ],
+      "categories": [
+       2,
+       2
+      ]
+     },
+     "conversationId": "d7db3ed2-da56-4122-a934-31a72902a568",
+     "tools": [
+      "findDocuments",
+      "updateDocument"
+     ],
+     "reply": "Renamed category **Billing** (ID 2) to **Payments**. The change is live; no draft was created. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 5.898,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 31526,
+      "outputTokens": 89,
+      "cacheReadTokens": 31363,
+      "cachedShare": 0.994829664403984,
+      "seconds": 5.801,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 31526,
+        "outputTokens": 89,
+        "cacheReadTokens": 31363,
+        "seconds": 5.801,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 31526,
+        "outputTokens": 89,
+        "cacheReadTokens": 31363,
+        "cacheWriteTokens": 154
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "nameAfter": "Payments",
+      "cards": [
+       {
+        "tool": "updateDocument",
+        "reason": "{\"kind\":\"live-write\",\"collection\":\"categories\",\"document\":{\"id\":2}}"
+       }
+      ],
+      "categories": [
+       2,
+       2
+      ]
+     },
+     "conversationId": "61ac9455-5b48-4a32-834c-5d63f09701b2",
+     "tools": [
+      "findDocuments",
+      "updateDocument"
+     ],
+     "reply": "I’ll rename “Billing” to “Payments.” Categories have no draft state, so the change will be live after confirmation.Renamed category **Billing** (ID 2) to **Payments**. The change is live; no draft was created. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.706,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 31558,
+      "outputTokens": 121,
+      "cacheReadTokens": 31363,
+      "cachedShare": 0.9938209011977945,
+      "seconds": 6.638,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 31558,
+        "outputTokens": 121,
+        "cacheReadTokens": 31363,
+        "seconds": 6.638,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 31558,
+        "outputTokens": 121,
+        "cacheReadTokens": 31363,
+        "cacheWriteTokens": 186
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

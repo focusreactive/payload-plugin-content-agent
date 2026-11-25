@@ -1,0 +1,8 @@
+node_modules/
+.next/
+.state/
+next-env.d.ts
+tsconfig.tsbuildinfo
+package-lock.json
+*.tgz
+media/

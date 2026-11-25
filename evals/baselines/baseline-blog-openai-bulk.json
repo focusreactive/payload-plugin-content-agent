@@ -1,0 +1,363 @@
+{
+ "label": "baseline-blog-openai-bulk",
+ "schema": "blog",
+ "model": "openai",
+ "k": 3,
+ "date": "2026-11-12T15:46:39.776Z",
+ "summary": {
+  "scenarios": 2,
+  "passK": 1,
+  "runs": 6,
+  "runsPassed": 3,
+  "toolCalls": 22,
+  "failedToolCalls": 5,
+  "inputTokens": 581609
+ },
+ "results": [
+  {
+   "id": "bulk-above-threshold",
+   "title": "The same change to seven documents, above the confirmation threshold",
+   "passed": 0,
+   "runs": 3,
+   "passK": false,
+   "median": {
+    "seconds": 19.03,
+    "steps": 4,
+    "inputTokens": 67484,
+    "outputTokens": 396,
+    "cachedShare": 0.9409532843253497
+   },
+   "toolCalls": 7,
+   "failedToolCalls": 1,
+   "runDetails": [
+    {
+     "ok": false,
+     "details": {
+      "changedCorrectly": 0,
+      "of": 7,
+      "confirmTurns": 1,
+      "otherPostUnchanged": true
+     },
+     "conversationId": "75dffd7b-86ff-4692-a1b5-f6c828a8fc1e",
+     "tools": [
+      "editContent",
+      "editContent"
+     ],
+     "reply": "I didn’t make any changes because the selection matched 0 posts.\n\nIf that’s unexpected, the likely cause is that the title filter pattern didn’t match your data exactly. I can re-check the matching posts another way and then apply the excerpt update only to those drafts.\n---\nDone: 0 posts were updated, so no drafts changed.\n\nThe confirmed write ran against the title pattern and the tool reported 0 matching documents. If you want, I can now re-check the selection with a different matcher and then update only the posts that truly end with `: a Short Introduction`.\n\n⚠ Check: no document was changed in this turn. The message above describes a write that did not happen - nothing was saved.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 18.328,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 4,
+      "inputTokens": 67472,
+      "outputTokens": 384,
+      "cacheReadTokens": 63488,
+      "cachedShare": 0.9409532843253497,
+      "seconds": 18.237,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 4,
+        "inputTokens": 67472,
+        "outputTokens": 384,
+        "cacheReadTokens": 63488,
+        "seconds": 18.237,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": false,
+     "details": {
+      "changedCorrectly": 0,
+      "of": 7,
+      "confirmTurns": 1,
+      "otherPostUnchanged": true
+     },
+     "conversationId": "e98174ed-8b69-4a8e-8a37-00640d3d7a9d",
+     "tools": [
+      "editContent",
+      "editContent"
+     ],
+     "reply": "I couldn’t apply that yet because the selection matched 0 posts.\n\nI did not change anything.\n\nIf you want, I can quickly verify whether:\n- the titles use a different suffix format, or\n- these posts only exist in the published version and not the current drafts.\n---\nDone: 0 posts were updated, so no drafts changed.\n\nI did not touch any other posts.\n\nThis suggests there are currently no draft posts matching the title pattern in the draft set the tool searched. If you want, I can now check the published versions or inspect similar titles to find the right scope.\n\n⚠ Check: no document was changed in this turn. The message above describes a write that did not happen - nothing was saved.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 19.03,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 4,
+      "inputTokens": 67484,
+      "outputTokens": 396,
+      "cacheReadTokens": 63488,
+      "cachedShare": 0.9407859640803746,
+      "seconds": 18.952,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 4,
+        "inputTokens": 67484,
+        "outputTokens": 396,
+        "cacheReadTokens": 63488,
+        "seconds": 18.952,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": false,
+     "details": {
+      "changedCorrectly": 0,
+      "of": 7,
+      "confirmTurns": 1,
+      "otherPostUnchanged": true
+     },
+     "conversationId": "17f1e8eb-e615-487e-8998-acb790773e9a",
+     "tools": [
+      "editContent",
+      "editContent",
+      "editContent"
+     ],
+     "reply": "I couldn’t make the change because the selection matched 0 posts.\n\nI did not change anything.\n\nPossible reason: the title filter didn’t match your CMS data exactly. If you want, I can quickly re-check by finding posts with similar titles and then apply the excerpt update only to the exact matches.\n---\nDone attempt completed, but 0 posts were updated.\n\nNo drafts were changed, so there’s nothing to review yet.\n\nIt looks like no post titles matched the pattern I used. If you want, I can now re-check the titles in the posts collection, find the exact matching set of `*: a Short Introduction` posts, and then apply the excerpt change only to those drafts.\n\n⚠ Check: no document was changed in this turn. The message above describes a write that did not happen - nothing was saved.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 21.698999999999998,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 5,
+      "inputTokens": 84589,
+      "outputTokens": 495,
+      "cacheReadTokens": 80384,
+      "cachedShare": 0.9502890446748395,
+      "seconds": 21.616,
+      "toolCalls": 3,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "editContent",
+        "error": "This project is not localized (no locales configured) - the \"locale\" argument is not applicable."
+       }
+      ],
+      "perAgent": {
+       "main": {
+        "steps": 5,
+        "inputTokens": 84589,
+        "outputTokens": 495,
+        "cacheReadTokens": 80384,
+        "seconds": 21.616,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 1
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "bulk-find-replace",
+   "title": "Replace a phrase in every document of a collection",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 21.113,
+    "steps": 7,
+    "inputTokens": 120321,
+    "outputTokens": 416,
+    "cachedShare": 0.9373223490870549
+   },
+   "toolCalls": 15,
+   "failedToolCalls": 4,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "changedCorrectly": 7,
+      "of": 7,
+      "confirmTurns": 1,
+      "postsWithoutThePhraseUnchanged": true
+     },
+     "conversationId": "b1cf40bb-debd-4972-8672-74ee4d63a411",
+     "tools": [
+      "searchContent",
+      "searchContent",
+      "findReplaceContent",
+      "findReplaceContent"
+     ],
+     "reply": "I found 7 posts with the exact phrase “small team” in the excerpt and/or body.\n\nBecause this is a bulk change across more than 5 documents, I need your confirmation before writing anything.\n\nPlanned change:\n- Collection: posts\n- Scope: 7 drafts\n- Replace everywhere in those matched posts:\n  - `small team` → `small editorial team`\n- Fields affected: excerpt and rich-text body/content\n\nIf you want me to proceed, reply: **yes** or **confirm**.I found 7 posts with the exact phrase **“small team”**.\n\nPlanned draft update:\n- Replace `small team` → `small editorial team`\n- Scope: **7 posts**\n- Fields: **excerpt** and **body/content**\n\nBecause this affects more than 5 documents, I need your explicit confirmation before making the draft changes.\n\nReply **yes** or **confirm** to proceed.\n---\nDone — replaced **“small team”** with **“small editorial team”** **14 times across 7 posts**, saved as **drafts**.\n\nPlease review those draft updates in the admin panel before publishing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 18.726,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 6,
+      "inputTokens": 103785,
+      "outputTokens": 416,
+      "cacheReadTokens": 97280,
+      "cachedShare": 0.9373223490870549,
+      "seconds": 18.636,
+      "toolCalls": 4,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "findReplaceContent",
+        "error": "This project is not localized (no locales configured) - the \"locale\" argument is not applicable."
+       }
+      ],
+      "perAgent": {
+       "main": {
+        "steps": 6,
+        "inputTokens": 103785,
+        "outputTokens": 416,
+        "cacheReadTokens": 97280,
+        "seconds": 18.636,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 4,
+        "failedToolCalls": 1
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "changedCorrectly": 7,
+      "of": 7,
+      "confirmTurns": 1,
+      "postsWithoutThePhraseUnchanged": true
+     },
+     "conversationId": "2adaf56f-9909-482d-9d48-8f127f0f63c2",
+     "tools": [
+      "editContent",
+      "searchContent",
+      "findReplaceContent",
+      "searchContent",
+      "findReplaceContent",
+      "findReplaceContent"
+     ],
+     "reply": "I found 7 posts with that exact phrase.\n\nPlanned change:\n- Replace `small team` → `small editorial team`\n- Scope: 7 post drafts\n- Fields affected: excerpt and rich text body wherever the exact phrase appears\n\nPlease confirm with “yes” or “go ahead”, and I’ll apply it to all 7 as drafts.\n---\nDone — replaced `small team` with `small editorial team` 14 times across 7 posts, saved as drafts.\n\nPlease review the 7 updated drafts in the admin panel before publishing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 24.633000000000003,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 8,
+      "inputTokens": 137958,
+      "outputTokens": 470,
+      "cacheReadTokens": 130048,
+      "cachedShare": 0.9426637092448427,
+      "seconds": 24.557,
+      "toolCalls": 6,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "findReplaceContent",
+        "error": "This project is not localized (no locales configured) - the \"locale\" argument is not applicable."
+       }
+      ],
+      "perAgent": {
+       "main": {
+        "steps": 8,
+        "inputTokens": 137958,
+        "outputTokens": 470,
+        "cacheReadTokens": 130048,
+        "seconds": 24.557,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 6,
+        "failedToolCalls": 1
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "changedCorrectly": 7,
+      "of": 7,
+      "confirmTurns": 1,
+      "postsWithoutThePhraseUnchanged": true
+     },
+     "conversationId": "6cb665ab-351f-4004-9397-aa73ff864be1",
+     "tools": [
+      "findReplaceContent",
+      "searchContent",
+      "searchContent",
+      "findReplaceContent",
+      "findReplaceContent"
+     ],
+     "reply": "I found 7 posts with matches for “small team”.\n\nBecause this is a bulk find/replace, I need your confirmation before writing anything.\n\nPlanned change:\n- Collection: posts\n- Scope: 7 posts\n- Replace: `small team` → `small editorial team`\n- Coverage: excerpt and body content wherever that exact string appears\n\nReply with **yes** / **confirm** / **go ahead** and I’ll apply it to all 7 posts as drafts.\n---\nDone — replaced `small team` with `small editorial team` 14 times across 7 posts, saved as drafts.\n\nThat covered the excerpt and body matches in those 7 documents.\n\nPlease review the updated drafts in the admin panel before publishing.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 21.113,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 7,
+      "inputTokens": 120321,
+      "outputTokens": 367,
+      "cacheReadTokens": 112128,
+      "cachedShare": 0.9319071483780886,
+      "seconds": 21.03,
+      "toolCalls": 5,
+      "failedToolCalls": 2,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "main",
+        "tool": "findReplaceContent",
+        "error": "This project is not localized (no locales configured) - the \"locale\" argument is not applicable."
+       },
+       {
+        "agent": "main",
+        "tool": "findReplaceContent",
+        "error": "This project is not localized (no locales configured) - the \"locale\" argument is not applicable."
+       }
+      ],
+      "perAgent": {
+       "main": {
+        "steps": 7,
+        "inputTokens": 120321,
+        "outputTokens": 367,
+        "cacheReadTokens": 112128,
+        "seconds": 21.03,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 2
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

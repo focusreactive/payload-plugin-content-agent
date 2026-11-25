@@ -1,0 +1,1763 @@
+{
+ "label": "free1-terra-shop",
+ "schema": "shop",
+ "model": "openai",
+ "k": 3,
+ "date": "2026-11-23T07:34:14.950Z",
+ "summary": {
+  "scenarios": 8,
+  "passK": 8,
+  "runs": 24,
+  "runsPassed": 24,
+  "toolCalls": 66,
+  "failedToolCalls": 3,
+  "inputTokens": 936769
+ },
+ "results": [
+  {
+   "id": "number-field",
+   "title": "Change a number",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 4.243,
+    "steps": 2,
+    "inputTokens": 22610,
+    "outputTokens": 71,
+    "cachedShare": 0.9880583812472358
+   },
+   "toolCalls": 3,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "price": 159
+     },
+     "conversationId": "d2ce16fb-245c-4046-be24-4cac712b87e6",
+     "tools": [
+      "updateDocument"
+     ],
+     "reply": "Updated the price of **Ridge 28 Backpack** (ID: 1) to 159. No other content was changed.\n\nOne draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 4.232,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 22610,
+      "outputTokens": 71,
+      "cacheReadTokens": 11170,
+      "cachedShare": 0.4940291906236179,
+      "seconds": 4.14,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 22610,
+        "outputTokens": 71,
+        "cacheReadTokens": 11170,
+        "seconds": 4.14,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 22610,
+        "outputTokens": 71,
+        "cacheReadTokens": 11170,
+        "cacheWriteTokens": 11434
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "price": 159
+     },
+     "conversationId": "fa11c694-6759-4beb-81a6-98fb6f9ca5ca",
+     "tools": [
+      "updateDocument"
+     ],
+     "reply": "Updated the price of **Ridge 28 Backpack** (ID: 1) to 159. No other content was changed.\n\nOne draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 4.243,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 22610,
+      "outputTokens": 71,
+      "cacheReadTokens": 22340,
+      "cachedShare": 0.9880583812472358,
+      "seconds": 4.119,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 22610,
+        "outputTokens": 71,
+        "cacheReadTokens": 22340,
+        "seconds": 4.119,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 22610,
+        "outputTokens": 71,
+        "cacheReadTokens": 22340,
+        "cacheWriteTokens": 264
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "price": 159
+     },
+     "conversationId": "20b56143-c649-41bc-bbe0-81c32be28b08",
+     "tools": [
+      "updateDocument"
+     ],
+     "reply": "Updated the price of **Ridge 28 Backpack** (ID 1) to 159. One draft was updated; please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 4.75,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 22610,
+      "outputTokens": 65,
+      "cacheReadTokens": 22340,
+      "cachedShare": 0.9880583812472358,
+      "seconds": 4.692,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 22610,
+        "outputTokens": 65,
+        "cacheReadTokens": 22340,
+        "seconds": 4.692,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 22610,
+        "outputTokens": 65,
+        "cacheReadTokens": 22340,
+        "cacheWriteTokens": 264
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "array-row-number",
+   "title": "Change one value in one array row",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 13.674,
+    "steps": 5,
+    "inputTokens": 51077,
+    "outputTokens": 288,
+    "cachedShare": 0.934498260229091
+   },
+   "toolCalls": 12,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "variants": [
+       {
+        "sku": "RDG-28-BLK",
+        "color": "black",
+        "stock": 14
+       },
+       {
+        "sku": "RDG-28-SND",
+        "color": "sand",
+        "stock": 12
+       },
+       {
+        "sku": "RDG-28-FOR",
+        "color": "forest",
+        "stock": 0
+       }
+      ]
+     },
+     "conversationId": "8295c549-bee3-4e6f-9903-4b781ff37f72",
+     "tools": [
+      "readDocument",
+      "editContent"
+     ],
+     "instructions": [
+      "Set the stock of the sand variant to 12. Change nothing else; preserve all other variants and their existing values."
+     ],
+     "reply": "Updated **Ridge 28 Backpack** (ID: 1): the sand variant’s stock is now 12. Nothing else changed.\n\n1 draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 13.674,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 5,
+      "inputTokens": 51077,
+      "outputTokens": 288,
+      "cacheReadTokens": 41567,
+      "cachedShare": 0.8138105213696968,
+      "seconds": 13.621,
+      "toolCalls": 4,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 2,
+        "inputTokens": 15787,
+        "outputTokens": 97,
+        "cacheReadTokens": 7835,
+        "seconds": 4.242,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 34126,
+        "outputTokens": 115,
+        "cacheReadTokens": 33732,
+        "seconds": 13.621,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1164,
+        "outputTokens": 76,
+        "cacheReadTokens": 0,
+        "seconds": 2.422,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 16951,
+        "outputTokens": 173,
+        "cacheReadTokens": 7835,
+        "cacheWriteTokens": 9107
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 34126,
+        "outputTokens": 115,
+        "cacheReadTokens": 33732,
+        "cacheWriteTokens": 385
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "variants": [
+       {
+        "sku": "RDG-28-BLK",
+        "color": "black",
+        "stock": 14
+       },
+       {
+        "sku": "RDG-28-SND",
+        "color": "sand",
+        "stock": 12
+       },
+       {
+        "sku": "RDG-28-FOR",
+        "color": "forest",
+        "stock": 0
+       }
+      ]
+     },
+     "conversationId": "88a61c3b-a200-4c99-9d32-5ceb65e7918c",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "Set the stock of the sand variant to 12. Change nothing else."
+     ],
+     "reply": "Updated the sand variant’s stock from 3 to 12 in **Ridge 28 Backpack** (ID: 1). Nothing else changed.\n\n1 draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 10.923,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 4,
+      "inputTokens": 39373,
+      "outputTokens": 202,
+      "cacheReadTokens": 36794,
+      "cachedShare": 0.934498260229091,
+      "seconds": 10.862,
+      "toolCalls": 3,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 2,
+        "inputTokens": 15751,
+        "outputTokens": 79,
+        "cacheReadTokens": 14452,
+        "seconds": 3.895,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 22467,
+        "outputTokens": 86,
+        "cacheReadTokens": 22342,
+        "seconds": 10.862,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1155,
+        "outputTokens": 37,
+        "cacheReadTokens": 0,
+        "seconds": 2.076,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 16906,
+        "outputTokens": 116,
+        "cacheReadTokens": 14452,
+        "cacheWriteTokens": 2445
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 22467,
+        "outputTokens": 86,
+        "cacheReadTokens": 22342,
+        "cacheWriteTokens": 119
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "variants": [
+       {
+        "sku": "RDG-28-BLK",
+        "color": "black",
+        "stock": 14
+       },
+       {
+        "sku": "RDG-28-SND",
+        "color": "sand",
+        "stock": 12
+       },
+       {
+        "sku": "RDG-28-FOR",
+        "color": "forest",
+        "stock": 0
+       }
+      ]
+     },
+     "conversationId": "619bc063-e94b-4944-98ed-0a213797ed18",
+     "tools": [
+      "readDocument",
+      "editContent"
+     ],
+     "instructions": [
+      "Set the stock of the sand variant to 12. Change nothing else; preserve all other variants and fields exactly."
+     ],
+     "reply": "Updated the sand variant’s stock from 3 to 12 in **Ridge 28 Backpack** (ID: 1). Nothing else changed.\n\n1 draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 15.348,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 6,
+      "inputTokens": 58937,
+      "outputTokens": 724,
+      "cacheReadTokens": 56649,
+      "cachedShare": 0.9611788859290429,
+      "seconds": 15.292,
+      "toolCalls": 5,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 3,
+        "inputTokens": 24812,
+        "outputTokens": 608,
+        "cacheReadTokens": 22898,
+        "seconds": 8.106,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 34125,
+        "outputTokens": 116,
+        "cacheReadTokens": 33751,
+        "seconds": 15.292,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "seconds": 0,
+        "runs": 0,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 24812,
+        "outputTokens": 608,
+        "cacheReadTokens": 22898,
+        "cacheWriteTokens": 1905
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 34125,
+        "outputTokens": 116,
+        "cacheReadTokens": 33751,
+        "cacheWriteTokens": 365
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "select-field",
+   "title": "Change a select to one of its options",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 3.945,
+    "steps": 2,
+    "inputTokens": 22646,
+    "outputTokens": 69,
+    "cachedShare": 0.9861344166740263
+   },
+   "toolCalls": 3,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "availability": "retired"
+     },
+     "conversationId": "74ddf0db-1c64-48a8-a02e-372fcc999cc1",
+     "tools": [
+      "updateDocument"
+     ],
+     "reply": "Marked **Ridge 28 Backpack** (ID: 1) as retired. No other content was changed.\n\nOne draft was updated; please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 4.031,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 22646,
+      "outputTokens": 69,
+      "cacheReadTokens": 22318,
+      "cachedShare": 0.9855162059524861,
+      "seconds": 3.965,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 22646,
+        "outputTokens": 69,
+        "cacheReadTokens": 22318,
+        "seconds": 3.965,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 22646,
+        "outputTokens": 69,
+        "cacheReadTokens": 22318,
+        "cacheWriteTokens": 322
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "availability": "retired"
+     },
+     "conversationId": "feba0987-3ff2-4595-81a6-a2737daca9dc",
+     "tools": [
+      "updateDocument"
+     ],
+     "reply": "Marked **Ridge 28 Backpack** (ID 1) as retired. No other content fields were changed.\n\nOne draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 3.945,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 22646,
+      "outputTokens": 68,
+      "cacheReadTokens": 22332,
+      "cachedShare": 0.9861344166740263,
+      "seconds": 3.899,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 22646,
+        "outputTokens": 68,
+        "cacheReadTokens": 22332,
+        "seconds": 3.899,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 22646,
+        "outputTokens": 68,
+        "cacheReadTokens": 22332,
+        "cacheWriteTokens": 308
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "availability": "retired"
+     },
+     "conversationId": "7bf96acf-387a-4316-a925-3f90e5559e6f",
+     "tools": [
+      "updateDocument"
+     ],
+     "reply": "Marked **Ridge 28 Backpack** (ID: 1) as retired. No other content fields were changed.\n\n1 draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 3.802,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 2,
+      "inputTokens": 22646,
+      "outputTokens": 69,
+      "cacheReadTokens": 22332,
+      "cachedShare": 0.9861344166740263,
+      "seconds": 3.758,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 2,
+        "inputTokens": 22646,
+        "outputTokens": 69,
+        "cacheReadTokens": 22332,
+        "seconds": 3.758,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 22646,
+        "outputTokens": 69,
+        "cacheReadTokens": 22332,
+        "cacheWriteTokens": 308
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "relationship-replace",
+   "title": "Point a relationship at another document",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 6.93,
+    "steps": 3,
+    "inputTokens": 33890,
+    "outputTokens": 92,
+    "cachedShare": 0.9940690469164946
+   },
+   "toolCalls": 6,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "brandBefore": 2,
+      "brandAfter": 1,
+      "fjell": 1
+     },
+     "conversationId": "43ad857f-b9d0-4b19-bacd-783cd3605cb8",
+     "tools": [
+      "findDocuments",
+      "updateDocument"
+     ],
+     "reply": "Updated the brand of **Market Tote (ID 3)** to Fjell. No other content was changed.\n\nOne draft was updated; please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 5.884,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 33890,
+      "outputTokens": 92,
+      "cacheReadTokens": 22428,
+      "cachedShare": 0.661788138093833,
+      "seconds": 5.838,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 33890,
+        "outputTokens": 92,
+        "cacheReadTokens": 22428,
+        "seconds": 5.838,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 33890,
+        "outputTokens": 92,
+        "cacheReadTokens": 22428,
+        "cacheWriteTokens": 11453
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "brandBefore": 2,
+      "brandAfter": 1,
+      "fjell": 1
+     },
+     "conversationId": "ed6d86c5-5541-4649-9876-278b581e5cfd",
+     "tools": [
+      "findDocuments",
+      "updateDocument"
+     ],
+     "reply": "Updated the brand to **Fjell** on **Market Tote** (ID: 3). No other fields were changed.\n\n1 draft updated; please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.93,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 33890,
+      "outputTokens": 95,
+      "cacheReadTokens": 33689,
+      "cachedShare": 0.9940690469164946,
+      "seconds": 6.873,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 33890,
+        "outputTokens": 95,
+        "cacheReadTokens": 33689,
+        "seconds": 6.873,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 33890,
+        "outputTokens": 95,
+        "cacheReadTokens": 33689,
+        "cacheWriteTokens": 192
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "brandBefore": 2,
+      "brandAfter": 1,
+      "fjell": 1
+     },
+     "conversationId": "226b3cfe-05d0-4032-accd-d75f28ea60cd",
+     "tools": [
+      "findDocuments",
+      "updateDocument"
+     ],
+     "reply": "Changed the brand of **Market Tote (ID 3)** to Fjell. One draft updated; please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 7.094,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 33890,
+      "outputTokens": 85,
+      "cacheReadTokens": 33689,
+      "cachedShare": 0.9940690469164946,
+      "seconds": 7.046,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 33890,
+        "outputTokens": 85,
+        "cacheReadTokens": 33689,
+        "seconds": 7.046,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 33890,
+        "outputTokens": 85,
+        "cacheReadTokens": 33689,
+        "cacheWriteTokens": 192
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "block-relationship-add",
+   "title": "Add a reference to a block that lists documents",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 14.09,
+    "steps": 5,
+    "inputTokens": 50881,
+    "outputTokens": 454,
+    "cachedShare": 0.9471516007532956
+   },
+   "toolCalls": 15,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "products": [
+       1,
+       2,
+       3
+      ],
+      "bannerUnchanged": true
+     },
+     "conversationId": "4a8f2b03-3c2a-46f3-b85c-31dce5d33799",
+     "tools": [
+      "findDocuments",
+      "readDocument",
+      "editContent"
+     ],
+     "instructions": [
+      "In the productGrid block [6b03eb7070c070af8e14a1c1] titled \"Our picks\", set products to [1, 2, 3], adding Market Tote (product ID 3) at the end and preserving the existing products and all other content."
+     ],
+     "reply": "I’ll add Market Tote to the end of the “Our picks” grid, keeping the two existing products.Added **Market Tote** (product ID 3) to the end of the grid on **Autumn Gear** (ID 1), keeping both existing products.\n\nOne draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 14.09,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 5,
+      "inputTokens": 50877,
+      "outputTokens": 454,
+      "cacheReadTokens": 30203,
+      "cachedShare": 0.5936474241798848,
+      "seconds": 14.041,
+      "toolCalls": 5,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 2,
+        "inputTokens": 15258,
+        "outputTokens": 154,
+        "cacheReadTokens": 7550,
+        "seconds": 3.799,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 34357,
+        "outputTokens": 229,
+        "cacheReadTokens": 22653,
+        "seconds": 14.041,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1262,
+        "outputTokens": 71,
+        "cacheReadTokens": 0,
+        "seconds": 2.118,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 16520,
+        "outputTokens": 225,
+        "cacheReadTokens": 7550,
+        "cacheWriteTokens": 8961
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 34357,
+        "outputTokens": 229,
+        "cacheReadTokens": 22653,
+        "cacheWriteTokens": 11695
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "products": [
+       1,
+       2,
+       3
+      ],
+      "bannerUnchanged": true
+     },
+     "conversationId": "39dac140-6f01-4f3d-b2d9-6b04a36b373d",
+     "tools": [
+      "findDocuments",
+      "readDocument",
+      "editContent"
+     ],
+     "instructions": [
+      "In the productGrid block [6b03eb7070c070af8e14a1c1], set products to [1, 2, 3], preserving the existing products and their order and adding Market Tote (product 3) at the end. Do not change anything else."
+     ],
+     "reply": "I’ll add Market Tote to the end of the “Our picks” grid, keeping the existing products.Added **Market Tote** (product ID 3) to the end of the grid on **Autumn Gear** (ID 1), keeping the other products in order.\n\nOne draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 18.023,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 5,
+      "inputTokens": 50976,
+      "outputTokens": 564,
+      "cacheReadTokens": 48282,
+      "cachedShare": 0.9471516007532956,
+      "seconds": 17.958,
+      "toolCalls": 5,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 2,
+        "inputTokens": 15364,
+        "outputTokens": 260,
+        "cacheReadTokens": 14154,
+        "seconds": 7.306,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 34353,
+        "outputTokens": 229,
+        "cacheReadTokens": 34128,
+        "seconds": 17.958,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1259,
+        "outputTokens": 75,
+        "cacheReadTokens": 0,
+        "seconds": 1.815,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 16623,
+        "outputTokens": 335,
+        "cacheReadTokens": 14154,
+        "cacheWriteTokens": 2460
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 34353,
+        "outputTokens": 229,
+        "cacheReadTokens": 34128,
+        "cacheWriteTokens": 216
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "products": [
+       1,
+       2,
+       3
+      ],
+      "bannerUnchanged": true
+     },
+     "conversationId": "5c6e739a-222e-4314-bb26-b64e8d95de4e",
+     "tools": [
+      "findDocuments",
+      "readDocument",
+      "editContent"
+     ],
+     "instructions": [
+      "In product grid [6b03eb7070c070af8e14a1c1], append Market Tote (product ID 3) to the existing products, preserving their order and keeping the other products. The resulting products should be [1, 2, 3]. Change nothing else."
+     ],
+     "reply": "Added **Market Tote** (ID 3) to the end of the product grid on **Autumn Gear** (ID 1), keeping the existing products.\n\nUpdated 1 draft. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 13.325,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 5,
+      "inputTokens": 50881,
+      "outputTokens": 430,
+      "cacheReadTokens": 48283,
+      "cachedShare": 0.9489396827892533,
+      "seconds": 13.257,
+      "toolCalls": 5,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "content-editor": {
+        "steps": 2,
+        "inputTokens": 15289,
+        "outputTokens": 186,
+        "cacheReadTokens": 14155,
+        "seconds": 4.238,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       },
+       "main": {
+        "steps": 3,
+        "inputTokens": 34329,
+        "outputTokens": 201,
+        "cacheReadTokens": 34128,
+        "seconds": 13.257,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 3,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1263,
+        "outputTokens": 43,
+        "cacheReadTokens": 0,
+        "seconds": 1.596,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 16552,
+        "outputTokens": 229,
+        "cacheReadTokens": 14155,
+        "cacheWriteTokens": 2388
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 34329,
+        "outputTokens": 201,
+        "cacheReadTokens": 34128,
+        "cacheWriteTokens": 192
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "rich-text-append",
+   "title": "Add a paragraph to the end of a rich text field",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 19.124,
+    "steps": 7,
+    "inputTokens": 64985,
+    "outputTokens": 621,
+    "cachedShare": 0.9468800492421328
+   },
+   "toolCalls": 18,
+   "failedToolCalls": 3,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "paragraphs": [
+       "The Ridge 28 carries a day of gear and keeps it dry.",
+       "The back panel is padded and the hip belt comes off for city use.",
+       "It fits a 15-inch laptop."
+      ]
+     },
+     "conversationId": "74bc373d-0969-41bc-bdf5-c721796087fe",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "Add a third paragraph to the end of the description: \"It fits a 15-inch laptop.\" Keep the first two paragraphs exactly as they are."
+     ],
+     "reply": "I’ll append the sentence as a third paragraph, leaving the first two unchanged.Added the third paragraph to **Ridge 28 Backpack** (ID: 1), leaving the first two unchanged.\n\n1 draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 19.675,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 7,
+      "inputTokens": 64985,
+      "outputTokens": 621,
+      "cacheReadTokens": 61533,
+      "cachedShare": 0.9468800492421328,
+      "seconds": 19.612,
+      "toolCalls": 6,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "Nothing was declared. itemsAdded at \"description\": \"description\" is not a blocks or array field, so no item can be added to it. The blocks and array fields of this document: categories, variants. For text added to a field, declare \"present\" with the text. Call declareOutcome again with every criteri"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 41185,
+        "outputTokens": 397,
+        "cacheReadTokens": 39196,
+        "seconds": 13.319,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 22563,
+        "outputTokens": 118,
+        "cacheReadTokens": 22337,
+        "seconds": 19.612,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1237,
+        "outputTokens": 106,
+        "cacheReadTokens": 0,
+        "seconds": 2.248,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 42422,
+        "outputTokens": 503,
+        "cacheReadTokens": 39196,
+        "cacheWriteTokens": 3208
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 22563,
+        "outputTokens": 118,
+        "cacheReadTokens": 22337,
+        "cacheWriteTokens": 220
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "paragraphs": [
+       "The Ridge 28 carries a day of gear and keeps it dry.",
+       "The back panel is padded and the hip belt comes off for city use.",
+       "It fits a 15-inch laptop."
+      ]
+     },
+     "conversationId": "bfccac36-9222-440c-8c8a-60a31c7fbe09",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "Add a third paragraph to the end of the description: \"It fits a 15-inch laptop.\" Keep the first two paragraphs exactly as they are."
+     ],
+     "reply": "Added the third paragraph to **Ridge 28 Backpack** (ID 1), leaving the first two unchanged.\n\n1 draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 15.791,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 7,
+      "inputTokens": 64722,
+      "outputTokens": 492,
+      "cacheReadTokens": 62654,
+      "cachedShare": 0.9680479589629493,
+      "seconds": 15.735,
+      "toolCalls": 6,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "Nothing was declared. itemsAdded at \"description\": \"description\" is not a blocks or array field, so no item can be added to it. The blocks and array fields of this document: categories, variants. For text added to a field, declare \"present\" with the text. Call declareOutcome again with every criteri"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 40948,
+        "outputTokens": 299,
+        "cacheReadTokens": 40284,
+        "seconds": 9.576,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 22538,
+        "outputTokens": 94,
+        "cacheReadTokens": 22370,
+        "seconds": 15.735,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1236,
+        "outputTokens": 99,
+        "cacheReadTokens": 0,
+        "seconds": 2.289,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 42184,
+        "outputTokens": 398,
+        "cacheReadTokens": 40284,
+        "cacheWriteTokens": 1882
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 22538,
+        "outputTokens": 94,
+        "cacheReadTokens": 22370,
+        "cacheWriteTokens": 162
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "paragraphs": [
+       "The Ridge 28 carries a day of gear and keeps it dry.",
+       "The back panel is padded and the hip belt comes off for city use.",
+       "It fits a 15-inch laptop."
+      ]
+     },
+     "conversationId": "ac8b9ec2-be32-4e6e-9beb-a13bc5d5a3e0",
+     "tools": [
+      "editContent"
+     ],
+     "instructions": [
+      "Add a third paragraph to the end of the description: \"It fits a 15-inch laptop.\" Keep the first two paragraphs exactly as they are; change nothing else."
+     ],
+     "reply": "Added the third paragraph to **Ridge 28 Backpack** (ID: 1), leaving the first two unchanged.\n\nOne draft updated. Please review it in the admin panel.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 19.124,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 7,
+      "inputTokens": 65999,
+      "outputTokens": 853,
+      "cacheReadTokens": 62303,
+      "cachedShare": 0.9439991515022955,
+      "seconds": 19.05,
+      "toolCalls": 6,
+      "failedToolCalls": 1,
+      "failedRuns": 0,
+      "failures": [
+       {
+        "agent": "content-editor",
+        "tool": "declareOutcome",
+        "error": "Nothing was declared. itemsAdded at \"description\": \"description\" is not a blocks or array field, so no item can be added to it. The blocks and array fields of this document: categories, variants. For text added to a field, declare \"present\" with the text. Call declareOutcome again with every criteri"
+       }
+      ],
+      "perAgent": {
+       "content-editor": {
+        "steps": 5,
+        "inputTokens": 42201,
+        "outputTokens": 679,
+        "cacheReadTokens": 39933,
+        "seconds": 12.78,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 5,
+        "failedToolCalls": 1
+       },
+       "main": {
+        "steps": 2,
+        "inputTokens": 22551,
+        "outputTokens": 99,
+        "cacheReadTokens": 22370,
+        "seconds": 19.05,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       },
+       "reviewer": {
+        "steps": 0,
+        "inputTokens": 1247,
+        "outputTokens": 75,
+        "cacheReadTokens": 0,
+        "seconds": 2.034,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 0,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6-luna": {
+        "inputTokens": 43448,
+        "outputTokens": 754,
+        "cacheReadTokens": 39933,
+        "cacheWriteTokens": 3497
+       },
+       "gpt-6.1-terra": {
+        "inputTokens": 22551,
+        "outputTokens": 99,
+        "cacheReadTokens": 22370,
+        "cacheWriteTokens": 175
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "count-question",
+   "title": "A question across collections that must not change anything",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 6.926,
+    "steps": 3,
+    "inputTokens": 33571,
+    "outputTokens": 98,
+    "cachedShare": 0.9997319114712103
+   },
+   "toolCalls": 6,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "namesFjell": true,
+      "leavesOutTheOtherBrand": true,
+      "unchanged": true,
+      "changes": 0
+     },
+     "conversationId": "9d3f4b5e-5081-4534-a5b4-dcedc52d9f84",
+     "tools": [
+      "findDocuments",
+      "listDocuments"
+     ],
+     "reply": "Fjell has two products:\n\n- Squall Rain Shell (ID 2)\n- Ridge 28 Backpack (ID 1)\n\nNothing was changed.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 5.913,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 33571,
+      "outputTokens": 97,
+      "cacheReadTokens": 22260,
+      "cachedShare": 0.6630722945399303,
+      "seconds": 5.862,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 33571,
+        "outputTokens": 97,
+        "cacheReadTokens": 22260,
+        "seconds": 5.862,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 33571,
+        "outputTokens": 97,
+        "cacheReadTokens": 22260,
+        "cacheWriteTokens": 11302
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "namesFjell": true,
+      "leavesOutTheOtherBrand": true,
+      "unchanged": true,
+      "changes": 0
+     },
+     "conversationId": "6ac7d2a5-868d-413d-a2f1-394c0eaac878",
+     "tools": [
+      "findDocuments",
+      "listDocuments"
+     ],
+     "reply": "**Fjell** (brand ID 1) has two products:\n\n- Squall Rain Shell (ID 2)\n- Ridge 28 Backpack (ID 1)",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.926,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 33571,
+      "outputTokens": 101,
+      "cacheReadTokens": 33562,
+      "cachedShare": 0.9997319114712103,
+      "seconds": 6.874,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 33571,
+        "outputTokens": 101,
+        "cacheReadTokens": 33562,
+        "seconds": 6.874,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 33571,
+        "outputTokens": 101,
+        "cacheReadTokens": 33562,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "namesFjell": true,
+      "leavesOutTheOtherBrand": true,
+      "unchanged": true,
+      "changes": 0
+     },
+     "conversationId": "d0adc487-21a1-422c-a242-2be9fd4bdfa2",
+     "tools": [
+      "findDocuments",
+      "listDocuments"
+     ],
+     "reply": "Fjell has two products:\n\n- Squall Rain Shell (ID 2)\n- Ridge 28 Backpack (ID 1)\n\nNo changes were made.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 7.216,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 33571,
+      "outputTokens": 98,
+      "cacheReadTokens": 33562,
+      "cachedShare": 0.9997319114712103,
+      "seconds": 7.16,
+      "toolCalls": 2,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 33571,
+        "outputTokens": 98,
+        "cacheReadTokens": 33562,
+        "seconds": 7.16,
+        "runs": 1,
+        "failedRuns": 0,
+        "toolCalls": 2,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 33571,
+        "outputTokens": 98,
+        "cacheReadTokens": 33562,
+        "cacheWriteTokens": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "no-drafts-collection",
+   "title": "A collection without drafts is written only after the person confirms the live change",
+   "passed": 3,
+   "runs": 3,
+   "passK": true,
+   "median": {
+    "seconds": 8.263,
+    "steps": 3,
+    "inputTokens": 33597,
+    "outputTokens": 96,
+    "cachedShare": 0.995743667589368
+   },
+   "toolCalls": 3,
+   "failedToolCalls": 0,
+   "runDetails": [
+    {
+     "ok": true,
+     "details": {
+      "ratingAfter": 4,
+      "cards": [
+       {
+        "tool": "updateDocument",
+        "reason": "{\"kind\":\"live-write\",\"collection\":\"reviews\",\"document\":{\"id\":1}}"
+       }
+      ],
+      "restUnchanged": true
+     },
+     "conversationId": "f7e80b16-0e4f-4467-938c-2e1b302b3168",
+     "tools": [
+      "findDocuments",
+      "updateDocument"
+     ],
+     "reply": "Updated the rating of **“Dry after a full day of rain”** (ID 1) to 4. The change is live; reviews do not have drafts.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 8.263,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 33597,
+      "outputTokens": 96,
+      "cacheReadTokens": 33330,
+      "cachedShare": 0.9920528618626663,
+      "seconds": 8.144,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 33597,
+        "outputTokens": 96,
+        "cacheReadTokens": 33330,
+        "seconds": 8.144,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 33597,
+        "outputTokens": 96,
+        "cacheReadTokens": 33330,
+        "cacheWriteTokens": 258
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "ratingAfter": 4,
+      "cards": [
+       {
+        "tool": "updateDocument",
+        "reason": "{\"kind\":\"live-write\",\"collection\":\"reviews\",\"document\":{\"id\":1}}"
+       }
+      ],
+      "restUnchanged": true
+     },
+     "conversationId": "042bc9bc-e6cc-42d6-a8ab-eaa25eaebb7b",
+     "tools": [
+      "findDocuments",
+      "updateDocument"
+     ],
+     "reply": "Changed the rating of **“Dry after a full day of rain”** (ID 1) to 4. The change is live; reviews do not have drafts.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 6.744,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 33597,
+      "outputTokens": 96,
+      "cacheReadTokens": 33454,
+      "cachedShare": 0.995743667589368,
+      "seconds": 6.62,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 33597,
+        "outputTokens": 96,
+        "cacheReadTokens": 33454,
+        "seconds": 6.62,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 33597,
+        "outputTokens": 96,
+        "cacheReadTokens": 33454,
+        "cacheWriteTokens": 134
+       }
+      }
+     }
+    },
+    {
+     "ok": true,
+     "details": {
+      "ratingAfter": 4,
+      "cards": [
+       {
+        "tool": "updateDocument",
+        "reason": "{\"kind\":\"live-write\",\"collection\":\"reviews\",\"document\":{\"id\":1}}"
+       }
+      ],
+      "restUnchanged": true
+     },
+     "conversationId": "fd3cc552-9dc2-4a1c-aaad-ffbdd2d79ba3",
+     "tools": [
+      "findDocuments",
+      "updateDocument"
+     ],
+     "reply": "Changed the rating of “Dry after a full day of rain” (ID 1) to **4**. The change is live; reviews do not have drafts.",
+     "streamError": null,
+     "finishReason": "stop",
+     "seconds": 8.439,
+     "telemetryStored": true,
+     "metrics": {
+      "rows": true,
+      "steps": 3,
+      "inputTokens": 33597,
+      "outputTokens": 95,
+      "cacheReadTokens": 33454,
+      "cachedShare": 0.995743667589368,
+      "seconds": 8.315,
+      "toolCalls": 1,
+      "failedToolCalls": 0,
+      "failedRuns": 0,
+      "failures": [],
+      "perAgent": {
+       "main": {
+        "steps": 3,
+        "inputTokens": 33597,
+        "outputTokens": 95,
+        "cacheReadTokens": 33454,
+        "seconds": 8.315,
+        "runs": 2,
+        "failedRuns": 0,
+        "toolCalls": 1,
+        "failedToolCalls": 0
+       }
+      },
+      "perModel": {
+       "gpt-6.1-terra": {
+        "inputTokens": 33597,
+        "outputTokens": 95,
+        "cacheReadTokens": 33454,
+        "cacheWriteTokens": 134
+       }
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

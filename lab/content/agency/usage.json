@@ -1,0 +1,642 @@
+{
+  "posts/headless-cms-localization-guide": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 748,
+    "outputTokens": 3204,
+    "reasoningTokens": 516,
+    "words": 2075,
+    "seconds": 63
+  },
+  "posts/structured-content-modeling-guide": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 742,
+    "outputTokens": 3361,
+    "reasoningTokens": 1030,
+    "words": 1872,
+    "seconds": 68
+  },
+  "posts/core-web-vitals-headless-sites": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 768,
+    "outputTokens": 3574,
+    "reasoningTokens": 995,
+    "words": 1939,
+    "seconds": 70
+  },
+  "posts/storyblok-visual-editor-nextjs": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 730,
+    "outputTokens": 3893,
+    "reasoningTokens": 1430,
+    "words": 1847,
+    "seconds": 72
+  },
+  "posts/nextjs-app-router-cms-caching": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 749,
+    "outputTokens": 4035,
+    "reasoningTokens": 1373,
+    "words": 1964,
+    "seconds": 72
+  },
+  "posts/sanity-to-payload-migration-guide": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 748,
+    "outputTokens": 3726,
+    "reasoningTokens": 1024,
+    "words": 2014,
+    "seconds": 73
+  },
+  "posts/wordpress-to-headless-migration-checklist": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 757,
+    "outputTokens": 3687,
+    "reasoningTokens": 1069,
+    "words": 1990,
+    "seconds": 75
+  },
+  "posts/payload-cms-live-preview-nextjs": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 754,
+    "outputTokens": 4512,
+    "reasoningTokens": 1386,
+    "words": 2236,
+    "seconds": 78
+  },
+  "posts/cms-redirects-at-scale": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 748,
+    "outputTokens": 3465,
+    "reasoningTokens": 985,
+    "words": 1964,
+    "seconds": 63
+  },
+  "posts/payload-access-control-patterns": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 736,
+    "outputTokens": 3508,
+    "reasoningTokens": 887,
+    "words": 2006,
+    "seconds": 64
+  },
+  "posts/astro-content-collections-vs-cms": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 741,
+    "outputTokens": 3273,
+    "reasoningTokens": 569,
+    "words": 2173,
+    "seconds": 61
+  },
+  "posts/draft-preview-publish-workflows": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 765,
+    "outputTokens": 3560,
+    "reasoningTokens": 1034,
+    "words": 2017,
+    "seconds": 62
+  },
+  "posts/headless-seo-technical-checklist": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 746,
+    "outputTokens": 3369,
+    "reasoningTokens": 862,
+    "words": 1938,
+    "seconds": 62
+  },
+  "posts/image-optimization-headless-cms": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 745,
+    "outputTokens": 3674,
+    "reasoningTokens": 1091,
+    "words": 2008,
+    "seconds": 67
+  },
+  "posts/best-headless-cms-2026": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 879,
+    "outputTokens": 3466,
+    "reasoningTokens": 661,
+    "words": 2194,
+    "seconds": 63
+  },
+  "posts/best-nextjs-hosting-platforms-2026": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 832,
+    "outputTokens": 3979,
+    "reasoningTokens": 1091,
+    "words": 2336,
+    "seconds": 73
+  },
+  "posts/top-headless-commerce-platforms": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 834,
+    "outputTokens": 3441,
+    "reasoningTokens": 887,
+    "words": 2051,
+    "seconds": 57
+  },
+  "posts/questions-to-ask-headless-cms-agency": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 768,
+    "outputTokens": 3145,
+    "reasoningTokens": 516,
+    "words": 2196,
+    "seconds": 54
+  },
+  "posts/best-open-source-cms-2025": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 834,
+    "outputTokens": 3431,
+    "reasoningTokens": 826,
+    "words": 2083,
+    "seconds": 57
+  },
+  "posts/best-site-search-tools-headless": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 834,
+    "outputTokens": 3405,
+    "reasoningTokens": 654,
+    "words": 2201,
+    "seconds": 61
+  },
+  "posts/cms-migration-mistakes": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 803,
+    "outputTokens": 3360,
+    "reasoningTokens": 656,
+    "words": 2154,
+    "seconds": 57
+  },
+  "posts/payload-plugins-worth-installing": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 813,
+    "outputTokens": 3422,
+    "reasoningTokens": 610,
+    "words": 2336,
+    "seconds": 58
+  },
+  "posts/top-frameworks-for-content-sites": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 851,
+    "outputTokens": 3674,
+    "reasoningTokens": 1097,
+    "words": 2044,
+    "seconds": 62
+  },
+  "posts/best-static-site-generators-2026": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 819,
+    "outputTokens": 3363,
+    "reasoningTokens": 599,
+    "words": 2220,
+    "seconds": 58
+  },
+  "posts/payload-vs-sanity": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 758,
+    "outputTokens": 2974,
+    "reasoningTokens": 671,
+    "words": 1842,
+    "seconds": 53
+  },
+  "posts/payload-vs-strapi": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 728,
+    "outputTokens": 3217,
+    "reasoningTokens": 820,
+    "words": 1930,
+    "seconds": 53
+  },
+  "posts/storyblok-vs-contentful": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 739,
+    "outputTokens": 2955,
+    "reasoningTokens": 747,
+    "words": 1816,
+    "seconds": 52
+  },
+  "posts/nextjs-vs-astro-content-sites": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 723,
+    "outputTokens": 3126,
+    "reasoningTokens": 869,
+    "words": 1835,
+    "seconds": 53
+  },
+  "posts/vercel-vs-netlify": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 747,
+    "outputTokens": 3040,
+    "reasoningTokens": 775,
+    "words": 1800,
+    "seconds": 50
+  },
+  "posts/algolia-vs-typesense": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 746,
+    "outputTokens": 3173,
+    "reasoningTokens": 921,
+    "words": 1794,
+    "seconds": 53
+  },
+  "posts/sanity-vs-contentful": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 762,
+    "outputTokens": 3077,
+    "reasoningTokens": 649,
+    "words": 1940,
+    "seconds": 55
+  },
+  "posts/payload-partner-program": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 697,
+    "outputTokens": 1294,
+    "reasoningTokens": 516,
+    "words": 562,
+    "seconds": 23
+  },
+  "posts/shopify-vs-medusa-headless": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 736,
+    "outputTokens": 2869,
+    "reasoningTokens": 642,
+    "words": 1806,
+    "seconds": 51
+  },
+  "posts/clutch-top-developer-2026": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 683,
+    "outputTokens": 1232,
+    "reasoningTokens": 408,
+    "words": 571,
+    "seconds": 19
+  },
+  "posts/starter-3-released": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 694,
+    "outputTokens": 1364,
+    "reasoningTokens": 665,
+    "words": 477,
+    "seconds": 22
+  },
+  "posts/berlin-office-opening": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 667,
+    "outputTokens": 1487,
+    "reasoningTokens": 840,
+    "words": 458,
+    "seconds": 24
+  },
+  "docs/getting-started-first-deploy": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 592,
+    "outputTokens": 1659,
+    "reasoningTokens": 516,
+    "words": 831,
+    "seconds": 27
+  },
+  "docs/getting-started-installation": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 603,
+    "outputTokens": 2202,
+    "reasoningTokens": 1002,
+    "words": 855,
+    "seconds": 34
+  },
+  "docs/getting-started-project-structure": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 593,
+    "outputTokens": 2272,
+    "reasoningTokens": 1005,
+    "words": 774,
+    "seconds": 32
+  },
+  "docs/getting-started-environment-variables": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 589,
+    "outputTokens": 2219,
+    "reasoningTokens": 1080,
+    "words": 804,
+    "seconds": 34
+  },
+  "posts/state-of-headless-cms-2026": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 755,
+    "outputTokens": 3266,
+    "reasoningTokens": 1034,
+    "words": 1751,
+    "seconds": 53
+  },
+  "posts/cms-migration-cost-report-2025": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 750,
+    "outputTokens": 3826,
+    "reasoningTokens": 1539,
+    "words": 1720,
+    "seconds": 60
+  },
+  "posts/headless-performance-benchmark-2026": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 759,
+    "outputTokens": 3681,
+    "reasoningTokens": 1022,
+    "words": 2022,
+    "seconds": 58
+  },
+  "posts/editor-experience-survey-2026": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 752,
+    "outputTokens": 2985,
+    "reasoningTokens": 748,
+    "words": 1783,
+    "seconds": 51
+  },
+  "docs/guides-content-modeling": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 592,
+    "outputTokens": 1982,
+    "reasoningTokens": 738,
+    "words": 818,
+    "seconds": 30
+  },
+  "docs/guides-seo-metadata": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 587,
+    "outputTokens": 1920,
+    "reasoningTokens": 516,
+    "words": 902,
+    "seconds": 28
+  },
+  "docs/guides-live-preview": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 590,
+    "outputTokens": 2127,
+    "reasoningTokens": 922,
+    "words": 872,
+    "seconds": 33
+  },
+  "docs/guides-redirects": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 583,
+    "outputTokens": 1965,
+    "reasoningTokens": 632,
+    "words": 926,
+    "seconds": 32
+  },
+  "docs/guides-localization": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 584,
+    "outputTokens": 2203,
+    "reasoningTokens": 897,
+    "words": 903,
+    "seconds": 36
+  },
+  "docs/reference-cli": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 583,
+    "outputTokens": 1643,
+    "reasoningTokens": 504,
+    "words": 777,
+    "seconds": 24
+  },
+  "docs/guides-upgrading-to-3": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 598,
+    "outputTokens": 2010,
+    "reasoningTokens": 828,
+    "words": 865,
+    "seconds": 34
+  },
+  "docs/reference-configuration": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 581,
+    "outputTokens": 2092,
+    "reasoningTokens": 791,
+    "words": 896,
+    "seconds": 32
+  },
+  "docs/recipes-add-a-block": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 585,
+    "outputTokens": 2021,
+    "reasoningTokens": 821,
+    "words": 812,
+    "seconds": 29
+  },
+  "docs/reference-blocks": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 599,
+    "outputTokens": 2164,
+    "reasoningTokens": 802,
+    "words": 914,
+    "seconds": 34
+  },
+  "docs/reference-rest-api": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 589,
+    "outputTokens": 2277,
+    "reasoningTokens": 860,
+    "words": 909,
+    "seconds": 32
+  },
+  "docs/reference-hooks": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 597,
+    "outputTokens": 2354,
+    "reasoningTokens": 1084,
+    "words": 907,
+    "seconds": 38
+  },
+  "docs/recipes-add-a-locale": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 585,
+    "outputTokens": 2256,
+    "reasoningTokens": 1034,
+    "words": 901,
+    "seconds": 35
+  },
+  "docs/guides-image-handling": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 1259,
+    "outputTokens": 3956,
+    "reasoningTokens": 1218,
+    "words": 1004,
+    "seconds": 64
+  },
+  "docs/recipes-protect-a-page": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 590,
+    "outputTokens": 3341,
+    "reasoningTokens": 1552,
+    "words": 977,
+    "seconds": 47
+  },
+  "cases/lumenpath-learning": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 699,
+    "outputTokens": 1633,
+    "reasoningTokens": 516,
+    "words": 925,
+    "seconds": 29
+  },
+  "docs/recipes-scheduled-publishing": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 590,
+    "outputTokens": 2809,
+    "reasoningTokens": 1293,
+    "words": 941,
+    "seconds": 39
+  },
+  "cases/nordlys-outdoor": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 721,
+    "outputTokens": 2022,
+    "reasoningTokens": 946,
+    "words": 852,
+    "seconds": 34
+  },
+  "cases/verdan-health": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 689,
+    "outputTokens": 1960,
+    "reasoningTokens": 961,
+    "words": 806,
+    "seconds": 32
+  },
+  "cases/tallgrass-media": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 718,
+    "outputTokens": 1740,
+    "reasoningTokens": 640,
+    "words": 892,
+    "seconds": 30
+  },
+  "cases/alpenroute-travel": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 698,
+    "outputTokens": 2072,
+    "reasoningTokens": 1020,
+    "words": 851,
+    "seconds": 33
+  },
+  "cases/quillstack": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 724,
+    "outputTokens": 1615,
+    "reasoningTokens": 516,
+    "words": 865,
+    "seconds": 28
+  },
+  "cases/kettlebrook-bank": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 1432,
+    "outputTokens": 3432,
+    "reasoningTokens": 1273,
+    "words": 878,
+    "seconds": 61
+  },
+  "cases/brightharbor-pay": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 706,
+    "outputTokens": 1599,
+    "reasoningTokens": 516,
+    "words": 874,
+    "seconds": 30
+  },
+  "cases/sundari-clinics": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 700,
+    "outputTokens": 1869,
+    "reasoningTokens": 778,
+    "words": 896,
+    "seconds": 31
+  },
+  "cases/fjordline-ferries": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 712,
+    "outputTokens": 1637,
+    "reasoningTokens": 516,
+    "words": 901,
+    "seconds": 29
+  },
+  "cases/maple-and-finch": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 726,
+    "outputTokens": 2109,
+    "reasoningTokens": 1026,
+    "words": 872,
+    "seconds": 35
+  },
+  "cases/campus-nord": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 719,
+    "outputTokens": 1820,
+    "reasoningTokens": 709,
+    "words": 913,
+    "seconds": 31
+  },
+  "pages/payload-cms-development": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 1121,
+    "outputTokens": 2124,
+    "reasoningTokens": 669,
+    "words": 1128,
+    "seconds": 34
+  },
+  "pages/cms-audit": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 1100,
+    "outputTokens": 1852,
+    "reasoningTokens": 382,
+    "words": 1167,
+    "seconds": 27
+  },
+  "pages/headless-cms-development": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 1079,
+    "outputTokens": 1838,
+    "reasoningTokens": 454,
+    "words": 1086,
+    "seconds": 30
+  },
+  "pages/nextjs-development": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 1029,
+    "outputTokens": 2136,
+    "reasoningTokens": 858,
+    "words": 950,
+    "seconds": 34
+  },
+  "pages/headless-cms-agency-germany": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 1019,
+    "outputTokens": 1749,
+    "reasoningTokens": 459,
+    "words": 1005,
+    "seconds": 27
+  },
+  "pages/wordpress-to-headless-migration": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 1090,
+    "outputTokens": 2019,
+    "reasoningTokens": 632,
+    "words": 1063,
+    "seconds": 30
+  },
+  "pages/headless-ecommerce": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 1083,
+    "outputTokens": 1950,
+    "reasoningTokens": 679,
+    "words": 973,
+    "seconds": 31
+  },
+  "pages/about": {
+    "model": "gpt-6.1-terra",
+    "inputTokens": 982,
+    "outputTokens": 2093,
+    "reasoningTokens": 991,
+    "words": 803,
+    "seconds": 32
+  }
+}
